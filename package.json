@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "awesome-typescript-loader": "0.15.10",
+    "cz-conventional-changelog": "^1.1.5",
     "del": "2.2.0",
     "gulp": "3.9.1",
     "gulp-autoprefixer": "^3.1.0",
@@ -22,5 +23,10 @@
     "webpack": "1.12.14"
   },
   "name": "ionic-native-playground",
-  "description": "ionic-native-playground: An Ionic project"
+  "description": "ionic-native-playground: An Ionic project",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
