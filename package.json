@@ -28,5 +28,10 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  }
+  },
+  "cordovaPlugins": [
+    "cordova-plugin-actionsheet",
+    "cordova-plugin-geolocation"
+  ],
+  "cordovaPlatforms": []
 }

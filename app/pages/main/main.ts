@@ -41,6 +41,22 @@ export class MainPage {
 
   }
 
+
+  /**
+   * show action sheet
+   */
+  actionsheet () : void {
+    let buttonLabels = ['Share via Facebook', 'Share via Twitter'];
+    ActionSheet.show({
+         'title': 'What do you want with this image?',
+         'buttonLabels': buttonLabels,
+         'addCancelButtonWithLabel': 'Cancel',
+         'addDestructiveButtonWithLabel' : 'Delete'
+       }).then(buttonIndex => {
+         console.log('Button pressed: ' + buttonLabels[buttonIndex - 1]);
+       });
+  }
+
   showMessage(message : string) : void {
 
     this.nav.present(
