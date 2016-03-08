@@ -1,4 +1,4 @@
-import {Page, NavController} from 'ionic-angular';
+import {Page, NavController, Alert} from 'ionic-angular';
 // Import used plugins from Ionic Native library
 import {
 ActionSheet,
@@ -35,6 +35,17 @@ export class MainPage {
     Geolocation.getCurrentPosition().then(
       res => console.log(res),
       err => console.log("ERROR", err)
+    );
+
+  }
+
+  showError(errorMessage : string) {
+
+    this.nav.present(
+      Alert.create({
+        title : 'Error',
+        message : errorMessage
+      })
     );
 
   }
