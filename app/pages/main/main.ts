@@ -39,11 +39,14 @@ export class MainPage {
    * update output
    * @param input
    */
-  updateOutput (input : any) : void {
+  updateOutput (input : any, error? : boolean) : void {
+    this.outputContent = '';
+    if (error) this.outputContent += '<strong>ERROR</strong>';
+
     if (typeof input == 'string') {
-      this.outputContent = input;
+      this.outputContent += input;
     }else if (typeof input == 'object') {
-      this.outputContent = this.objectToHtml(input);
+      this.outputContent += this.objectToHtml(input);
     } else {
       console.warn("You haven't thought of this type: ", typeof input, input);
     }
@@ -85,7 +88,7 @@ export class MainPage {
 
     Geolocation.getCurrentPosition().then(
       res => this.updateOutput(res),
-      err => this.showError(err)
+      err => this.updateOutput(err, true)
     );
 
   }
@@ -106,27 +109,5 @@ export class MainPage {
     });
   }
 
-  showMessage(message : string) : void {
-
-    this.nav.present(
-      Alert.create({
-        message: message,
-        buttons: ['OK']
-      })
-    );
-
-  }
-
-  showError(errorMessage : string) {
-
-    this.nav.present(
-      Alert.create({
-        title : 'Error',
-        message : errorMessage,
-        buttons: ['OK']
-      })
-    );
-
-  }
 
 }
