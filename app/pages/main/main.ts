@@ -1,4 +1,4 @@
-import {Page} from 'ionic-angular';
+import {Page, NavController} from 'ionic-angular';
 // Import used plugins from Ionic Native library
 import {
 ActionSheet,
@@ -25,6 +25,18 @@ TouchID,
 })
 export class MainPage {
 
+  constructor(private nav : NavController) {}
 
+  /**
+   * Tests the geolocation
+   */
+  geolocation () {
+
+    Geolocation.getCurrentPosition().then(
+      res => console.log(res),
+      err => console.log("ERROR", err)
+    );
+
+  }
 
 }
