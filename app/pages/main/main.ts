@@ -33,8 +33,21 @@ export class MainPage {
   geolocation () {
 
     Geolocation.getCurrentPosition().then(
-      res => this.showError(res),
+      res => this.showMessage(
+        "Your coordinates are: " + res.coords.latitude + "," + res.coords.longitude
+      ),
       err => this.showError(err)
+    );
+
+  }
+
+  showMessage(message : string) : void {
+
+    this.nav.present(
+      Alert.create({
+        message: message,
+        buttons: ['OK']
+      })
     );
 
   }
