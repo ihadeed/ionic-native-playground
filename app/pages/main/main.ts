@@ -33,8 +33,8 @@ export class MainPage {
   geolocation () {
 
     Geolocation.getCurrentPosition().then(
-      res => console.log(res),
-      err => console.log("ERROR", err)
+      res => this.showError(res),
+      err => this.showError(err)
     );
 
   }
@@ -44,7 +44,8 @@ export class MainPage {
     this.nav.present(
       Alert.create({
         title : 'Error',
-        message : errorMessage
+        message : errorMessage,
+        buttons: ['OK']
       })
     );
 
