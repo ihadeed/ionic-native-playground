@@ -6,3 +6,44 @@
 // These are the imports which make up the design of this app.
 // By default each design mode includes these shared imports.
 // App Shared Sass variables belong in app.variables.scss.
+
+.output-area {
+
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  padding: 5px;
+  background: map_get($colors, light);
+  height: 80%;
+  transition: height .2s ease-in;
+  border-top: 1px solid darken(map_get($colors, light), 50);
+
+  span.icon {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    transition: transform .2s ease-in;
+    color: darken(map_get($colors, light), 50);
+  }
+
+  span.title {
+    text-align: center;
+    text-transform: uppercase;
+    color: darken(map_get($colors, light), 20);
+    display: block;
+  }
+
+  &.collapsed {
+    height: 35px;
+    span.icon {
+      transform: rotate(180deg);
+    }
+  }
+
+  span.output {
+    padding: 20px 0;
+    overflow: scroll;
+  }
+
+}

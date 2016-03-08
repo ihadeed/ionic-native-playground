@@ -9,4 +9,16 @@
     <button block (click)="actionsheet()">
         Action Sheet
     </button>
+
+    <div class="output-area" [ngClass]="{'collapsed': outputCollapsedEh}">
+        <span (click)="toggleOutput()" class="icon">
+            <ion-icon name="arrow-down"></ion-icon>
+        </span>
+        <span class="title">
+                    Output
+        </span>
+        <span class="output" [innerHtml]="outputContent">
+        </span>
+    </div>
+
 </ion-content>
