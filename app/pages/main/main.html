@@ -4,21 +4,24 @@
 
 <ion-content padding class="page1">
     <button block (click)="geolocation()">
-        Geolocation
+        <ion-icon name="navigate"></ion-icon> Geolocation
     </button>
     <button block (click)="actionsheet()">
-        Action Sheet
+        <ion-icon name="list"></ion-icon> Action Sheet
+    </button>
+    <button block (click)="camera()">
+        <ion-icon name="camera"></ion-icon> Camera
+    </button>
+    <button block (click)="barcodescanner()">
+        <ion-icon name="camera"></ion-icon> Barcode Scanner
     </button>
 
     <div class="output-area" [ngClass]="{'collapsed': outputCollapsedEh}">
         <span (click)="toggleOutput()" class="icon">
             <ion-icon name="arrow-down"></ion-icon>
         </span>
-        <span class="title">
-                    Output
-        </span>
-        <span class="output" [innerHtml]="outputContent">
-        </span>
+        <span class="title">Output</span>
+        <span class="output" [innerHtml]="outputContent"></span>
     </div>
 
 </ion-content>

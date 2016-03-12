@@ -14,10 +14,10 @@ import {
   Device,
 //Facebook,
   Geolocation,
-  Push,
+  //Push,
   StatusBar,
   Toast,
-  TouchID,
+  //TouchID,
 } from 'ionic-native';
 
 @Page({
@@ -28,7 +28,9 @@ export class MainPage {
   private outputCollapsedEh : boolean = true;
   private outputContent : string = "No content available at the moment.";
 
-  constructor(private nav : NavController) {}
+  constructor(private nav : NavController) {
+    console.log("platform is", Device.device);
+  }
 
   toggleOutput () : void {
     console.log("Output toggled.");
@@ -51,7 +53,8 @@ export class MainPage {
       console.warn("You haven't thought of this type: ", typeof input, input);
     }
 
-    // Uncollapse output if it's collapsed
+    // Uncollapse output if it's collapsed :)
+
     if(this.outputCollapsedEh) this.toggleOutput();
   }
 
@@ -107,6 +110,26 @@ export class MainPage {
     }).then(buttonIndex => {
       console.log('Button pressed: ' + buttonLabels[buttonIndex - 1]);
     });
+  }
+
+  camera () : void {
+
+  }
+
+  barcodescanner () : void {
+
+  }
+
+  datepicker () : void {
+
+  }
+
+  toast () : void {
+
+  }
+
+  device () : void {
+
   }
 
 
