@@ -42,7 +42,9 @@
   },
   "cordovaPlugins": [
     "cordova-plugin-actionsheet",
-    "cordova-plugin-geolocation"
+    "cordova-plugin-geolocation",
+    "cordova-plugin-camera",
+    "phonegap-plugin-barcodescanner"
   ],
   "cordovaPlatforms": []
 }

@@ -106,18 +106,38 @@ export class MainPage {
       'title': 'What do you want with this image?',
       'buttonLabels': buttonLabels,
       'addCancelButtonWithLabel': 'Cancel',
-      'addDestructiveButtonWithLabel' : 'Delete'
+      'addDestructiveButtonWithLabel' : 'Delete',
+      'androidTheme' : 5, // THEME_DEVICE_DEFAULT_LIGHT
     }).then(buttonIndex => {
       console.log('Button pressed: ' + buttonLabels[buttonIndex - 1]);
     });
   }
 
+  /**
+   * Take a photo
+   */
   camera () : void {
+
+    let options = {
+      targetWidth: 500
+    };
+
+    Camera.getPicture(options)
+    .then(
+      (photo : any) => this.updateOutput('<img src="data:image/jpeg;base64,'+photo+'" alt="" />'),
+      (error : string) => this.updateOutput(error, true)
+    );
 
   }
 
+  /**
+   * Scans a barcode then outputs data
+   */
   barcodescanner () : void {
-
+    BarcodeScanner.scan().then(
+      barcodeData => this.updateOutput(barcodeData),
+      error => this.updateOutput(error, true)
+    )
   }
 
   datepicker () : void {
