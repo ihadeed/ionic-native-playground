@@ -26,6 +26,9 @@
   "description": "A demo application for driftyco/ionic-native library.",
   "repository": "https://github.com/ihadeed/ionic-native-playground",
   "license": "MIT",
+  "scripts": {
+    "test": "gulp build"
+  },
   "keywords": [
     "ionic",
     "ionic-native",
