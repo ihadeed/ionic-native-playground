@@ -23,7 +23,15 @@
     "webpack": "1.12.14"
   },
   "name": "ionic-native-playground",
-  "description": "ionic-native-playground: An Ionic project",
+  "description": "A demo application for driftyco/ionic-native library.",
+  "repository": "https://github.com/ihadeed/ionic-native-playground",
+  "license": "MIT",
+  "keywords": [
+    "ionic",
+    "ionic-native",
+    "cordova",
+    "plugins"
+  ],
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
