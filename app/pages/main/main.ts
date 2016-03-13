@@ -2,10 +2,13 @@ import {Page, NavController, Alert} from 'ionic-angular';
 // Import used plugins from Ionic Native library
 import {
   ActionSheet,
+  AppAvailability,
   AppRate,
   AppVersion,
   Badge,
   BarcodeScanner,
+  Base64ToGallery,
+  BatteryStatus,
 //BLE,
   Calendar,
   Camera,
@@ -18,7 +21,7 @@ import {
   StatusBar,
   Toast,
   //TouchID,
-} from '../ionic-native-dev';
+} from '../../../ionic-native-dev/index';
 
 @Page({
   templateUrl: 'build/pages/main/main.html',
@@ -139,6 +142,16 @@ export class MainPage {
       barcodeData => this.updateOutput(barcodeData),
       error => this.updateOutput(error, true)
     )
+  }
+
+  batterystatus () : void {
+    this.updateOutput("Watching the battery level for one minute. This will update once the battery level has been retrieved.");
+    let sub = BatteryStatus.onChange().subscribe(
+      status => this.updateOutput("Watching the battery level for one minute.<br>Current battery level is " + status.level + ". Plugged-in: " + status.isPlugged)
+    );
+
+    setTimeout(()=>sub.unsubscribe(), 60000); // Cancel watch in a minute
+
   }
 
   datepicker () : void {

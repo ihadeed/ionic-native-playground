@@ -15,6 +15,9 @@
     <button block (click)="barcodescanner()">
         <ion-icon name="camera"></ion-icon> Barcode Scanner
     </button>
+    <button block (click)="batterystatus()">
+        <ion-icon name="battery"></ion-icon> Battery Status
+    </button>
 
     <div class="output-area" [ngClass]="{'collapsed': outputCollapsedEh}">
         <span (click)="toggleOutput()" class="icon">
