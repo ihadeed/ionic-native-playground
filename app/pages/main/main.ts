@@ -119,7 +119,8 @@ export class MainPage {
   camera () : void {
 
     let options = {
-      targetWidth: 500
+      targetWidth: 500,
+      destinationType: 0
     };
 
     Camera.getPicture(options)
