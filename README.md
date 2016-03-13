@@ -1,3 +1,5 @@
+[![Circle CI](https://circleci.com/gh/ihadeed/ionic-native-playground.svg?style=svg)](https://circleci.com/gh/ihadeed/ionic-native-playground)
+
 #Ionic Native Playground
 
 This demo Cordova app demonstrates the usage and the features of Ionic Native. To read more about Ionic Native please visit their [repo here](https://github.com/driftyco/ionic-native). 
