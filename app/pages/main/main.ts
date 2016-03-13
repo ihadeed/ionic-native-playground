@@ -18,7 +18,7 @@ import {
   StatusBar,
   Toast,
   //TouchID,
-} from 'ionic-native';
+} from '../ionic-native-dev';
 
 @Page({
   templateUrl: 'build/pages/main/main.html',
