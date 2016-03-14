@@ -45,7 +45,9 @@
     "cordova-plugin-geolocation",
     "cordova-plugin-camera",
     "phonegap-plugin-barcodescanner",
-    "cordova-plugin-battery-status"
+    "cordova-plugin-battery-status",
+    "cordova-plugin-device",
+    "cordova-plugin-x-toast"
   ],
   "cordovaPlatforms": []
 }

@@ -649,7 +649,7 @@ var BatteryStatus = (function () {
      * @returns {Observable} Returns an observable that pushes a status object
      */
     BatteryStatus.onChange = function () {
-        return getEventObservable("batterylevel");
+        return getEventObservable("batterystatus");
     };
     /**
      * Watch when the battery level goes low
@@ -681,9 +681,11 @@ exports.BatteryStatus = BatteryStatus;
  */
 function getEventObservable(event) {
     return new Observable_1.Observable(function (observer) {
-        var callback = function (status) { return observer.next(status); };
-        window.addEventListener(event, callback, false);
-        return function () { return window.removeEventListener(event, callback, false); };
+        window.addEventListener(event, eventCB, false);
+        function eventCB(data) {
+            observer.next(data);
+        }
+        return function () { return window.removeEventListener(event, eventCB, false); };
     });
 }
 

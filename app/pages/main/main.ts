@@ -1,4 +1,5 @@
 import {Page, NavController, Alert} from 'ionic-angular';
+import {Observable} from 'rxjs/Observable';
 // Import used plugins from Ionic Native library
 import {
   ActionSheet,
@@ -22,6 +23,7 @@ import {
   Toast,
   //TouchID,
 } from '../../../ionic-native-dev/index';
+import {StatusObject} from "../../../ionic-native-dev/plugins/batterystatus";
 
 @Page({
   templateUrl: 'build/pages/main/main.html',
@@ -30,6 +32,7 @@ export class MainPage {
 
   private outputCollapsedEh : boolean = true;
   private outputContent : string = "No content available at the moment.";
+  private batteryLevelSubscription : any;
 
   constructor(private nav : NavController) {
     console.log("platform is", Device.device);
@@ -42,9 +45,12 @@ export class MainPage {
 
   /**
    * update output
-   * @param input
+   * @param input {any}
+   * @param error {boolean}
    */
   updateOutput (input : any, error? : boolean) : void {
+    console.log("Updating output");
+
     this.outputContent = '';
     if (error) this.outputContent += '<strong>ERROR</strong>';
 
@@ -144,13 +150,20 @@ export class MainPage {
     )
   }
 
+  /**
+   * Watch / Stop watch on battery status
+   */
   batterystatus () : void {
-    this.updateOutput("Watching the battery level for one minute. This will update once the battery level has been retrieved.");
-    let sub = BatteryStatus.onChange().subscribe(
-      status => this.updateOutput("Watching the battery level for one minute.<br>Current battery level is " + status.level + ". Plugged-in: " + status.isPlugged)
+    if(this.batteryLevelSubscription) {
+      this.batteryLevelSubscription.unsubscribe();
+      this.batteryLevelSubscription = null;
+      this.updateOutput("Cancelled battery status watch.");
+      return;
+    }
+    this.updateOutput("Watching the battery level for one minute. You will be notified with changes.<br>Press the Battery status button again to cancel the watch.");
+    this.batteryLevelSubscription = BatteryStatus.onChange().subscribe(
+      data => Toast.show("Battery level: " + data.level + ". Is plugged in: " + data.isPlugged, "4000", "center").subscribe()
     );
-
-    setTimeout(()=>sub.unsubscribe(), 60000); // Cancel watch in a minute
 
   }
 
@@ -158,8 +171,11 @@ export class MainPage {
 
   }
 
+  /**
+   * Show a toast
+   */
   toast () : void {
-
+    Toast.show('Hello world!', '2000', 'center').subscribe();
   }
 
   device () : void {
