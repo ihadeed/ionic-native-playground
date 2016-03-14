@@ -75,7 +75,7 @@ export class MainPage {
     console.log("Updating output");
 
     this.outputContent = '';
-    if (error) this.outputContent += '<strong>ERROR</strong>';
+    if (error) this.outputContent += '<strong>ERROR</strong> ';
 
     if (typeof input == 'string') {
       this.outputContent += input;
@@ -223,10 +223,47 @@ export class MainPage {
     new Plugin('Vibration', () => Vibration.vibrate(2000)),
     new Plugin('App Rate', () => AppRate.promptForRating(true)),
     new Plugin('App Version',() => {
-      this.updateOutput("App name: " + AppVersion.getAppName() + "" +
-        "<br>Package name: " + AppVersion.getPackageName() + "" +
-        "<br>App Version: " + AppVersion.getVersionNumber() + "" +
-        "<br>Version Code: " + AppVersion.getVersionCode());
+      let _resolved_count = 0,
+        _called_count = 0;
+      let name, package_name, version_number, version_code;
+      let output = () => {
+        _called_count++;
+        if(_called_count===4 && _resolved_count === 0) {
+          this.updateOutput('Error getting version number.', true);
+          return;
+        }
+        if(_resolved_count<4 && _called_count <4) return;
+        this.updateOutput("App name: " + name + "" +
+          "<br>Package name: " + package_name + "" +
+          "<br>App Version: " + version_number + "" +
+          "<br>Version Code: " + version_code);
+      }
+      AppVersion.getAppName().then((data) => {
+        _resolved_count++;
+        name = data;
+        output();
+      }, ()=>output());
+
+      AppVersion.getPackageName().then((data) => {
+        _resolved_count++;
+        package_name = data;
+        output();
+      }, ()=>output());
+
+      AppVersion.getVersionNumber().then(data=>{
+        _resolved_count++;
+        version_number = data;
+        output();
+      }, ()=>output());
+
+      AppVersion.getVersionCode().then(data=>{
+        _resolved_count++;
+        version_code = data;
+        output();
+      }, ()=>output());
+
+
+
     }),
     new Plugin('Badge', () => {
       Badge.set(5).then(
