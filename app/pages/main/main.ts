@@ -34,8 +34,59 @@ export class MainPage {
   private outputContent : string = "No content available at the moment.";
   private batteryLevelSubscription : any;
 
+  private plugins : Array<any> = [
+
+    {
+      name: 'Geolocation',
+      icon: 'navigate',
+      action: () => this.geolocation()
+    },
+
+    {
+      name: 'Action Sheet',
+      icon: 'list',
+      action: () => this.actionsheet()
+    },
+
+    {
+      name: 'Camera',
+      icon: 'camera',
+      action: () => this.camera()
+    },
+
+    {
+      name: 'Barcode Scanner',
+      icon: 'camera',
+      action: () => this.barcodescanner()
+    },
+
+    {
+      name: 'Battery Status',
+      icon: 'battery-full',
+      action: () => this.batterystatus()
+    }
+
+
+  ];
+
   constructor(private nav : NavController) {
     console.log("platform is", Device.device);
+  }
+
+  more () : void {
+    this.nav.present(Alert.create({
+      title: 'About',
+      body: 'This application was created by Ibrahim Hadeed',
+      buttons: [
+        'Close',
+        {
+          text: 'View Github Profile',
+          handler: () => {
+            // TODO open inappbrowser here
+          }
+        }
+      ]
+    }));
   }
 
   toggleOutput () : void {

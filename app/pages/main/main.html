@@ -1,23 +1,23 @@
 <ion-navbar *navbar favorite>
     <ion-title>Playground</ion-title>
+    <ion-buttons end>
+        <button (click)="more()">
+            <ion-icon name="help"></ion-icon>
+        </button>
+    </ion-buttons>
 </ion-navbar>
 
-<ion-content padding class="page1">
-    <button block (click)="geolocation()">
-        <ion-icon name="navigate"></ion-icon> Geolocation
-    </button>
-    <button block (click)="actionsheet()">
-        <ion-icon name="list"></ion-icon> Action Sheet
-    </button>
-    <button block (click)="camera()">
-        <ion-icon name="camera"></ion-icon> Camera
-    </button>
-    <button block (click)="barcodescanner()">
-        <ion-icon name="camera"></ion-icon> Barcode Scanner
-    </button>
-    <button block (click)="batterystatus()">
-        <ion-icon name="battery"></ion-icon> Battery Status
-    </button>
+<ion-content class="page1">
+    <ion-list>
+        <ion-list-header padding>
+            Select one of the plugins to test
+        </ion-list-header>
+        <ion-item *ngFor="#i of plugins" (click)="i.action()">
+            <ion-icon item-left [name]="i.icon"></ion-icon>
+            {{ i.name }}
+        </ion-item>
+
+    </ion-list>
 
     <div class="output-area" [ngClass]="{'collapsed': outputCollapsedEh}">
         <span (click)="toggleOutput()" class="icon">

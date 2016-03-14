@@ -1,0 +1,124 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@2.14.12
+3 info using node@v4.2.4
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'C:\\Users\\Ibrahim\\WebstormProjects\\ionic-native-playground',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\Ibrahim\AppData\Roaming\npm-cache\ionic-native-playground\1.0.0\package.tgz not in flight; packing
+9 verbose tar pack [ 'C:\\Users\\Ibrahim\\AppData\\Roaming\\npm-cache\\ionic-native-playground\\1.0.0\\package.tgz',
+9 verbose tar pack   'C:\\Users\\Ibrahim\\WebstormProjects\\ionic-native-playground' ]
+10 verbose tarball C:\Users\Ibrahim\AppData\Roaming\npm-cache\ionic-native-playground\1.0.0\package.tgz
+11 verbose folder C:\Users\Ibrahim\WebstormProjects\ionic-native-playground
+12 info prepublish ionic-native-playground@1.0.0
+13 verbose addLocalTarball adding from inside cache C:\Users\Ibrahim\AppData\Roaming\npm-cache\ionic-native-playground\1.0.0\package.tgz
+14 silly cache afterAdd ionic-native-playground@1.0.0
+15 verbose afterAdd C:\Users\Ibrahim\AppData\Roaming\npm-cache\ionic-native-playground\1.0.0\package\package.json not in flight; writing
+16 verbose afterAdd C:\Users\Ibrahim\AppData\Roaming\npm-cache\ionic-native-playground\1.0.0\package\package.json written
+17 silly publish { dependencies:
+17 silly publish    { angular2: '2.0.0-beta.6',
+17 silly publish      'es6-promise': '3.0.2',
+17 silly publish      'es6-shim': '0.33.13',
+17 silly publish      'ionic-angular': '*',
+17 silly publish      'ionic-native': '^1.0.12',
+17 silly publish      ionicons: '3.0.0-alpha.3',
+17 silly publish      'reflect-metadata': '0.1.2',
+17 silly publish      rxjs: '5.0.0-beta.0',
+17 silly publish      'zone.js': '0.5.14' },
+17 silly publish   devDependencies:
+17 silly publish    { 'awesome-typescript-loader': '0.15.10',
+17 silly publish      'cz-conventional-changelog': '^1.1.5',
+17 silly publish      del: '2.2.0',
+17 silly publish      gulp: '3.9.1',
+17 silly publish      'gulp-autoprefixer': '^3.1.0',
+17 silly publish      'gulp-sass': '2.2.0',
+17 silly publish      'gulp-watch': '4.3.5',
+17 silly publish      'strip-sourcemap-loader': '0.0.1',
+17 silly publish      typescript: '1.7.5',
+17 silly publish      webpack: '1.12.14' },
+17 silly publish   name: 'ionic-native-playground',
+17 silly publish   description: 'A demo application for driftyco/ionic-native library.',
+17 silly publish   repository:
+17 silly publish    { type: 'git',
+17 silly publish      url: 'git+https://github.com/ihadeed/ionic-native-playground.git' },
+17 silly publish   version: '1.0.0',
+17 silly publish   license: 'MIT',
+17 silly publish   scripts: { test: 'gulp build' },
+17 silly publish   keywords: [ 'ionic', 'ionic-native', 'cordova', 'plugins' ],
+17 silly publish   config: { commitizen: { path: './node_modules/cz-conventional-changelog' } },
+17 silly publish   cordovaPlugins:
+17 silly publish    [ 'cordova-plugin-actionsheet',
+17 silly publish      'cordova-plugin-geolocation',
+17 silly publish      'cordova-plugin-camera',
+17 silly publish      'phonegap-plugin-barcodescanner',
+17 silly publish      'cordova-plugin-battery-status',
+17 silly publish      'cordova-plugin-device',
+17 silly publish      'cordova-plugin-x-toast' ],
+17 silly publish   cordovaPlatforms: [],
+17 silly publish   readme: '[![Circle CI](https://circleci.com/gh/ihadeed/ionic-native-playground.svg?style=svg)](https://circleci.com/gh/ihadeed/ionic-native-playground)\r\n[![npm](https://img.shields.io/npm/l/express.svg)](https://www.npmjs.com/package/ionic-native-playground)\r\n[![npm](https://badge.fury.io/js/ionic-native-playground.svg)](https://www.npmjs.com/package/ionic-native-playground)\r\n\r\n# Ionic Native Playground\r\n\r\nThis demo Cordova app demonstrates the usage and the features of Ionic Native. To read more about Ionic Native please visit their [repo here](https://github.com/driftyco/ionic-native). \r\n\r\n*Note: this repository is privately maintained and developed and is not related in any way to the original developers of Ionic Native*\r\n\r\n## Implemented plugins\r\n- [Geolocation](http://ionicframework.com/docs/v2/native/Geolocation)\r\n- [ActionSheet](http://ionicframework.com/docs/v2/native/Action%20Sheet/)\r\n- [Camera](http://ionicframework.com/docs/v2/native/Camera)\r\n- [Barcode Scanner](http://ionicframework.com/docs/v2/native/Barcode%20Scanner)\r\n- [Battery Status](http://ionicframework.com/docs/v2/native/Battert%20Status)\r\n- [Toast](http://ionicframework.com/docs/v2/native/Toast)\r\n\r\n# Install from iTunes / Google Play\r\nSoon.\r\nThis app will be published upon completion.\r\n\r\n# Manual Installation\r\n```shell\r\nnpm install\r\nionic state restore\r\n```\r\n',
+17 silly publish   readmeFilename: 'README.md',
+17 silly publish   gitHead: '7edbc9cc9d6bc06bcccfca3c8a7277d0d23e4417',
+17 silly publish   bugs: { url: 'https://github.com/ihadeed/ionic-native-playground/issues' },
+17 silly publish   homepage: 'https://github.com/ihadeed/ionic-native-playground#readme',
+17 silly publish   _id: 'ionic-native-playground@1.0.0',
+17 silly publish   _shasum: '69466da2faf16af0003af80acd6b2ef54f3c0c7f',
+17 silly publish   _from: '.' }
+18 verbose getPublishConfig undefined
+19 silly mapToRegistry name ionic-native-playground
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/ionic-native-playground
+23 verbose publish registryBase https://registry.npmjs.org/
+24 silly publish uploading C:\Users\Ibrahim\AppData\Roaming\npm-cache\ionic-native-playground\1.0.0\package.tgz
+25 verbose request uri https://registry.npmjs.org/ionic-native-playground
+26 verbose request sending authorization for write operation
+27 info attempt registry request try #1 at 9:09:34 PM
+28 verbose request using bearer token for auth
+29 verbose request id d4fa787010869430
+30 http request PUT https://registry.npmjs.org/ionic-native-playground
+31 http 403 https://registry.npmjs.org/ionic-native-playground
+32 verbose headers { 'content-type': 'application/json',
+32 verbose headers   'cache-control': 'max-age=300',
+32 verbose headers   'content-length': '95',
+32 verbose headers   'accept-ranges': 'bytes',
+32 verbose headers   date: 'Mon, 14 Mar 2016 01:09:53 GMT',
+32 verbose headers   via: '1.1 varnish',
+32 verbose headers   connection: 'keep-alive',
+32 verbose headers   'x-served-by': 'cache-dfw1842-DFW',
+32 verbose headers   'x-cache': 'MISS',
+32 verbose headers   'x-cache-hits': '0',
+32 verbose headers   'x-timer': 'S1457917777.796552,VS0,VE15858' }
+33 verbose request invalidating C:\Users\Ibrahim\AppData\Roaming\npm-cache\registry.npmjs.org\ionic-native-playground on PUT
+34 error publish Failed PUT 403
+35 verbose stack Error: "You cannot publish over the previously published version 1.0.0." : ionic-native-playground
+35 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+35 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:252:14)
+35 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+35 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:198:22)
+35 verbose stack     at emitTwo (events.js:87:13)
+35 verbose stack     at Request.emit (events.js:172:7)
+35 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1082:10)
+35 verbose stack     at emitOne (events.js:82:20)
+35 verbose stack     at Request.emit (events.js:169:7)
+35 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1009:12)
+36 verbose statusCode 403
+37 verbose pkgid ionic-native-playground
+38 verbose cwd C:\Users\Ibrahim\WebstormProjects\ionic-native-playground
+39 error Windows_NT 10.0.10586
+40 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+41 error node v4.2.4
+42 error npm  v2.14.12
+43 error code E403
+44 error "You cannot publish over the previously published version 1.0.0." : ionic-native-playground
+45 error If you need help, you may report this error at:
+45 error     <https://github.com/npm/npm/issues>
+46 verbose exit [ 1, true ]
