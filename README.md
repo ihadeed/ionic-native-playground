@@ -8,7 +8,7 @@ This demo Cordova app demonstrates the usage and the features of Ionic Native. T
 
 *Note: this repository is privately maintained and developed and is not related in any way to the original developers of Ionic Native*
 
-https://github.com/ihadeed/ionic-native-playground/blob/master/screenshot.png?raw=true
+![Screenshot](https://github.com/ihadeed/ionic-native-playground/blob/master/screenshot.png?raw=true "Screenshot")
 
 ## Implemented plugins
 - [Geolocation](http://ionicframework.com/docs/v2/native/Geolocation)
