@@ -46,19 +46,19 @@ export class MainPage {
   }
 
   more () : void {
-    //this.nav.present(Alert.create({
-    //  title: 'About',
-    //  body: 'This application was created by Ibrahim Hadeed',
-    //  buttons: [
-    //    'Close',
-    //    {
-    //      text: 'View Github Profile',
-    //      handler: () => {
-    //        // TODO open inappbrowser here
-    //      }
-    //    }
-    //  ]
-    //}));
+    this.nav.present(Alert.create({
+      title: 'About',
+      body: 'This application was created by Ibrahim Hadeed',
+      buttons: [
+        'Close',
+        {
+          text: 'View Github Profile',
+          handler: () => {
+            // TODO open inappbrowser here
+          }
+        }
+      ]
+    }));
   }
 
   toggleOutput () : void {
