@@ -22,6 +22,7 @@ import {
   StatusBar,
   Toast,
   //TouchID,
+  Vibration
 } from '../../../ionic-native-dev/index';
 import {StatusObject} from "../../../ionic-native-dev/plugins/batterystatus";
 
@@ -64,6 +65,24 @@ export class MainPage {
       name: 'Battery Status',
       icon: 'battery-full',
       action: () => this.batterystatus()
+    },
+
+    {
+      name: 'Vibration',
+      icon: 'settings',
+      action: () => Vibration.vibrate(2000)
+    },
+
+    {
+      name: 'App Rate',
+      icon: 'settings',
+      action: () => AppRate.promptForRating(true)
+    },
+
+    {
+      name: 'App Version',
+      icon: 'settings',
+      action: () => this.updateOutput("App name: " + AppVersion.getAppName() + "<br>Package name: " + AppVersion.getPackageName() + "<br>App Version: " + AppVersion.getAppVersion() + "<br>Version Code: " + AppVersion.getVersionCode())
     }
 
 
