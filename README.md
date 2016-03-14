@@ -1,6 +1,6 @@
 [![Circle CI](https://circleci.com/gh/ihadeed/ionic-native-playground.svg?style=svg)](https://circleci.com/gh/ihadeed/ionic-native-playground)
 [![npm](https://img.shields.io/npm/l/express.svg)](https://www.npmjs.com/package/ionic-native-playground)
-[![npm](https://img.shields.io/npm/v/npm.svg)](https://www.npmjs.com/package/ionic-native-playground)
+[![npm](https://badge.fury.io/js/ionic-native-playground.svg)](https://www.npmjs.com/package/ionic-native-playground)
 
 # Ionic Native Playground
 
