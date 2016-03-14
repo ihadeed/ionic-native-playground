@@ -11,6 +11,8 @@ This demo Cordova app demonstrates the usage and the features of Ionic Native. T
 - ActionSheet
 - Camera
 - Barcode Scanner
+- Battery Status
+- Toast
 
 # Install from iTunes / Google Play
 Soon.
