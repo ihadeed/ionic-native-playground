@@ -168,7 +168,10 @@ export class MainPage {
   }
 
   datepicker () : void {
-
+    DatePicker.show({mode: 'datetime', date: new Date()}).then(
+      res => this.updateOutput(res),
+      err => this.updateOutput(err, true)
+    )
   }
 
   /**
