@@ -26,6 +26,11 @@ import {
 } from '../../../ionic-native-dev/index';
 import {StatusObject} from "../../../ionic-native-dev/plugins/batterystatus";
 
+class Plugin {
+  constructor (public name, public action, public icon = 'settings') {
+  }
+}
+
 @Page({
   templateUrl: 'build/pages/main/main.html',
 })
@@ -35,77 +40,25 @@ export class MainPage {
   private outputContent : string = "No content available at the moment.";
   private batteryLevelSubscription : any;
 
-  private plugins : Array<any> = [
-
-    {
-      name: 'Geolocation',
-      icon: 'navigate',
-      action: () => this.geolocation()
-    },
-
-    {
-      name: 'Action Sheet',
-      icon: 'list',
-      action: () => this.actionsheet()
-    },
-
-    {
-      name: 'Camera',
-      icon: 'camera',
-      action: () => this.camera()
-    },
-
-    {
-      name: 'Barcode Scanner',
-      icon: 'camera',
-      action: () => this.barcodescanner()
-    },
-
-    {
-      name: 'Battery Status',
-      icon: 'battery-full',
-      action: () => this.batterystatus()
-    },
-
-    {
-      name: 'Vibration',
-      icon: 'settings',
-      action: () => Vibration.vibrate(2000)
-    },
-
-    {
-      name: 'App Rate',
-      icon: 'settings',
-      action: () => AppRate.promptForRating(true)
-    },
-
-    {
-      name: 'App Version',
-      icon: 'settings',
-      action: () => this.updateOutput("App name: " + AppVersion.getAppName() + "<br>Package name: " + AppVersion.getPackageName() + "<br>App Version: " + AppVersion.getAppVersion() + "<br>Version Code: " + AppVersion.getVersionCode())
-    }
-
-
-  ];
 
   constructor(private nav : NavController) {
     console.log("platform is", Device.device);
   }
 
   more () : void {
-    this.nav.present(Alert.create({
-      title: 'About',
-      body: 'This application was created by Ibrahim Hadeed',
-      buttons: [
-        'Close',
-        {
-          text: 'View Github Profile',
-          handler: () => {
-            // TODO open inappbrowser here
-          }
-        }
-      ]
-    }));
+    //this.nav.present(Alert.create({
+    //  title: 'About',
+    //  body: 'This application was created by Ibrahim Hadeed',
+    //  buttons: [
+    //    'Close',
+    //    {
+    //      text: 'View Github Profile',
+    //      handler: () => {
+    //        // TODO open inappbrowser here
+    //      }
+    //    }
+    //  ]
+    //}));
   }
 
   toggleOutput () : void {
@@ -203,10 +156,10 @@ export class MainPage {
     };
 
     Camera.getPicture(options)
-    .then(
-      (photo : any) => this.updateOutput('<img src="data:image/jpeg;base64,'+photo+'" alt="" />'),
-      (error : string) => this.updateOutput(error, true)
-    );
+      .then(
+        (photo : any) => this.updateOutput('<img src="data:image/jpeg;base64,'+photo+'" alt="" />'),
+        (error : string) => this.updateOutput(error, true)
+      );
 
   }
 
@@ -254,6 +207,40 @@ export class MainPage {
   device () : void {
 
   }
+
+
+  /***
+   * Plugin list
+   */
+
+  private plugins : Array<any> = [
+
+    new Plugin('Geolocation',() => this.geolocation(), 'navigate'),
+    new Plugin('Action Sheet', () => this.actionsheet(), 'list'),
+    new Plugin('Camera', () => this.camera(), 'camera'),
+    new Plugin('Barcode Scanner', () => this.barcodescanner(), 'camera'),
+    new Plugin('Battery status', ()=>this.batterystatus(), 'battery-full'),
+    new Plugin('Vibration', () => Vibration.vibrate(2000)),
+    new Plugin('App Rate', () => AppRate.promptForRating(true)),
+    new Plugin('App Version',() => {
+      this.updateOutput("App name: " + AppVersion.getAppName() + "" +
+        "<br>Package name: " + AppVersion.getPackageName() + "" +
+        "<br>App Version: " + AppVersion.getVersionNumber() + "" +
+        "<br>Version Code: " + AppVersion.getVersionCode());
+    }),
+    new Plugin('Badge', () => {
+      Badge.set(5).then(
+        res => this.updateOutput('Badge has been set to 5.'),
+        err => this.updateOutput('Error updating badge.<br>' + err)
+      );
+    }),
+
+    new Plugin('Toast', () => this.toast())
+
+
+
+  ];
+
 
 
 }
