@@ -1,3 +1,4 @@
+"use strict";
 /**
  * Initialize the ngCordova Angular module if we're running in ng1
  */

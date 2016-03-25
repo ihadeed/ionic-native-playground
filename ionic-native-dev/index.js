@@ -1,3 +1,4 @@
+"use strict";
 function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
@@ -55,6 +56,8 @@ var hotspot_1 = require('./plugins/hotspot');
 exports.Hotspot = hotspot_1.Hotspot;
 var imagepicker_1 = require('./plugins/imagepicker');
 exports.ImagePicker = imagepicker_1.ImagePicker;
+var inappbrowser_1 = require('./plugins/inappbrowser');
+exports.InAppBrowser = inappbrowser_1.InAppBrowser;
 var keyboard_1 = require('./plugins/keyboard');
 exports.Keyboard = keyboard_1.Keyboard;
 var launchnavigator_1 = require('./plugins/launchnavigator');
@@ -65,6 +68,8 @@ var push_1 = require('./plugins/push');
 exports.Push = push_1.Push;
 var sms_1 = require('./plugins/sms');
 exports.SMS = sms_1.SMS;
+var spinnerdialog_1 = require('./plugins/spinnerdialog');
+exports.SpinnerDialog = spinnerdialog_1.SpinnerDialog;
 var splashscreen_1 = require('./plugins/splashscreen');
 exports.Splashscreen = splashscreen_1.Splashscreen;
 var statusbar_1 = require('./plugins/statusbar');
@@ -104,11 +109,13 @@ window['IonicNative'] = {
     Globalization: globalization_1.Globalization,
     Hotspot: hotspot_1.Hotspot,
     ImagePicker: imagepicker_1.ImagePicker,
+    InAppBrowser: inappbrowser_1.InAppBrowser,
     Keyboard: keyboard_1.Keyboard,
     LaunchNavigator: launchnavigator_1.LaunchNavigator,
     LocalNotifications: localnotifications_1.LocalNotifications,
     Push: push_1.Push,
     SMS: sms_1.SMS,
+    SpinnerDialog: spinnerdialog_1.SpinnerDialog,
     Splashscreen: splashscreen_1.Splashscreen,
     StatusBar: statusbar_1.StatusBar,
     Toast: toast_1.Toast,

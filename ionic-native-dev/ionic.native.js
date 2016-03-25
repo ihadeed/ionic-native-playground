@@ -1,4 +1,5 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+"use strict";
 function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
@@ -56,6 +57,8 @@ var hotspot_1 = require('./plugins/hotspot');
 exports.Hotspot = hotspot_1.Hotspot;
 var imagepicker_1 = require('./plugins/imagepicker');
 exports.ImagePicker = imagepicker_1.ImagePicker;
+var inappbrowser_1 = require('./plugins/inappbrowser');
+exports.InAppBrowser = inappbrowser_1.InAppBrowser;
 var keyboard_1 = require('./plugins/keyboard');
 exports.Keyboard = keyboard_1.Keyboard;
 var launchnavigator_1 = require('./plugins/launchnavigator');
@@ -66,6 +69,8 @@ var push_1 = require('./plugins/push');
 exports.Push = push_1.Push;
 var sms_1 = require('./plugins/sms');
 exports.SMS = sms_1.SMS;
+var spinnerdialog_1 = require('./plugins/spinnerdialog');
+exports.SpinnerDialog = spinnerdialog_1.SpinnerDialog;
 var splashscreen_1 = require('./plugins/splashscreen');
 exports.Splashscreen = splashscreen_1.Splashscreen;
 var statusbar_1 = require('./plugins/statusbar');
@@ -105,11 +110,13 @@ window['IonicNative'] = {
     Globalization: globalization_1.Globalization,
     Hotspot: hotspot_1.Hotspot,
     ImagePicker: imagepicker_1.ImagePicker,
+    InAppBrowser: inappbrowser_1.InAppBrowser,
     Keyboard: keyboard_1.Keyboard,
     LaunchNavigator: launchnavigator_1.LaunchNavigator,
     LocalNotifications: localnotifications_1.LocalNotifications,
     Push: push_1.Push,
     SMS: sms_1.SMS,
+    SpinnerDialog: spinnerdialog_1.SpinnerDialog,
     Splashscreen: splashscreen_1.Splashscreen,
     StatusBar: statusbar_1.StatusBar,
     Toast: toast_1.Toast,
@@ -132,7 +139,8 @@ setTimeout(function () {
     }
 }, DEVICE_READY_TIMEOUT);
 
-},{"./ng1":2,"./plugins/actionsheet":3,"./plugins/appavailability":4,"./plugins/apprate":5,"./plugins/appversion":6,"./plugins/badge":7,"./plugins/barcodescanner":8,"./plugins/base64togallery":9,"./plugins/batterystatus":10,"./plugins/ble":11,"./plugins/calendar":12,"./plugins/camera":13,"./plugins/clipboard":14,"./plugins/contacts":15,"./plugins/datepicker":16,"./plugins/dbmeter":17,"./plugins/device":18,"./plugins/devicemotion":19,"./plugins/deviceorientation":20,"./plugins/dialogs":21,"./plugins/facebook":22,"./plugins/flashlight":23,"./plugins/geolocation":24,"./plugins/globalization":25,"./plugins/hotspot":26,"./plugins/imagepicker":27,"./plugins/keyboard":28,"./plugins/launchnavigator":29,"./plugins/localnotifications":30,"./plugins/plugin":31,"./plugins/push":32,"./plugins/sms":33,"./plugins/splashscreen":34,"./plugins/statusbar":35,"./plugins/toast":36,"./plugins/touchid":37,"./plugins/vibration":38}],2:[function(require,module,exports){
+},{"./ng1":2,"./plugins/actionsheet":3,"./plugins/appavailability":4,"./plugins/apprate":5,"./plugins/appversion":6,"./plugins/badge":7,"./plugins/barcodescanner":8,"./plugins/base64togallery":9,"./plugins/batterystatus":10,"./plugins/ble":11,"./plugins/calendar":12,"./plugins/camera":13,"./plugins/clipboard":14,"./plugins/contacts":15,"./plugins/datepicker":16,"./plugins/dbmeter":17,"./plugins/device":18,"./plugins/devicemotion":19,"./plugins/deviceorientation":20,"./plugins/dialogs":21,"./plugins/facebook":22,"./plugins/flashlight":23,"./plugins/geolocation":24,"./plugins/globalization":25,"./plugins/hotspot":26,"./plugins/imagepicker":27,"./plugins/inappbrowser":28,"./plugins/keyboard":29,"./plugins/launchnavigator":30,"./plugins/localnotifications":31,"./plugins/plugin":32,"./plugins/push":33,"./plugins/sms":34,"./plugins/spinnerdialog":35,"./plugins/splashscreen":36,"./plugins/statusbar":37,"./plugins/toast":38,"./plugins/touchid":39,"./plugins/vibration":40}],2:[function(require,module,exports){
+"use strict";
 /**
  * Initialize the ngCordova Angular module if we're running in ng1
  */
@@ -158,6 +166,7 @@ function publishAngular1Service(config, cls) {
 exports.publishAngular1Service = publishAngular1Service;
 
 },{}],3:[function(require,module,exports){
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -224,14 +233,16 @@ var ActionSheet = (function () {
         plugin_1.Plugin({
             plugin: 'cordova-plugin-actionsheet',
             pluginRef: 'plugins.actionsheet',
-            repo: 'https://github.com/EddyVerbruggen/cordova-plugin-actionsheet'
+            repo: 'https://github.com/EddyVerbruggen/cordova-plugin-actionsheet',
+            platforms: ['Android', 'iOS', 'Windows Phone 8']
         })
     ], ActionSheet);
     return ActionSheet;
-})();
+}());
 exports.ActionSheet = ActionSheet;
 
-},{"./plugin":31}],4:[function(require,module,exports){
+},{"./plugin":32}],4:[function(require,module,exports){
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -248,6 +259,9 @@ var plugin_1 = require('./plugin');
  *
  * @usage
  * ```js
+ * import {AppAvailability} from 'ionic-native';
+ *
+ *
  * var app;
  *
  * if(device.platform === 'iOS') {
@@ -279,14 +293,16 @@ var AppAvailability = (function () {
         plugin_1.Plugin({
             plugin: 'cordova-plugin-appavailability',
             pluginRef: 'appAvailability',
-            repo: 'https://github.com/ohh2ahh/AppAvailability'
+            repo: 'https://github.com/ohh2ahh/AppAvailability',
+            platforms: ['Android', 'iOS']
         })
     ], AppAvailability);
     return AppAvailability;
-})();
+}());
 exports.AppAvailability = AppAvailability;
 
-},{"./plugin":31}],5:[function(require,module,exports){
+},{"./plugin":32}],5:[function(require,module,exports){
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -303,6 +319,9 @@ var plugin_1 = require('./plugin');
  *
  * @usage
  * ```js
+ * import {AppRate} from 'ionic-native';
+ *
+ *
  * AppRate.preferences.storeAppURL.ios = '<my_app_id>';
  * AppRate.preferences.storeAppURL.android = 'market://details?id=<package_name>';
  * AppRate.preferences.storeAppURL.blackberry = 'appworld://content/[App Id]/';
@@ -353,14 +372,16 @@ var AppRate = (function () {
         plugin_1.Plugin({
             plugin: 'cordova-plugin-apprate',
             pluginRef: 'AppRate',
-            repo: 'https://github.com/pushandplay/cordova-plugin-apprate'
+            repo: 'https://github.com/pushandplay/cordova-plugin-apprate',
+            platforms: ['Android', 'iOS']
         })
     ], AppRate);
     return AppRate;
-})();
+}());
 exports.AppRate = AppRate;
 
-},{"./plugin":31}],6:[function(require,module,exports){
+},{"./plugin":32}],6:[function(require,module,exports){
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -377,6 +398,9 @@ var plugin_1 = require('./plugin');
  *
  * @usage
  * ```js
+ * import {AppVersion} from 'ionic-native';
+ *
+ *
  *  AppVersion.getAppName();
  *  AppVersion.getPackageName();
  *  AppVersion.getVersionCode();
@@ -422,14 +446,16 @@ var AppVersion = (function () {
         plugin_1.Plugin({
             plugin: 'cordova-plugin-app-version',
             pluginRef: 'cordova.getAppVersion',
-            repo: 'https://github.com/whiteoctober/cordova-plugin-app-version'
+            repo: 'https://github.com/whiteoctober/cordova-plugin-app-version',
+            platforms: ['Android', 'iOS']
         })
     ], AppVersion);
     return AppVersion;
-})();
+}());
 exports.AppVersion = AppVersion;
 
-},{"./plugin":31}],7:[function(require,module,exports){
+},{"./plugin":32}],7:[function(require,module,exports){
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -446,6 +472,9 @@ var plugin_1 = require('./plugin');
  *
  * @usage
  * ```js
+ * import {Badge} from 'ionic-native';
+ *
+ *
  * Badge.set(10);
  * Badge.increase();
  * Badge.clear();
@@ -515,14 +544,16 @@ var Badge = (function () {
         plugin_1.Plugin({
             plugin: 'cordova-plugin-badge',
             pluginRef: 'cordova.plugins.notification.badge',
-            repo: 'https://github.com/katzer/cordova-plugin-badge'
+            repo: 'https://github.com/katzer/cordova-plugin-badge',
+            platforms: ['Android', 'iOS', 'Browser', 'Windows', 'Amazon FireOS', 'Windows Phone 8']
         })
     ], Badge);
     return Badge;
-})();
+}());
 exports.Badge = Badge;
 
-},{"./plugin":31}],8:[function(require,module,exports){
+},{"./plugin":32}],8:[function(require,module,exports){
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -539,6 +570,9 @@ var plugin_1 = require('./plugin');
  *
  * @usage
  * ```js
+ * import {BarcodeScanner} from 'ionic-native';
+ *
+ *
  * BarcodeScanner.scan().then((barcodeData) => {
  *  // Success! Barcode data is here
  * }, (err) => {
@@ -561,14 +595,16 @@ var BarcodeScanner = (function () {
         plugin_1.Plugin({
             plugin: 'phonegap-plugin-barcodescanner',
             pluginRef: 'cordova.plugins.barcodeScanner',
-            repo: 'https://github.com/phonegap/phonegap-plugin-barcodescanner'
+            repo: 'https://github.com/phonegap/phonegap-plugin-barcodescanner',
+            pltaforms: ['Android', 'iOS', 'Windows Phone 8', 'Windows 10', 'Windows 8', 'BlackBerry 10', 'Browser']
         })
     ], BarcodeScanner);
     return BarcodeScanner;
-})();
+}());
 exports.BarcodeScanner = BarcodeScanner;
 
-},{"./plugin":31}],9:[function(require,module,exports){
+},{"./plugin":32}],9:[function(require,module,exports){
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -582,6 +618,9 @@ var plugin_1 = require('./plugin');
  * @platforms Android, iOS, Windows Phone
  * @usage
  * ```ts
+ * import {Base64ToGallery} from 'ionic-native';
+ *
+ *
  * Base64ToGallery.base64ToGallery(base64Data, 'img_').then(
  *   res => console.log("Saved image to gallery ", res),
  *   err => console.log("Error saving image to gallery ", err)
@@ -606,14 +645,16 @@ var Base64ToGallery = (function () {
         plugin_1.Plugin({
             plugin: 'cordova-base64-to-gallery',
             pluginRef: 'cordova',
-            repo: 'https://github.com/Nexxa/cordova-base64-to-gallery'
+            repo: 'https://github.com/Nexxa/cordova-base64-to-gallery',
+            platforms: ['Android', 'iOS', 'Windows Phone 8']
         })
     ], Base64ToGallery);
     return Base64ToGallery;
-})();
+}());
 exports.Base64ToGallery = Base64ToGallery;
 
-},{"./plugin":31}],10:[function(require,module,exports){
+},{"./plugin":32}],10:[function(require,module,exports){
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -621,7 +662,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var plugin_1 = require('./plugin');
-var Observable_1 = require("rxjs/Observable");
 /**
  * @name Battery Status
  * @description
@@ -629,6 +669,10 @@ var Observable_1 = require("rxjs/Observable");
  *
  * @usage
  * ```js
+ * import {BatteryStatus} from 'ionic-native';
+ *
+ *
+ *
  * // watch change in battery status
  * let subscription = BatteryStatus.onChange().subscribe(
  *  status => {
@@ -648,46 +692,48 @@ var BatteryStatus = (function () {
      * Watch the change in battery level
      * @returns {Observable} Returns an observable that pushes a status object
      */
-    BatteryStatus.onChange = function () {
-        return getEventObservable("batterylevel");
-    };
+    BatteryStatus.onChange = function () { return; };
     /**
      * Watch when the battery level goes low
      * @returns {Observable<StatusObject>} Returns an observable that pushes a status object
      */
-    BatteryStatus.onLow = function () {
-        return getEventObservable("batterylow");
-    };
+    BatteryStatus.onLow = function () { return; };
     /**
      * Watch when the battery level goes to critial
      * @returns {Observable<StatusObject>} Returns an observable that pushes a status object
      */
-    BatteryStatus.onCritical = function () {
-        return getEventObservable("batterycritical");
-    };
+    BatteryStatus.onCritical = function () { return; };
+    __decorate([
+        plugin_1.Cordova({
+            eventObservable: true,
+            event: 'batterylevel'
+        })
+    ], BatteryStatus, "onChange", null);
+    __decorate([
+        plugin_1.Cordova({
+            eventObservable: true,
+            event: 'batterylow'
+        })
+    ], BatteryStatus, "onLow", null);
+    __decorate([
+        plugin_1.Cordova({
+            eventObservable: true,
+            event: 'batterycritical'
+        })
+    ], BatteryStatus, "onCritical", null);
     BatteryStatus = __decorate([
         plugin_1.Plugin({
             plugin: 'cordova-plugin-batterystatus',
-            repo: 'https://github.com/apache/cordova-plugin-battery-status'
+            repo: 'https://github.com/apache/cordova-plugin-battery-status',
+            platforms: ['Amazon Fire OS', 'iOS', 'Android', 'BlackBerry 10', 'Windows Phone 7', 'Windows Phone 8', 'Windows', 'Firefox OS', 'Browser']
         })
     ], BatteryStatus);
     return BatteryStatus;
-})();
+}());
 exports.BatteryStatus = BatteryStatus;
-/**
- * Wrap the event with an observable
- * @param event
- * @returns {Observable}
- */
-function getEventObservable(event) {
-    return new Observable_1.Observable(function (observer) {
-        var callback = function (status) { return observer.next(status); };
-        window.addEventListener(event, callback, false);
-        return function () { return window.removeEventListener(event, callback, false); };
-    });
-}
 
-},{"./plugin":31,"rxjs/Observable":40}],11:[function(require,module,exports){
+},{"./plugin":32}],11:[function(require,module,exports){
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1102,14 +1148,16 @@ var BLE = (function () {
         plugin_1.Plugin({
             plugin: 'cordova-plugin-ble-central',
             pluginRef: 'ble',
-            repo: 'https://github.com/don/cordova-plugin-ble-central'
+            repo: 'https://github.com/don/cordova-plugin-ble-central',
+            platforms: ['iOS', 'Android']
         })
     ], BLE);
     return BLE;
-})();
+}());
 exports.BLE = BLE;
 
-},{"./plugin":31}],12:[function(require,module,exports){
+},{"./plugin":32}],12:[function(require,module,exports){
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1135,6 +1183,10 @@ var Calendar = (function () {
      *
      * @usage
      * ```
+     * import {Calendar} from 'ionic-native';
+     *
+     *
+     *
      * Calendar.createCalendar('MyCalendar').then(
      *   (msg) => { console.log(msg); },
      *   (err) => { console.log(err); }
@@ -1403,14 +1455,16 @@ var Calendar = (function () {
         plugin_1.Plugin({
             plugin: 'cordova-plugin-calendar',
             pluginRef: 'plugins.calendar',
-            repo: 'https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin'
+            repo: 'https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin',
+            platforms: ['Android', 'iOS']
         })
     ], Calendar);
     return Calendar;
-})();
+}());
 exports.Calendar = Calendar;
 
-},{"./plugin":31}],13:[function(require,module,exports){
+},{"./plugin":32}],13:[function(require,module,exports){
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1423,10 +1477,12 @@ var plugin_1 = require('./plugin');
  * @description
  * Take a photo or capture video.
  *
- * Requires Cordova plugin: `cordova-plugin-camera`. For more info, please see the [Cordova Camera Plugin Docs](https://github.com/apache/cordova-plugin-camera).
+ * Requires {@link module:driftyco/ionic-native} and the Cordova plugin: `cordova-plugin-camera`. For more info, please see the [Cordova Camera Plugin Docs](https://github.com/apache/cordova-plugin-camera).
  *
  * @usage
  * ```js
+ * import {Camera} from 'ionic-native';
+ *
  * Camera.getPicture(options).then((imageData) => {
  *  // imageData is either a base64 encoded string or a file URI
  *  // If it's base64:
@@ -1457,20 +1513,24 @@ var Camera = (function () {
         })
     ], Camera, "getPicture", null);
     __decorate([
-        plugin_1.Cordova()
+        plugin_1.Cordova({
+            platforms: ['iOS']
+        })
     ], Camera, "cleanup", null);
     Camera = __decorate([
         plugin_1.Plugin({
             plugin: 'cordova-plugin-camera',
             pluginRef: 'navigator.camera',
-            repo: 'https://github.com/apache/cordova-plugin-camera'
+            repo: 'https://github.com/apache/cordova-plugin-camera',
+            platforms: ['Android', 'BlackBerry', 'Browser', 'Firefox', 'FireOS', 'iOS', 'Windows', 'Windows Phone 8', 'Ubuntu']
         })
     ], Camera);
     return Camera;
-})();
+}());
 exports.Camera = Camera;
 
-},{"./plugin":31}],14:[function(require,module,exports){
+},{"./plugin":32}],14:[function(require,module,exports){
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1488,6 +1548,10 @@ var plugin_1 = require('./plugin');
  *
  * @usage
  * ```js
+ * import {Clipboard} from 'ionic-native';
+ *
+ *
+ *
  * Clipboard.copy("Hello world");
  *
  * Clipboard.paste().then(
@@ -1525,14 +1589,16 @@ var Clipboard = (function () {
         plugin_1.Plugin({
             plugin: 'https://github.com/VersoSolutions/CordovaClipboard.git',
             pluginRef: 'cordova.plugins.clipboard',
-            repo: 'https://github.com/VersoSolutions/CordovaClipboard'
+            repo: 'https://github.com/VersoSolutions/CordovaClipboard',
+            platforms: ['Amazon Fire OS', 'iOS', 'Android', 'BlackBerry 10', 'Windows Phone 7', 'Windows Phone 8', 'Windows', 'Firefox OS', 'Browser']
         })
     ], Clipboard);
     return Clipboard;
-})();
+}());
 exports.Clipboard = Clipboard;
 
-},{"./plugin":31}],15:[function(require,module,exports){
+},{"./plugin":32}],15:[function(require,module,exports){
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1551,6 +1617,10 @@ var plugin_1 = require('./plugin');
  * @usage
  *
  * ```js
+ * import {Contacts} from 'ionic-native';
+ *
+ *
+ *
  * Contacts.save({
  *   displayName: "Mr. Ionitron"
  * }).then((contact) => {}, (err) => {})
@@ -1617,10 +1687,11 @@ var Contacts = (function () {
         })
     ], Contacts);
     return Contacts;
-})();
+}());
 exports.Contacts = Contacts;
 
-},{"./plugin":31}],16:[function(require,module,exports){
+},{"./plugin":32}],16:[function(require,module,exports){
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1639,6 +1710,10 @@ var plugin_1 = require('./plugin');
  *
  * @usage
  * ```js
+ * import {DatePicker} from 'ionic-native';
+ *
+ *
+ *
  * DatePicker.show({
  *   date: new Date(),
  *   mode: 'date'
@@ -1669,10 +1744,11 @@ var DatePicker = (function () {
         })
     ], DatePicker);
     return DatePicker;
-})();
+}());
 exports.DatePicker = DatePicker;
 
-},{"./plugin":31}],17:[function(require,module,exports){
+},{"./plugin":32}],17:[function(require,module,exports){
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1686,6 +1762,10 @@ var plugin_1 = require('./plugin');
  * @platforms Android, iOS
  * @usage
  * ```ts
+ * import {DBMeter} from 'ionic-native';
+ *
+ *
+ *
  * // Start listening
  * let subscription = DBMeter.start().subscribe(
  *   data => console.log(data)
@@ -1752,10 +1832,11 @@ var DBMeter = (function () {
         })
     ], DBMeter);
     return DBMeter;
-})();
+}());
 exports.DBMeter = DBMeter;
 
-},{"./plugin":31}],18:[function(require,module,exports){
+},{"./plugin":32}],18:[function(require,module,exports){
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1770,7 +1851,11 @@ var plugin_1 = require('./plugin');
  *
  * @usage
  * ```js
- * let info = Device.getDevice();
+ * import {Device} from 'ionic-native';
+ *
+ *
+ *
+ * console.log('Device UUID is: ' + Device.device.uuid);
  * ```
  */
 var Device = (function () {
@@ -1797,10 +1882,11 @@ var Device = (function () {
         })
     ], Device);
     return Device;
-})();
+}());
 exports.Device = Device;
 
-},{"./plugin":31}],19:[function(require,module,exports){
+},{"./plugin":32}],19:[function(require,module,exports){
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1815,6 +1901,9 @@ var plugin_1 = require('./plugin');
  *
  * @usage
  * ```ts
+ * import {DeviceMotion} from 'ionic-native';
+ *
+ *
  *
  * // Get the device current acceleration
  * DeviceMotion.getCurrentAcceleration().then(
@@ -1875,10 +1964,11 @@ var DeviceMotion = (function () {
         })
     ], DeviceMotion);
     return DeviceMotion;
-})();
+}());
 exports.DeviceMotion = DeviceMotion;
 
-},{"./plugin":31}],20:[function(require,module,exports){
+},{"./plugin":32}],20:[function(require,module,exports){
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1893,6 +1983,10 @@ var plugin_1 = require('./plugin');
  *
  * @usage
  * ```ts
+ * import {DeviceOrientation} from 'ionic-native';
+ *
+ *
+ *
  * // Get the device current compass heading
  * DeviceOrientation.getCurrentHeading().then(
  *   data => console.log(data),
@@ -1942,10 +2036,11 @@ var DeviceOrientation = (function () {
         })
     ], DeviceOrientation);
     return DeviceOrientation;
-})();
+}());
 exports.DeviceOrientation = DeviceOrientation;
 
-},{"./plugin":31}],21:[function(require,module,exports){
+},{"./plugin":32}],21:[function(require,module,exports){
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1962,6 +2057,11 @@ var plugin_1 = require('./plugin');
  *
  * @usage
  * ```js
+ * import {Dialogs} from 'ionic-native';
+ *
+ *
+ *
+ *
  * ```
  */
 var Dialogs = (function () {
@@ -2041,10 +2141,11 @@ var Dialogs = (function () {
         })
     ], Dialogs);
     return Dialogs;
-})();
+}());
 exports.Dialogs = Dialogs;
 
-},{"./plugin":31}],22:[function(require,module,exports){
+},{"./plugin":32}],22:[function(require,module,exports){
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2119,6 +2220,14 @@ var plugin_1 = require('./plugin');
  * Events are listed on the [insights page](https://www.facebook.com/insights/).
  *
  * For tracking events, see `logEvent` and `logPurchase`.
+ *
+ * @usage
+ * ```js
+ * import {Facebook} from 'ionic-native';
+ *
+ *
+ *
+ * ```
  *
  */
 var Facebook = (function () {
@@ -2289,10 +2398,11 @@ var Facebook = (function () {
         })
     ], Facebook);
     return Facebook;
-})();
+}());
 exports.Facebook = Facebook;
 
-},{"./plugin":31}],23:[function(require,module,exports){
+},{"./plugin":32}],23:[function(require,module,exports){
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2308,6 +2418,10 @@ var plugin_1 = require('./plugin');
  *
  * @usage
  * ```js
+ * import {Flashlight} from 'ionic-native';
+ *
+ *
+ *
  * ```
  */
 var Flashlight = (function () {
@@ -2363,10 +2477,11 @@ var Flashlight = (function () {
         })
     ], Flashlight);
     return Flashlight;
-})();
+}());
 exports.Flashlight = Flashlight;
 
-},{"./plugin":31}],24:[function(require,module,exports){
+},{"./plugin":32}],24:[function(require,module,exports){
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2384,6 +2499,10 @@ var plugin_1 = require('./plugin');
  * @usage
  *
  * ```ts
+ * import {Geolocation} from 'ionic-native';
+ *
+ *
+ *
  * Geolocation.getCurrentPosition().then((resp) => {
  *  //resp.coords.latitude
  *  //resp.coords.longitude
@@ -2443,10 +2562,11 @@ var Geolocation = (function () {
         })
     ], Geolocation);
     return Geolocation;
-})();
+}());
 exports.Geolocation = Geolocation;
 
-},{"./plugin":31}],25:[function(require,module,exports){
+},{"./plugin":32}],25:[function(require,module,exports){
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2458,6 +2578,12 @@ var plugin_1 = require('./plugin');
  * @name Globalization
  * @description
  * @usage
+ * ```js
+ * import {Globalization} from 'ionic-native';
+ *
+ *
+ *
+ * ```
  */
 var Globalization = (function () {
     function Globalization() {
@@ -2587,10 +2713,11 @@ var Globalization = (function () {
         })
     ], Globalization);
     return Globalization;
-})();
+}());
 exports.Globalization = Globalization;
 
-},{"./plugin":31}],26:[function(require,module,exports){
+},{"./plugin":32}],26:[function(require,module,exports){
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2603,6 +2730,12 @@ var plugin_1 = require('./plugin');
  * @description
  * @platforms Android
  * @usage
+ * ```js
+ * import {Hotspot} from 'ionic-native';
+ *
+ *
+ *
+ * ```
  */
 var Hotspot = (function () {
     function Hotspot() {
@@ -2722,15 +2855,16 @@ var Hotspot = (function () {
     Hotspot = __decorate([
         plugin_1.Plugin({
             plugin: 'cordova-plugin-hotspot',
-            pluginRef: 'cordova.plugnis.hotspot',
+            pluginRef: 'cordova.plugins.hotspot',
             repo: 'https://github.com/hypery2k/cordova-hotspot-plugin'
         })
     ], Hotspot);
     return Hotspot;
-})();
+}());
 exports.Hotspot = Hotspot;
 
-},{"./plugin":31}],27:[function(require,module,exports){
+},{"./plugin":32}],27:[function(require,module,exports){
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2748,6 +2882,10 @@ var plugin_1 = require('./plugin');
  *
  * @usage
  * ```js
+ * import {ImagePicker} from 'ionic-native';
+ *
+ *
+ *
  * ImagePicker.getPictures(options).then((results) => {
  *   for (var i = 0; i < results.length; i++) {
  *       console.log('Image URI: ' + results[i]);
@@ -2779,10 +2917,11 @@ var ImagePicker = (function () {
         })
     ], ImagePicker);
     return ImagePicker;
-})();
+}());
 exports.ImagePicker = ImagePicker;
 
-},{"./plugin":31}],28:[function(require,module,exports){
+},{"./plugin":32}],28:[function(require,module,exports){
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2790,6 +2929,53 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var plugin_1 = require('./plugin');
+var InAppBrowser = (function () {
+    function InAppBrowser() {
+    }
+    /**
+     * Opens a URL in a new InAppBrowser instance, the current browser instance, or the system browser.
+     * @param  url     The URL to load.
+     * @param  target  The target in which to load the URL, an optional parameter that defaults to _self.
+     * @param  options Options for the InAppBrowser. Optional, defaulting to: location=yes.
+     *                 The options string must not contain any blank space, and each feature's
+     *                 name/value pairs must be separated by a comma. Feature names are case insensitive.
+     */
+    InAppBrowser.open = function (url, target, options) { return; };
+    __decorate([
+        plugin_1.Cordova({
+            sync: true
+        })
+    ], InAppBrowser, "open", null);
+    InAppBrowser = __decorate([
+        plugin_1.Plugin({
+            plugin: 'cordova-plugin-inappbrowser',
+            pluginRef: 'cordova.InAppBrowser'
+        })
+    ], InAppBrowser);
+    return InAppBrowser;
+}());
+exports.InAppBrowser = InAppBrowser;
+
+},{"./plugin":32}],29:[function(require,module,exports){
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var plugin_1 = require('./plugin');
+/**
+ * @name Keyboard
+ * @description
+ * @usage
+ * ```js
+ * import {Keyboard} from 'ionic-native';
+ *
+ *
+ *
+ * ```
+ */
 var Keyboard = (function () {
     function Keyboard() {
     }
@@ -2797,18 +2983,43 @@ var Keyboard = (function () {
      * Hide the keyboard accessory bar with the next, previous and done buttons.
      * @param hide {boolean}
      */
-    Keyboard.hideKeyboardAccessoryBar = function (hide) { };
+    //@Cordova({
+    //  sync: true
+    //})
+    Keyboard.hideKeyboardAccessoryBar = function (hide) {
+        console.log("hideKeyboardAccessoryBar method has been removed temporarily.");
+    };
+    /**
+     * Force keyboard to be shown.
+     * @platforms ['Android','BlackBerry 10','Windows']
+     */
+    Keyboard.show = function () { };
     /**
      * Close the keyboard if open
+     * @platforms ['iOS','Android','BlackBerry 10','Windows']
      */
     Keyboard.close = function () { };
+    /**
+     * Prevents the native UIScrollView from moving when an input is focused.
+     * @platforms ['iOS','Windows']
+     * @param disable
+     */
     Keyboard.disableScroll = function (disable) { };
-    Keyboard.show = function () { };
+    /**
+     * Creates an observable that notifies you when the keyboard is shown. Unsubscribe to observable to cancel event watch.
+     * @platforms ['iOS','Android','BlackBerry 10','Windows']
+     */
+    Keyboard.onKeybardShow = function () { return; };
+    /**
+     * Creates an observable that notifies you when the keyboard is hidden. Unsubscribe to observable to cancel event watch.
+     * @platforms ['iOS','Android','BlackBerry 10','Windows']
+     */
+    Keyboard.onKeybardHide = function () { return; };
     __decorate([
         plugin_1.Cordova({
             sync: true
         })
-    ], Keyboard, "hideKeyboardAccessoryBar", null);
+    ], Keyboard, "show", null);
     __decorate([
         plugin_1.Cordova({
             sync: true
@@ -2821,9 +3032,16 @@ var Keyboard = (function () {
     ], Keyboard, "disableScroll", null);
     __decorate([
         plugin_1.Cordova({
-            sync: true
+            eventObservable: true,
+            event: 'native.keyboardshow'
         })
-    ], Keyboard, "show", null);
+    ], Keyboard, "onKeybardShow", null);
+    __decorate([
+        plugin_1.Cordova({
+            eventObservable: true,
+            event: 'native.keyboardhide'
+        })
+    ], Keyboard, "onKeybardHide", null);
     Keyboard = __decorate([
         plugin_1.Plugin({
             plugin: 'ionic-plugin-keyboard',
@@ -2832,10 +3050,11 @@ var Keyboard = (function () {
         })
     ], Keyboard);
     return Keyboard;
-})();
+}());
 exports.Keyboard = Keyboard;
 
-},{"./plugin":31}],29:[function(require,module,exports){
+},{"./plugin":32}],30:[function(require,module,exports){
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2850,6 +3069,10 @@ var plugin_1 = require('./plugin');
  *
  * @usage
  * ```js
+ * import {LaunchNavigator} from 'ionic-native';
+ *
+ *
+ *
  * LaunchNavigator.navigate("Toronto, ON", "London, ON")
  *   .then(
  *     success => console.log("Launched navigator"),
@@ -2882,10 +3105,11 @@ var LaunchNavigator = (function () {
         })
     ], LaunchNavigator);
     return LaunchNavigator;
-})();
+}());
 exports.LaunchNavigator = LaunchNavigator;
 
-},{"./plugin":31}],30:[function(require,module,exports){
+},{"./plugin":32}],31:[function(require,module,exports){
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2900,6 +3124,10 @@ var plugin_1 = require('./plugin');
  *
  * @usage
  * ```ts
+ * import {LocalNotifications} from 'ionic-native';
+ *
+ *
+ *
  * // Schedule a single notification
  * LocalNotifications.schedule({
  *   id: 1,
@@ -3101,10 +3329,11 @@ var LocalNotifications = (function () {
         })
     ], LocalNotifications);
     return LocalNotifications;
-})();
+}());
 exports.LocalNotifications = LocalNotifications;
 
-},{"./plugin":31}],31:[function(require,module,exports){
+},{"./plugin":32}],32:[function(require,module,exports){
+"use strict";
 var util_1 = require('../util');
 var Observable_1 = require('rxjs/Observable');
 /**
@@ -3236,6 +3465,18 @@ function wrapObservable(pluginObj, methodName, args, opts) {
     });
 }
 /**
+ * Wrap the event with an observable
+ * @param event
+ * @returns {Observable}
+ */
+function wrapEventObservable(event) {
+    return new Observable_1.Observable(function (observer) {
+        var callback = function (status) { return observer.next(status); };
+        window.addEventListener(event, callback, false);
+        return function () { return window.removeEventListener(event, callback, false); };
+    });
+}
+/**
  * @private
  * @param pluginObj
  * @param methodName
@@ -3249,15 +3490,14 @@ exports.wrap = function (pluginObj, methodName, opts) {
         for (var _i = 0; _i < arguments.length; _i++) {
             args[_i - 0] = arguments[_i];
         }
-        if (opts.sync) {
+        if (opts.sync)
             return callCordovaPlugin(pluginObj, methodName, args, opts);
-        }
-        else if (opts.observable) {
+        else if (opts.observable)
             return wrapObservable(pluginObj, methodName, args, opts);
-        }
-        else {
+        else if (opts.eventObservable && opts.event)
+            return wrapEventObservable(opts.event);
+        else
             return wrapPromise(pluginObj, methodName, args, opts);
-        }
     };
 };
 /**
@@ -3343,7 +3583,8 @@ function CordovaProperty(target, key, descriptor) {
 }
 exports.CordovaProperty = CordovaProperty;
 
-},{"../util":39,"rxjs/Observable":40}],32:[function(require,module,exports){
+},{"../util":41,"rxjs/Observable":42}],33:[function(require,module,exports){
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3359,6 +3600,14 @@ var plugin_1 = require('./plugin');
  * Requires Cordova plugin: `phonegap-plugin-push`. For more info, please see the [Push plugin docs](https://github.com/phonegap/phonegap-plugin-push).
  *
  * For TypeScript users, see the [Push plugin docs about using TypeScript for custom notifications](https://github.com/phonegap/phonegap-plugin-push/blob/master/docs/TYPESCRIPT.md).
+ *
+ * @usage
+ * ```js
+ * import {Push} from 'ionic-native';
+ *
+ *
+ *
+ * ```
  */
 var Push = (function () {
     function Push() {
@@ -3405,10 +3654,11 @@ var Push = (function () {
         })
     ], Push);
     return Push;
-})();
+}());
 exports.Push = Push;
 
-},{"./plugin":31}],33:[function(require,module,exports){
+},{"./plugin":32}],34:[function(require,module,exports){
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3424,6 +3674,9 @@ var plugin_1 = require('./plugin');
  *
  * @usage
  * ```ts
+ * import {SMS} from 'ionic-native';
+ *
+ *
  *
  * // Send a text message using default options
  * SMS.send('416123456','Hello world!');
@@ -3448,14 +3701,76 @@ var SMS = (function () {
         plugin_1.Plugin({
             plugin: 'cordova-sms-plugin',
             pluginRef: 'sms',
-            repo: 'https://github.com/cordova-sms/cordova-sms-plugin'
+            repo: 'https://github.com/cordova-sms/cordova-sms-plugin',
+            platforms: ['Android', 'iOS', 'Windows Phone 8']
         })
     ], SMS);
     return SMS;
-})();
+}());
 exports.SMS = SMS;
 
-},{"./plugin":31}],34:[function(require,module,exports){
+},{"./plugin":32}],35:[function(require,module,exports){
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var plugin_1 = require('./plugin');
+/**
+ * @name Spinner Dialog
+ * @description
+ * @usage
+ * ```js
+ * import {SpinnerDialog} from 'ionic-native';
+ *
+ *
+ *
+ * SpinnerDialog.show();
+ *
+ * SpinnerDialog.hide();
+ * ```
+ */
+var SpinnerDialog = (function () {
+    function SpinnerDialog() {
+    }
+    /**
+     * Shows the spinner dialog
+     * @param title {string} Spinner title (shows on Android only)
+     * @param message {string} Spinner message
+     * @param cancelCallback {boolean|function} Set to false to set spinner not cancelable. Or provide a function to call when the user cancels the spinner.
+     * @param iOSOptions {object} Options for iOS only
+     */
+    SpinnerDialog.show = function (title, message, cancelCallback, iOSOptions) { };
+    /**
+     * Hides the spinner dialog if visible
+     */
+    SpinnerDialog.hide = function () { };
+    __decorate([
+        plugin_1.Cordova({
+            sync: true
+        })
+    ], SpinnerDialog, "show", null);
+    __decorate([
+        plugin_1.Cordova({
+            sync: true
+        })
+    ], SpinnerDialog, "hide", null);
+    SpinnerDialog = __decorate([
+        plugin_1.Plugin({
+            plugin: 'cordova-plugin-spinner-dialog',
+            pluginRef: 'window.plugins.spinnerDialog',
+            repo: 'https://github.com/Paldom/SpinnerDialog',
+            platforms: ['Android', 'iOS', 'Windows Phone 8']
+        })
+    ], SpinnerDialog);
+    return SpinnerDialog;
+}());
+exports.SpinnerDialog = SpinnerDialog;
+
+},{"./plugin":32}],36:[function(require,module,exports){
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3468,6 +3783,10 @@ var plugin_1 = require('./plugin');
  * @description This plugin displays and hides a splash screen during application launch. The methods below allows showing and hiding the splashscreen after the app has loaded.
  * @usage
  * ```ts
+ * import {Splashscreen} from 'ionic-native';
+ *
+ *
+ *
  * Splashscreen.show();
  *
  * Splashscreen.hide();
@@ -3502,10 +3821,11 @@ var Splashscreen = (function () {
         })
     ], Splashscreen);
     return Splashscreen;
-})();
+}());
 exports.Splashscreen = Splashscreen;
 
-},{"./plugin":31}],35:[function(require,module,exports){
+},{"./plugin":32}],37:[function(require,module,exports){
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3514,7 +3834,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 var plugin_1 = require('./plugin');
 /**
- * @name StatusBar
+ * @name Status Bar
  * @description
  * Manage the appearance of the native status bar.
  *
@@ -3522,6 +3842,10 @@ var plugin_1 = require('./plugin');
  *
  * @usage
  * ```ts
+ * import {StatusBar} from 'ionic-native';
+ *
+ *
+ *
  * StatuBar.overlaysWebView(true);
  *
  * StatusBar.
@@ -3652,10 +3976,11 @@ var StatusBar = (function () {
         })
     ], StatusBar);
     return StatusBar;
-})();
+}());
 exports.StatusBar = StatusBar;
 
-},{"./plugin":31}],36:[function(require,module,exports){
+},{"./plugin":32}],38:[function(require,module,exports){
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3672,6 +3997,10 @@ var plugin_1 = require('./plugin');
  *
  * @usage
  * ```ts
+ * import {Toast} from 'ionic-native';
+ *
+ *
+ *
  * Toast.show("I'm a toast", 5000, "center").subscribe(
  *   toast => {
  *     console.log(toast);
@@ -3686,7 +4015,7 @@ var Toast = (function () {
      * Show a native toast for the given duration at the specified position.
      *
      * @param {string} message  The message to display.
-     * @param {string} duration  Duration to show the toast, either 'short' or 'long'.
+     * @param {string} duration  Duration to show the toast, either 'short', 'long' or any number of milliseconds: '1500'.
      * @param {string} position  Where to position the toast, either 'top', 'center', or 'bottom'.
      * @return {Observable}  Returns an Observable that notifies first on success and then when tapped, rejects on error.
      */
@@ -3701,7 +4030,7 @@ var Toast = (function () {
      *
      * @param {Object} options  Options for showing a toast. Available options:
      *   message  The message to display.
-     *   duration  Duration to show the toast, either 'short' or 'long'.
+     *   duration  Duration to show the toast, either 'short', 'long' or any number of milliseconds: '1500'.
      *   position  Where to position the toast, either 'top', 'center', or 'bottom'.
      *   addPixelsY  Offset in pixels to move the toast up or down from its specified position.
      *
@@ -3797,10 +4126,11 @@ var Toast = (function () {
         })
     ], Toast);
     return Toast;
-})();
+}());
 exports.Toast = Toast;
 
-},{"./plugin":31}],37:[function(require,module,exports){
+},{"./plugin":32}],39:[function(require,module,exports){
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3827,7 +4157,13 @@ var plugin_1 = require('./plugin');
  *  -  `-4` - The scan was cancelled by the system (Home button for example)
  *  -  `-6` - TouchID is not Available
  *  -  `-8` - TouchID is locked out from too many tries
+ * @usage
+ * ```js
+ * import {TouchID} from 'ionic-native';
  *
+ *
+ *
+ * ```
  */
 var TouchID = (function () {
     function TouchID() {
@@ -3880,10 +4216,11 @@ var TouchID = (function () {
         })
     ], TouchID);
     return TouchID;
-})();
+}());
 exports.TouchID = TouchID;
 
-},{"./plugin":31}],38:[function(require,module,exports){
+},{"./plugin":32}],40:[function(require,module,exports){
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3896,6 +4233,10 @@ var plugin_1 = require('./plugin');
  * @description Vibrates the device
  * @usage
  * ```ts
+ * import {Vibration} from 'ionic-native';
+ *
+ *
+ *
  * // Vibrate the device for a second
  * Vibration.vibrate(1000);
  *
@@ -3931,10 +4272,11 @@ var Vibration = (function () {
         })
     ], Vibration);
     return Vibration;
-})();
+}());
 exports.Vibration = Vibration;
 
-},{"./plugin":31}],39:[function(require,module,exports){
+},{"./plugin":32}],41:[function(require,module,exports){
+"use strict";
 function get(obj, path) {
     for (var i = 0, path = path.split('.'), len = path.length; i < len; i++) {
         if (!obj) {
@@ -3947,7 +4289,7 @@ function get(obj, path) {
 exports.get = get;
 ;
 
-},{}],40:[function(require,module,exports){
+},{}],42:[function(require,module,exports){
 var Subscriber_1 = require('./Subscriber');
 var root_1 = require('./util/root');
 var SymbolShim_1 = require('./util/SymbolShim');
@@ -4083,7 +4425,7 @@ var Observable = (function () {
 })();
 exports.Observable = Observable;
 
-},{"./Subscriber":41,"./symbol/rxSubscriber":43,"./util/SymbolShim":44,"./util/root":46}],41:[function(require,module,exports){
+},{"./Subscriber":43,"./symbol/rxSubscriber":45,"./util/SymbolShim":46,"./util/root":48}],43:[function(require,module,exports){
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
@@ -4214,7 +4556,7 @@ var Subscriber = (function (_super) {
 })(Subscription_1.Subscription);
 exports.Subscriber = Subscriber;
 
-},{"./Subscription":42,"./symbol/rxSubscriber":43,"./util/noop":45,"./util/throwError":47,"./util/tryOrOnError":48}],42:[function(require,module,exports){
+},{"./Subscription":44,"./symbol/rxSubscriber":45,"./util/noop":47,"./util/throwError":49,"./util/tryOrOnError":50}],44:[function(require,module,exports){
 var noop_1 = require('./util/noop');
 var Subscription = (function () {
     function Subscription(_unsubscribe) {
@@ -4297,7 +4639,7 @@ var Subscription = (function () {
 })();
 exports.Subscription = Subscription;
 
-},{"./util/noop":45}],43:[function(require,module,exports){
+},{"./util/noop":47}],45:[function(require,module,exports){
 var SymbolShim_1 = require('../util/SymbolShim');
 /**
  * rxSubscriber symbol is a symbol for retreiving an "Rx safe" Observer from an object
@@ -4307,7 +4649,7 @@ var SymbolShim_1 = require('../util/SymbolShim');
  */
 exports.rxSubscriber = SymbolShim_1.SymbolShim.for('rxSubscriber');
 
-},{"../util/SymbolShim":44}],44:[function(require,module,exports){
+},{"../util/SymbolShim":46}],46:[function(require,module,exports){
 var root_1 = require('./root');
 function polyfillSymbol(root) {
     var Symbol = ensureSymbol(root);
@@ -4376,12 +4718,12 @@ function ensureObservable(Symbol) {
 exports.ensureObservable = ensureObservable;
 exports.SymbolShim = polyfillSymbol(root_1.root);
 
-},{"./root":46}],45:[function(require,module,exports){
+},{"./root":48}],47:[function(require,module,exports){
 /* tslint:disable:no-empty */
 function noop() { }
 exports.noop = noop;
 
-},{}],46:[function(require,module,exports){
+},{}],48:[function(require,module,exports){
 (function (global){
 var objectTypes = {
     'boolean': false,
@@ -4401,11 +4743,11 @@ if (freeGlobal && (freeGlobal.global === freeGlobal || freeGlobal.window === fre
 }
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],47:[function(require,module,exports){
+},{}],49:[function(require,module,exports){
 function throwError(e) { throw e; }
 exports.throwError = throwError;
 
-},{}],48:[function(require,module,exports){
+},{}],50:[function(require,module,exports){
 function tryOrOnError(target) {
     function tryCatcher() {
         try {
