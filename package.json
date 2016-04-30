@@ -22,7 +22,7 @@
   "name": "ionic-native-playground",
   "description": "A demo application for driftyco/ionic-native library.",
   "repository": "https://github.com/ihadeed/ionic-native-playground",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "license": "MIT",
   "scripts": {
     "test": "gulp build"
