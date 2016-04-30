@@ -1,26 +1,23 @@
 {
   "dependencies": {
-    "angular2": "2.0.0-beta.6",
-    "es6-promise": "3.0.2",
-    "es6-shim": "0.33.13",
-    "ionic-angular": "*",
-    "ionic-native": "^1.0.12",
+    "angular2": "2.0.0-beta.15",
+    "es6-shim": "^0.35.0",
+    "ionic-angular": "2.0.0-beta.6",
+    "ionic-native": "^1.2.0",
     "ionicons": "3.0.0-alpha.3",
-    "reflect-metadata": "0.1.2",
-    "rxjs": "5.0.0-beta.0",
-    "zone.js": "0.5.14"
+    "rxjs": "5.0.0-beta.2"
   },
   "devDependencies": {
-    "awesome-typescript-loader": "0.15.10",
-    "cz-conventional-changelog": "^1.1.5",
+    "cz-conventional-changelog": "^1.1.6",
     "del": "2.2.0",
     "gulp": "3.9.1",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-sass": "2.2.0",
     "gulp-watch": "4.3.5",
-    "strip-sourcemap-loader": "0.0.1",
-    "typescript": "1.7.5",
-    "webpack": "1.12.14"
+    "ionic-gulp-browserify-typescript": "^1.1.0",
+    "ionic-gulp-fonts-copy": "^1.0.0",
+    "ionic-gulp-html-copy": "^1.0.0",
+    "ionic-gulp-sass-build": "^1.0.0",
+    "ionic-gulp-scripts-copy": "^1.0.1",
+    "run-sequence": "1.1.5"
   },
   "name": "ionic-native-playground",
   "description": "A demo application for driftyco/ionic-native library.",
@@ -48,7 +45,9 @@
     "phonegap-plugin-barcodescanner",
     "cordova-plugin-battery-status",
     "cordova-plugin-device",
-    "cordova-plugin-x-toast"
+    "cordova-plugin-x-toast",
+    "cordova-plugin-inappbrowser",
+    "cordova-plugin-sqlite"
   ],
   "cordovaPlatforms": []
 }

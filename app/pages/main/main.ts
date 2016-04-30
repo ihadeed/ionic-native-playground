@@ -23,8 +23,8 @@ import {
   Toast,
   //TouchID,
   Vibration
-} from '../../../ionic-native-dev/index';
-import {StatusObject} from "../../../ionic-native-dev/plugins/batterystatus";
+} from 'ionic-native';
+import {StatusObject} from "ionic-native/dist/plugins/batterystatus";
 
 class Plugin {
   constructor (public name, public action, public icon = 'settings') {
@@ -48,7 +48,7 @@ export class MainPage {
   more () : void {
     this.nav.present(Alert.create({
       title: 'About',
-      body: 'This application was created by Ibrahim Hadeed',
+      subTitle: 'This application was created by Ibrahim Hadeed',
       buttons: [
         'Close',
         {
