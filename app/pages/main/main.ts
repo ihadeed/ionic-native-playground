@@ -1,4 +1,4 @@
-import {Page, NavController, Alert} from 'ionic-angular';
+import {Page, NavController, Alert, Platform} from 'ionic-angular';
 import {Observable} from 'rxjs/Observable';
 // Import used plugins from Ionic Native library
 import {
@@ -41,7 +41,7 @@ export class MainPage {
     private batteryLevelSubscription : any;
 
 
-    constructor(private nav : NavController) {
+    constructor(private nav : NavController, private platfrom: Platform) {
         console.log("platform is", Device.device);
     }
 
@@ -120,12 +120,13 @@ export class MainPage {
      * Tests the geolocation
      */
     geolocation () {
-
-        Geolocation.getCurrentPosition().then(
-            res => this.updateOutput(res),
-            err => this.updateOutput(err, true)
-        );
-
+        // Temporary platform ready listener till we implement built-in listener in ionic-native
+        this.platform.ready().then(() => {
+            Geolocation.getCurrentPosition().then(
+                res => this.updateOutput(res),
+                err => this.updateOutput(err, true)
+            );
+        });
     }
 
 
@@ -280,7 +281,6 @@ export class MainPage {
         new Plugin('App Version',() => this.appversion()),
         new Plugin('Badge', () => this.badge()),
         new Plugin('Toast', () => this.toast())
-
 
 
     ];
