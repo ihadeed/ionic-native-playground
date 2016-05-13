@@ -299,6 +299,7 @@ export class MainPage {
 
     private plugins : Array<any> = [
         new Plugin('Action Sheet', () => this.actionsheet(), 'list'),
+        new Plugin('App Availability', () => this.appavailability()),
         new Plugin('App Rate', () => AppRate.promptForRating(true)), // Prompt for rating
         new Plugin('App Version',() => this.appversion()),
         new Plugin('Badge', () => this.badge()),

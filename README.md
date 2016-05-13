@@ -20,6 +20,7 @@ This demo Cordova app demonstrates the usage and the features of Ionic Native. T
 - [Battery Status](http://ionicframework.com/docs/v2/native/Battert%20Status)
 - [Toast](http://ionicframework.com/docs/v2/native/Toast)
 - Vibration
+- App Availability
 - App Rate
 - App Version
 - Badge
