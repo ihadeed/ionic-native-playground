@@ -23,7 +23,9 @@ import {
     Toast,
     //TouchID,
     Vibration,
-    Network
+    Network,
+    Screenshot,
+    DeviceOrientation
 } from 'ionic-native';
 import {StatusObject} from "ionic-native/dist/plugins/batterystatus";
 
@@ -292,6 +294,21 @@ export class MainPage {
         this.updateOutput(Network.connection);
     }
 
+    screenshot (): void {
+        Screenshot.URI()
+            .then(
+                (uri : any) => this.updateOutput('<img src="'+uri+'" alt="" />'),
+                (error : string) => this.updateOutput(error, true)
+            );
+    }
+
+    deviceorientation (): void {
+        DeviceOrientation.getCurrentHeading().then(
+            (heading) => this.updateOutput("Current heading is: " + heading),
+            (error) => this.updateOutput(error, true)
+        );
+    }
+
 
     /***
      * Plugin list
@@ -310,6 +327,8 @@ export class MainPage {
         new Plugin('Geolocation',() => this.geolocation(), 'navigate'),
         new Plugin('Toast', () => this.toast()),
         new Plugin('Vibration', () => Vibration.vibrate(2000)), // Vibrate for two seconds
+        new Plugin('Screenshot', () => this.screenshot()),
+        new Plugin('Device Orientation', () => this.deviceorientation())
 
     ];
 

@@ -25,6 +25,8 @@ This demo Cordova app demonstrates the usage and the features of Ionic Native. T
 - App Version
 - Badge
 - Network
+- Screenshot
+- Device Orientation
 
 # Install from iTunes / Google Play
 Soon.
