@@ -48,7 +48,13 @@
     "cordova-plugin-x-toast",
     "cordova-plugin-inappbrowser",
     "cordova-plugin-sqlite",
-    "cordova-plugin-network-information"
+    "cordova-plugin-network-information",
+    "cordova-plugin-email-composer",
+    {
+      "locator": "https://github.com/gitawego/cordova-screenshot.git",
+      "id": "com.darktalker.cordova.screenshot"
+    },
+    "cordova-plugin-device-orientation"
   ],
   "cordovaPlatforms": []
 }

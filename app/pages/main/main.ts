@@ -25,7 +25,8 @@ import {
     Vibration,
     Network,
     Screenshot,
-    DeviceOrientation
+    DeviceOrientation,
+    EmailComposer
 } from 'ionic-native';
 import {StatusObject} from "ionic-native/dist/plugins/batterystatus";
 
@@ -309,6 +310,14 @@ export class MainPage {
         );
     }
 
+    emailcomposer () : void {
+        EmailComposer.open("i.hadeed@zyra.ca").then(
+            () => this.updateOutput("Email composer should be open now, if it isn't, then something happened."),
+            (error) => this.updateOuput("Error opening email composer. " + error, true)
+        )
+    }
+
+
 
     /***
      * Plugin list
@@ -328,7 +337,8 @@ export class MainPage {
         new Plugin('Toast', () => this.toast()),
         new Plugin('Vibration', () => Vibration.vibrate(2000)), // Vibrate for two seconds
         new Plugin('Screenshot', () => this.screenshot()),
-        new Plugin('Device Orientation', () => this.deviceorientation())
+        new Plugin('Device Orientation', () => this.deviceorientation()),
+        new Plugin('Email Composer', () => this.emailcomposer())
 
     ];
 

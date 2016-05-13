@@ -27,6 +27,7 @@ This demo Cordova app demonstrates the usage and the features of Ionic Native. T
 - Network
 - Screenshot
 - Device Orientation
+- Email Composer
 
 # Install from iTunes / Google Play
 Soon.
