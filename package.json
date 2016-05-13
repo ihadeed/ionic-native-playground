@@ -47,7 +47,8 @@
     "cordova-plugin-device",
     "cordova-plugin-x-toast",
     "cordova-plugin-inappbrowser",
-    "cordova-plugin-sqlite"
+    "cordova-plugin-sqlite",
+    "cordova-plugin-network-information"
   ],
   "cordovaPlatforms": []
 }

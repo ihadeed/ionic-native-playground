@@ -22,7 +22,8 @@ import {
     StatusBar,
     Toast,
     //TouchID,
-    Vibration
+    Vibration,
+    Network
 } from 'ionic-native';
 import {StatusObject} from "ionic-native/dist/plugins/batterystatus";
 
@@ -219,6 +220,7 @@ export class MainPage {
 
     }
 
+
     /**
      * Scans a barcode then outputs data
      */
@@ -264,24 +266,33 @@ export class MainPage {
 
     }
 
+    /**
+     * Test the network plugin
+     */
+    network (): void {
+        Network.connection().then(
+            (res)=> this.updateOutput(res),
+            (err)=> this.updateOutput(err, true)
+        );
+    }
+
 
     /***
      * Plugin list
      */
 
     private plugins : Array<any> = [
-
-        new Plugin('Geolocation',() => this.geolocation(), 'navigate'),
         new Plugin('Action Sheet', () => this.actionsheet(), 'list'),
-        new Plugin('Camera', () => this.camera(), 'camera'),
-        new Plugin('Barcode Scanner', () => this.barcodescanner(), 'camera'),
-        new Plugin('Battery status', ()=>this.batterystatus(), 'battery-full'),
-        new Plugin('Vibration', () => Vibration.vibrate(2000)), // Vibrate for two seconds
         new Plugin('App Rate', () => AppRate.promptForRating(true)), // Prompt for rating
         new Plugin('App Version',() => this.appversion()),
         new Plugin('Badge', () => this.badge()),
-        new Plugin('Toast', () => this.toast())
-
+        new Plugin('Barcode Scanner', () => this.barcodescanner(), 'camera'),
+        new Plugin('Battery status', ()=>this.batterystatus(), 'battery-full'),
+        new Plugin('Camera', () => this.camera(), 'camera'),
+        new Plugin('Network', () => this.network()),
+        new Plugin('Geolocation',() => this.geolocation(), 'navigate'),
+        new Plugin('Toast', () => this.toast()),
+        new Plugin('Vibration', () => Vibration.vibrate(2000)), // Vibrate for two seconds
 
     ];
 
