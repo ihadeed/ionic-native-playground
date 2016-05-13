@@ -42,7 +42,7 @@ export class MainPage {
     private batteryLevelSubscription : any;
 
 
-    constructor(private nav : NavController, private platfrom: Platform) {
+    constructor(private nav : NavController, private platform: Platform) {
         console.log("platform is", Device.device);
     }
 
@@ -145,6 +145,25 @@ export class MainPage {
         }).then(buttonIndex => {
             console.log('Button pressed: ' + buttonLabels[buttonIndex - 1]);
         });
+    }
+
+    /**
+     * Test app availability. Check if Facebook is installed.
+     */
+    appavailability (): void {
+        if(this.platform.is('ios')){
+            AppAvailability.check('facebook://').then(
+                ()=> this.updateOutput("Facebook is installed!"),
+                ()=> this.updateOutput("Facebook is not installed.")
+            );
+        }else if(this.platform.is('android')){
+            AppAvailability.check('com.facebook.katana').then(
+                ()=> this.updateOutput("Facebook is installed!"),
+                ()=> this.updateOutput("Facebook is not installed.")
+            );
+        }else {
+            this.updateOutput("Sorry, I've only implemented a demo for iOS and Android", true);
+        }
     }
 
     /**
