@@ -289,10 +289,7 @@ export class MainPage {
      * Test the network plugin
      */
     network (): void {
-        Network.connection().then(
-            (res)=> this.updateOutput(res),
-            (err)=> this.updateOutput(err, true)
-        );
+        this.updateOutput(Network.connection);
     }
 
 
