@@ -10,25 +10,21 @@ import {
     BarcodeScanner,
     Base64ToGallery,
     BatteryStatus,
-//BLE,
     Calendar,
     Camera,
     Contacts,
     DatePicker,
     Device,
-//Facebook,
     Geolocation,
-    //Push,
     StatusBar,
     Toast,
-    //TouchID,
     Vibration,
     Network,
     Screenshot,
     DeviceOrientation,
     EmailComposer
-} from 'ionic-native';
-import {StatusObject} from "ionic-native/dist/plugins/batterystatus";
+} from '../../../../ionic-native/dist/index';
+import {StatusObject} from "../../../../ionic-native/dist/plugins/batterystatus";
 
 class Plugin {
     constructor (public name, public action, public icon = 'settings') {
@@ -311,10 +307,20 @@ export class MainPage {
     }
 
     emailcomposer () : void {
-        EmailComposer.open("i.hadeed@zyra.ca").then(
+      EmailComposer.isAvailable().then(
+        () => {
+          console.log("Email composer is available");
+        },
+        () => {
+          console.log("Email composer isn't available.");
+        }
+      )
+        EmailComposer.open({
+            to: "i.hadeed@zyra.ca" // don't spam me please!
+        }).then(
             () => this.updateOutput("Email composer should be open now, if it isn't, then something happened."),
-            (error) => this.updateOuput("Error opening email composer. " + error, true)
-        )
+            (error) => this.updateOutput("Error opening email composer. " + error, true)
+        );
     }
 
 
