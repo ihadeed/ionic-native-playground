@@ -1,5 +1,5 @@
 import {Page, NavController, Alert, Platform} from 'ionic-angular';
-import {Observable} from 'rxjs/Observable';
+import {Observable} from 'rxjs/Rx';
 // Import used plugins from Ionic Native library
 import {
     ActionSheet,
@@ -322,8 +322,6 @@ export class MainPage {
             (error) => this.updateOutput("Error opening email composer. " + error, true)
         );
     }
-
-
 
     /***
      * Plugin list
