@@ -22,9 +22,11 @@ import {
     Network,
     Screenshot,
     DeviceOrientation,
-    EmailComposer
-} from '../../../../ionic-native/dist/index';
-import {StatusObject} from "../../../../ionic-native/dist/plugins/batterystatus";
+    EmailComposer,
+    GoogleMap
+} from 'ionic-native';
+import {GoogleMapsMarker, GoogleMapsLatLng, CameraPosition, GoogleMapsMarkerOptions} from 'ionic-native/dist/plugins/googlemaps';
+import {StatusObject} from "ionic-native/dist/plugins/batterystatus";
 
 class Plugin {
     constructor (public name, public action, public icon = 'settings') {
@@ -39,10 +41,47 @@ export class MainPage {
     private outputCollapsedEh : boolean = true;
     private outputContent : string = "No content available at the moment.";
     private batteryLevelSubscription : any;
-
+    private googleMap: GoogleMap;
 
     constructor(private nav : NavController, private platform: Platform) {
         console.log("platform is", Device.device);
+        this.platform.ready().then(()=> {
+
+            this.googleMap = new GoogleMap("gmap");
+            console.log("gmap is ", this.googleMap);
+            let myPosition = new GoogleMapsLatLng('43.536476', '-79.7304218');
+            console.log("My position is", myPosition);
+            let markerOptions: GoogleMapsMarkerOptions = {
+                position: myPosition,
+                title: 'Custom thing'
+            };
+
+            //marker.showInfoWindow();
+
+            this.googleMap.on(GoogleMap.event.MAP_CLICK).subscribe(
+                (data: any) => console.log("GoogleMap.onMapClick(): ", data)
+            );
+
+            this.googleMap.on(GoogleMap.event.MAP_READY).subscribe(
+                (data: any) => {
+                    console.log("GoogleMap.onMapReady(): ", data);
+                    this.googleMap.addMarker(markerOptions).then(
+                        (marker) => {
+                            console.log("marker is ", marker);
+                            this.googleMap.animateCamera({target: myPosition});
+
+                        },
+                        () => console.error("Error adding marker")
+                    );
+
+                }
+            );
+
+            this.googleMap.on(GoogleMap.event.CAMERA_CHANGE).subscribe(
+                (data: any) => console.log("GoogleMap.onCameraChange(): ", data)
+            );
+
+        });
     }
 
     more () : void {
@@ -314,7 +353,7 @@ export class MainPage {
         () => {
           console.log("Email composer isn't available.");
         }
-      )
+      );
         EmailComposer.open({
             to: "i.hadeed@zyra.ca" // don't spam me please!
         }).then(

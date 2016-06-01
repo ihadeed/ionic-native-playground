@@ -61,7 +61,15 @@
       "locator": "https://github.com/gitawego/cordova-screenshot.git",
       "id": "com.darktalker.cordova.screenshot"
     },
-    "cordova-plugin-device-orientation"
+    "cordova-plugin-device-orientation",
+    {
+      "variables": {
+        "API_KEY_FOR_ANDROID": "'AIzaSyApuGX8An71r8nbR0f3uemO1NdouXT17V8'",
+        "API_KEY_FOR_IOS": "'AIzaSyApuGX8An71r8nbR0f3uemO1NdouXT17V8'"
+      },
+      "locator": "cordova-plugin-googlemaps",
+      "id": "plugin.google.maps"
+    }
   ],
   "cordovaPlatforms": []
 }

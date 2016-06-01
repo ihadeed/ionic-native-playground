@@ -8,23 +8,24 @@
 </ion-navbar>
 
 <ion-content>
-    <ion-list>
-        <ion-list-header padding>
-            Select one of the plugins to test
-        </ion-list-header>
-        <ion-item *ngFor="#i of plugins" (click)="i.action()">
-            <ion-icon item-left [name]="i.icon"></ion-icon>
-            {{ i.name }}
-        </ion-item>
+    <div id="gmap" style="height: 100%;"></div>
+    <!--<ion-list>-->
+        <!--<ion-list-header padding>-->
+            <!--Select one of the plugins to test-->
+        <!--</ion-list-header>-->
+        <!--<ion-item *ngFor="#i of plugins" (click)="i.action()">-->
+            <!--<ion-icon item-left [name]="i.icon"></ion-icon>-->
+            <!--{{ i.name }}-->
+        <!--</ion-item>-->
 
-    </ion-list>
+    <!--</ion-list>-->
 
-    <div class="output-area" [ngClass]="{'collapsed': outputCollapsedEh}">
-        <span (click)="toggleOutput()" class="icon">
-            <ion-icon name="arrow-down"></ion-icon>
-        </span>
-        <span class="title">Output</span>
-        <span class="output" [innerHtml]="outputContent"></span>
-    </div>
+    <!--<div class="output-area" [ngClass]="{'collapsed': outputCollapsedEh}">-->
+        <!--<span (click)="toggleOutput()" class="icon">-->
+            <!--<ion-icon name="arrow-down"></ion-icon>-->
+        <!--</span>-->
+        <!--<span class="title">Output</span>-->
+        <!--<span class="output" [innerHtml]="outputContent"></span>-->
+    <!--</div>-->
 
 </ion-content>
