@@ -25,7 +25,7 @@ import {
     EmailComposer,
     GoogleMap
 } from 'ionic-native';
-import {GoogleMapsMarker, GoogleMapsLatLng, CameraPosition, GoogleMapsMarkerOptions} from 'ionic-native/dist/plugins/googlemaps';
+import {GoogleMapsMarker, GoogleMapsLatLng, CameraPosition, GoogleMapsMarkerOptions, GoogleMapsEvent} from 'ionic-native/dist/plugins/googlemaps';
 import {StatusObject} from "ionic-native/dist/plugins/batterystatus";
 
 class Plugin {
@@ -49,7 +49,7 @@ export class MainPage {
 
             this.googleMap = new GoogleMap("gmap");
             console.log("gmap is ", this.googleMap);
-            let myPosition = new GoogleMapsLatLng('43.536476', '-79.7304218');
+            let myPosition = new GoogleMapsLatLng(43.536476, -79.7304218);
             console.log("My position is", myPosition);
             let markerOptions: GoogleMapsMarkerOptions = {
                 position: myPosition,
@@ -58,11 +58,11 @@ export class MainPage {
 
             //marker.showInfoWindow();
 
-            this.googleMap.on(GoogleMap.event.MAP_CLICK).subscribe(
+            this.googleMap.on(GoogleMapsEvent.MAP_CLICK).subscribe(
                 (data: any) => console.log("GoogleMap.onMapClick(): ", data)
             );
 
-            this.googleMap.on(GoogleMap.event.MAP_READY).subscribe(
+            this.googleMap.on(GoogleMapsEvent.MAP_READY).subscribe(
                 (data: any) => {
                     console.log("GoogleMap.onMapReady(): ", data);
                     this.googleMap.addMarker(markerOptions).then(
@@ -77,7 +77,7 @@ export class MainPage {
                 }
             );
 
-            this.googleMap.on(GoogleMap.event.CAMERA_CHANGE).subscribe(
+            this.googleMap.on(GoogleMapsEvent.CAMERA_CHANGE).subscribe(
                 (data: any) => console.log("GoogleMap.onCameraChange(): ", data)
             );
 
