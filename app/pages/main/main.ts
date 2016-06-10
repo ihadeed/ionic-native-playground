@@ -1,5 +1,6 @@
 import {Page, NavController, Alert, Platform} from 'ionic-angular';
-import {Observable} from 'rxjs/Rx';
+import {Observable} from 'rxjs/Observable';
+import 'rxjs/add/operator/map';
 // Import used plugins from Ionic Native library
 import {
     ActionSheet,
@@ -58,7 +59,9 @@ export class MainPage {
 
             //marker.showInfoWindow();
 
-            this.googleMap.on(GoogleMapsEvent.MAP_CLICK).subscribe(
+            this.googleMap.on(GoogleMapsEvent.MAP_CLICK)
+                .map(data=>data)
+                .subscribe(
                 (data: any) => console.log("GoogleMap.onMapClick(): ", data)
             );
 
