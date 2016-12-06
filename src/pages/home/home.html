@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Ionic Native Playground
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <button ion-item *ngFor="let plugin of plugins" (click)="show(plugin)">
+      {{plugin.name}}
+    </button>
+  </ion-list>
+</ion-content>
