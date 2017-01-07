@@ -21,8 +21,7 @@ export class DevicePage {
 
     console.log(Device);
 
-
-    console.log(Device.platform);
+    console.log(Device.uuid);
 
   }
 
