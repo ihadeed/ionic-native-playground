@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Platform } from 'ionic-angular';
+import {Platform, ViewController} from 'ionic-angular';
 import { Market } from 'ionic-native';
 
 @Component({
@@ -9,7 +9,8 @@ import { Market } from 'ionic-native';
 export class MarketPage {
 
   constructor(
-    private platform: Platform
+    private platform: Platform,
+    public viewCtrl: ViewController
   ) {}
 
   openInstagram() {

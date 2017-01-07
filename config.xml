@@ -29,4 +29,5 @@
     <param name="ios-package" onload="true" value="CDVStatusBar"/>
   </feature>
   <allow-navigation href="http://192.168.1.98:8000"/>
+  <allow-navigation href="http://192.168.1.98:8100"/>
 </widget>

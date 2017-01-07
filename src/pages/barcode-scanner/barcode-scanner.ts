@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ViewController } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
 
 /*
   Generated class for the BarcodeScanner page.
@@ -13,7 +13,10 @@ import { ViewController } from 'ionic-angular';
 })
 export class BarcodeScannerPage {
 
-  constructor(public viewCtrl: ViewController) {}
+  constructor(public navCtrl: NavController) {}
 
+  ionViewDidLoad() {
+    console.log('Hello BarcodeScannerPage Page');
+  }
 
 }
