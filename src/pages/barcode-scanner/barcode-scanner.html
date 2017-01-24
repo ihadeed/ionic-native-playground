@@ -6,13 +6,19 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>BarcodeScanner</ion-title>
+  <ion-navbar color="primary">
+    <ion-title>Barcode Scanner</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="viewCtrl.dismiss()">Close</button>
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+
+  <button ion-button large block (click)="scan()">Scan</button>
+  <button ion-button large block (click)="encode()">Encode</button>
 
 </ion-content>

@@ -12,6 +12,7 @@ import {DevicePage} from "./pages/device/device";
 import {DeviceAccountsPage} from "./pages/device-accounts/device-accounts";
 import {MarketPage} from "./pages/market/market";
 import {KeyboardPage} from "./pages/keyboard/keyboard";
+import {GooglePlusPage} from "./pages/google-plus/google-plus";
 
 class Plugin {
   constructor(
@@ -34,5 +35,6 @@ export default [
   new Plugin('Device Accounts', DeviceAccountsPage),
   new Plugin('Market', MarketPage),
   new Plugin('Keyboard', KeyboardPage),
+  new Plugin('Google Plus', GooglePlusPage),
 ];
 

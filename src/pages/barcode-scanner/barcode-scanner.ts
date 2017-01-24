@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import {NavController, ViewController} from 'ionic-angular';
+import {BarcodeScanner} from "ionic-native";
 
 /*
   Generated class for the BarcodeScanner page.
@@ -13,10 +14,22 @@ import { NavController } from 'ionic-angular';
 })
 export class BarcodeScannerPage {
 
-  constructor(public navCtrl: NavController) {}
+  constructor(
+    public viewCtrl: ViewController
+  ) {}
 
-  ionViewDidLoad() {
-    console.log('Hello BarcodeScannerPage Page');
+  scan() {
+    console.log('Scanning');
+    BarcodeScanner.scan()
+      .then(console.log.bind(console))
+      .catch(console.error.bind(console));
+  }
+
+  encode() {
+    console.log('Encoding');
+    BarcodeScanner.encode(BarcodeScanner.Encode.TEXT_TYPE, 'https://justpost.io')
+      .then(console.log.bind(console))
+      .catch(console.error.bind(console));
   }
 
 }
