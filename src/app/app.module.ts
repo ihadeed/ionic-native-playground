@@ -4,10 +4,12 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
 import Plugins from '../plugins';
+import {GoogleMapComponent} from "../components/google-map/google-map";
 
 let declarations = [
   MyApp,
-  HomePage
+  HomePage,
+  GoogleMapComponent
 ];
 
 let entryComponents = [

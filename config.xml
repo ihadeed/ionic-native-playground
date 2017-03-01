@@ -6,6 +6,8 @@
   <content src="index.html"/>
   <access origin="*"/>
   <allow-navigation href="http://ionic.local/*"/>
+  <allow-navigation href="http://192.168.1.98:8000"/>
+  <allow-navigation href="http://192.168.1.98:8100"/>
   <allow-intent href="http://*/*"/>
   <allow-intent href="https://*/*"/>
   <allow-intent href="tel:*"/>
@@ -29,6 +31,4 @@
   <feature name="StatusBar">
     <param name="ios-package" onload="true" value="CDVStatusBar"/>
   </feature>
-  <allow-navigation href="http://192.168.1.98:8000"/>
-  <allow-navigation href="http://192.168.1.98:8100"/>
 </widget>
