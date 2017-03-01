@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {NavController, ViewController} from 'ionic-angular';
-import {Device} from "ionic-native";
+import {Device} from "@ionic-native/device";
 
 /*
   Generated class for the Device page.
@@ -14,14 +14,16 @@ import {Device} from "ionic-native";
 })
 export class DevicePage {
 
-  constructor(public viewCtrl: ViewController) {}
+  constructor(
+    private device: Device
+  ) {}
 
 
   getDeviceInfo() {
 
-    console.log(Device);
+    console.log(this.device);
 
-    console.log(Device.uuid);
+    console.log(this.device.uuid);
 
   }
 

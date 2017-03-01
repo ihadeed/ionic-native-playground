@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { ViewController } from 'ionic-angular';
-import {Contact, ContactField, ContactName, Contacts, ContactFindOptions, ContactFieldType} from "ionic-native";
+import {Contact, ContactField, ContactName, Contacts, ContactFindOptions, ContactFieldType} from "@ionic-native/contacts";
 
 
 @Component({
@@ -9,11 +8,13 @@ import {Contact, ContactField, ContactName, Contacts, ContactFindOptions, Contac
 })
 export class ContactsPage {
 
-  constructor(public viewCtrl: ViewController) {}
+  constructor(
+    private contacts: Contacts
+  ) {}
 
   createContact() {
 
-    const contact = new Contact();
+    const contact: Contact = this.contacts.create();
 
     contact.name = new ContactName(null, 'Smith', 'John');
     contact.phoneNumbers = [new ContactField('mobile', '6476476477', true)];
@@ -25,7 +26,7 @@ export class ContactsPage {
   }
 
   pickContact() {
-    Contacts.pickContact()
+    this.contacts.pickContact()
       .then(contacts => {
         console.log(contacts);
       })
@@ -38,7 +39,7 @@ export class ContactsPage {
     options.multiple = true;
     options.hasPhoneNumber = true;
     const fields: ContactFieldType[] = ['name'];
-    Contacts.find(fields, options)
+    this.contacts.find(fields, options)
       .then(contacts => {
         console.log(contacts);
       })

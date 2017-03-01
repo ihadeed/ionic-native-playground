@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
-import {ViewController} from 'ionic-angular';
-import {ActionSheet} from "ionic-native";
-
+import { ActionSheet } from "@ionic-native/action-sheet";
 
 @Component({
   selector: 'page-action-sheet',
@@ -9,10 +7,12 @@ import {ActionSheet} from "ionic-native";
 })
 export class ActionSheetPage {
 
-  constructor(public viewCtrl: ViewController) {}
+  constructor(
+    private actionSheet: ActionSheet
+  ) {}
 
   showActionSheet() {
-    ActionSheet.show({
+    this.actionSheet.show({
       buttonLabels: ['An option', 'Another option', 'A third option'],
       title: 'A Native Action Sheet'
     })

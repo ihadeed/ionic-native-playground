@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {ViewController} from 'ionic-angular';
-import {GooglePlus} from "ionic-native";
+import {GooglePlus} from "@ionic-native/google-plus";
 
 @Component({
   selector: 'page-google-plus',
@@ -9,12 +9,12 @@ import {GooglePlus} from "ionic-native";
 export class GooglePlusPage {
 
   constructor(
-    public viewCtrl: ViewController
+    private googlePlus: GooglePlus
   ) {
   }
 
   login() {
-    GooglePlus.login()
+    this.googlePlus.login()
       .then(console.log.bind(console))
       .catch(console.error.bind(console));
 

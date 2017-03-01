@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { ViewController } from 'ionic-angular';
-import {Camera, CameraOptions} from "ionic-native";
+import {Camera, CameraOptions} from "@ionic-native/camera";
 
 @Component({
   selector: 'page-camera',
@@ -24,7 +23,9 @@ export class CameraPage {
 
   configItems = [];
 
-  constructor(public viewCtrl: ViewController) {
+  constructor(
+    private camera: Camera
+  ) {
     for(let prop in this.config) {
       this.configItems.push(prop);
     }
@@ -32,7 +33,7 @@ export class CameraPage {
 
 
   takePicture() {
-    Camera.getPicture(this.config)
+    this.camera.getPicture(this.config)
       .then(res => console.log(res))
       .catch(e => console.error(e));
   }

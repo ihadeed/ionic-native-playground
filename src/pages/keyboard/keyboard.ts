@@ -1,6 +1,6 @@
 import {Component, NgZone} from '@angular/core';
 import {ViewController, Platform} from 'ionic-angular';
-import {Keyboard} from "ionic-native";
+import {Keyboard} from "@ionic-native/keyboard";
 @Component({
   selector: 'page-keyboard',
   templateUrl: 'keyboard.html'
@@ -8,18 +8,18 @@ import {Keyboard} from "ionic-native";
 export class KeyboardPage {
 
   constructor(
-    public viewCtrl: ViewController,
+    private keyboard: Keyboard
   ) {
   }
 
   show() {
     console.log('Showing Keyboard');
-    Keyboard.show();
+    this.keyboard.show();
   }
 
   close() {
     console.log('Closing keyboard');
-    Keyboard.close();
+    this.keyboard.close();
   }
 
 
