@@ -1,8 +1,8 @@
 import {Component, ViewChild, Input, Renderer, OnInit, ElementRef} from '@angular/core';
 import {Platform} from "ionic-angular";
 import {
-  GoogleMapsObject, GoogleMapsEvent, GoogleMapsLatLng, CameraPosition, GoogleMapsMarkerOptions,
-  GoogleMapsMarker, GoogleMaps
+  GoogleMap, GoogleMapsEvent, LatLng, CameraPosition, MarkerOptions,
+  Marker, GoogleMaps
 } from "@ionic-native/google-maps";
 
 @Component({
@@ -13,7 +13,7 @@ export class GoogleMapComponent implements OnInit {
 
   private mapContainer: HTMLElement;
 
-  map: GoogleMapsObject;
+  map: GoogleMap;
 
   private isInit: boolean = false;
 
