@@ -13,4 +13,12 @@ import { ViewController } from 'ionic-angular';
 })
 export class GoogleMapsPage {
 
+  onMapClick(e) {
+    console.log('map was clicked', e);
+  }
+
+  onMapReady(e) {
+    console.log('map is ready', e);
+  }
+
 }

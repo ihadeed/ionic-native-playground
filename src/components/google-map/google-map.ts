@@ -1,4 +1,4 @@
-import {Component, ViewChild, Input, Renderer, OnInit, ElementRef} from '@angular/core';
+import {Component, ViewChild, Input, Renderer, OnInit, ElementRef, Output, EventEmitter} from '@angular/core';
 import {Platform} from "ionic-angular";
 import {
   GoogleMap, GoogleMapsEvent, LatLng, CameraPosition, MarkerOptions,
@@ -39,6 +39,13 @@ export class GoogleMapComponent implements OnInit {
     return this._width;
   }
 
+  @Output()
+  mapClick: EventEmitter<any> = new EventEmitter<any>();
+
+  @Output()
+  mapReady: EventEmitter<any> = new EventEmitter<any>();
+
+
   constructor(
     private platform: Platform,
     private renderer: Renderer,
@@ -55,12 +62,22 @@ export class GoogleMapComponent implements OnInit {
     this.platform.ready()
       .then(() => {
         this.map = this.googleMaps.create(this.mapContainer);
+
         this.map.one(GoogleMapsEvent.MAP_READY)
-          .then(() => {
+          .then((e) => {
+            this.mapReady.emit(e);
             this.isInit = true;
           });
+
+        this.map.on(GoogleMapsEvent.MAP_CLICK)
+          .subscribe(data => this.mapClick.emit(data));
+
       });
 
+  }
+
+  ngOnDestroy() {
+    this.map.remove();
   }
 
   private setupContainer() {
