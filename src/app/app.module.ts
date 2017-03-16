@@ -36,12 +36,14 @@ import {Market} from "@ionic-native/market";
 
 import {SplashScreen} from '@ionic-native/splash-screen';
 import {StatusBar} from '@ionic-native/status-bar';
+import {PluginResultComponent} from "../components/plugin-result/plugin-result";
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     GoogleMapComponent,
+    PluginResultComponent,
 
     ActionSheetPage,
     BarcodeScannerPage,
