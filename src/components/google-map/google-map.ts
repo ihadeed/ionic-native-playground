@@ -6,7 +6,8 @@ import {
 } from "@ionic-native/google-maps";
 
 @Component({
-  selector: 'google-map'
+  selector: 'google-map',
+  template: ''
 })
 export class GoogleMapComponent implements OnInit {
 

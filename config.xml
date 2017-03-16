@@ -3,7 +3,7 @@
   <name>Ionic Native Playground</name>
   <description>Test out Ionic Native functionality</description>
   <author email="info@zyra.ca" href="https://zyramedia.com/">Zyra Media</author>
-  <content src="http://192.168.1.98:8100" original-src="index.html"/>
+  <content src="index.html"/>
   <access origin="*"/>
   <allow-navigation href="http://ionic.local/*"/>
   <allow-navigation href="http://192.168.1.98:8000"/>
