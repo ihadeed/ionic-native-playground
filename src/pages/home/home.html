@@ -7,8 +7,8 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <button ion-item *ngFor="let plugin of plugins" (click)="show(plugin)">
+  <ion-list [virtualScroll]="plugins" [approxItemHeight]="'46px'">
+    <button ion-item *virtualItem="let plugin" (click)="show(plugin)">
       {{plugin.name}}
     </button>
   </ion-list>

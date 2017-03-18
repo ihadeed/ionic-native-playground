@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, NgZone } from '@angular/core';
 import { Platform } from 'ionic-angular';
 
 import { HomePage } from '../pages/home/home';
@@ -16,8 +16,12 @@ export class MyApp {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
-      statusBar.backgroundColorByHexString('#387ef5');
-      splashScreen.hide();
     });
+
+    // document.addEventListener('deviceready', () => {
+    //   console.log(NgZone.isInAngularZone());
+    //   statusBar.backgroundColorByHexString('#387ef5');
+    //   splashScreen.hide();
+    // });
   }
 }

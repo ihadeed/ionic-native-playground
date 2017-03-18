@@ -8,6 +8,9 @@ import {Contact, ContactField, ContactName, Contacts, ContactFindOptions, Contac
 })
 export class ContactsPage {
 
+  result;
+  error;
+
   constructor(
     private contacts: Contacts
   ) {}
@@ -20,17 +23,15 @@ export class ContactsPage {
     contact.phoneNumbers = [new ContactField('mobile', '6476476477', true)];
 
     contact.save()
-      .then(res => console.log('Saved ', res))
-      .catch(e => console.log(e));
+      .then(v => this.result = v)
+      .catch(v => this.error = v);
 
   }
 
   pickContact() {
     this.contacts.pickContact()
-      .then(contacts => {
-        console.log(contacts);
-      })
-      .catch(e => console.error(e));
+      .then(v => this.result = v)
+      .catch(v => this.error = v);
   }
 
   findContacts() {
@@ -40,10 +41,8 @@ export class ContactsPage {
     options.hasPhoneNumber = true;
     const fields: ContactFieldType[] = ['name'];
     this.contacts.find(fields, options)
-      .then(contacts => {
-        console.log(contacts);
-      })
-      .catch(e => console.error(e));
+      .then(v => this.result = v)
+      .catch(v => this.error = v);
   }
 
 }

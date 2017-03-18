@@ -8,14 +8,17 @@ import {DeviceAccounts} from "@ionic-native/device-accounts";
 })
 export class DeviceAccountsPage {
 
+  result;
+  error;
+
   constructor(
     private deviceAccounts: DeviceAccounts
   ) {}
 
   getDeviceAccounts() {
     this.deviceAccounts.get()
-      .then(console.log.bind(console))
-      .catch(console.error.bind(console));
+      .then(v => this.result = v)
+      .catch(e => this.error = e);
   }
 
 }

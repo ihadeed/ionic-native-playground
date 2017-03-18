@@ -12,7 +12,12 @@
 
 </ion-header>
 
-
 <ion-content padding>
-  <button ion-button large outline block></button>
+  <plugin-result [result]="result" [error]="error"></plugin-result>
+  <ion-item>
+    <ion-label stacked>Enter text</ion-label>
+    <ion-input placeholder="Enter text to copy" [(ngModel)]="input"></ion-input>
+  </ion-item>
+  <button ion-button large outline block (click)="copy()"></button>
+  <button ion-button large outline block (click)="paste()"></button>
 </ion-content>

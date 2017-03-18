@@ -8,12 +8,17 @@ import { Market } from '@ionic-native/market';
 })
 export class MarketPage {
 
+  result;
+  error;
+
   constructor(
     private market: Market
   ) {}
 
   openInstagram() {
-    this.market.open('com.instagram.android');
+    this.market.open('com.instagram.android')
+      .then(v => this.result = v)
+      .catch(e => this.error = e);
   }
 
 }

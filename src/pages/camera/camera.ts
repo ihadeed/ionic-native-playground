@@ -7,6 +7,9 @@ import {Camera, CameraOptions} from "@ionic-native/camera";
 })
 export class CameraPage {
 
+  result;
+  error;
+
   config: CameraOptions = {
     quality: 100,
     destinationType: 1,
@@ -34,8 +37,8 @@ export class CameraPage {
 
   takePicture() {
     this.camera.getPicture(this.config)
-      .then(res => console.log(res))
-      .catch(e => console.error(e));
+      .then(res => this.result = res)
+      .catch(e => this.error = e);
   }
 
 }

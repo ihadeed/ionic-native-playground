@@ -14,6 +14,8 @@ import {Device} from "@ionic-native/device";
 })
 export class DevicePage {
 
+  result;
+
   constructor(
     private device: Device
   ) {}
@@ -21,9 +23,16 @@ export class DevicePage {
 
   getDeviceInfo() {
 
-    console.log(this.device);
-
-    console.log(this.device.uuid);
+    this.result = {
+      cordova: this.device.cordova,
+      model: this.device.model,
+      platform: this.device.platform,
+      uuid: this.device.uuid,
+      version: this.device.version,
+      manufacturer: this.device.manufacturer,
+      isVirtual: this.device.isVirtual,
+      serial: this.device.serial
+    };
 
   }
 

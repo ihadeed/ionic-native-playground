@@ -15,6 +15,8 @@
 
 <ion-content padding>
 
+  <plugin-result [result]="result" [error]="error"></plugin-result>
+
   <button ion-button large block (click)="scan()">Scan</button>
   <button ion-button large block (click)="encode()">Encode</button>
 

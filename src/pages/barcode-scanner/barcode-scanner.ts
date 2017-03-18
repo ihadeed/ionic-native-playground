@@ -8,6 +8,9 @@ import {BarcodeScanner} from "@ionic-native/barcode-scanner";
 })
 export class BarcodeScannerPage {
 
+  result;
+  error;
+
   constructor(
     private barcodeScanner: BarcodeScanner
   ) {}
@@ -15,15 +18,15 @@ export class BarcodeScannerPage {
   scan() {
     console.log('Scanning');
     this.barcodeScanner.scan()
-      .then(console.log.bind(console))
-      .catch(console.error.bind(console));
+      .then(v => this.result = v)
+      .catch(e => this.error = e);
   }
 
   encode() {
     console.log('Encoding');
     this.barcodeScanner.encode(this.barcodeScanner.Encode.TEXT_TYPE, 'https://justpost.io')
-      .then(console.log.bind(console))
-      .catch(console.error.bind(console));
+      .then(v => this.result = v)
+      .catch(e => this.error = e);
   }
 
 }

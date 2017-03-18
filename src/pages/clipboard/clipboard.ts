@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ViewController } from 'ionic-angular';
+import { Clipboard } from '@ionic-native/clipboard';
 
 /*
   Generated class for the Clipboard page.
@@ -13,7 +14,25 @@ import { ViewController } from 'ionic-angular';
 })
 export class ClipboardPage {
 
-  constructor(public viewCtrl: ViewController) {}
+  result;
+  error;
+  input;
+
+  constructor(
+    private clipboard: Clipboard
+  ) {}
+
+  copy() {
+    this.clipboard.copy(this.input)
+      .then(v => this.result = v)
+      .catch(e => this.error = e);
+  }
+
+  paste() {
+    this.clipboard.paste()
+      .then(v => this.result = v)
+      .catch(e => this.error = e);
+  }
 
 
 }

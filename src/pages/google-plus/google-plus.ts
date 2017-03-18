@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {ViewController} from 'ionic-angular';
 import {GooglePlus} from "@ionic-native/google-plus";
 
 @Component({
@@ -8,16 +7,19 @@ import {GooglePlus} from "@ionic-native/google-plus";
 })
 export class GooglePlusPage {
 
+  result;
+  error;
+
+
   constructor(
     private googlePlus: GooglePlus
-  ) {
-  }
+  ) {}
 
   login() {
     this.googlePlus.login()
-      .then(console.log.bind(console))
-      .catch(console.error.bind(console));
-
+      .then(v => this.result = v)
+      .catch(e => this.error = e);
   }
+
 
 }

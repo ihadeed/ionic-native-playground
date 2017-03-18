@@ -14,5 +14,6 @@
 
 
 <ion-content padding>
-  <button ion-button large outline block></button>
+  <plugin-result [result]="result"></plugin-result>
+  <button ion-button large outline block (click)="getStatus()">Get status</button>
 </ion-content>

@@ -14,6 +14,8 @@
 
 
 <ion-content padding>
+  <plugin-result [result]="result" [error]="error"></plugin-result>
+
   <button ion-button large outline block (click)="createContact()">Create Contact</button>
   <button ion-button large outline block (click)="pickContact()">Pick Contact</button>
   <button ion-button large outline block (click)="findContacts()">Find Contacts</button>

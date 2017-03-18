@@ -1,7 +1,9 @@
-<pre *ngIf="_result">
-  {{ _result }}
-</pre>
+<div class="result" *ngIf="_result">
+  <strong>Plugin result:</strong>
+  <pre [innerHTML]="_result"></pre>
+</div>
 
-<pre *ngIf="_error">
-  {{ _error }}
-</pre>
+<div class="error" *ngIf="_error">
+  <strong>Plugin error:</strong>
+  <pre [innerHtml]="_error"></pre>
+</div>

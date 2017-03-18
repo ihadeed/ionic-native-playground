@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, NgZone} from '@angular/core';
 import {ActionSheet, ActionSheetOptions} from "@ionic-native/action-sheet";
 
 @Component({
@@ -12,7 +12,9 @@ export class ActionSheetPage {
 
   constructor(
     private actionSheet: ActionSheet
-  ) {}
+  ) {
+    console.log('is action sheet running in ngzone?', NgZone.isInAngularZone());
+  }
 
   showActionSheet() {
     const options: ActionSheetOptions = {
@@ -22,7 +24,9 @@ export class ActionSheetPage {
     };
 
     this.actionSheet.show(options)
-      .then(res => this.result = res)
+      .then(res => {
+        this.result = res;
+      })
       .catch(e => this.error = e);
   }
 

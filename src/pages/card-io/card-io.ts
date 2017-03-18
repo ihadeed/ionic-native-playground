@@ -7,6 +7,9 @@ import {CardIOOptions, CardIO} from "@ionic-native/card-io";
 })
 export class CardIOPage {
 
+  result;
+  error;
+
   constructor(
     private cardIO: CardIO
   ) {}
@@ -26,14 +29,16 @@ export class CardIOPage {
       if (canScan) {
 
         this.cardIO.scan(options)
-          .then(console.log.bind(console))
-          .catch(console.error.bind(console));
+          .then(v => this.result = v)
+          .catch(v => this.error = v);
 
       } else {
+
+        this.error = 'Cannot scan';
         console.log('Cant scan');
       }
 
-    }).catch(console.error.bind(console));
+    }).catch(e => this.error = e);
 
   }
 

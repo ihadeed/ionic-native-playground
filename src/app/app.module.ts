@@ -22,6 +22,7 @@ import {MarketPage} from "../pages/market/market";
 
 import {ActionSheet} from "@ionic-native/action-sheet";
 import {BarcodeScanner} from "@ionic-native/barcode-scanner";
+import { BatteryStatus } from '@ionic-native/battery-status';
 import {Brightness} from "@ionic-native/brightness";
 import {Camera} from "@ionic-native/camera";
 import {CardIO} from "@ionic-native/card-io";
@@ -33,10 +34,12 @@ import {GoogleMaps} from "@ionic-native/google-maps";
 import {GooglePlus} from "@ionic-native/google-plus";
 import {Keyboard} from "@ionic-native/keyboard";
 import {Market} from "@ionic-native/market";
+import { Geolocation } from '@ionic-native/geolocation';
 
 import {SplashScreen} from '@ionic-native/splash-screen';
 import {StatusBar} from '@ionic-native/status-bar';
 import {PluginResultComponent} from "../components/plugin-result/plugin-result";
+import {GeolocationPage} from "../pages/geolocation/geolocation";
 
 @NgModule({
   declarations: [
@@ -58,7 +61,8 @@ import {PluginResultComponent} from "../components/plugin-result/plugin-result";
     GoogleMapsPage,
     GooglePlusPage,
     KeyboardPage,
-    MarketPage
+    MarketPage,
+    GeolocationPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -81,13 +85,18 @@ import {PluginResultComponent} from "../components/plugin-result/plugin-result";
     GoogleMapsPage,
     GooglePlusPage,
     KeyboardPage,
-    MarketPage
+    MarketPage,
+    GeolocationPage
   ],
   providers: [
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    {
+      provide: ErrorHandler,
+      useClass: IonicErrorHandler
+    },
 
     ActionSheet,
     BarcodeScanner,
+    BatteryStatus,
     Brightness,
     Camera,
     CardIO,
@@ -99,6 +108,7 @@ import {PluginResultComponent} from "../components/plugin-result/plugin-result";
     GooglePlus,
     Keyboard,
     Market,
+    Geolocation,
 
     SplashScreen,
     StatusBar

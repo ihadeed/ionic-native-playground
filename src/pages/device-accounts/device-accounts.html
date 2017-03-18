@@ -15,6 +15,8 @@
 
 <ion-content padding>
 
+  <plugin-result [result]="result" [error]="error"></plugin-result>
+
   <button ion-button large outline block (click)="getDeviceAccounts()">Get Device Accounts</button>
 
 </ion-content>

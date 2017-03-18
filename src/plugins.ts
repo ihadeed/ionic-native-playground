@@ -3,8 +3,6 @@ import {ActionSheetPage} from "./pages/action-sheet/action-sheet";
 import {BarcodeScannerPage} from "./pages/barcode-scanner/barcode-scanner";
 import {BatteryStatusPage} from "./pages/battery-status/battery-status";
 import {BrightnessPage} from "./pages/brightness/brightness";
-import {CameraPreviewPage} from "./pages/camera-preview/camera-preview";
-import {CardIO} from "ionic-native";
 import {CardIOPage} from "./pages/card-io/card-io";
 import {ClipboardPage} from "./pages/clipboard/clipboard";
 import {ContactsPage} from "./pages/contacts/contacts";
@@ -14,6 +12,7 @@ import {MarketPage} from "./pages/market/market";
 import {KeyboardPage} from "./pages/keyboard/keyboard";
 import {GooglePlusPage} from "./pages/google-plus/google-plus";
 import {GoogleMapsPage} from "./pages/google-maps/google-maps";
+import {GeolocationPage} from "./pages/geolocation/geolocation";
 
 class Plugin {
   constructor(
@@ -38,5 +37,6 @@ export default [
   new Plugin('Keyboard', KeyboardPage),
   new Plugin('Google Plus', GooglePlusPage),
   new Plugin('Google Maps', GoogleMapsPage),
+  new Plugin('Geolocation', GeolocationPage)
 ];
 
