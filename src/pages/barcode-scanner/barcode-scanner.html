@@ -1,0 +1,23 @@
+<!--
+  Generated template for the BarcodeScanner page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Barcode Scanner</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <plugin-result [result]="result" [error]="error"></plugin-result>
+
+  <button ion-button large block (click)="scan()">Scan</button>
+  <button ion-button large block (click)="encode()">Encode</button>
+
+</ion-content>

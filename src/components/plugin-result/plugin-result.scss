@@ -1,0 +1,29 @@
+plugin-result {
+  display: block;
+  margin-bottom: 15px;
+
+  .result, .error {
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .result {
+    background: transparentize(green, 0.9);
+    border: 1px green solid;
+  }
+
+  .error {
+    background: transparentize(red, 0.9);
+    border: 1px red solid;
+  }
+
+  pre {
+    width: 100%;
+  }
+
+  .string { color: green; }
+  .number { color: darkorange; }
+  .boolean { color: blue; }
+  .null { color: magenta; }
+  .key { color: red; }
+}

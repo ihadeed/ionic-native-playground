@@ -1,0 +1,22 @@
+<!--
+  Generated template for the Contacts page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Contacts</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <plugin-result [result]="result" [error]="error"></plugin-result>
+
+  <button ion-button large outline block (click)="createContact()">Create Contact</button>
+  <button ion-button large outline block (click)="pickContact()">Pick Contact</button>
+  <button ion-button large outline block (click)="findContacts()">Find Contacts</button>
+</ion-content>
