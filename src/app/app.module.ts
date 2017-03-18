@@ -39,6 +39,7 @@ import { Geolocation } from '@ionic-native/geolocation';
 import {SplashScreen} from '@ionic-native/splash-screen';
 import {StatusBar} from '@ionic-native/status-bar';
 import {PluginResultComponent} from "../components/plugin-result/plugin-result";
+import { PluginConfigComponent } from '../components/plugin-config/plugin-config';
 import {GeolocationPage} from "../pages/geolocation/geolocation";
 
 @NgModule({
@@ -47,6 +48,7 @@ import {GeolocationPage} from "../pages/geolocation/geolocation";
     HomePage,
     GoogleMapComponent,
     PluginResultComponent,
+    PluginConfigComponent,
 
     ActionSheetPage,
     BarcodeScannerPage,
