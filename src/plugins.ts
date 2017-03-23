@@ -15,6 +15,11 @@ import {GooglePlusPage} from "./pages/google-plus/google-plus";
 import {GoogleMapsPage} from "./pages/google-maps/google-maps";
 import {GeolocationPage} from "./pages/geolocation/geolocation";
 import {DiagnosticPage} from "./pages/diagnostic/diagnostic";
+import {AndroidFingerprintAuthPage} from "./pages/android-fingerprint-auth/android-fingerprint-auth";
+import {AppRatePage} from "./pages/app-rate/app-rate";
+import {BadgePage} from "./pages/badge/badge";
+import {AppAvailability} from "@ionic-native/app-availability";
+import {AppAvailabilityPage} from "./pages/app-availability/app-availability";
 
 
 class Plugin {
@@ -41,7 +46,11 @@ const plugins = [
   new Plugin('Google Plus', GooglePlusPage),
   new Plugin('Google Maps', GoogleMapsPage),
   new Plugin('Geolocation', GeolocationPage),
-  new Plugin('Diagnostic', DiagnosticPage)
+  new Plugin('Diagnostic', DiagnosticPage),
+  new Plugin('Android Fingerprint Auth', AndroidFingerprintAuthPage),
+  new Plugin('App Rate', AppRatePage),
+  new Plugin('Badge', BadgePage),
+  new Plugin('App Availability', AppAvailabilityPage)
 ];
 
 export default _.sortBy(plugins, ['name']);

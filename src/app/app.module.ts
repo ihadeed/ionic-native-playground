@@ -38,11 +38,20 @@ import { Geolocation } from '@ionic-native/geolocation';
 import { Diagnostic } from '@ionic-native/diagnostic';
 import {SplashScreen} from '@ionic-native/splash-screen';
 import {StatusBar} from '@ionic-native/status-bar';
+import { AppAvailability } from '@ionic-native/app-availability';
+import { Badge } from '@ionic-native/badge';
+import { AppRate } from '@ionic-native/app-rate';
+import { AndroidFingerprintAuth } from '@ionic-native/android-fingerprint-auth';
 import {PluginResultComponent} from "../components/plugin-result/plugin-result";
 import { PluginConfigComponent } from '../components/plugin-config/plugin-config';
 import {GeolocationPage} from "../pages/geolocation/geolocation";
 import {PluginMethodsComponent} from "../components/plugin-methods/plugin-methods";
 import {PluginParamsPage} from "../pages/plugin-params/plugin-params";
+import {AndroidFingerprintAuthPage} from "../pages/android-fingerprint-auth/android-fingerprint-auth";
+import {AppAvailabilityPage} from "../pages/app-availability/app-availability";
+import {AppPreferencesPage} from "../pages/app-preferences/app-preferences";
+import {AppRatePage} from "../pages/app-rate/app-rate";
+import {BadgePage} from "../pages/badge/badge";
 
 @NgModule({
   declarations: [
@@ -69,7 +78,12 @@ import {PluginParamsPage} from "../pages/plugin-params/plugin-params";
     KeyboardPage,
     MarketPage,
     GeolocationPage,
-    DiagnosticPage
+    DiagnosticPage,
+    AndroidFingerprintAuthPage,
+    AppAvailabilityPage,
+    AppPreferencesPage,
+    AppRatePage,
+    BadgePage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -95,7 +109,12 @@ import {PluginParamsPage} from "../pages/plugin-params/plugin-params";
     KeyboardPage,
     MarketPage,
     GeolocationPage,
-    DiagnosticPage
+    DiagnosticPage,
+    AndroidFingerprintAuthPage,
+    AppAvailabilityPage,
+    AppPreferencesPage,
+    AppRatePage,
+    BadgePage
   ],
   providers: [
     {
@@ -119,6 +138,10 @@ import {PluginParamsPage} from "../pages/plugin-params/plugin-params";
     Market,
     Geolocation,
     Diagnostic,
+    AppRate,
+    AppAvailability,
+    AndroidFingerprintAuth,
+    Badge,
 
     SplashScreen,
     StatusBar
