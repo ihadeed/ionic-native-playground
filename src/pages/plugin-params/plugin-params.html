@@ -27,8 +27,8 @@
         <ion-input *ngIf="['text', 'number'].indexOf(param.type) > -1" [type]="param.type" [(ngModel)]="params[i]"></ion-input>
         <ion-toggle *ngIf="param.type === 'boolean'" [(ngModel)]="params[i]"></ion-toggle>
         <ion-textarea *ngIf="param.type === 'object'" [(ngModel)]="params[i]"></ion-textarea>
-        <button ion-button icon-only item-right (click)="removeItem(i)">
-          <ion-icon name="remove"></ion-icon>
+        <button ion-button icon-only clear color="danger" item-right (click)="removeItem(i)">
+          <ion-icon name="remove-circle"></ion-icon>
         </button>
       </ion-item>
     </ion-item-group>
