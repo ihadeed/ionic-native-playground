@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.zyramedia.apps.ionicnativeplayground" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.zyramedia.apps.ionicnativeplayground" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>Ionic Native Playground</name>
   <description>Test out Ionic Native functionality</description>
   <author email="info@zyra.ca" href="https://zyramedia.com/">Zyra Media</author>
@@ -16,7 +16,7 @@
   <allow-intent href="geo:*"/>
   <platform name="android">
     <allow-intent href="market:*"/>
-    <config-file target="AndroidManifest.xml" parent="/manifest">
+    <config-file target="AndroidManifest.xml" parent="/*">
       <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
       <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
       <uses-permission android:name="android.permission.BLUETOOTH" />
