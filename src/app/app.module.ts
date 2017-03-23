@@ -52,6 +52,14 @@ import {AppAvailabilityPage} from "../pages/app-availability/app-availability";
 import {AppPreferencesPage} from "../pages/app-preferences/app-preferences";
 import {AppRatePage} from "../pages/app-rate/app-rate";
 import {BadgePage} from "../pages/badge/badge";
+import {BrowserTabPage} from "../pages/browser-tab/browser-tab";
+import {CalendarPage} from "../pages/calendar/calendar";
+import {CallNumberPage} from "../pages/call-number/call-number";
+import {DatePickerPage} from "../pages/date-picker/date-picker";
+import {CallNumber} from "@ionic-native/call-number";
+import {Calendar} from "@ionic-native/calendar";
+import { BrowserTab } from '@ionic-native/browser-tab';
+import { DatePicker } from '@ionic-native/date-picker';
 
 @NgModule({
   declarations: [
@@ -83,7 +91,11 @@ import {BadgePage} from "../pages/badge/badge";
     AppAvailabilityPage,
     AppPreferencesPage,
     AppRatePage,
-    BadgePage
+    BadgePage,
+    BrowserTabPage,
+    CalendarPage,
+    CallNumberPage,
+    DatePickerPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -114,7 +126,11 @@ import {BadgePage} from "../pages/badge/badge";
     AppAvailabilityPage,
     AppPreferencesPage,
     AppRatePage,
-    BadgePage
+    BadgePage,
+    BrowserTabPage,
+    CalendarPage,
+    CallNumberPage,
+    DatePickerPage
   ],
   providers: [
     {
@@ -142,6 +158,10 @@ import {BadgePage} from "../pages/badge/badge";
     AppAvailability,
     AndroidFingerprintAuth,
     Badge,
+    BrowserTab,
+    Calendar,
+    CallNumber,
+    DatePicker,
 
     SplashScreen,
     StatusBar

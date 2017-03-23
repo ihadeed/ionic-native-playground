@@ -20,6 +20,10 @@ import {AppRatePage} from "./pages/app-rate/app-rate";
 import {BadgePage} from "./pages/badge/badge";
 import {AppAvailability} from "@ionic-native/app-availability";
 import {AppAvailabilityPage} from "./pages/app-availability/app-availability";
+import {BrowserTabPage} from "./pages/browser-tab/browser-tab";
+import {CalendarPage} from "./pages/calendar/calendar";
+import {CallNumberPage} from "./pages/call-number/call-number";
+import {DatePickerPage} from "./pages/date-picker/date-picker";
 
 
 class Plugin {
@@ -50,7 +54,11 @@ const plugins = [
   new Plugin('Android Fingerprint Auth', AndroidFingerprintAuthPage),
   new Plugin('App Rate', AppRatePage),
   new Plugin('Badge', BadgePage),
-  new Plugin('App Availability', AppAvailabilityPage)
+  new Plugin('App Availability', AppAvailabilityPage),
+  new Plugin('Browser Tab', BrowserTabPage),
+  new Plugin('Calendar', CalendarPage),
+  new Plugin('Call Number', CallNumberPage),
+  new Plugin('Date Picker', DatePickerPage)
 ];
 
 export default _.sortBy(plugins, ['name']);
