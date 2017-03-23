@@ -3,6 +3,11 @@ This demo Cordova app demonstrates the usage and the features of Ionic Native. T
 
 ## Implemented plugins
 - Action Sheet
+- Android Fingerprint Auth
+- App Availability
+- App Preferences
+- App Rate
+- Badge
 - Barcode Scanner
 - Battery Status
 - Brightness
@@ -12,6 +17,12 @@ This demo Cordova app demonstrates the usage and the features of Ionic Native. T
 - Contacts
 - Device
 - Device Accounts
+- Diagnostic
+- Geolocation
+- Google Maps
+- Google Plus
+- Keyboard
+- Market
 
 # Install from iTunes / Google Play
 Soon.
