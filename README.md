@@ -30,6 +30,8 @@ This app will be published upon completion.
 
 # Manual Installation
 ```shell
+git clone https://github.com/ihadeed/ionic-native-playground
+cd ionic-native-playground
 npm install
 ionic state restore
 ```
