@@ -1,0 +1,41 @@
+<!--
+  Generated template for the PluginParams page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Plugin Params</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+
+  <div padding>
+    <button ion-button align-self-center block large (click)="addParam()">
+      Add param
+    </button>
+  </div>
+
+  <ion-list>
+    <ion-list-header color="light">Params</ion-list-header>
+    <ion-item-group reorder="true" (ionItemReorder)="reorderParams($event)">
+      <ion-item *ngFor="let param of paramsWithTypes; let i = index" >
+        <ion-input *ngIf="['text', 'number'].indexOf(param.type) > -1" [type]="param.type" [(ngModel)]="params[i]"></ion-input>
+        <ion-toggle *ngIf="param.type === 'boolean'" [(ngModel)]="params[i]"></ion-toggle>
+        <ion-textarea *ngIf="param.type === 'object'" [(ngModel)]="params[i]"></ion-textarea>
+        <button ion-button icon-only item-right (click)="removeItem(i)">
+          <ion-icon name="remove"></ion-icon>
+        </button>
+      </ion-item>
+    </ion-item-group>
+  </ion-list>
+
+  <div padding>
+    <button ion-button large block outline round (click)="dismiss()">Save</button>
+  </div>
+
+</ion-content>

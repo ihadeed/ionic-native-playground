@@ -1,0 +1,29 @@
+<ion-list>
+
+  <ion-item-group *ngIf="properties.length > 0">
+    <ion-list-header color="light">
+      <h2>Properties</h2>
+    </ion-list-header>
+    <button ion-item *ngFor="let btn of properties" (click)="btn.handler()">
+      {{ btn.text }}
+    </button>
+  </ion-item-group>
+
+  <ion-item-group *ngIf="methods.length > 0">
+    <ion-list-header color="light">
+      <h2>Methods</h2>
+      <p>Swipe to the left to call with params</p>
+    </ion-list-header>
+    <ion-item-sliding *ngFor="let btn of methods">
+      <button ion-item (click)="btn.handler()">
+        {{ btn.text }}
+      </button>
+      <ion-item-options side="right">
+        <button ion-button (click)="btn.handler(true)">
+          Call with params
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-item-group>
+
+</ion-list>
