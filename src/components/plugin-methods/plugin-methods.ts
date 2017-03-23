@@ -35,8 +35,6 @@ export class PluginMethodsComponent {
   private success = val => {
     this.ngZone.run(() => {
       if (this.pluginResult) {
-        console.log('sending thingy to plugin result');
-        console.log(this.pluginResult);
         this.pluginResult.result = val;
       } else {
         this.onResult.emit(val);
@@ -74,7 +72,7 @@ export class PluginMethodsComponent {
 
           if (isFunction) {
 
-            const getResult = (...args: any[]) => {
+            const getResult = (args: any[] = []) => {
               const result = method.apply(this._plugin, args);
 
               if (result.then) {
@@ -84,7 +82,7 @@ export class PluginMethodsComponent {
                   next: this.success.bind(this),
                   error: this.error.bind(this),
                   completed: this.success.bind(this)
-                })
+                });
               } else {
                 this.success(result);
               }
