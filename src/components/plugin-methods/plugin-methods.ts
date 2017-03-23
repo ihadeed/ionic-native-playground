@@ -75,7 +75,7 @@ export class PluginMethodsComponent {
           if (isFunction) {
 
             const getResult = (...args: any[]) => {
-              const result = method.apply(this._plugin);
+              const result = method.apply(this._plugin, args);
 
               if (result.then) {
                 result.then(this.success.bind(this)).catch(this.error.bind(this));
