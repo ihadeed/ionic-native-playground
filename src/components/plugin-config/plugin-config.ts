@@ -1,22 +1,59 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
-/*
-  Generated class for the PluginConfig component.
-
-  See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
-  for more info on Angular 2 Components.
-*/
 @Component({
   selector: 'plugin-config',
   templateUrl: 'plugin-config.html'
 })
 export class PluginConfigComponent {
 
-  text: string;
 
-  constructor() {
-    console.log('Hello PluginConfig Component');
-    this.text = 'Hello World';
+  _config: any;
+
+  configItems: Array<{name: string; type: string;}> = [];
+
+  @Input()
+  set config(val: any) {
+    console.log('Got config object', val);
+    this._config = val;
+    this.processConfig();
+  }
+
+  @Input()
+  name: string;
+
+  @Output()
+  configChange: EventEmitter<any> = new EventEmitter<any>();
+
+  getInputType(type: string) {
+    switch (type) {
+      case 'boolean':
+        return 'checkbox';
+      case 'number':
+        return 'number';
+      default:
+        return 'text';
+    }
+  }
+
+  emitChanges() {
+    this.configChange.emit(this._config);
+  }
+
+  private processConfig() {
+
+    if (typeof this._config != 'object') {
+      // we can only process an object
+      return;
+    }
+    for (let prop in this._config) {
+      const type = typeof this._config[prop];
+
+      this.configItems.push({
+        name: prop,
+        type
+      });
+    }
+
   }
 
 }

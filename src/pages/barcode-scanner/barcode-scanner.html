@@ -18,6 +18,9 @@
   <plugin-result [result]="result" [error]="error"></plugin-result>
 
   <button ion-button large block (click)="scan()">Scan</button>
+
+  <plugin-config [(config)]="scanConfig" name="Scan config"></plugin-config>
+
   <button ion-button large block (click)="encode()">Encode</button>
 
 </ion-content>

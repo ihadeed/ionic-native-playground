@@ -16,25 +16,23 @@ export class DevicePage {
 
   result;
 
-  constructor(
-    private device: Device
-  ) {}
+  constructor(public device: Device) {}
 
 
-  getDeviceInfo() {
-
-    this.result = {
-      cordova: this.device.cordova,
-      model: this.device.model,
-      platform: this.device.platform,
-      uuid: this.device.uuid,
-      version: this.device.version,
-      manufacturer: this.device.manufacturer,
-      isVirtual: this.device.isVirtual,
-      serial: this.device.serial
-    };
-
-  }
+  // getDeviceInfo() {
+  //
+  //   this.result = {
+  //     cordova: this.device.cordova,
+  //     model: this.device.model,
+  //     platform: this.device.platform,
+  //     uuid: this.device.uuid,
+  //     version: this.device.version,
+  //     manufacturer: this.device.manufacturer,
+  //     isVirtual: this.device.isVirtual,
+  //     serial: this.device.serial
+  //   };
+  //
+  // }
 
 
 }

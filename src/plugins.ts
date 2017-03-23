@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import {CameraPage} from "./pages/camera/camera";
 import {ActionSheetPage} from "./pages/action-sheet/action-sheet";
 import {BarcodeScannerPage} from "./pages/barcode-scanner/barcode-scanner";
@@ -13,6 +14,8 @@ import {KeyboardPage} from "./pages/keyboard/keyboard";
 import {GooglePlusPage} from "./pages/google-plus/google-plus";
 import {GoogleMapsPage} from "./pages/google-maps/google-maps";
 import {GeolocationPage} from "./pages/geolocation/geolocation";
+import {DiagnosticPage} from "./pages/diagnostic/diagnostic";
+
 
 class Plugin {
   constructor(
@@ -22,7 +25,7 @@ class Plugin {
 }
 
 
-export default [
+const plugins = [
   new Plugin('Action Sheet', ActionSheetPage),
   new Plugin('Barcode Scanner', BarcodeScannerPage),
   new Plugin('Battery Status', BatteryStatusPage),
@@ -37,6 +40,9 @@ export default [
   new Plugin('Keyboard', KeyboardPage),
   new Plugin('Google Plus', GooglePlusPage),
   new Plugin('Google Maps', GoogleMapsPage),
-  new Plugin('Geolocation', GeolocationPage)
+  new Plugin('Geolocation', GeolocationPage),
+  new Plugin('Diagnostic', DiagnosticPage)
 ];
+
+export default _.sortBy(plugins, ['name']);
 

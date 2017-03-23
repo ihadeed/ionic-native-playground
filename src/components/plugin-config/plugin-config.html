@@ -1,8 +1,13 @@
-<!--
-  Generated template for the PluginConfig component.
+<ion-list>
 
-  See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
-  for more info on Angular 2 Components.
--->
+  <ion-list-header color="light">
+    {{ name || 'Config'}}
+  </ion-list-header>
 
-{{text}}
+  <ion-item *ngFor="let prop of configItems">
+    <ion-label>{{ prop.name }}</ion-label>
+    <ion-input *ngIf="prop.type !== 'boolean'" [type]="getInputType(prop.type)" (ionChange)="emitChanges($event)" [(ngModel)]="_config[prop.name]"></ion-input>
+    <ion-toggle *ngIf="prop.type == 'boolean'" (ionChange)="emitChanges($event)" [(ngModel)]="_config[prop.name]"></ion-toggle>
+  </ion-item>
+
+</ion-list>

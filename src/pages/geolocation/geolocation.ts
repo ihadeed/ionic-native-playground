@@ -24,6 +24,7 @@ export class GeolocationPage {
 
   constructor(
     private geolocation: Geolocation
+    , private ngZone: NgZone
   ) {}
 
   getLocation() {
@@ -41,7 +42,9 @@ export class GeolocationPage {
     this.watch = this.geolocation.watchPosition(this.options).subscribe(v => {
       console.log('Got new val fro mobser', v);
       console.log('isInAngularZone?', NgZone.isInAngularZone());
-      this.result = v;
+      this.ngZone.run(() => {
+        this.result = v;
+      });
     });
   }
 

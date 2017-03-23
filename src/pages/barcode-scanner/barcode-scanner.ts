@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import {BarcodeScanner} from "@ionic-native/barcode-scanner";
-
+import {BarcodeScanner, BarcodeScannerOptions} from "@ionic-native/barcode-scanner";
 
 @Component({
   selector: 'page-barcode-scanner',
@@ -11,13 +10,25 @@ export class BarcodeScannerPage {
   result;
   error;
 
+  scanConfig: BarcodeScannerOptions = {
+    preferFrontCamera: false,
+    showFlipCameraButton: true,
+    showTorchButton: true,
+    disableAnimations: false,
+    disableSuccessBeep: false,
+    prompt: 'Scan any barcode!',
+    formats: '',
+    orientation: 'landscape',
+    torchOn: false,
+    resultDisplayDuration: 3
+  };
+
   constructor(
     private barcodeScanner: BarcodeScanner
   ) {}
 
   scan() {
-    console.log('Scanning');
-    this.barcodeScanner.scan()
+    this.barcodeScanner.scan(this.scanConfig)
       .then(v => this.result = v)
       .catch(e => this.error = e);
   }

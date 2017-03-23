@@ -1,15 +1,7 @@
-<!--
-  Generated template for the Camera page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>Camera</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
@@ -21,14 +13,6 @@
     <button ion-button large outline block (click)="takePicture()">Take picture</button>
   </div>
 
-  <ion-list>
-    <ion-item-divider color="light">Config</ion-item-divider>
-    <ion-item *ngFor="let opt of configItems">
-      <ion-label>{{opt}}</ion-label>
-      <ion-input [(ngModel)]="config[opt]" autocomplete="off" autocorrect="off" autocapitalize="off"></ion-input>
-    </ion-item>
-  </ion-list>
-
-
+  <plugin-config name="Camera config" [(config)]="config"></plugin-config>
 
 </ion-content>

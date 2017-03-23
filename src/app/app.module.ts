@@ -19,7 +19,7 @@ import {GoogleMapsPage} from "../pages/google-maps/google-maps";
 import {GooglePlusPage} from "../pages/google-plus/google-plus";
 import {KeyboardPage} from "../pages/keyboard/keyboard";
 import {MarketPage} from "../pages/market/market";
-
+import { DiagnosticPage } from '../pages/diagnostic/diagnostic';
 import {ActionSheet} from "@ionic-native/action-sheet";
 import {BarcodeScanner} from "@ionic-native/barcode-scanner";
 import { BatteryStatus } from '@ionic-native/battery-status';
@@ -35,12 +35,14 @@ import {GooglePlus} from "@ionic-native/google-plus";
 import {Keyboard} from "@ionic-native/keyboard";
 import {Market} from "@ionic-native/market";
 import { Geolocation } from '@ionic-native/geolocation';
-
+import { Diagnostic } from '@ionic-native/diagnostic';
 import {SplashScreen} from '@ionic-native/splash-screen';
 import {StatusBar} from '@ionic-native/status-bar';
 import {PluginResultComponent} from "../components/plugin-result/plugin-result";
 import { PluginConfigComponent } from '../components/plugin-config/plugin-config';
 import {GeolocationPage} from "../pages/geolocation/geolocation";
+import {PluginMethodsComponent} from "../components/plugin-methods/plugin-methods";
+import {PluginParamsPage} from "../pages/plugin-params/plugin-params";
 
 @NgModule({
   declarations: [
@@ -49,6 +51,8 @@ import {GeolocationPage} from "../pages/geolocation/geolocation";
     GoogleMapComponent,
     PluginResultComponent,
     PluginConfigComponent,
+    PluginMethodsComponent,
+    PluginParamsPage,
 
     ActionSheetPage,
     BarcodeScannerPage,
@@ -64,7 +68,8 @@ import {GeolocationPage} from "../pages/geolocation/geolocation";
     GooglePlusPage,
     KeyboardPage,
     MarketPage,
-    GeolocationPage
+    GeolocationPage,
+    DiagnosticPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -73,6 +78,7 @@ import {GeolocationPage} from "../pages/geolocation/geolocation";
   entryComponents: [
     MyApp,
     HomePage,
+    PluginParamsPage,
 
     ActionSheetPage,
     BarcodeScannerPage,
@@ -88,7 +94,8 @@ import {GeolocationPage} from "../pages/geolocation/geolocation";
     GooglePlusPage,
     KeyboardPage,
     MarketPage,
-    GeolocationPage
+    GeolocationPage,
+    DiagnosticPage
   ],
   providers: [
     {
@@ -111,6 +118,7 @@ import {GeolocationPage} from "../pages/geolocation/geolocation";
     Keyboard,
     Market,
     Geolocation,
+    Diagnostic,
 
     SplashScreen,
     StatusBar

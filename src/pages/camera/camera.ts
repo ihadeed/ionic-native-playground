@@ -24,16 +24,9 @@ export class CameraPage {
     cameraDirection: 0
   };
 
-  configItems = [];
-
   constructor(
     private camera: Camera
-  ) {
-    for(let prop in this.config) {
-      this.configItems.push(prop);
-    }
-  }
-
+  ) {}
 
   takePicture() {
     this.camera.getPicture(this.config)

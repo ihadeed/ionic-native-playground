@@ -14,6 +14,7 @@ export class BatteryStatusPage {
 
   constructor(
     private batteryStatus: BatteryStatus
+    , private ngZone: NgZone
   ){
     console.log('Is the battery staus page in angular zone', NgZone.isInAngularZone());
 
@@ -25,9 +26,9 @@ export class BatteryStatusPage {
     this.subscription = this.batteryStatus.onChange().subscribe(v => {
       console.log('Are we in angular zone?', NgZone.isInAngularZone());
       console.log('got new value', v);
-      // this.ngZone.run(() => {
+      this.ngZone.run(() => {
         this.result = v
-      // });
+      });
     });
   }
 
