@@ -1,0 +1,11 @@
+{
+  "name": "Couchbase Lite",
+  "members": [
+    {
+      "name": "getURL",
+      "description": "Get the database url",
+      "params": [
+      ]
+    }
+  ]
+}

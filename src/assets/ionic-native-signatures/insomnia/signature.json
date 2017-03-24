@@ -1,0 +1,17 @@
+{
+  "name": "Insomnia",
+  "members": [
+    {
+      "name": "keepAwake",
+      "description": "Keeps awake the application",
+      "params": [
+      ]
+    },
+    {
+      "name": "allowSleepAgain",
+      "description": "Allows the application to sleep again",
+      "params": [
+      ]
+    }
+  ]
+}

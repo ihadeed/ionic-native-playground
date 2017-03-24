@@ -1,98 +1,57 @@
 import { Component } from '@angular/core';
-import {AlertController, NavController, NavParams, ViewController} from 'ionic-angular';
+import {AlertController, ModalController, NavParams, ViewController} from 'ionic-angular';
+import { ObjectCreator } from '../../object-creator2.class';
 
-/*
-  Generated class for the PluginParams page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
-*/
 @Component({
   selector: 'page-plugin-params',
   templateUrl: 'plugin-params.html'
 })
-export class PluginParamsPage {
+export class PluginParamsPage extends ObjectCreator {
 
-  paramsWithTypes: { type: string }[] = [];
+  constructor(
+    navParams: NavParams
+    , viewCtrl: ViewController
+    , alertCtrl: AlertController
+    , modalCtrl: ModalController
+  ) {
+    super(navParams, viewCtrl, alertCtrl, modalCtrl);
 
-  params: any[] = [];
-
-  constructor(private viewCtrl: ViewController, private alertCtrl: AlertController) {}
-
-  addParam() {
-    this.alertCtrl.create({
-      title: 'Pick type of param',
-      inputs: [
-        {
-          type: 'radio',
-          label: 'Boolean',
-          value: 'boolean'
-        },
-        {
-          type: 'radio',
-          label: 'Number',
-          value: 'number'
-        },
-        {
-          type: 'radio',
-          label: 'Text',
-          value: 'text'
-        },
-        {
-          type: 'radio',
-          label: 'Object',
-          value: 'object'
-        }
-      ],
-      buttons: [
-        'Cancel',
-        {
-          text: 'Add',
-          handler: type => {
-            this.paramsWithTypes.push({ type });
-            switch (type) {
-              case 'boolean':
-                this.params.push(false);
-                break;
-              case 'number':
-                this.params.push(0);
-                break;
-              case 'text':
-                this.params.push('');
-                break;
-              case 'object':
-                this.params.push('');
-                break;
-            }
-          }
-        }
-      ]
-    }).present();
-  }
-
-  reorderParams(indexes) {
-
-    const el1 = this.paramsWithTypes[indexes.from],
-      el2 = this.params[indexes.from];
-
-    this.paramsWithTypes.splice(indexes.from, 1);
-    this.params.splice(indexes.from, 1);
-
-    this.paramsWithTypes.splice(indexes.to, 0, el1);
-    this.params.splice(indexes.to, 0, el2);
+    if (this.signature) {
+      this.signature.params.forEach(param => {
+        console.log(param);
+        this._addItem(this.parseType(param.type), null, param.name);
+      });
+    }
 
   }
 
+  private parseType(type: string) {
 
-  removeItem(index) {
-    this.paramsWithTypes.splice(index, 1);
-    this.params.splice(index, 1);
+    // lets start with string as default type
+    if (!type) return 'string';
+
+    // first things first
+    type = type.toLowerCase();
+
+    switch (type) {
+      case 'string':
+      case 'number':
+      case 'boolean':
+        // no processing needed
+        return type;
+
+      default:
+        // check if array
+        if (type.indexOf('[]') > -1 || type.indexOf('array') > -1) return 'array';
+        // if it's none of the above, it's probably a custom type, which is most likely an object
+        else return 'object';
+    }
+
   }
 
-
-  dismiss() {
-    const params = this.params.map((p, i) => {
-      switch (this.paramsWithTypes[i].type) {
+  save() {
+    const params = this.values.map((p, i) => {
+      switch (this.items[i].type) {
         case 'number':
           return Number(p);
         case 'object':

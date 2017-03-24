@@ -1,0 +1,17 @@
+{
+  "name": "Alipay",
+  "members": [
+    {
+      "name": "pay",
+      "description": "Open Alipay to perform App pay",
+      "params": [
+        {
+          "name": "order",
+          "description": "alipay options",
+          "type": "AlipayOrder",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

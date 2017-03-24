@@ -1,0 +1,71 @@
+{
+  "name": "Serial",
+  "members": [
+    {
+      "name": "requestPermission",
+      "description": "Request permission to connect to a serial device",
+      "params": [
+        {
+          "name": "options",
+          "description": "Options used to request serial permissions for an unknown device",
+          "type": "SerialPermissionOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "open",
+      "description": "Open connection to a serial device",
+      "params": [
+        {
+          "name": "options",
+          "description": "Options used to open serial connection",
+          "type": "SerialOpenOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "write",
+      "description": "Write to a serial connection",
+      "params": [
+        {
+          "name": "data",
+          "description": "data to write to the serial connection",
+          "type": "any",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "writeHex",
+      "description": "Write hex to a serial connection",
+      "params": [
+        {
+          "name": "data",
+          "description": "data to write to the serial connection",
+          "type": "any",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "read",
+      "description": "Read from a serial connection",
+      "params": [
+      ]
+    },
+    {
+      "name": "registerReadCallback",
+      "description": "Watch the incoming data from the serial connection. Clear the watch by unsubscribing from the observable",
+      "params": [
+      ]
+    },
+    {
+      "name": "close",
+      "description": "Close the serial connection",
+      "params": [
+      ]
+    }
+  ]
+}

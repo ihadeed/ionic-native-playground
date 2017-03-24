@@ -1,0 +1,23 @@
+{
+  "name": "Clipboard",
+  "members": [
+    {
+      "name": "copy",
+      "description": "Copies the given text",
+      "params": [
+        {
+          "name": "text",
+          "description": "Text that gets copied on the system clipboard",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "paste",
+      "description": "Pastes the text stored in clipboard",
+      "params": [
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "App Update",
+  "members": [
+    {
+      "name": "checkAppUpdate",
+      "description": "Check and update",
+      "params": [
+        {
+          "name": "updateUrl",
+          "description": "update api url",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,683 @@
+{
+  "name": "Appodeal",
+  "members": [
+    {
+      "name": "readonly",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "initialize",
+      "description": "initialize Appodeal SDK",
+      "params": [
+        {
+          "name": "appKey",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "adType",
+          "description": "",
+          "type": "number",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "isInitialized",
+      "description": "check if SDK has been initialized",
+      "params": [
+      ]
+    },
+    {
+      "name": "show",
+      "description": "show ad of specified type",
+      "params": [
+        {
+          "name": "adType",
+          "description": "",
+          "type": "number",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "showWithPlacement",
+      "description": "show ad of specified type with placement options",
+      "params": [
+        {
+          "name": "adType",
+          "description": "",
+          "type": "number",
+          "optional": false
+        },
+        {
+          "name": "placement",
+          "description": "",
+          "type": "any",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "hide",
+      "description": "hide ad of specified type",
+      "params": [
+        {
+          "name": "adType",
+          "description": "",
+          "type": "number",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "confirm",
+      "description": "confirm use of ads of specified type",
+      "params": [
+        {
+          "name": "adType",
+          "description": "",
+          "type": "number",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "isLoaded",
+      "description": "check if ad of specified type has been loaded",
+      "params": [
+        {
+          "name": "adType",
+          "description": "",
+          "type": "number",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "isPrecache",
+      "description": "check if ad of specified",
+      "params": [
+        {
+          "name": "adType",
+          "description": "",
+          "type": "number",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "setAutoCache",
+      "description": "",
+      "params": [
+        {
+          "name": "adType",
+          "description": "",
+          "type": "number",
+          "optional": false
+        },
+        {
+          "name": "autoCache",
+          "description": "",
+          "type": "",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "cache",
+      "description": "forcefully cache an ad by type",
+      "params": [
+        {
+          "name": "adType",
+          "description": "",
+          "type": "number",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "setOnLoadedTriggerBoth",
+      "description": "",
+      "params": [
+        {
+          "name": "set",
+          "description": "",
+          "type": "boolean",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "setSmartBanners",
+      "description": "enable or disable Smart Banners",
+      "params": [
+        {
+          "name": "enabled",
+          "description": "",
+          "type": "boolean",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "setBannerBackground",
+      "description": "enable or disable banner backgrounds",
+      "params": [
+        {
+          "name": "enabled",
+          "description": "",
+          "type": "boolean",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "setBannerAnimation",
+      "description": "enable or disable banner animations",
+      "params": [
+        {
+          "name": "enabled",
+          "description": "",
+          "type": "boolean",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "set728x90Banners",
+      "description": "",
+      "params": [
+        {
+          "name": "value",
+          "description": "",
+          "type": "",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "setLogging",
+      "description": "enable or disable logging",
+      "params": [
+        {
+          "name": "logging",
+          "description": "",
+          "type": "boolean",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "setTesting",
+      "description": "enable or disable testing mode",
+      "params": [
+        {
+          "name": "testing",
+          "description": "",
+          "type": "boolean",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "resetUUID",
+      "description": "reset device ID",
+      "params": [
+      ]
+    },
+    {
+      "name": "getVersion",
+      "description": "get version of Appdeal SDK",
+      "params": [
+      ]
+    },
+    {
+      "name": "disableNetwork",
+      "description": "",
+      "params": [
+        {
+          "name": "network",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "adType",
+          "description": "",
+          "type": "number",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "disableNetworkType",
+      "description": "",
+      "params": [
+        {
+          "name": "network",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "adType",
+          "description": "",
+          "type": "number",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "disableLocationPermissionCheck",
+      "description": "disable Location permissions for Appodeal SDK",
+      "params": [
+      ]
+    },
+    {
+      "name": "disableWriteExternalStoragePermissionCheck",
+      "description": "disable Storage permissions for Appodeal SDK",
+      "params": [
+      ]
+    },
+    {
+      "name": "enableInterstitialCallbacks",
+      "description": "enable event listeners",
+      "params": [
+        {
+          "name": "enabled",
+          "description": "",
+          "type": "boolean",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "enableSkippableVideoCallbacks",
+      "description": "enable event listeners",
+      "params": [
+        {
+          "name": "enabled",
+          "description": "",
+          "type": "boolean",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "enableNonSkippableVideoCallbacks",
+      "description": "enable event listeners",
+      "params": [
+        {
+          "name": "enabled",
+          "description": "",
+          "type": "boolean",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "enableBannerCallbacks",
+      "description": "enable event listeners",
+      "params": [
+        {
+          "name": "enabled",
+          "description": "",
+          "type": "boolean",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "enableRewardedVideoCallbacks",
+      "description": "enable event listeners",
+      "params": [
+        {
+          "name": "enabled",
+          "description": "",
+          "type": "boolean",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "setCustomBooleanRule",
+      "description": "",
+      "params": [
+        {
+          "name": "name",
+          "description": "name of rule",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "value",
+          "description": "",
+          "type": "boolean",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "setCustomIntegerRule",
+      "description": "",
+      "params": [
+        {
+          "name": "name",
+          "description": "name of rule",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "value",
+          "description": "",
+          "type": "number",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "setCustomDoubleRule",
+      "description": "set rule with float value",
+      "params": [
+        {
+          "name": "name",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "value",
+          "description": "",
+          "type": "number",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "setCustomStringRule",
+      "description": "set rule with string value",
+      "params": [
+        {
+          "name": "name",
+          "description": "name of rule",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "value",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "setUserId",
+      "description": "set ID preference in Appodeal for current user",
+      "params": [
+        {
+          "name": "id",
+          "description": "",
+          "type": "",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "setEmail",
+      "description": "set Email preference in Appodeal for current user",
+      "params": [
+        {
+          "name": "email",
+          "description": "",
+          "type": "",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "setBirthday",
+      "description": "set Birthday preference in Appodeal for current user",
+      "params": [
+        {
+          "name": "birthday",
+          "description": "",
+          "type": "",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "setAge",
+      "description": "et Age preference in Appodeal for current user",
+      "params": [
+        {
+          "name": "age",
+          "description": "",
+          "type": "",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "setGender",
+      "description": "set Gender preference in Appodeal for current user",
+      "params": [
+        {
+          "name": "gender",
+          "description": "",
+          "type": "",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "setOccupation",
+      "description": "set Occupation preference in Appodeal for current user",
+      "params": [
+        {
+          "name": "occupation",
+          "description": "",
+          "type": "",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "setRelation",
+      "description": "set Relation preference in Appodeal for current user",
+      "params": [
+        {
+          "name": "relation",
+          "description": "",
+          "type": "",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "setSmoking",
+      "description": "set Smoking preference in Appodeal for current user",
+      "params": [
+        {
+          "name": "smoking",
+          "description": "",
+          "type": "",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "setAlcohol",
+      "description": "set Alcohol preference in Appodeal for current user",
+      "params": [
+        {
+          "name": "alcohol",
+          "description": "",
+          "type": "",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "setInterests",
+      "description": "set Interests preference in Appodeal for current user",
+      "params": [
+        {
+          "name": "interests",
+          "description": "",
+          "type": "",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "onInterstitialLoaded",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "onInterstitialFailedToLoad",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "onInterstitialShown",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "onInterstitialClicked",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "onInterstitialClosed",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "onSkippableVideoLoaded",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "onSkippableVideoFailedToLoad",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "onSkippableVideoShown",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "onSkippableVideoFinished",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "onSkippableVideoClosed",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "onRewardedVideoLoaded",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "onRewardedVideoFailedToLoad",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "onRewardedVideoShown",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "onRewardedVideoFinished",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "onRewardedVideoClosed",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "onNonSkippableVideoLoaded",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "onNonSkippableVideoFailedToLoad",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "onNonSkippableVideoShown",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "onNonSkippableVideoFinished",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "onNonSkippableVideoClosed",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "onBannerClicked",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "onBannerFailedToLoad",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "onBannerLoaded",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "onBannerShown",
+      "description": "",
+      "params": [
+      ]
+    }
+  ]
+}

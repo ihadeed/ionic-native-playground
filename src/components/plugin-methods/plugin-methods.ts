@@ -2,13 +2,8 @@ import {Component, EventEmitter, Input, NgZone, Output} from '@angular/core';
 import {PluginResultComponent} from "../plugin-result/plugin-result";
 import {ModalController} from "ionic-angular";
 import {PluginParamsPage} from "../../pages/plugin-params/plugin-params";
+import {SignatureService} from "../../providers/signature";
 
-/*
- Generated class for the PluginMethods component.
-
- See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
- for more info on Angular 2 Components.
- */
 @Component({
   selector: 'plugin-methods',
   templateUrl: 'plugin-methods.html'
@@ -25,6 +20,9 @@ export class PluginMethodsComponent {
 
   @Input()
   pluginResult: PluginResultComponent;
+
+  @Input()
+  sigName: string;
 
   @Output()
   onResult = new EventEmitter<any>();
@@ -56,7 +54,7 @@ export class PluginMethodsComponent {
   properties: any[] = [];
   methods: any[] = [];
 
-  constructor(private ngZone: NgZone, private modalCtrl: ModalController){}
+  constructor(private ngZone: NgZone, private modalCtrl: ModalController, private sig: SignatureService){}
 
   private processPlugin() {
     if (!this._plugin) return;
@@ -88,8 +86,22 @@ export class PluginMethodsComponent {
               }
             };
 
-            if (withParams) {
-              this.getParams().then(params => getResult(params));
+            if (this.sigName) {
+              this.sig.getMethodSignature(member, this.sigName)
+                .then(res => {
+                  if (res && res.params && res.params.length > 0) {
+                    this.getParams(res)
+                      .then(params => !!params && getResult(params));
+                  } else {
+                    getResult();
+                  }
+                })
+                .catch(e => {
+                  console.log('cant get signature of method ', e);
+                  getResult();
+                });
+            } else if (withParams) {
+              this.getParams().then(params => !!params && getResult(params));
             } else {
               getResult();
             }
@@ -106,9 +118,9 @@ export class PluginMethodsComponent {
     }
   }
 
-  private getParams(): Promise<any> {
+  private getParams(signature?: any): Promise<any> {
     return new Promise<any>((resolve) => {
-      const modal = this.modalCtrl.create(PluginParamsPage);
+      const modal = this.modalCtrl.create(PluginParamsPage, { signature });
       modal.present();
       modal.onDidDismiss(resolve);
     });

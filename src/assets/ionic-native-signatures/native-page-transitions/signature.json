@@ -1,0 +1,65 @@
+{
+  "name": "Native Page Transitions",
+  "members": [
+    {
+      "name": "slide",
+      "description": "Perform a slide animation",
+      "params": [
+        {
+          "name": "options",
+          "description": "Options for the transition",
+          "type": "NativeTransitionOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "flip",
+      "description": "Perform a flip animation",
+      "params": [
+        {
+          "name": "options",
+          "description": "Options for the transition",
+          "type": "NativeTransitionOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "fade",
+      "description": "Perform a fade animation",
+      "params": [
+        {
+          "name": "options",
+          "description": "Options for the transition",
+          "type": "NativeTransitionOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "drawer",
+      "description": "Perform a slide animation",
+      "params": [
+        {
+          "name": "options",
+          "description": "Options for the transition",
+          "type": "NativeTransitionOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "curl",
+      "description": "Perform a slide animation",
+      "params": [
+        {
+          "name": "options",
+          "description": "Options for the transition",
+          "type": "NativeTransitionOptions",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

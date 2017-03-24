@@ -1,0 +1,41 @@
+{
+  "name": "Screenshot",
+  "members": [
+    {
+      "name": "save",
+      "description": "Takes screenshot and saves the image",
+      "params": [
+        {
+          "name": "format.",
+          "description": "Format can take the value of either 'jpg' or 'png'On ios, only 'jpg' format is supported",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "quality.",
+          "description": "Determines the quality of the screenshot.       Default quality is set to 100.",
+          "type": "number",
+          "optional": false
+        },
+        {
+          "name": "filename.",
+          "description": "Name of the file as stored on the storage",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "URI",
+      "description": "Takes screenshot and returns the image as an URI",
+      "params": [
+        {
+          "name": "quality.",
+          "description": "Determines the quality of the screenshot.       Default quality is set to 100.",
+          "type": "number",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

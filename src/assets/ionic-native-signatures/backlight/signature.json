@@ -1,0 +1,17 @@
+{
+  "name": "Backlight",
+  "members": [
+    {
+      "name": "on",
+      "description": "This function turns backlight on",
+      "params": [
+      ]
+    },
+    {
+      "name": "off",
+      "description": "This function turns backlight off",
+      "params": [
+      ]
+    }
+  ]
+}

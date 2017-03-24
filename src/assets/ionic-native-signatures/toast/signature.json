@@ -1,0 +1,119 @@
+{
+  "name": "Toast",
+  "members": [
+    {
+      "name": "show",
+      "description": "Show a native toast for the given duration at the specified position.",
+      "params": [
+        {
+          "name": "message",
+          "description": "The message to display.",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "duration",
+          "description": "Duration to show the toast, either 'short', 'long' or any number of milliseconds: '1500'.",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "position",
+          "description": "Where to position the toast, either 'top', 'center', or 'bottom'.",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "hide",
+      "description": "Manually hide any currently visible toast.",
+      "params": [
+      ]
+    },
+    {
+      "name": "showWithOptions",
+      "description": "Show a native toast with the given options.",
+      "params": [
+        {
+          "name": "options",
+          "description": "Options for showing a toast. Available options:  message  The message to display.  duration  Duration to show the toast, either 'short', 'long' or any number of milliseconds: '1500'.  position  Where to position the toast, either 'top', 'center', or 'bottom'.  addPixelsY  Offset in pixels to move the toast up or down from its specified position.",
+          "type": "Object",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "showShortTop",
+      "description": "Shorthand for `show(message, 'short', 'top')`.",
+      "params": [
+        {
+          "name": "message",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "showShortCenter",
+      "description": "Shorthand for `show(message, 'short', 'center')`.",
+      "params": [
+        {
+          "name": "message",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "showShortBottom",
+      "description": "Shorthand for `show(message, 'short', 'bottom')`.",
+      "params": [
+        {
+          "name": "message",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "showLongTop",
+      "description": "Shorthand for `show(message, 'long', 'top')`.",
+      "params": [
+        {
+          "name": "message",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "showLongCenter",
+      "description": "Shorthand for `show(message, 'long', 'center')`.",
+      "params": [
+        {
+          "name": "message",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "showLongBottom",
+      "description": "Shorthand for `show(message, 'long', 'bottom')`.",
+      "params": [
+        {
+          "name": "message",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Transfer",
+  "members": [
+    {
+      "name": "FileTransferErrorCode",
+      "description": "Error code rejected from upload with FileTransferErrorDefined in FileTransferError.     FILE_NOT_FOUND_ERR: 1   Return when file was not found     INVALID_URL_ERR: 2,     Return when url was invalid     CONNECTION_ERR: 3,      Return on connection error     ABORT_ERR: 4,           Return on aborting     NOT_MODIFIED_ERR: 5     Return on '304 Not Modified' HTTP response",
+      "params": [
+      ]
+    },
+    {
+      "name": "create",
+      "description": "Creates a new FileTransfer object",
+      "params": [
+      ]
+    }
+  ]
+}

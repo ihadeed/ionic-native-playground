@@ -1,0 +1,35 @@
+{
+  "name": "Flashlight",
+  "members": [
+    {
+      "name": "available",
+      "description": "Checks if the flashlight is available",
+      "params": [
+      ]
+    },
+    {
+      "name": "switchOn",
+      "description": "Switches the flashlight on",
+      "params": [
+      ]
+    },
+    {
+      "name": "switchOff",
+      "description": "Switches the flashlight off",
+      "params": [
+      ]
+    },
+    {
+      "name": "toggle",
+      "description": "Toggles the flashlight",
+      "params": [
+      ]
+    },
+    {
+      "name": "isSwitchedOn",
+      "description": "Checks if the flashlight is turned on.",
+      "params": [
+      ]
+    }
+  ]
+}

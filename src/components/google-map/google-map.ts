@@ -1,8 +1,7 @@
 import {Component, Input, Renderer, OnInit, ElementRef, Output, EventEmitter} from '@angular/core';
 import {Platform} from "ionic-angular";
 import {
-  GoogleMap, GoogleMapsEvent, LatLng, CameraPosition, MarkerOptions,
-  Marker, GoogleMaps
+  GoogleMap, GoogleMapsEvent, GoogleMaps
 } from "@ionic-native/google-maps";
 
 @Component({

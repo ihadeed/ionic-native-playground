@@ -1,0 +1,53 @@
+{
+  "name": "Keyboard",
+  "members": [
+    {
+      "name": "hideKeyboardAccessoryBar",
+      "description": "Hide the keyboard accessory bar with the next, previous and done buttons.",
+      "params": [
+        {
+          "name": "hide",
+          "description": "",
+          "type": "boolean",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "show",
+      "description": "Force keyboard to be shown.",
+      "params": [
+      ]
+    },
+    {
+      "name": "close",
+      "description": "Close the keyboard if open.",
+      "params": [
+      ]
+    },
+    {
+      "name": "disableScroll",
+      "description": "Prevents the native UIScrollView from moving when an input is focused.",
+      "params": [
+        {
+          "name": "disable",
+          "description": "",
+          "type": "",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "onKeyboardShow",
+      "description": "Creates an observable that notifies you when the keyboard is shown. Unsubscribe to observable to cancel event watch.",
+      "params": [
+      ]
+    },
+    {
+      "name": "onKeyboardHide",
+      "description": "Creates an observable that notifies you when the keyboard is hidden. Unsubscribe to observable to cancel event watch.",
+      "params": [
+      ]
+    }
+  ]
+}

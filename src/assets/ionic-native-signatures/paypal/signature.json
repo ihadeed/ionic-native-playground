@@ -1,0 +1,77 @@
+{
+  "name": "PayPal",
+  "members": [
+    {
+      "name": "version",
+      "description": "Retrieve the version of the PayPal iOS SDK library. Useful when contacting support.",
+      "params": [
+      ]
+    },
+    {
+      "name": "init",
+      "description": "You must preconnect to PayPal to prepare the device for processing payments.This improves the user experience, by making the presentation of theUI faster. The preconnect is valid for a limited time, sothe recommended time to preconnect is on page load.",
+      "params": [
+        {
+          "name": "clientIdsForEnvironments:",
+          "description": "set of client ids for environments",
+          "type": "PayPalEnvironment",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "prepareToRender",
+      "description": "You must preconnect to PayPal to prepare the device for processing payments.This improves the user experience, by making the presentation of the UI faster.The preconnect is valid for a limited time, so the recommended time to preconnect is on page load.",
+      "params": [
+        {
+          "name": "environment:",
+          "description": "available options are \"PayPalEnvironmentNoNetwork\", \"PayPalEnvironmentProduction\" and \"PayPalEnvironmentSandbox\"",
+          "type": "String",
+          "optional": false
+        },
+        {
+          "name": "configuration:",
+          "description": "PayPalConfiguration object, for Future Payments merchantName, merchantPrivacyPolicyURL and merchantUserAgreementURL must be set be set",
+          "type": "PayPalConfiguration",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "renderSinglePaymentUI",
+      "description": "Start PayPal UI to collect payment from the user.See https://developer.paypal.com/webapps/developer/docs/integration/mobile/ios-integration-guide/for more documentation of the params.",
+      "params": [
+        {
+          "name": "payment",
+          "description": "PayPalPayment object",
+          "type": "PayPalPayment",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "clientMetadataID",
+      "description": "Once a user has consented to future payments, when the user subsequently initiates a PayPal paymentfrom their device to be completed by your server, PayPal uses a Correlation ID to verify that thepayment is originating from a valid, user-consented device+application.This helps reduce fraud and decrease declines.This method MUST be called prior to initiating a pre-consented payment (a \"future payment\") from a mobile device.Pass the result to your server, to include in the payment request sent to PayPal.Do not otherwise cache or store this value.",
+      "params": [
+      ]
+    },
+    {
+      "name": "renderFuturePaymentUI",
+      "description": "Please Read Docs on Future Payments at https://github.com/paypal/PayPal-iOS-SDK#future-payments",
+      "params": [
+      ]
+    },
+    {
+      "name": "renderProfileSharingUI",
+      "description": "Please Read Docs on Profile Sharing at https://github.com/paypal/PayPal-iOS-SDK#profile-sharing",
+      "params": [
+        {
+          "name": "scopes",
+          "description": "scopes Set of requested scope-values. Accepted scopes are: openid, profile, address, email, phone, futurepayments and paypalattributesSee https://developer.paypal.com/docs/integration/direct/identity/attributes/ for more details",
+          "type": "Array<string>",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "name": "BLE",
+  "members": [
+    {
+      "name": "scan",
+      "description": "Scan and discover BLE peripherals for the specified amount of time.",
+      "params": [
+        {
+          "name": "services",
+          "description": "List of service UUIDs to discover, or `[]` to find all devices",
+          "type": "string[]",
+          "optional": false
+        },
+        {
+          "name": "seconds",
+          "description": "Number of seconds to run discovery",
+          "type": "number",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "startScan",
+      "description": "Scan and discover BLE peripherals until `stopScan` is called.",
+      "params": [
+        {
+          "name": "services",
+          "description": "List of service UUIDs to discover, or `[]` to find all devices",
+          "type": "string[]",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "startScanWithOptions",
+      "description": "Scans for BLE devices. This function operates similarly to the `startScan` function, but allows you to specify extra options (like allowing duplicate device reports).",
+      "params": [
+        {
+          "name": "services",
+          "description": "List of service UUIDs to discover, or `[]` to find all devices",
+          "type": "string[]",
+          "optional": false
+        },
+        {
+          "name": "options",
+          "description": "",
+          "type": "any",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "stopScan",
+      "description": "Stop a scan started by `startScan`.",
+      "params": [
+      ]
+    },
+    {
+      "name": "connect",
+      "description": "Connect to a peripheral.",
+      "params": [
+        {
+          "name": "deviceId",
+          "description": "UUID or MAC address of the peripheral",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "disconnect",
+      "description": "Disconnect from a peripheral.",
+      "params": [
+        {
+          "name": "deviceId",
+          "description": "UUID or MAC address of the peripheral",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "read",
+      "description": "Read the value of a characteristic.",
+      "params": [
+        {
+          "name": "deviceId",
+          "description": "UUID or MAC address of the peripheral",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "serviceUUID",
+          "description": "UUID of the BLE service",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "characteristicUUID",
+          "description": "UUID of the BLE characteristic",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "write",
+      "description": "Write the value of a characteristic.",
+      "params": [
+        {
+          "name": "deviceId",
+          "description": "UUID or MAC address of the peripheral",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "serviceUUID",
+          "description": "UUID of the BLE service",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "characteristicUUID",
+          "description": "UUID of the BLE characteristic",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "value",
+          "description": "Data to write to the characteristic, as an ArrayBuffer.",
+          "type": "ArrayBuffer",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "writeWithoutResponse",
+      "description": "Write the value of a characteristic without waiting for confirmation from the peripheral.",
+      "params": [
+        {
+          "name": "deviceId",
+          "description": "UUID or MAC address of the peripheral",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "serviceUUID",
+          "description": "UUID of the BLE service",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "characteristicUUID",
+          "description": "UUID of the BLE characteristic",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "value",
+          "description": "Data to write to the characteristic, as an ArrayBuffer.",
+          "type": "ArrayBuffer",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "startNotification",
+      "description": "Register to be notified when the value of a characteristic changes.",
+      "params": [
+        {
+          "name": "deviceId",
+          "description": "UUID or MAC address of the peripheral",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "serviceUUID",
+          "description": "UUID of the BLE service",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "characteristicUUID",
+          "description": "UUID of the BLE characteristic",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "stopNotification",
+      "description": "Stop being notified when the value of a characteristic changes.",
+      "params": [
+        {
+          "name": "deviceId",
+          "description": "UUID or MAC address of the peripheral",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "serviceUUID",
+          "description": "UUID of the BLE service",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "characteristicUUID",
+          "description": "UUID of the BLE characteristic",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "isConnected",
+      "description": "Report the connection status.",
+      "params": [
+        {
+          "name": "deviceId",
+          "description": "UUID or MAC address of the peripheral",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "isEnabled",
+      "description": "Report if bluetooth is enabled.",
+      "params": [
+      ]
+    },
+    {
+      "name": "showBluetoothSettings",
+      "description": "Open System Bluetooth settings (Android only).",
+      "params": [
+      ]
+    },
+    {
+      "name": "enable",
+      "description": "Enable Bluetooth on the device (Android only).",
+      "params": [
+      ]
+    }
+  ]
+}

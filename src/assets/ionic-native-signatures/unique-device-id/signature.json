@@ -1,0 +1,11 @@
+{
+  "name": "Unique Device ID",
+  "members": [
+    {
+      "name": "get",
+      "description": "Gets a unique, cross-install, app-specific device id.",
+      "params": [
+      ]
+    }
+  ]
+}

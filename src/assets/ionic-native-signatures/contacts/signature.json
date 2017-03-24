@@ -1,0 +1,35 @@
+{
+  "name": "Contacts",
+  "members": [
+    {
+      "name": "create",
+      "description": "Create a single contact.",
+      "params": [
+      ]
+    },
+    {
+      "name": "find",
+      "description": "Search for contacts in the Contacts list.",
+      "params": [
+        {
+          "name": "fields",
+          "description": "Contact fields to be used as a search qualifier",
+          "type": "ContactFieldType[]",
+          "optional": false
+        },
+        {
+          "name": "options",
+          "description": "Optional options for the query",
+          "type": "IContactFindOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "pickContact",
+      "description": "Select a single Contact.",
+      "params": [
+      ]
+    }
+  ]
+}

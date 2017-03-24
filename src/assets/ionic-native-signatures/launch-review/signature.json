@@ -1,0 +1,11 @@
+{
+  "name": "Launch Review",
+  "members": [
+    {
+      "name": "launch",
+      "description": "Launch store app using given app ID",
+      "params": [
+      ]
+    }
+  ]
+}

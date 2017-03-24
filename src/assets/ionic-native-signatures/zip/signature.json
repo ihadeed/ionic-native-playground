@@ -1,0 +1,29 @@
+{
+  "name": "Zip",
+  "members": [
+    {
+      "name": "unzip",
+      "description": "Extracts files from a ZIP archive",
+      "params": [
+        {
+          "name": "sourceZip",
+          "description": "Source ZIP file",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "destUrl",
+          "description": "Destination folder",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "onProgress",
+          "description": "optional callback to be called on progress update",
+          "type": "Function",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

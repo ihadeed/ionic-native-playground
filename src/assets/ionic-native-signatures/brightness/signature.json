@@ -1,0 +1,29 @@
+{
+  "name": "Brightness",
+  "members": [
+    {
+      "name": "setBrightness",
+      "description": "Sets the brightness of the display.",
+      "params": [
+        {
+          "name": "Floating",
+          "description": "number between 0 and 1 in which case 1 means 100% brightness and 0 means 0% brightness.",
+          "type": "value",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "getBrightness",
+      "description": "Reads the current brightness of the device display.",
+      "params": [
+      ]
+    },
+    {
+      "name": "setKeepScreenOn",
+      "description": "Keeps the screen on. Prevents the device from setting the screen to sleep.",
+      "params": [
+      ]
+    }
+  ]
+}

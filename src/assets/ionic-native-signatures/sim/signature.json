@@ -1,0 +1,23 @@
+{
+  "name": "Sim",
+  "members": [
+    {
+      "name": "getSimInfo",
+      "description": "Returns info from the SIM card.",
+      "params": [
+      ]
+    },
+    {
+      "name": "hasReadPermission",
+      "description": "Check permission",
+      "params": [
+      ]
+    },
+    {
+      "name": "requestReadPermission",
+      "description": "Request permission",
+      "params": [
+      ]
+    }
+  ]
+}

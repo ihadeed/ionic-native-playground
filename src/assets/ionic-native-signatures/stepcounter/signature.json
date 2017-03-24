@@ -1,0 +1,47 @@
+{
+  "name": "Stepcounter",
+  "members": [
+    {
+      "name": "start",
+      "description": "Start the step counter",
+      "params": [
+        {
+          "name": "startingOffset",
+          "description": "will be added to the total steps counted in this session",
+          "type": "number",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "stop",
+      "description": "Stop the step counter",
+      "params": [
+      ]
+    },
+    {
+      "name": "getTodayStepCount",
+      "description": "Get the amount of steps for today (or -1 if it no data given)",
+      "params": [
+      ]
+    },
+    {
+      "name": "getStepCount",
+      "description": "Get the amount of steps since the start command has been called",
+      "params": [
+      ]
+    },
+    {
+      "name": "deviceCanCountSteps",
+      "description": "Returns true/false if Android device is running >API level 19 && has the step counter API available",
+      "params": [
+      ]
+    },
+    {
+      "name": "getHistory",
+      "description": "Get the step history (JavaScript object)",
+      "params": [
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>{{ pluginName }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <plugin-result #pluginResult></plugin-result>
+  <plugin-methods [plugin]="plugin" [pluginResult]="pluginResult" [sigName]="sigName"></plugin-methods>
+</ion-content>

@@ -1,0 +1,17 @@
+{
+  "name": "Vibration",
+  "members": [
+    {
+      "name": "vibrate",
+      "description": "Vibrates the device for given amount of time.",
+      "params": [
+        {
+          "name": "time",
+          "description": "Milliseconds to vibrate the device. If passed an array of numbers, it will define a vibration pattern. Pass 0 to stop any vibration immediately.",
+          "type": "number",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

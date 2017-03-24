@@ -1,0 +1,23 @@
+{
+  "name": "Text To Speech",
+  "members": [
+    {
+      "name": "speak",
+      "description": "This function speaks",
+      "params": [
+        {
+          "name": "options",
+          "description": "Text to speak or TTSOptions",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "stop",
+      "description": "Stop any current TTS playback",
+      "params": [
+      ]
+    }
+  ]
+}

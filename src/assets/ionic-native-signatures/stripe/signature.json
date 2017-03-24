@@ -1,0 +1,95 @@
+{
+  "name": "Stripe",
+  "members": [
+    {
+      "name": "setPublishableKey",
+      "description": "Set publishable key",
+      "params": [
+        {
+          "name": "publishableKey",
+          "description": "Publishable key",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "createCardToken",
+      "description": "Create Credit Card Token",
+      "params": [
+        {
+          "name": "params",
+          "description": "Credit card information",
+          "type": "StripeCardTokenParams",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "createBankAccountToken",
+      "description": "Create a bank account token",
+      "params": [
+        {
+          "name": "params",
+          "description": "Bank account information",
+          "type": "StripeBankAccountParams",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "validateCardNumber",
+      "description": "Validates a credit card number",
+      "params": [
+        {
+          "name": "cardNumber",
+          "description": "Credit card number",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "validateCVC",
+      "description": "Validates a CVC number",
+      "params": [
+        {
+          "name": "cvc",
+          "description": "CVC number",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "validateExpiryDate",
+      "description": "Validates an expiry date",
+      "params": [
+        {
+          "name": "expMonth",
+          "description": "expiry month",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "expYear",
+          "description": "expiry year",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "getCardType",
+      "description": "Get a card type from card number",
+      "params": [
+        {
+          "name": "cardNumber",
+          "description": "Card number",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "name": "Facebook",
+  "members": [
+    {
+      "name": "browserInit",
+      "description": "Browser wrapper",
+      "params": [
+        {
+          "name": "appId",
+          "description": "Your Facebook AppID from their dashboard",
+          "type": "number",
+          "optional": false
+        },
+        {
+          "name": "version",
+          "description": "The version of API you may want to use. Optional",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "login",
+      "description": "Login to Facebook to authenticate this app.```typescript{  status: \"connected\",  authResponse: {    session_key: true,    accessToken: \"kgkh3g42kh4g23kh4g2kh34g2kg4k2h4gkh3g4k2h4gk23h4gk2h34gk234gk2h34AndSoOn\",    expiresIn: 5183979,    sig: \"...\",    secret: \"...\",    userID: \"634565435\"  }}```",
+      "params": [
+        {
+          "name": "permissions",
+          "description": "List of [permissions](https://developers.facebook.com/docs/facebook-login/permissions) this app has upon logging in.",
+          "type": "string[]",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "logout",
+      "description": "Logout of Facebook.For more info see the [Facebook docs](https://developers.facebook.com/docs/reference/javascript/FB.logout)",
+      "params": [
+      ]
+    },
+    {
+      "name": "getLoginStatus",
+      "description": "Determine if a user is logged in to Facebook and has authenticated your app.  There are three possible states for a user:1) the user is logged into Facebook and has authenticated your application (connected)2) the user is logged into Facebook but has not authenticated your application (not_authorized)3) the user is either not logged into Facebook or explicitly logged out of your application so it doesn't attempt to connect to Facebook and thus, we don't know if they've authenticated your application or not (unknown)Resolves with a response like:```{  authResponse: {    userID: \"12345678912345\",    accessToken: \"kgkh3g42kh4g23kh4g2kh34g2kg4k2h4gkh3g4k2h4gk23h4gk2h34gk234gk2h34AndSoOn\",    session_Key: true,    expiresIn: \"5183738\",    sig: \"...\"  },  status: \"connected\"}```For more information see the [Facebook docs](https://developers.facebook.com/docs/reference/javascript/FB.getLoginStatus)",
+      "params": [
+      ]
+    },
+    {
+      "name": "getAccessToken",
+      "description": "Get a Facebook access token for using Facebook services.",
+      "params": [
+      ]
+    },
+    {
+      "name": "showDialog",
+      "description": "Show one of various Facebook dialogs. Example of options for a Share dialog:```{  method: \"share\",  href: \"http://example.com\",  caption: \"Such caption, very feed.\",  description: \"Much description\",  picture: 'http://example.com/image.png'}```For more options see the [Cordova plugin docs](https://github.com/jeduan/cordova-plugin-facebook4#show-a-dialog) and the [Facebook docs](https://developers.facebook.com/docs/javascript/reference/FB.ui)",
+      "params": [
+        {
+          "name": "options",
+          "description": "The dialog options",
+          "type": "Object",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "api",
+      "description": "Make a call to Facebook Graph API. Can take additional permissions beyond those granted on login.For more information see: Calling the Graph API - https://developers.facebook.com/docs/javascript/reference/FB.api Graph Explorer - https://developers.facebook.com/tools/explorer Graph API - https://developers.facebook.com/docs/graph-api",
+      "params": [
+        {
+          "name": "requestPath",
+          "description": "Graph API endpoint you want to call",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "permissions",
+          "description": "List of [permissions](https://developers.facebook.com/docs/facebook-login/permissions) for this request.",
+          "type": "string[]",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "logEvent",
+      "description": "Log an event.  For more information see the Events section above.",
+      "params": [
+        {
+          "name": "name",
+          "description": "Name of the event",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "params",
+          "description": "An object containing extra data to log with the event",
+          "type": "Object",
+          "optional": true
+        },
+        {
+          "name": "valueToSum",
+          "description": "any value to be added to added to a sum on each event",
+          "type": "number",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "logPurchase",
+      "description": "Log a purchase. For more information see the Events section above.",
+      "params": [
+        {
+          "name": "value",
+          "description": "Value of the purchase.",
+          "type": "number",
+          "optional": false
+        },
+        {
+          "name": "currency",
+          "description": "The currency, as an [ISO 4217 currency code](http://en.wikipedia.org/wiki/ISO_4217)",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "appInvite",
+      "description": "Open App Invite dialog. Does not require login.For more information see:  the App Invites Overview - https://developers.facebook.com/docs/app-invites/overview  the App Links docs - https://developers.facebook.com/docs/applinks",
+      "params": [
+        {
+          "name": "options",
+          "description": "An object containing an [App Link](https://developers.facebook.com/docs/applinks) URL to your app and an optional image URL.",
+          "type": "Object",
+          "optional": false
+        },
+        {
+          "name": "options.url",
+          "description": "[App Link](https://developers.facebook.com/docs/applinks) to your app",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "options.picture",
+          "description": "image to be displayed in the App Invite dialog",
+          "type": "string",
+          "optional": true
+        }
+      ]
+    }
+  ]
+}

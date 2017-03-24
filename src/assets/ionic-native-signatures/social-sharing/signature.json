@@ -1,0 +1,335 @@
+{
+  "name": "Social Sharing",
+  "members": [
+    {
+      "name": "share",
+      "description": "Shares using the share sheet",
+      "params": [
+        {
+          "name": "message",
+          "description": "The message you would like to share.",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "subject",
+          "description": "The subject",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "file",
+          "description": "URL(s) to file(s) or image(s), local path(s) to file(s) or image(s), or base64 data of an image. Only the first file/image will be used on Windows Phone.",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "url",
+          "description": "A URL to share",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "shareWithOptions",
+      "description": "Shares using the share sheet with additional options and returns a result object or an error message (requires plugin version 5.1.0+)",
+      "params": [
+        {
+          "name": "options",
+          "description": "The options object with the message, subject, files, url and chooserTitle properties.",
+          "type": "object",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "canShareVia",
+      "description": "Checks if you can share via a specific app.",
+      "params": [
+        {
+          "name": "appName",
+          "description": "App name or package name. Examples: instagram or com.apple.social.facebook",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "message",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "subject",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "image",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "url",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "shareViaTwitter",
+      "description": "Shares directly to Twitter",
+      "params": [
+        {
+          "name": "message",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "image",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "url",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "shareViaFacebook",
+      "description": "Shares directly to Facebook",
+      "params": [
+        {
+          "name": "message",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "image",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "url",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "shareViaFacebookWithPasteMessageHint",
+      "description": "Shares directly to Facebook with a paste message hint",
+      "params": [
+        {
+          "name": "message",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "image",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "url",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "pasteMessageHint",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "shareViaInstagram",
+      "description": "Shares directly to Instagram",
+      "params": [
+        {
+          "name": "message",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "image",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "shareViaWhatsApp",
+      "description": "Shares directly to WhatsApp",
+      "params": [
+        {
+          "name": "message",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "image",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "url",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "shareViaWhatsAppToReceiver",
+      "description": "Shares directly to a WhatsApp Contact",
+      "params": [
+        {
+          "name": "receiver",
+          "description": "Pass phone number on Android, and Addressbook ID (abid) on iOS",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "message",
+          "description": "Message to send",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "image",
+          "description": "Image to send (does not work on iOS",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "url",
+          "description": "Link to send",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "shareViaSMS",
+      "description": "Share via SMS",
+      "params": [
+        {
+          "name": "messge",
+          "description": "message to send",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "phoneNumber",
+          "description": "Number or multiple numbers seperated by commas",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "canShareViaEmail",
+      "description": "Checks if you can share via email",
+      "params": [
+      ]
+    },
+    {
+      "name": "shareViaEmail",
+      "description": "Share via Email",
+      "params": [
+        {
+          "name": "message",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "subject",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "to",
+          "description": "",
+          "type": "string[]",
+          "optional": false
+        },
+        {
+          "name": "cc",
+          "description": "Optional",
+          "type": "string[]",
+          "optional": false
+        },
+        {
+          "name": "bcc",
+          "description": "Optional",
+          "type": "string[]",
+          "optional": false
+        },
+        {
+          "name": "files",
+          "description": "Optional URL or local path to file(s) to attach",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "shareVia",
+      "description": "Share via AppName",
+      "params": [
+        {
+          "name": "appName",
+          "description": "App name or package name. Examples: instagram or com.apple.social.facebook",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "message",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "subject",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "image",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "url",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

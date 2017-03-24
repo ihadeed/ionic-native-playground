@@ -1,0 +1,293 @@
+{
+  "name": "Pinterest",
+  "members": [
+    {
+      "name": "SCOPES",
+      "description": "Convenience constant for authentication scopes",
+      "params": [
+      ]
+    },
+    {
+      "name": "login",
+      "description": "Logs the user in using their Pinterest account.",
+      "params": [
+        {
+          "name": "scopes",
+          "description": "Array of scopes that you need access to. You can use Pinterest.SCOPES constant for convenience.",
+          "type": "Array<string>",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "getMe",
+      "description": "Gets the authenticated user's profile",
+      "params": [
+        {
+          "name": "fields",
+          "description": "Fields to retrieve, separated by commas. Defaults to all available fields.",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "getMyPins",
+      "description": "",
+      "params": [
+        {
+          "name": "fields",
+          "description": "Optional fields separated by comma",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "limit",
+          "description": "Optional limit, defaults to 100, maximum is 100.",
+          "type": "number",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "getMyBoards",
+      "description": "",
+      "params": [
+        {
+          "name": "fields",
+          "description": "Optional fields separated by comma",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "limit",
+          "description": "Optional limit, defaults to 100, maximum is 100.",
+          "type": "number",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "getMyLikes",
+      "description": "Get the authenticated user's likes.",
+      "params": [
+        {
+          "name": "fields",
+          "description": "Optional fields separated by comma",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "limit",
+          "description": "Optional limit, defaults to 100, maximum is 100.",
+          "type": "number",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "getMyFollowers",
+      "description": "Get the authenticated user's followers.",
+      "params": [
+        {
+          "name": "fields",
+          "description": "Optional fields separated by comma",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "limit",
+          "description": "Optional limit, defaults to 100, maximum is 100.",
+          "type": "number",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "getMyFollowedBoards",
+      "description": "Get the authenticated user's followed boards.",
+      "params": [
+        {
+          "name": "fields",
+          "description": "Optional fields separated by comma",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "limit",
+          "description": "Optional limit, defaults to 100, maximum is 100.",
+          "type": "number",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "getMyFollowedInterests",
+      "description": "Get the authenticated user's followed interests.",
+      "params": [
+        {
+          "name": "fields",
+          "description": "Optional fields separated by comma",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "limit",
+          "description": "Optional limit, defaults to 100, maximum is 100.",
+          "type": "number",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "getUser",
+      "description": "Get a user's profile.",
+      "params": [
+        {
+          "name": "username",
+          "description": "",
+          "type": "",
+          "optional": false
+        },
+        {
+          "name": "fields",
+          "description": "",
+          "type": "",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "getBoard",
+      "description": "Get a board's data.",
+      "params": [
+        {
+          "name": "boardId",
+          "description": "",
+          "type": "",
+          "optional": false
+        },
+        {
+          "name": "fields",
+          "description": "",
+          "type": "",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "getBoardPins",
+      "description": "Get Pins of a specific board.",
+      "params": [
+        {
+          "name": "boardId",
+          "description": "The ID of the board",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "fields",
+          "description": "Optional fields separated by comma",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "limit",
+          "description": "Optional limit, defaults to 100, maximum is 100.",
+          "type": "number",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "deleteBoard",
+      "description": "Delete a board.",
+      "params": [
+        {
+          "name": "boardId",
+          "description": "The ID of the board",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "createBoard",
+      "description": "Create a new board for the authenticated user.",
+      "params": [
+        {
+          "name": "name",
+          "description": "Name of the board",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "desc",
+          "description": "Optional description of the board",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "getPin",
+      "description": "Get a Pin by ID.",
+      "params": [
+        {
+          "name": "pinId",
+          "description": "The ID of the Pin",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "fields",
+          "description": "Optional fields separated by comma",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "deletePin",
+      "description": "Deletes a pin",
+      "params": [
+        {
+          "name": "pinId",
+          "description": "The ID of the pin",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "createPin",
+      "description": "Creates a Pin",
+      "params": [
+        {
+          "name": "note",
+          "description": "Note/Description of the pin",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "boardId",
+          "description": "Board ID to put the Pin under",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "imageUrl",
+          "description": "URL of the image to share",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "link",
+          "description": "Optional link to share",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

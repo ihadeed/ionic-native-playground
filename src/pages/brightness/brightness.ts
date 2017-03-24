@@ -1,13 +1,7 @@
 import { Component } from '@angular/core';
-import {Platform, ViewController} from 'ionic-angular';
-import {Brightness} from "@ionic-native/brightness";
+import { Platform } from 'ionic-angular';
+import { Brightness } from "@ionic-native/brightness";
 
-/*
-  Generated class for the Brightness page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
-*/
 @Component({
   selector: 'page-brightness',
   templateUrl: 'brightness.html'
