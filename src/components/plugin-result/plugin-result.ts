@@ -12,7 +12,7 @@ export class PluginResultComponent {
   @Input()
   set result(val: any) {
     this.reset();
-    if (val) {
+    if (typeof val !== 'undefined') {
       this._result = this.process(val);
     }
   }
@@ -20,7 +20,7 @@ export class PluginResultComponent {
   @Input()
   set error(val: any) {
     this.reset();
-    if (val) {
+    if (typeof val !== 'undefined') {
       this._error = this.process(val);
     }
   }
