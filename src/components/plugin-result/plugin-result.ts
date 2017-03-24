@@ -135,7 +135,9 @@ export class PluginResultComponent {
     try {
       if (typeof value == 'object') {
         return this.colorify(this.stringify(value));
-      } else return value;
+      } else if(typeof value == 'number') {
+        return value;
+      } else return String(value);
     } catch (e) {
       console.log(e);
       return value;
