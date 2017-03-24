@@ -63,12 +63,12 @@ export class ObjectCreator {
         ]
       });
       typeAlert.present();
-    });
+    }).catch(() => {});
   }
 
   changeType(i: number) {
     this.selectType()
-      .then(type => (this.items[i].type = type) && this.setValue(i, type));
+      .then((type: string) => (this.items[i].type = type) && this.setValue(i, type));
   }
 
   selectName(currentName: string = '') {
@@ -92,7 +92,7 @@ export class ObjectCreator {
           }
         ]
       }).present();
-    });
+    }).catch(() => {});
   }
 
   addItem() {

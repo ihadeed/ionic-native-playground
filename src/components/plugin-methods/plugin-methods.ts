@@ -59,6 +59,8 @@ export class PluginMethodsComponent {
   private processPlugin() {
     if (!this._plugin) return;
 
+    window['myp'] = this._plugin;
+
     for (let member in this._plugin) {
       const isFunction = typeof this._plugin[member] == 'function';
 

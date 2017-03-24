@@ -1,42 +1,46 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.zyramedia.apps.ionicnativeplayground" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>Ionic Native Playground</name>
-  <description>Test out Ionic Native functionality</description>
-  <author email="info@zyra.ca" href="https://zyramedia.com/">Zyra Media</author>
-  <content src="index.html"/>
-  <access origin="*"/>
-  <allow-navigation href="http://ionic.local/*"/>
-  <allow-navigation href="http://192.168.1.98:8000"/>
-  <allow-navigation href="http://192.168.1.98:8100"/>
-  <allow-intent href="http://*/*"/>
-  <allow-intent href="https://*/*"/>
-  <allow-intent href="tel:*"/>
-  <allow-intent href="sms:*"/>
-  <allow-intent href="mailto:*"/>
-  <allow-intent href="geo:*"/>
-  <platform name="android">
-    <allow-intent href="market:*"/>
-    <config-file target="AndroidManifest.xml" parent="/*">
-      <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-      <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
-      <uses-permission android:name="android.permission.BLUETOOTH" />
-      <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
-      <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-      <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    </config-file>
-  </platform>
-  <platform name="ios">
-    <allow-intent href="itms:*"/>
-    <allow-intent href="itms-apps:*"/>
-  </platform>
-  <preference name="webviewbounce" value="false"/>
-  <preference name="UIWebViewBounce" value="false"/>
-  <preference name="DisallowOverscroll" value="true"/>
-  <preference name="android-minSdkVersion" value="16"/>
-  <preference name="BackupWebStorage" value="none"/>
-  <preference name="SplashMaintainAspectRatio" value="true"/>
-  <preference name="FadeSplashScreenDuration" value="300"/>
-  <feature name="StatusBar">
-    <param name="ios-package" onload="true" value="CDVStatusBar"/>
-  </feature>
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.zyramedia.apps.ionicnativeplayground" version="0.9.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Ionic Native Playground</name>
+    <description>Test out Ionic Native functionality</description>
+    <author email="info@zyra.ca" href="https://zyramedia.com/">Zyra Media</author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <config-file parent="/*" target="AndroidManifest.xml">
+            <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+            <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+            <uses-permission android:name="android.permission.BLUETOOTH" />
+            <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+            <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+        </config-file>
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    <preference name="webviewbounce" value="false" />
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="android-minSdkVersion" value="16" />
+    <preference name="BackupWebStorage" value="none" />
+    <preference name="SplashMaintainAspectRatio" value="true" />
+    <preference name="FadeSplashScreenDuration" value="300" />
+    <feature name="StatusBar">
+        <param name="ios-package" onload="true" value="CDVStatusBar" />
+    </feature>
+    <plugin name="cordova-plugin-googleplus" spec="~5.1.1">
+        <variable name="REVERSED_CLIENT_ID" value="com.googleusercontent.apps.574561427806-5u2m32athiahkvr0cefepdr82r824ch9" />
+    </plugin>
+    <plugin name="cordova-plugin-googlemaps" spec="https://github.com/ihadeed/cordova-plugin-googlemaps">
+        <variable name="API_KEY_FOR_ANDROID" value="AIzaSyDprtwhsBk0oonfHN1i0QJF51b_jeWTx6A" />
+        <variable name="API_KEY_FOR_IOS" value="AIzaSyDprtwhsBk0oonfHN1i0QJF51b_jeWTx6A" />
+    </plugin>
 </widget>

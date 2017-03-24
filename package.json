@@ -1,7 +1,7 @@
 {
-  "name": "ionic-hello-world",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "name": "ionic-native-playground",
+  "author": "Ibby Hadeed <i.hadeed@zyra.ca>",
+  "homepage": "https://zyramedia.com",
   "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",
@@ -95,7 +95,55 @@
       "locator": "https://github.com/card-io/card.io-Cordova-Plugin",
       "id": "card.io.cordova.mobilesdk"
     },
-    "cordova-clipboard"
+    "cordova-clipboard",
+    {
+      "locator": "https://github.com/loicknuchel/cordova-device-accounts.git",
+      "id": "org.loicknuchel.cordova.deviceaccounts"
+    },
+    {
+      "locator": "cordova-plugin-market",
+      "id": "com.xmartlabs.cordova.market"
+    },
+    "cordova-plugin-file",
+    "cordova-plugin-geolocation",
+    "cordova-plugin-app-version",
+    "cordova.plugins.diagnostic",
+    "cordova-plugin-android-fingerprint-auth",
+    "cordova-plugin-appavailability",
+    "cordova-plugin-app-preferences",
+    "cordova-plugin-apprate",
+    "cordova-plugin-dialogs",
+    "cordova-plugin-globalization",
+    "cordova-plugin-badge",
+    "cordova-plugin-app-event",
+    "cordova-custom-config",
+    "cordova-plugin-velda-devicefeedback",
+    "cordova-plugin-calendar",
+    "cordova-plugin-browsertab",
+    "cordova-plugin-datepicker",
+    "cordova-plugin-admobpro",
+    "cordova-plugin-extension",
+    "cordova-plugin-mauron85-background-geolocation",
+    "cordova-plugin-dbmeter",
+    "cordova-plugin-add-swift-support",
+    "cordova-plugin-device-motion",
+    "cordova-plugin-device-orientation",
+    {
+      "locator": "http://github.com/don/cordova-filechooser.git",
+      "id": "com.megster.cordova.FileChooser"
+    },
+    "cordova-plugin-flashlight",
+    "cordova-plugin-gyroscope",
+    "cordova-sms-plugin",
+    "cordova-plugin-tts",
+    "cordova-plugin-vibration",
+    "cordova-plugin-speechrecognition",
+    "cordova-plugin-googleplus",
+    {
+      "locator": "https://github.com/ihadeed/cordova-plugin-googlemaps",
+      "id": "cordova-plugin-googlemaps"
+    },
+    "cordova-plugin-call-number"
   ],
   "description": "ionic-native-playground: An Ionic project"
 }
