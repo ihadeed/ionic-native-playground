@@ -10,15 +10,15 @@
     "ionic:serve": "ionic-app-scripts serve"
   },
   "dependencies": {
-    "@angular/common": "2.4.8",
-    "@angular/compiler": "2.4.8",
-    "@angular/compiler-cli": "2.4.8",
-    "@angular/core": "2.4.8",
-    "@angular/forms": "2.4.8",
-    "@angular/http": "2.4.8",
-    "@angular/platform-browser": "2.4.8",
-    "@angular/platform-browser-dynamic": "2.4.8",
-    "@angular/platform-server": "2.4.8",
+    "@angular/common": "4.0.0-rc.5",
+    "@angular/compiler": "4.0.0-rc.5",
+    "@angular/compiler-cli": "4.0.0-rc.5",
+    "@angular/core": "4.0.0-rc.5",
+    "@angular/forms": "4.0.0-rc.5",
+    "@angular/http": "4.0.0-rc.5",
+    "@angular/platform-browser": "4.0.0-rc.5",
+    "@angular/platform-browser-dynamic": "4.0.0-rc.5",
+    "@angular/platform-server": "4.0.0-rc.5",
     "@ionic-native/action-sheet": "^3.2.0",
     "@ionic-native/android-fingerprint-auth": "^3.2.0",
     "@ionic-native/app-availability": "^3.2.0",
@@ -49,18 +49,19 @@
     "@ionic-native/market": "^3.2.0",
     "@ionic-native/splash-screen": "^3.2.0",
     "@ionic-native/status-bar": "^3.2.0",
-    "@ionic/storage": "2.0.0",
-    "@types/lodash": "4.14.50",
-    "ionic-angular": "^2.3.0",
+    "@ionic/storage": "2.0.1",
+    "@types/lodash": "^4.14.57",
+    "ionic-angular": "2.1.0-201703201940",
     "ionicons": "3.0.0",
     "lodash": "^4.17.4",
-    "rxjs": "5.0.1",
+    "rxjs": "5.1.1",
     "sw-toolbox": "3.4.0",
-    "zone.js": "0.7.2"
+    "zone.js": "^0.8.4"
   },
   "devDependencies": {
-    "@ionic/app-scripts": "1.1.4",
-    "typescript": "2.0.9"
+    "@ionic/app-scripts": "nightly",
+    "@ionic/cli-plugin-cordova": "0.0.9",
+    "typescript": "~2.2.1"
   },
   "cordovaPlugins": [
     "cordova-plugin-whitelist",

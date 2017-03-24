@@ -42,9 +42,7 @@ export class GeolocationPage {
     this.watch = this.geolocation.watchPosition(this.options).subscribe(v => {
       console.log('Got new val fro mobser', v);
       console.log('isInAngularZone?', NgZone.isInAngularZone());
-      this.ngZone.run(() => {
-        this.result = v;
-      });
+      this.result = v;
     });
   }
 

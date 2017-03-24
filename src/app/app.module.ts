@@ -1,4 +1,5 @@
 import { NgModule, ErrorHandler } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -60,6 +61,7 @@ import {CallNumber} from "@ionic-native/call-number";
 import {Calendar} from "@ionic-native/calendar";
 import { BrowserTab } from '@ionic-native/browser-tab';
 import { DatePicker } from '@ionic-native/date-picker';
+import {IonicStorageModule} from "@ionic/storage";
 
 @NgModule({
   declarations: [
@@ -98,7 +100,9 @@ import { DatePicker } from '@ionic-native/date-picker';
     DatePickerPage
   ],
   imports: [
-    IonicModule.forRoot(MyApp)
+    BrowserModule,
+    IonicModule.forRoot(MyApp),
+    IonicStorageModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
