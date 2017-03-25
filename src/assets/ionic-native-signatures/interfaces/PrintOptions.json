@@ -1,0 +1,42 @@
+{
+  "name": "PrintOptions",
+  "parent": "Printer",
+  "properties": [
+    {
+      "name": "name",
+      "description": "The name of the print job and the document",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "printerId",
+      "description": "The network URL of the printer.Only supported on iOS.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "duplex",
+      "description": "Specifies the duplex mode to use for the print job.Either double-sided (duplex:true) or single-sided (duplex:false).Double-sided by default.Only supported on iOS",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "landscape",
+      "description": "The orientation of the printed content, portrait or landscapePortrait by default.",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "grayscale",
+      "description": "If your application only prints black text, setting this property to true can result in better performance in many cases.False by default.",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "bounds",
+      "description": "The Size and position of the print view",
+      "type": "number[] | any",
+      "optional":true
+    }
+  ]
+}

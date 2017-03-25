@@ -1,0 +1,77 @@
+{
+  "name": "InAppPurchase",
+  "members": [
+    {
+      "name": "getProducts",
+      "description": "Retrieves a list of full product data from Apple/Google. This method must be called before making purchases.",
+      "params": [
+        {
+          "name": "productId",
+          "description": "an array of product ids.",
+          "type": "array<string>",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "buy",
+      "description": "Buy a product that matches the productId.",
+      "params": [
+        {
+          "name": "productId",
+          "description": "A string that matches the product you want to buy.",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "subscribe",
+      "description": "Same as buy, but for subscription based products.",
+      "params": [
+        {
+          "name": "productId",
+          "description": "A string that matches the product you want to subscribe to.",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "consume",
+      "description": "Call this function after purchasing a \"consumable\" product to mark it as consumed. On Android, you must consume products that you want to let the user purchase multiple times. If you will not consume the product after a purchase, the next time you will attempt to purchase it you will get the error message:",
+      "params": [
+        {
+          "name": "productType",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "receipt",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "signature",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "restorePurchases",
+      "description": "Restore all purchases from the store",
+      "params": [
+      ]
+    },
+    {
+      "name": "getReceipt",
+      "description": "Get the receipt.",
+      "params": [
+      ]
+    }
+  ]
+}

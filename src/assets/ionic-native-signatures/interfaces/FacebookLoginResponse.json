@@ -1,0 +1,32 @@
+{
+  "name": "FacebookLoginResponse",
+  "parent": "Facebook",
+  "properties": [
+    {
+      "name": "status",
+      "description": "",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "authResponse",
+      "description": "",
+      "type": "{
+
+    session_key: boolean;
+
+    accessToken: string;
+
+    expiresIn: number;
+
+    sig: string;
+
+    secret: string;
+
+    userID: string;
+
+  }",
+      "optional":false
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "ZBar",
+  "members": [
+    {
+      "name": "scan",
+      "description": "Open the scanner",
+      "params": [
+        {
+          "name": "options",
+          "description": "Scan options",
+          "type": "ZBarOptions",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

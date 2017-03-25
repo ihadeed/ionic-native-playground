@@ -1,0 +1,35 @@
+{
+  "name": "Broadcaster",
+  "members": [
+    {
+      "name": "addEventListener",
+      "description": "This function listen to an event sent from the native code",
+      "params": [
+        {
+          "name": "eventName",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "fireNativeEvent",
+      "description": "This function sends data to the native code",
+      "params": [
+        {
+          "name": "eventName",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "eventData",
+          "description": "",
+          "type": "any",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

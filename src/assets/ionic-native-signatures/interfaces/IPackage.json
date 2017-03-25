@@ -1,0 +1,54 @@
+{
+  "name": "IPackage",
+  "parent": "CodePush",
+  "properties": [
+    {
+      "name": "deploymentKey",
+      "description": "",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "description",
+      "description": "",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "label",
+      "description": "",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "appVersion",
+      "description": "",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "isMandatory",
+      "description": "",
+      "type": "boolean",
+      "optional":false
+    },
+    {
+      "name": "packageHash",
+      "description": "",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "packageSize",
+      "description": "",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "failedInstall",
+      "description": "",
+      "type": "boolean",
+      "optional":false
+    }
+  ]
+}

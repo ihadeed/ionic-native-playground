@@ -1,0 +1,60 @@
+{
+  "name": "FileSaver",
+  "parent": "File",
+  "properties": [
+    {
+      "name": "abort",
+      "description": "Terminate file operation",
+      "type": "void",
+      "optional":false
+    },
+    {
+      "name": "readyState",
+      "description": "The FileSaver object can be in one of 3 states. The readyState attribute, on getting,must return the current state, which must be one of the following values:    INIT    WRITING    DONE",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "onwritestart",
+      "description": "Handler for writestart events.",
+      "type": "(event: ProgressEvent) =&gt; void",
+      "optional":false
+    },
+    {
+      "name": "onprogress",
+      "description": "Handler for progress events.",
+      "type": "(event: ProgressEvent) =&gt; void",
+      "optional":false
+    },
+    {
+      "name": "onwrite",
+      "description": "Handler for write events.",
+      "type": "(event: ProgressEvent) =&gt; void",
+      "optional":false
+    },
+    {
+      "name": "onabort",
+      "description": "Handler for abort events.",
+      "type": "(event: ProgressEvent) =&gt; void",
+      "optional":false
+    },
+    {
+      "name": "onerror",
+      "description": "Handler for error events.",
+      "type": "(event: ProgressEvent) =&gt; void",
+      "optional":false
+    },
+    {
+      "name": "onwriteend",
+      "description": "Handler for writeend events.",
+      "type": "(event: ProgressEvent) =&gt; void",
+      "optional":false
+    },
+    {
+      "name": "error",
+      "description": "The last error that occurred on the FileSaver.",
+      "type": "Error",
+      "optional":false
+    }
+  ]
+}

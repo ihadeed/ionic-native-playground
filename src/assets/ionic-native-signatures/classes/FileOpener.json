@@ -1,0 +1,47 @@
+{
+  "name": "FileOpener",
+  "members": [
+    {
+      "name": "open",
+      "description": "Open an file",
+      "params": [
+        {
+          "name": "filePath",
+          "description": "File Path",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "fileMIMEType",
+          "description": "File MIME Type",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "uninstall",
+      "description": "Uninstalls a package",
+      "params": [
+        {
+          "name": "packageId",
+          "description": "Package ID",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "appIsInstalled",
+      "description": "Check if an app is already installed",
+      "params": [
+        {
+          "name": "packageId",
+          "description": "Package ID",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

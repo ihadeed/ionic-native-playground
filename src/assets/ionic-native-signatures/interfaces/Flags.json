@@ -1,0 +1,18 @@
+{
+  "name": "Flags",
+  "parent": "File",
+  "properties": [
+    {
+      "name": "create",
+      "description": "Used to indicate that the user wants to create a file or directory if it was not previously there.",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "exclusive",
+      "description": "By itself, exclusive must have no effect. Used with create, it must cause getFile and getDirectory to fail if the target path already exists.",
+      "type": "boolean",
+      "optional":true
+    }
+  ]
+}

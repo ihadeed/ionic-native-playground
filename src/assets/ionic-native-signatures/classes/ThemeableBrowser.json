@@ -1,0 +1,29 @@
+{
+  "name": "ThemeableBrowser",
+  "members": [
+    {
+      "name": "create",
+      "description": "Creates a browser instance",
+      "params": [
+        {
+          "name": "url",
+          "description": "URL to open",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "target",
+          "description": "Target",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "styleOptions",
+          "description": "Themeable browser options",
+          "type": "ThemeableBrowserOptions",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

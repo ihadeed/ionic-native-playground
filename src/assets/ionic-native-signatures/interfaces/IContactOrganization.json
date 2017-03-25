@@ -1,0 +1,36 @@
+{
+  "name": "IContactOrganization",
+  "parent": "Contacts",
+  "properties": [
+    {
+      "name": "pref",
+      "description": "Set to true if this ContactOrganization contains the user's preferred value.",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "type",
+      "description": "A string that indicates what type of field this is, home for example.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "name",
+      "description": "The name of the organization.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "department",
+      "description": "The department the contract works for.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "title",
+      "description": "The contact's title at the organization.",
+      "type": "string",
+      "optional":true
+    }
+  ]
+}

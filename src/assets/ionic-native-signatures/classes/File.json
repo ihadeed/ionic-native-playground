@@ -1,0 +1,563 @@
+{
+  "name": "File",
+  "members": [
+    {
+      "name": "applicationDirectory",
+      "description": "Read-only directory where the application is installed.",
+      "params": [
+      ]
+    },
+    {
+      "name": "applicationStorageDirectory",
+      "description": "Read-only directory where the application is installed.",
+      "params": [
+      ]
+    },
+    {
+      "name": "dataDirectory",
+      "description": "Where to put app-specific data files.",
+      "params": [
+      ]
+    },
+    {
+      "name": "cacheDirectory",
+      "description": "Cached files that should survive app restarts.Apps should not rely on the OS to delete files in here.",
+      "params": [
+      ]
+    },
+    {
+      "name": "externalApplicationStorageDirectory",
+      "description": "Android: the application space on external storage.",
+      "params": [
+      ]
+    },
+    {
+      "name": "externalDataDirectory",
+      "description": "Android: Where to put app-specific data files on external storage.",
+      "params": [
+      ]
+    },
+    {
+      "name": "externalCacheDirectory",
+      "description": "Android: the application cache on external storage.",
+      "params": [
+      ]
+    },
+    {
+      "name": "externalRootDirectory",
+      "description": "Android: the external storage (SD card) root.",
+      "params": [
+      ]
+    },
+    {
+      "name": "tempDirectory",
+      "description": "iOS: Temp directory that the OS can clear at will.",
+      "params": [
+      ]
+    },
+    {
+      "name": "syncedDataDirectory",
+      "description": "iOS: Holds app-specific files that should be synced (e.g. to iCloud).",
+      "params": [
+      ]
+    },
+    {
+      "name": "documentsDirectory",
+      "description": "iOS: Files private to the app, but that are meaningful to other applications (e.g. Office files)",
+      "params": [
+      ]
+    },
+    {
+      "name": "sharedDirectory",
+      "description": "BlackBerry10: Files globally available to all apps",
+      "params": [
+      ]
+    },
+    {
+      "name": "cordovaFileError",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "getFreeDiskSpace",
+      "description": "Get free disk space in Bytes",
+      "params": [
+      ]
+    },
+    {
+      "name": "checkDir",
+      "description": "Check if a directory exists in a certain path, directory.",
+      "params": [
+        {
+          "name": "path",
+          "description": "Base FileSystem. Please refer to the iOS and Android filesystems above",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "dir",
+          "description": "Name of directory to check",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "createDir",
+      "description": "Creates a new directory in the specific path.The replace boolean value determines whether to replace an existing directory with the same name.If an existing directory exists and the replace value is false, the promise will fail and return an error.",
+      "params": [
+        {
+          "name": "path",
+          "description": "Base FileSystem. Please refer to the iOS and Android filesystems above",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "dirName",
+          "description": "Name of directory to create",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "replace",
+          "description": "If true, replaces file with same name. If false returns error",
+          "type": "boolean",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "removeDir",
+      "description": "Remove a directory at a given path.",
+      "params": [
+        {
+          "name": "path",
+          "description": "The path to the directory",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "dirName",
+          "description": "The directory name",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "moveDir",
+      "description": "Move a directory to a given path.",
+      "params": [
+        {
+          "name": "path",
+          "description": "The source path to the directory",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "dirName",
+          "description": "The source directory name",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "newPath",
+          "description": "The destionation path to the directory",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "newDirName",
+          "description": "The destination directory name",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "copyDir",
+      "description": "Copy a directory in various methods. If destination directory exists, will fail to copy.",
+      "params": [
+        {
+          "name": "path",
+          "description": "Base FileSystem. Please refer to the iOS and Android filesystems above",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "dirName",
+          "description": "Name of directory to copy",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "newPath",
+          "description": "Base FileSystem of new location",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "newDirName",
+          "description": "New name of directory to copy to (leave blank to remain the same)",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "listDir",
+      "description": "List files and directory from a given path.",
+      "params": [
+        {
+          "name": "path",
+          "description": "Base FileSystem. Please refer to the iOS and Android filesystems above",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "dirName",
+          "description": "Name of directory",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "removeRecursively",
+      "description": "Removes all files and the directory from a desired location.",
+      "params": [
+        {
+          "name": "path",
+          "description": "Base FileSystem. Please refer to the iOS and Android filesystems above",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "dirName",
+          "description": "Name of directory",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "checkFile",
+      "description": "Check if a file exists in a certain path, directory.",
+      "params": [
+        {
+          "name": "path",
+          "description": "Base FileSystem. Please refer to the iOS and Android filesystems above",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "file",
+          "description": "Name of file to check",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "createFile",
+      "description": "Creates a new file in the specific path.The replace boolean value determines whether to replace an existing file with the same name.If an existing file exists and the replace value is false, the promise will fail and return an error.",
+      "params": [
+        {
+          "name": "path",
+          "description": "Base FileSystem. Please refer to the iOS and Android filesystems above",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "fileName",
+          "description": "Name of file to create",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "replace",
+          "description": "If true, replaces file with same name. If false returns error",
+          "type": "boolean",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "removeFile",
+      "description": "Removes a file from a desired location.",
+      "params": [
+        {
+          "name": "path",
+          "description": "Base FileSystem. Please refer to the iOS and Android filesystems above",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "fileName",
+          "description": "Name of file to remove",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "writeFile",
+      "description": "Write a new file to the desired location.",
+      "params": [
+        {
+          "name": "path",
+          "description": "Base FileSystem. Please refer to the iOS and Android filesystems above",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "fileName",
+          "description": "path relative to base path",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "text",
+          "description": "content or blob to write",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "options",
+          "description": "replace file if set to true. See WriteOptions for more information.",
+          "type": "WriteOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "writeExistingFile",
+      "description": "Write to an existing file.",
+      "params": [
+        {
+          "name": "path",
+          "description": "Base FileSystem. Please refer to the iOS and Android filesystems above",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "fileName",
+          "description": "path relative to base path",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "text",
+          "description": "content or blob to write",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "readAsText",
+      "description": "Read the contents of a file as text.",
+      "params": [
+        {
+          "name": "path",
+          "description": "Base FileSystem. Please refer to the iOS and Android filesystems above",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "file",
+          "description": "Name of file, relative to path.",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "readAsDataURL",
+      "description": "Read file and return data as a base64 encoded data url.A data url is of the form:     data:[<mediatype>][;base64],<data>",
+      "params": [
+        {
+          "name": "path",
+          "description": "Base FileSystem. Please refer to the iOS and Android filesystems above",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "file",
+          "description": "Name of file, relative to path.",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "readAsBinaryString",
+      "description": "Read file and return data as a binary data.",
+      "params": [
+        {
+          "name": "path",
+          "description": "Base FileSystem. Please refer to the iOS and Android filesystems above",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "file",
+          "description": "Name of file, relative to path.",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "readAsArrayBuffer",
+      "description": "Read file and return data as an ArrayBuffer.",
+      "params": [
+        {
+          "name": "path",
+          "description": "Base FileSystem. Please refer to the iOS and Android filesystems above",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "file",
+          "description": "Name of file, relative to path.",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "moveFile",
+      "description": "Move a file to a given path.",
+      "params": [
+        {
+          "name": "path",
+          "description": "Base FileSystem. Please refer to the iOS and Android filesystems above",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "fileName",
+          "description": "Name of file to move",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "newPath",
+          "description": "Base FileSystem of new location",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "newFileName",
+          "description": "New name of file to move to (leave blank to remain the same)",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "copyFile",
+      "description": "Copy a file in various methods. If file exists, will fail to copy.",
+      "params": [
+        {
+          "name": "path",
+          "description": "Base FileSystem. Please refer to the iOS and Android filesystems above",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "fileName",
+          "description": "Name of file to copy",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "newPath",
+          "description": "Base FileSystem of new location",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "newFileName",
+          "description": "New name of file to copy to (leave blank to remain the same)",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "resolveLocalFilesystemUrl",
+      "description": "Resolves a local file system URL",
+      "params": [
+        {
+          "name": "fileUrl",
+          "description": "file system url",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "resolveDirectoryUrl",
+      "description": "Resolves a local directory url",
+      "params": [
+        {
+          "name": "directoryUrl",
+          "description": "directory system url",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "getDirectory",
+      "description": "Get a directory",
+      "params": [
+        {
+          "name": "directoryEntry",
+          "description": "Directory entry, obtained by resolveDirectoryUrl method",
+          "type": "DirectoryEntry",
+          "optional": false
+        },
+        {
+          "name": "directoryName",
+          "description": "Directory name",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "flags",
+          "description": "Options",
+          "type": "Flags",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "getFile",
+      "description": "Get a file",
+      "params": [
+        {
+          "name": "directoryEntry",
+          "description": "Directory entry, obtained by resolveDirectoryUrl method",
+          "type": "DirectoryEntry",
+          "optional": false
+        },
+        {
+          "name": "fileName",
+          "description": "File name",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "flags",
+          "description": "Options",
+          "type": "Flags",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

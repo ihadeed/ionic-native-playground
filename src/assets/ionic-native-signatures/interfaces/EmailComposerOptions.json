@@ -1,0 +1,54 @@
+{
+  "name": "EmailComposerOptions",
+  "parent": "EmailComposer",
+  "properties": [
+    {
+      "name": "app",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "to",
+      "description": "",
+      "type": "string | Array&lt;string&gt;",
+      "optional":true
+    },
+    {
+      "name": "cc",
+      "description": "",
+      "type": "string | Array&lt;string&gt;",
+      "optional":true
+    },
+    {
+      "name": "bcc",
+      "description": "",
+      "type": "string | Array&lt;string&gt;",
+      "optional":true
+    },
+    {
+      "name": "attachments",
+      "description": "",
+      "type": "Array&lt;any&gt;",
+      "optional":true
+    },
+    {
+      "name": "subject",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "body",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "isHtml",
+      "description": "",
+      "type": "boolean",
+      "optional":true
+    }
+  ]
+}

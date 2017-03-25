@@ -1,0 +1,41 @@
+{
+  "name": "SpeechRecognition",
+  "members": [
+    {
+      "name": "isRecognitionAvailable",
+      "description": "Check feature available",
+      "params": [
+      ]
+    },
+    {
+      "name": "startListening",
+      "description": "Start the recognition process",
+      "params": [
+      ]
+    },
+    {
+      "name": "stopListening",
+      "description": "Stop the recognition process",
+      "params": [
+      ]
+    },
+    {
+      "name": "getSupportedLanguages",
+      "description": "Get the list of supported languages",
+      "params": [
+      ]
+    },
+    {
+      "name": "hasPermission",
+      "description": "Check permission",
+      "params": [
+      ]
+    },
+    {
+      "name": "requestPermission",
+      "description": "Request permissions",
+      "params": [
+      ]
+    }
+  ]
+}

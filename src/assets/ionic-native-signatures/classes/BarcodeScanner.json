@@ -1,0 +1,41 @@
+{
+  "name": "BarcodeScanner",
+  "members": [
+    {
+      "name": "Encode",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "scan",
+      "description": "Open the barcode scanner.",
+      "params": [
+        {
+          "name": "options",
+          "description": "Optional options to pass to the scanner",
+          "type": "BarcodeScannerOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "encode",
+      "description": "Encodes data into a barcode.NOTE: not well supported on Android",
+      "params": [
+        {
+          "name": "type",
+          "description": "Type of encoding",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "data",
+          "description": "Data to encode",
+          "type": "any",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

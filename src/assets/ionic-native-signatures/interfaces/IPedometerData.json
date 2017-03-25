@@ -1,0 +1,42 @@
+{
+  "name": "IPedometerData",
+  "parent": "Pedometer",
+  "properties": [
+    {
+      "name": "startDate",
+      "description": "",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "endDate",
+      "description": "",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "numberOfSteps",
+      "description": "",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "distance",
+      "description": "",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "floorsAscended",
+      "description": "",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "floorsDescended",
+      "description": "",
+      "type": "number",
+      "optional":false
+    }
+  ]
+}

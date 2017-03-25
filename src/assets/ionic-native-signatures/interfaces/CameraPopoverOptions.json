@@ -1,0 +1,36 @@
+{
+  "name": "CameraPopoverOptions",
+  "parent": "Camera",
+  "properties": [
+    {
+      "name": "x",
+      "description": "",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "y",
+      "description": "",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "width",
+      "description": "",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "height",
+      "description": "",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "arrowDir",
+      "description": "Direction the arrow on the popover should point. Defined in Camera.PopoverArrowDirectionMatches iOS UIPopoverArrowDirection constants.     ARROW_UP : 1,     ARROW_DOWN : 2,     ARROW_LEFT : 4,     ARROW_RIGHT : 8,     ARROW_ANY : 15",
+      "type": "number",
+      "optional":false
+    }
+  ]
+}

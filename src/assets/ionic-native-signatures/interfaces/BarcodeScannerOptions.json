@@ -1,0 +1,66 @@
+{
+  "name": "BarcodeScannerOptions",
+  "parent": "BarcodeScanner",
+  "properties": [
+    {
+      "name": "preferFrontCamera",
+      "description": "Prefer front camera. Supported on iOS and Android.",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "showFlipCameraButton",
+      "description": "Show flip camera button. Supported on iOS and Android.",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "showTorchButton",
+      "description": "Show torch button. Supported on iOS and Android.",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "disableAnimations",
+      "description": "Disable animations. Supported on iOS only.",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "disableSuccessBeep",
+      "description": "Disable success beep. Supported on iOS only.",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "prompt",
+      "description": "Prompt text. Supported on Android only.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "formats",
+      "description": "Formats separated by commas. Defaults to all formats except `PDF_417` and `RSS_EXPANDED`.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "orientation",
+      "description": "Orientation. Supported on Android only. Can be set to `portrait` or `landscape`. Defaults to none so the user can rotate the phone and pick an orientation.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "torchOn",
+      "description": "Launch with the torch switched on (if available). Supported on Android only.",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "resultDisplayDuration",
+      "description": "Display scanned text for X ms. 0 suppresses it entirely, default 1500. Supported on Android only.",
+      "type": "number",
+      "optional":true
+    }
+  ]
+}

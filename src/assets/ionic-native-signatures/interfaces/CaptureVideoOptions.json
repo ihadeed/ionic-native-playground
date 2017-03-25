@@ -1,0 +1,24 @@
+{
+  "name": "CaptureVideoOptions",
+  "parent": "MediaCapture",
+  "properties": [
+    {
+      "name": "limit",
+      "description": "Maximum number of video clips to record. This value is ignored on iOS, only one video clip can be taken per invocation.",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "duration",
+      "description": "Maximum duration per video clip. This will be ignored on BlackBerry.",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "quality",
+      "description": "Quality of the video. This parameter can only be used with Android.",
+      "type": "number",
+      "optional":true
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "name": "FileReader",
+  "parent": "File",
+  "properties": [
+    {
+      "name": "readyState",
+      "description": "",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "error",
+      "description": "",
+      "type": "Error",
+      "optional":false
+    },
+    {
+      "name": "result",
+      "description": "",
+      "type": "string | ArrayBuffer",
+      "optional":false
+    },
+    {
+      "name": "onloadstart",
+      "description": "",
+      "type": "(evt: ProgressEvent) =&gt; void",
+      "optional":false
+    },
+    {
+      "name": "onprogress",
+      "description": "",
+      "type": "(evt: ProgressEvent) =&gt; void",
+      "optional":false
+    },
+    {
+      "name": "onload",
+      "description": "",
+      "type": "(evt: ProgressEvent) =&gt; void",
+      "optional":false
+    },
+    {
+      "name": "onerror",
+      "description": "",
+      "type": "(evt: ProgressEvent) =&gt; void",
+      "optional":false
+    },
+    {
+      "name": "onloadend",
+      "description": "",
+      "type": "(evt: ProgressEvent) =&gt; void",
+      "optional":false
+    },
+    {
+      "name": "onabort",
+      "description": "",
+      "type": "(evt: ProgressEvent) =&gt; void",
+      "optional":false
+    },
+    {
+      "name": "abort",
+      "description": "",
+      "type": "void",
+      "optional":false
+    },
+    {
+      "name": "readAsText",
+      "description": "",
+      "type": "void",
+      "optional":false
+    },
+    {
+      "name": "readAsDataURL",
+      "description": "",
+      "type": "void",
+      "optional":false
+    },
+    {
+      "name": "readAsBinaryString",
+      "description": "",
+      "type": "void",
+      "optional":false
+    },
+    {
+      "name": "readAsArrayBuffer",
+      "description": "",
+      "type": "void",
+      "optional":false
+    }
+  ]
+}

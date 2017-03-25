@@ -1,0 +1,24 @@
+{
+  "name": "ConfigurationData",
+  "parent": "MediaCapture",
+  "properties": [
+    {
+      "name": "type",
+      "description": "The ASCII-encoded lowercase string representing the media type.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "height",
+      "description": "The height of the image or video in pixels. The value is zero for sound clips.",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "width",
+      "description": "The width of the image or video in pixels. The value is zero for sound clips.",
+      "type": "number",
+      "optional":false
+    }
+  ]
+}

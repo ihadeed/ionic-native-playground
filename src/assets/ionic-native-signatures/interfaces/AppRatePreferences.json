@@ -1,0 +1,60 @@
+{
+  "name": "AppRatePreferences",
+  "parent": "AppRate",
+  "properties": [
+    {
+      "name": "useLanguage",
+      "description": "Custom BCP 47 language tag",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "displayAppName",
+      "description": "Custom application title",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "promptAgainForEachNewVersion",
+      "description": "Show dialog again when application version will be updated. Defaults to `true`",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "usesUntilPrompt",
+      "description": "count of runs of application before dialog will be displayed. Defaults to `3`",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "openStoreInApp",
+      "description": "leave app or no when application page opened in app store (now supported only for iOS). Defaults to `false`",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "useCustomRateDialog",
+      "description": "use custom view for rate dialog. Defaults to `false`",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "customLocale",
+      "description": "Custom locale object",
+      "type": "any",
+      "optional":true
+    },
+    {
+      "name": "callbacks",
+      "description": "Callbacks for events",
+      "type": "AppRateCallbacks",
+      "optional":true
+    },
+    {
+      "name": "storeAppURL",
+      "description": "App Store URLS",
+      "type": "AppUrls",
+      "optional":true
+    }
+  ]
+}

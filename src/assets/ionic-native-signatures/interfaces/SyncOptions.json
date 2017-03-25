@@ -1,0 +1,24 @@
+{
+  "name": "SyncOptions",
+  "parent": "CodePush",
+  "properties": [
+    {
+      "name": "ignoreFailedUpdates",
+      "description": "Optional boolean flag. If set, previous updates which were rolled back will be ignored. Defaults to true.",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "updateDialog",
+      "description": "Used to enable, disable or customize the user interaction during sync.If set to false, user interaction will be disabled. If set to true, the user will be alerted or asked to confirm new updates, based on whether the update is mandatory.To customize the user dialog, this option can be set to a custom UpdateDialogOptions instance.",
+      "type": "boolean | UpdateDialogOptions",
+      "optional":true
+    },
+    {
+      "name": "deploymentKey",
+      "description": "Overrides the config.xml deployment key when checking for updates.",
+      "type": "string",
+      "optional":true
+    }
+  ]
+}

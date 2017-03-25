@@ -1,0 +1,17 @@
+{
+  "name": "SecureStorage",
+  "members": [
+    {
+      "name": "create",
+      "description": "Creates a namespaced storage.",
+      "params": [
+        {
+          "name": "store",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

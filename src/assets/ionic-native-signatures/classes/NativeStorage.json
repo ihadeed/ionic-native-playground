@@ -1,0 +1,53 @@
+{
+  "name": "NativeStorage",
+  "members": [
+    {
+      "name": "setItem",
+      "description": "Stores a value",
+      "params": [
+        {
+          "name": "reference",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "value",
+          "description": "",
+          "type": "",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "getItem",
+      "description": "Gets a stored item",
+      "params": [
+        {
+          "name": "reference",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "remove",
+      "description": "Removes a single stored item",
+      "params": [
+        {
+          "name": "reference",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "clear",
+      "description": "Removes all stored values.",
+      "params": [
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "name": "StreamingAudioOptions",
+  "parent": "StreamingMedia",
+  "properties": [
+    {
+      "name": "bgColor",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "bgImage",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "bgImageScale",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "initFullscreen",
+      "description": "",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "successCallback",
+      "description": "",
+      "type": "Function",
+      "optional":true
+    },
+    {
+      "name": "errorCallback",
+      "description": "",
+      "type": "Function",
+      "optional":true
+    }
+  ]
+}

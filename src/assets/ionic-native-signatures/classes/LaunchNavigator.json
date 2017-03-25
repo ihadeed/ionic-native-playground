@@ -1,0 +1,203 @@
+{
+  "name": "LaunchNavigator",
+  "members": [
+    {
+      "name": "navigate",
+      "description": "Launches navigator app",
+      "params": [
+        {
+          "name": "destination",
+          "description": "Location name or coordinates (as string or array)",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "options",
+          "description": "",
+          "type": "LaunchNavigatorOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "isAppAvailable",
+      "description": "Determines if the given app is installed and available on the current device.",
+      "params": [
+        {
+          "name": "app",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "availableApps",
+      "description": "Returns a list indicating which apps are installed and available on the current device.",
+      "params": [
+      ]
+    },
+    {
+      "name": "getAppDisplayName",
+      "description": "Returns the display name of the specified app.",
+      "params": [
+        {
+          "name": "app",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "getAppsForPlatform",
+      "description": "Returns list of supported apps on a given platform.",
+      "params": [
+        {
+          "name": "platform",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "supportsTransportMode",
+      "description": "Indicates if an app on a given platform supports specification of transport mode.",
+      "params": [
+        {
+          "name": "app",
+          "description": "specified as a string, you can use one of the constants, e.g `LaunchNavigator.APP.GOOGLE_MAPS`",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "platform",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "getTransportModes",
+      "description": "Returns the list of transport modes supported by an app on a given platform.",
+      "params": [
+        {
+          "name": "app",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "platform",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "supportsLaunchMode",
+      "description": "Indicates if an app on a given platform supports specification of launch mode.Note that currently only Google Maps on Android does.",
+      "params": [
+        {
+          "name": "app",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "platform",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "supportsStart",
+      "description": "Indicates if an app on a given platform supports specification of start location.",
+      "params": [
+        {
+          "name": "app",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "platform",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "supportsStartName",
+      "description": "",
+      "params": [
+        {
+          "name": "app",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "platform",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "supportsDestName",
+      "description": "",
+      "params": [
+        {
+          "name": "app",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "platform",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "userSelect",
+      "description": "",
+      "params": [
+        {
+          "name": "destination",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "options",
+          "description": "",
+          "type": "LaunchNavigatorOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "APP",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "TRANSPORT_MODE",
+      "description": "",
+      "params": [
+      ]
+    }
+  ]
+}

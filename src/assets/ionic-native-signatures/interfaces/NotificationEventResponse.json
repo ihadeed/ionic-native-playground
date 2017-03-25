@@ -1,0 +1,42 @@
+{
+  "name": "NotificationEventResponse",
+  "parent": "Push",
+  "properties": [
+    {
+      "name": "message",
+      "description": "The text of the push message sent from the 3rd party service.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "title",
+      "description": "The optional title of the push message sent from the 3rd party service.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "count",
+      "description": "The number of messages to be displayed in the badge iOS or message count in the notification shade in Android.For windows, it represents the value in the badge notification which could be a number or a status glyph.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "sound",
+      "description": "The name of the sound file to be played upon receipt of the notification.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "image",
+      "description": "The path of the image file to be displayed in the notification.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "additionalData",
+      "description": "An optional collection of data sent by the 3rd party push service that does not fit in the above properties.",
+      "type": "NotificationEventAdditionalData | any",
+      "optional":false
+    }
+  ]
+}

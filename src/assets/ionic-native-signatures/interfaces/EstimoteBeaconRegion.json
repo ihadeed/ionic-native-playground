@@ -1,0 +1,36 @@
+{
+  "name": "EstimoteBeaconRegion",
+  "parent": "EstimoteBeacons",
+  "properties": [
+    {
+      "name": "state",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "major",
+      "description": "",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "minor",
+      "description": "",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "identifier",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "uuid",
+      "description": "",
+      "type": "string",
+      "optional":false
+    }
+  ]
+}

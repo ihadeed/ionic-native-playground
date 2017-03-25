@@ -1,0 +1,24 @@
+{
+  "name": "CategoryAction",
+  "parent": "Push",
+  "properties": [
+    {
+      "name": "yes",
+      "description": "",
+      "type": "CategoryActionData",
+      "optional":true
+    },
+    {
+      "name": "no",
+      "description": "",
+      "type": "CategoryActionData",
+      "optional":true
+    },
+    {
+      "name": "maybe",
+      "description": "",
+      "type": "CategoryActionData",
+      "optional":true
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "CategoryActionData",
+  "parent": "Push",
+  "properties": [
+    {
+      "name": "callback",
+      "description": "",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "title",
+      "description": "",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "foreground",
+      "description": "",
+      "type": "boolean",
+      "optional":false
+    },
+    {
+      "name": "destructive",
+      "description": "",
+      "type": "boolean",
+      "optional":false
+    }
+  ]
+}

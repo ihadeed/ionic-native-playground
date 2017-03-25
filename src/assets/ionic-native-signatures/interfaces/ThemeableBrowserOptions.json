@@ -1,0 +1,194 @@
+{
+  "name": "ThemeableBrowserOptions",
+  "parent": "ThemeableBrowser",
+  "properties": [
+    {
+      "name": "statusbar",
+      "description": "",
+      "type": "{
+    color: string;
+  }",
+      "optional":true
+    },
+    {
+      "name": "toolbar",
+      "description": "",
+      "type": "{
+    height?: number;
+    color?: string;
+    image?: string;
+  }",
+      "optional":true
+    },
+    {
+      "name": "title",
+      "description": "",
+      "type": "{
+    color?: string;
+    staticText?: string;
+    showPageTitle?: boolean;
+  }",
+      "optional":true
+    },
+    {
+      "name": "backButton",
+      "description": "",
+      "type": "ThemeableBrowserButton",
+      "optional":true
+    },
+    {
+      "name": "forwardButton",
+      "description": "",
+      "type": "ThemeableBrowserButton",
+      "optional":true
+    },
+    {
+      "name": "closeButton",
+      "description": "",
+      "type": "ThemeableBrowserButton",
+      "optional":true
+    },
+    {
+      "name": "customButtons",
+      "description": "",
+      "type": "ThemeableBrowserButton[]",
+      "optional":true
+    },
+    {
+      "name": "menu",
+      "description": "",
+      "type": "{
+    image?: string;
+    imagePressed?: string;
+    title?: string;
+    cancel?: string;
+    align?: string;
+    items?: {
+      event: string;
+      label: string;
+    }[];
+  }",
+      "optional":true
+    },
+    {
+      "name": "backButtonCanClose",
+      "description": "",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "disableAnimation",
+      "description": "",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "location",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "hidden",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "clearcache",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "clearsessioncache",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "zoom",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "hardwareback",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "mediaPlaybackRequiresUserAction",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "shouldPauseOnSuspsend",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "closebuttoncaption",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "disallowoverscroll",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "enableViewportScale",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "allowInlineMediaPlayback",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "keyboardDisplayRequiresUserAction",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "suppressesIncrementalRendering",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "presentationstyle",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "transitionstyle",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "toolbarposition",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "fullscreen",
+      "description": "",
+      "type": "string",
+      "optional":true
+    }
+  ]
+}

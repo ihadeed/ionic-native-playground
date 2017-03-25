@@ -1,0 +1,65 @@
+{
+  "name": "Badge",
+  "members": [
+    {
+      "name": "clear",
+      "description": "Clear the badge of the app icon.",
+      "params": [
+      ]
+    },
+    {
+      "name": "set",
+      "description": "Set the badge of the app icon.",
+      "params": [
+        {
+          "name": "badgeNumber",
+          "description": "The new badge number.",
+          "type": "number",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "get",
+      "description": "Get the badge of the app icon.",
+      "params": [
+      ]
+    },
+    {
+      "name": "increase",
+      "description": "Increase the badge number.",
+      "params": [
+        {
+          "name": "increaseBy",
+          "description": "Count to add to the current badge number",
+          "type": "number",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "decrease",
+      "description": "Decrease the badge number.",
+      "params": [
+        {
+          "name": "decreaseBy",
+          "description": "Count to subtract from the current badge number",
+          "type": "number",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "hasPermission",
+      "description": "Determine if the app has permission to show badges.",
+      "params": [
+      ]
+    },
+    {
+      "name": "registerPermission",
+      "description": "Register permission to set badge notifications",
+      "params": [
+      ]
+    }
+  ]
+}

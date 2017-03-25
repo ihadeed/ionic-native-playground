@@ -1,0 +1,72 @@
+{
+  "name": "AFAAuthOptions",
+  "parent": "AndroidFingerprintAuth",
+  "properties": [
+    {
+      "name": "clientId",
+      "description": "RequiredUsed as the alias for your key in the Android Key Store.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "username",
+      "description": "Used to create credential string for encrypted token and as alias to retrieve the cipher.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "password",
+      "description": "Used to create credential string for encrypted token",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "token",
+      "description": "Required for decrypt()Encrypted user credentials to decrypt upon successful authentication.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "disableBackup",
+      "description": "Set to true to remove the \"USE BACKUP\" button",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "locale",
+      "description": "Change the language. (en_US or es)",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "maxAttempts",
+      "description": "The device max is 5 attempts. Set this parameter if you want to allow fewer than 5 attempts.",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "userAuthRequired",
+      "description": "Require the user to authenticate with a fingerprint to authorize every use of the key.New fingerprint enrollment will invalidate key and require backup authenticate tore-enable the fingerprint authentication dialog.",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "dialogTitle",
+      "description": "Set the title of the fingerprint authentication dialog.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "dialogMessage",
+      "description": "Set the message of the fingerprint authentication dialog.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "dialogHint",
+      "description": "Set the hint displayed by the fingerprint icon on the fingerprint authentication dialog.",
+      "type": "string",
+      "optional":true
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "DeviceFeedback",
+  "members": [
+    {
+      "name": "acoustic",
+      "description": "Provide sound feedback to user, nevertheless respect user's settings and current active device profile as native feedback do.",
+      "params": [
+      ]
+    },
+    {
+      "name": "haptic",
+      "description": "Provide vibrate feedback to user, nevertheless respect user's tactile feedback setting as native feedback do.",
+      "params": [
+        {
+          "name": "type",
+          "description": "Specify type of vibration feedback. 0 for long press, 1 for virtual key, or 3 for keyboard tap.",
+          "type": "Number",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "isFeedbackEnabled",
+      "description": "Check if haptic and acoustic feedback is enabled by user settings.",
+      "params": [
+      ]
+    }
+  ]
+}

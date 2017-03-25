@@ -1,0 +1,18 @@
+{
+  "name": "SmsOptions",
+  "parent": "SMS",
+  "properties": [
+    {
+      "name": "replaceLineBreaks",
+      "description": "Set to true to replace \\n by a new line. Default: false",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "android",
+      "description": "",
+      "type": "SmsOptionsAndroid",
+      "optional":true
+    }
+  ]
+}

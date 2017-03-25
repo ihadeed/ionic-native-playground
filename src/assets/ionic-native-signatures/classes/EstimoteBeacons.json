@@ -1,0 +1,353 @@
+{
+  "name": "EstimoteBeacons",
+  "members": [
+    {
+      "name": "ProximityUnknown",
+      "description": "Proximity value",
+      "params": [
+      ]
+    },
+    {
+      "name": "ProximityImmediate",
+      "description": "Proximity value",
+      "params": [
+      ]
+    },
+    {
+      "name": "ProximityNear",
+      "description": "Proximity value",
+      "params": [
+      ]
+    },
+    {
+      "name": "ProximityFar",
+      "description": "Proximity value",
+      "params": [
+      ]
+    },
+    {
+      "name": "BeaconColorUnknown",
+      "description": "Beacon colour",
+      "params": [
+      ]
+    },
+    {
+      "name": "BeaconColorMintCocktail",
+      "description": "Beacon colour",
+      "params": [
+      ]
+    },
+    {
+      "name": "BeaconColorIcyMarshmallow",
+      "description": "Beacon colour",
+      "params": [
+      ]
+    },
+    {
+      "name": "BeaconColorBlueberryPie",
+      "description": "Beacon colour",
+      "params": [
+      ]
+    },
+    {
+      "name": "BeaconColorSweetBeetroot",
+      "description": "Beacon colour.",
+      "params": [
+      ]
+    },
+    {
+      "name": "BeaconColorCandyFloss",
+      "description": "Beacon colour",
+      "params": [
+      ]
+    },
+    {
+      "name": "BeaconColorLemonTart",
+      "description": "Beacon colour",
+      "params": [
+      ]
+    },
+    {
+      "name": "BeaconColorVanillaJello",
+      "description": "Beacon colour",
+      "params": [
+      ]
+    },
+    {
+      "name": "BeaconColorLiquoriceSwirl",
+      "description": "Beacon colour",
+      "params": [
+      ]
+    },
+    {
+      "name": "BeaconColorWhite",
+      "description": "Beacon colour",
+      "params": [
+      ]
+    },
+    {
+      "name": "BeaconColorTransparent",
+      "description": "Beacon colour",
+      "params": [
+      ]
+    },
+    {
+      "name": "RegionStateUnknown",
+      "description": "Region state",
+      "params": [
+      ]
+    },
+    {
+      "name": "RegionStateOutside",
+      "description": "Region state",
+      "params": [
+      ]
+    },
+    {
+      "name": "RegionStateInside",
+      "description": "Region state",
+      "params": [
+      ]
+    },
+    {
+      "name": "requestWhenInUseAuthorization",
+      "description": "Ask the user for permission to use location serviceswhile the app is in the foreground.You need to call this function or requestAlwaysAuthorizationon iOS 8+.Does nothing on other platforms.",
+      "params": [
+      ]
+    },
+    {
+      "name": "requestAlwaysAuthorization",
+      "description": "Ask the user for permission to use location serviceswhenever the app is running.You need to call this function or requestWhenInUseAuthorizationon iOS 8+.Does nothing on other platforms.",
+      "params": [
+      ]
+    },
+    {
+      "name": "authorizationStatus",
+      "description": "Get the current location authorization status.Implemented on iOS 8+.Does nothing on other platforms.",
+      "params": [
+      ]
+    },
+    {
+      "name": "startAdvertisingAsBeacon",
+      "description": "Start advertising as a beacon.",
+      "params": [
+        {
+          "name": "uuid",
+          "description": "UUID string the beacon should advertise (mandatory).",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "major",
+          "description": "Major value to advertise (mandatory).",
+          "type": "number",
+          "optional": false
+        },
+        {
+          "name": "minor",
+          "description": "Minor value to advertise (mandatory).",
+          "type": "number",
+          "optional": false
+        },
+        {
+          "name": "regionId",
+          "description": "Identifier of the region used to advertise (mandatory).",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "stopAdvertisingAsBeacon",
+      "description": "Stop advertising as a beacon.",
+      "params": [
+      ]
+    },
+    {
+      "name": "enableAnalytics",
+      "description": "Enable analytics.",
+      "params": [
+        {
+          "name": "enable",
+          "description": "Boolean value to turn analytics on or off (mandatory).",
+          "type": "number",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "isAnalyticsEnabled",
+      "description": "Test if analytics is enabled.",
+      "params": [
+      ]
+    },
+    {
+      "name": "isAuthorized",
+      "description": "Test if App ID and App Token is set.",
+      "params": [
+      ]
+    },
+    {
+      "name": "setupAppIDAndAppToken",
+      "description": "Set App ID and App Token.",
+      "params": [
+        {
+          "name": "appID",
+          "description": "The App ID (mandatory).",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "appToken",
+          "description": "The App Token (mandatory).",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "startEstimoteBeaconDiscovery",
+      "description": "Start scanning for all nearby beacons using CoreBluetooth (no region object is used).Available on iOS.",
+      "params": [
+      ]
+    },
+    {
+      "name": "stopEstimoteBeaconDiscovery",
+      "description": "Stop CoreBluetooth scan. Available on iOS.",
+      "params": [
+      ]
+    },
+    {
+      "name": "startRangingBeaconsInRegion",
+      "description": "Start ranging beacons. Available on iOS and Android.",
+      "params": [
+        {
+          "name": "region",
+          "description": "Dictionary with region properties (mandatory).",
+          "type": "EstimoteBeaconRegion",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "stopRangingBeaconsInRegion",
+      "description": "Stop ranging beacons. Available on iOS and Android.",
+      "params": [
+        {
+          "name": "region",
+          "description": "Dictionary with region properties (mandatory).",
+          "type": "EstimoteBeaconRegion",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "startRangingSecureBeaconsInRegion",
+      "description": "Start ranging secure beacons. Available on iOS.This function has the same parameters/behaviour as<a href="undefined"><code>startRangingBeaconsInRegion</code></a>.To use secure beacons set the App ID and App Token using<a href="undefined"><code>setupAppIDAndAppToken</code></a>.",
+      "params": [
+      ]
+    },
+    {
+      "name": "stopRangingSecureBeaconsInRegion",
+      "description": "Stop ranging secure beacons. Available on iOS.This function has the same parameters/behaviour as<a href="undefined"><code>stopRangingBeaconsInRegion</code></a>.",
+      "params": [
+      ]
+    },
+    {
+      "name": "startMonitoringForRegion",
+      "description": "Start monitoring beacons. Available on iOS and Android.",
+      "params": [
+        {
+          "name": "region",
+          "description": "Dictionary with region properties (mandatory).",
+          "type": "EstimoteBeaconRegion",
+          "optional": false
+        },
+        {
+          "name": "notifyEntryStateOnDisplay",
+          "description": "Set to true to detect if youare inside a region when the user turns display on, see<a href="https://developer.apple.com/library/prerelease/ios/documentation/CoreLocation/Reference/CLBeaconRegion_class/index.html#//apple_ref/occ/instp/CLBeaconRegion/notifyEntryStateOnDisplay|iOS">documentation</a>for further details (iOS only).",
+          "type": "boolean",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "stopMonitoringForRegion",
+      "description": "Stop monitoring beacons. Available on iOS and Android.",
+      "params": [
+        {
+          "name": "region",
+          "description": "Dictionary with region properties (mandatory).",
+          "type": "EstimoteBeaconRegion",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "startSecureMonitoringForRegion",
+      "description": "Start monitoring secure beacons. Available on iOS.This function has the same parameters/behaviour asEstimoteBeacons.startMonitoringForRegion.To use secure beacons set the App ID and App Token using<a href="undefined"><code>setupAppIDAndAppToken</code></a>.",
+      "params": [
+        {
+          "name": "region",
+          "description": "Region",
+          "type": "EstimoteBeaconRegion",
+          "optional": false
+        },
+        {
+          "name": "notifyEntryStateOnDisplay",
+          "description": "",
+          "type": "boolean",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "stopSecureMonitoringForRegion",
+      "description": "Stop monitoring secure beacons. Available on iOS.This function has the same parameters/behaviour as<a href="undefined"><code>stopMonitoringForRegion</code></a>.",
+      "params": [
+        {
+          "name": "region",
+          "description": "Region",
+          "type": "EstimoteBeaconRegion",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "connectToBeacon",
+      "description": "Connect to Estimote Beacon. Available on Android.",
+      "params": [
+        {
+          "name": "beacon",
+          "description": "Beacon to connect to.",
+          "type": "Beacon",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "disconnectConnectedBeacon",
+      "description": "Disconnect from connected Estimote Beacon. Available on Android.",
+      "params": [
+      ]
+    },
+    {
+      "name": "writeConnectedProximityUUID",
+      "description": "Write proximity UUID to connected Estimote Beacon. Available on Android.",
+      "params": [
+      ]
+    },
+    {
+      "name": "writeConnectedMajor",
+      "description": "Write major to connected Estimote Beacon. Available on Android.",
+      "params": [
+      ]
+    },
+    {
+      "name": "writeConnectedMinor",
+      "description": "Write minor to connected Estimote Beacon. Available on Android.",
+      "params": [
+      ]
+    }
+  ]
+}

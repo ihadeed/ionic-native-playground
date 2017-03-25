@@ -1,0 +1,30 @@
+{
+  "name": "MyLocation",
+  "parent": "GoogleMaps",
+  "properties": [
+    {
+      "name": "latLng",
+      "description": "",
+      "type": "LatLng",
+      "optional":true
+    },
+    {
+      "name": "speed",
+      "description": "",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "time",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "bearing",
+      "description": "",
+      "type": "number",
+      "optional":true
+    }
+  ]
+}

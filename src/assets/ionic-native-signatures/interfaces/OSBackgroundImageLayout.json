@@ -1,0 +1,24 @@
+{
+  "name": "OSBackgroundImageLayout",
+  "parent": "OneSignal",
+  "properties": [
+    {
+      "name": "image",
+      "description": "Image URL or name used as the background image.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "titleTextColor",
+      "description": "Text color of the title on the notification. ARGB Format.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "bodyTextColor",
+      "description": "Text color of the body on the notification. ARGB Format.",
+      "type": "string",
+      "optional":false
+    }
+  ]
+}

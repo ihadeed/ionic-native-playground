@@ -1,0 +1,42 @@
+{
+  "name": "CreateThumbnailOptions",
+  "parent": "VideoEditor",
+  "properties": [
+    {
+      "name": "fileUri",
+      "description": "The path to the video on the device",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "outputFileName",
+      "description": "The file name for the JPEG image",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "atTime",
+      "description": "Location in the video to create the thumbnail (in seconds)",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "width",
+      "description": "Width of the thumbnail.",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "height",
+      "description": "Height of the thumbnail.",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "quality",
+      "description": "Quality of the thumbnail (between 1 and 100).",
+      "type": "number",
+      "optional":true
+    }
+  ]
+}

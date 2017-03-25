@@ -1,0 +1,66 @@
+{
+  "name": "AlipayOrder",
+  "parent": "Alipay",
+  "properties": [
+    {
+      "name": "app_id",
+      "description": "appId assigned by Alipay",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "method",
+      "description": "Api name.Should be: alipay.trade.app.pay",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "format",
+      "description": "Data formatDefault: \"JSON\"",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "charset",
+      "description": "CharsetPossible values: \"UTF-8\", \"GBK\"Default: \"UTF-8\"",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "sign_type",
+      "description": "Sign methodDefault: 'RSA'",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "sign",
+      "description": "Sign value. Should be got from server side.Default: 'RSA'",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "timestamp",
+      "description": "Timestamp, formated like \"yyyy-MM-dd HH:mm:ss\", e.g. 2014-07-24 03:07:50",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "version",
+      "description": "Api version. Fixed value '1.0'",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "notify_url",
+      "description": "Notify url.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "biz_content",
+      "description": "biz content. formated in json. see alipay doc for detail.",
+      "type": "string",
+      "optional":false
+    }
+  ]
+}

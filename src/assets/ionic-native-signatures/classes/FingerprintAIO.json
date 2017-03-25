@@ -1,0 +1,23 @@
+{
+  "name": "FingerprintAIO",
+  "members": [
+    {
+      "name": "isAvailable",
+      "description": "Check if fingerprint authentication is available",
+      "params": [
+      ]
+    },
+    {
+      "name": "show",
+      "description": "Show authentication dialogue",
+      "params": [
+        {
+          "name": "options",
+          "description": "options for platform specific fingerprint API",
+          "type": "FingerprintOptions",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

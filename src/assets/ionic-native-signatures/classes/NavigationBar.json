@@ -1,0 +1,23 @@
+{
+  "name": "NavigationBar",
+  "members": [
+    {
+      "name": "setUp",
+      "description": "hide automatically (or not) the navigation bar.",
+      "params": [
+        {
+          "name": "autohide",
+          "description": "",
+          "type": "boolean",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "hideNavigationBar",
+      "description": "Hide the navigation bar. ",
+      "params": [
+      ]
+    }
+  ]
+}

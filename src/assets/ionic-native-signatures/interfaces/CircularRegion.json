@@ -1,0 +1,30 @@
+{
+  "name": "CircularRegion",
+  "parent": "IBeacon",
+  "properties": [
+    {
+      "name": "identifier",
+      "description": "A unique identifier for this region.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "latitude",
+      "description": "The latitude of this region.",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "longitude",
+      "description": "The longitude of this region.",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "radius",
+      "description": "The radius of the geofence for this region.",
+      "type": "number",
+      "optional":false
+    }
+  ]
+}

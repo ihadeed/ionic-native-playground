@@ -1,0 +1,12 @@
+{
+  "name": "DirectoryReader",
+  "parent": "File",
+  "properties": [
+    {
+      "name": "readEntries",
+      "description": "Read the next block of entries from this directory.",
+      "type": "void",
+      "optional":false
+    }
+  ]
+}

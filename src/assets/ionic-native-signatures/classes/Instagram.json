@@ -1,0 +1,41 @@
+{
+  "name": "Instagram",
+  "members": [
+    {
+      "name": "isInstalled",
+      "description": "Detect if the Instagram application is installed on the device.",
+      "params": [
+      ]
+    },
+    {
+      "name": "share",
+      "description": "Share an image on InstagramNote: Instagram app stopped accepting pre-filled captions on both iOS and Android. As a work-around, the caption is copied to the clipboard. You have to inform your users to paste the caption.",
+      "params": [
+        {
+          "name": "canvasIdOrDataUrl",
+          "description": "The canvas element id or the dataURL of the image to share",
+          "type": "",
+          "optional": false
+        },
+        {
+          "name": "caption",
+          "description": "The caption of the image",
+          "type": "",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "shareAsset",
+      "description": "Share a library asset or video",
+      "params": [
+        {
+          "name": "assetLocalIdentifier",
+          "description": "A local fileURI",
+          "type": "",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

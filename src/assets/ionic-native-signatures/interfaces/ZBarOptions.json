@@ -1,0 +1,36 @@
+{
+  "name": "ZBarOptions",
+  "parent": "ZBar",
+  "properties": [
+    {
+      "name": "text_title",
+      "description": "A string representing the title text (Android only).Default: \"Scan QR Code\"",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "text_instructions",
+      "description": "A string representing the instruction text (Android only).Default: \"Please point your camera at the QR code.\"",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "camera",
+      "description": "A string defining the active camera when opening the scanner.Possible values: \"front\", \"back\"Default: \"back\"",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "flash",
+      "description": "A string defining the state of the flash.Possible values: \"on\", \"off\", \"auto\"Default: \"auto\"",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "drawSight",
+      "description": "A boolean to show or hide a line in the center of the scanner.Default: true",
+      "type": "boolean",
+      "optional":true
+    }
+  ]
+}

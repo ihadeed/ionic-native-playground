@@ -1,0 +1,24 @@
+{
+  "name": "StreamingVideoOptions",
+  "parent": "StreamingMedia",
+  "properties": [
+    {
+      "name": "successCallback",
+      "description": "",
+      "type": "Function",
+      "optional":true
+    },
+    {
+      "name": "errorCallback",
+      "description": "",
+      "type": "Function",
+      "optional":true
+    },
+    {
+      "name": "orientation",
+      "description": "",
+      "type": "string",
+      "optional":true
+    }
+  ]
+}

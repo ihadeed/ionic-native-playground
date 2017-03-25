@@ -1,0 +1,30 @@
+{
+  "name": "CameraPosition",
+  "parent": "GoogleMaps",
+  "properties": [
+    {
+      "name": "target",
+      "description": "",
+      "type": "LatLng | LatLngBounds | LatLng[]",
+      "optional":true
+    },
+    {
+      "name": "zoom",
+      "description": "",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "tilt",
+      "description": "",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "bearing",
+      "description": "",
+      "type": "number",
+      "optional":true
+    }
+  ]
+}

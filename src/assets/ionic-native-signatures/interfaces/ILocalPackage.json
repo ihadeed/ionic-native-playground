@@ -1,0 +1,24 @@
+{
+  "name": "ILocalPackage",
+  "parent": "CodePush",
+  "properties": [
+    {
+      "name": "localPath",
+      "description": "The local storage path where this package is located.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "isFirstRun",
+      "description": "Indicates if the current application run is the first one after the package was applied.",
+      "type": "boolean",
+      "optional":false
+    },
+    {
+      "name": "install",
+      "description": "Applies this package to the application. The application will be reloaded with this package and on every application launch this package will be loaded.On the first run after the update, the application will wait for a codePush.notifyApplicationReady() call. Once this call is made, the install operation is considered a success.Otherwise, the install operation will be marked as failed, and the application is reverted to its previous version on the next run.",
+      "type": "void",
+      "optional":false
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "BeaconRegion",
+  "parent": "IBeacon",
+  "properties": [
+    {
+      "name": "identifier",
+      "description": "A unique identifier for this region.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "uuid",
+      "description": "The the beacon identifier the device will \"watch\" for. Many beacons can share the same uuid.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "major",
+      "description": "The beacon's major identifier number. Optional, of nothing is suppliedthe plugin will treat it as a wildcard.",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "minor",
+      "description": "The beacon's minor identifier number. Optional, of nothing is suppliedthe plugin will treat it as a wildcard.",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "notifyEntryStateOnDisplay",
+      "description": "If set to true the device will scan for beacons and determine region state anytimethe device's screen is turned on or off. Useful for debugging.",
+      "type": "boolean",
+      "optional":true
+    }
+  ]
+}

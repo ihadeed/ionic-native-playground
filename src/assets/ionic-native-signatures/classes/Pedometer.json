@@ -1,0 +1,47 @@
+{
+  "name": "Pedometer",
+  "members": [
+    {
+      "name": "isStepCountingAvailable",
+      "description": "Checks if step counting is available. Only works on iOS.",
+      "params": [
+      ]
+    },
+    {
+      "name": "isDistanceAvailable",
+      "description": "Distance estimation indicates the ability to use step information to supply the approximate distance travelled by the user.This capability is not supported on all devices, even with iOS 8.Only works on iOS.",
+      "params": [
+      ]
+    },
+    {
+      "name": "isFloorCountingAvailable",
+      "description": "Floor counting indicates the ability to count the number of floors the user walks up or down using stairs.This capability is not supported on all devices, even with iOS 8.Only works on iOS.",
+      "params": [
+      ]
+    },
+    {
+      "name": "startPedometerUpdates",
+      "description": "Starts the delivery of recent pedestrian-related data to your Cordova app.When the app is suspended, the delivery of updates stops temporarily.Upon returning to foreground or background execution, the pedometer object begins updates again.",
+      "params": [
+      ]
+    },
+    {
+      "name": "stopPedometerUpdates",
+      "description": "Stops the delivery of recent pedestrian data updates to your Cordova app.",
+      "params": [
+      ]
+    },
+    {
+      "name": "queryData",
+      "description": "Retrieves the data between the specified start and end dates.The startDate and endDate options are required and can be constructed in any valid JavaScript way(e.g. new Date(2015, 4, 1, 15, 20, 00) is also valid, as is milliseconds).Only works on iOS.",
+      "params": [
+        {
+          "name": "options",
+          "description": "start date and en date where you want to get pedometer data",
+          "type": "any",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

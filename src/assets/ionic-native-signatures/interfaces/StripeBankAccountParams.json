@@ -1,0 +1,42 @@
+{
+  "name": "StripeBankAccountParams",
+  "parent": "Stripe",
+  "properties": [
+    {
+      "name": "routing_number",
+      "description": "Routing number.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "account_number",
+      "description": "Account number.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "currency",
+      "description": "Currency code. Example: `USD`.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "country",
+      "description": "Country code. Example: `US`.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "account_holder_name",
+      "description": "Account holder name.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "account_holder_type",
+      "description": "Account holder type. This can be `individual` or `company`.",
+      "type": "string",
+      "optional":true
+    }
+  ]
+}

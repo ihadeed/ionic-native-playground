@@ -1,0 +1,107 @@
+{
+  "name": "BackgroundMode",
+  "members": [
+    {
+      "name": "enable",
+      "description": "Enable the background mode.Once called, prevents the app from being paused while in background.",
+      "params": [
+      ]
+    },
+    {
+      "name": "disable",
+      "description": "Disable the background mode.Once the background mode has been disabled, the app will be paused when in background.",
+      "params": [
+      ]
+    },
+    {
+      "name": "isEnabled",
+      "description": "Checks if background mode is enabled or not.",
+      "params": [
+      ]
+    },
+    {
+      "name": "isActive",
+      "description": "Can be used to get the information if the background mode is active.",
+      "params": [
+      ]
+    },
+    {
+      "name": "setDefaults",
+      "description": "Override the default title, ticker and text.Available only for Android platform.",
+      "params": [
+        {
+          "name": "options",
+          "description": "List of option to configure. See table below",
+          "type": "Configure",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "configure",
+      "description": "Modify the displayed information.Available only for Android platform.",
+      "params": [
+        {
+          "name": "options",
+          "description": "Any options you want to update. See table below.",
+          "type": "Configure",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "on",
+      "description": "Listen for events that the plugin fires. Available events are `enable`, `disable`, `activate`, `deactivate` and `failure`.",
+      "params": [
+        {
+          "name": "event",
+          "description": "Event name",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "moveToBackground",
+      "description": "Android allows to programmatically move from foreground to background.",
+      "params": [
+      ]
+    },
+    {
+      "name": "moveToForeground",
+      "description": "Android allows to programmatically move from background to foreground.",
+      "params": [
+      ]
+    },
+    {
+      "name": "overrideBackButton",
+      "description": "Override the back button on Android to go to background instead of closing the app.",
+      "params": [
+      ]
+    },
+    {
+      "name": "excludeFromTaskList",
+      "description": "Exclude the app from the recent task list works on Android 5.0+.",
+      "params": [
+      ]
+    },
+    {
+      "name": "isScreenOff",
+      "description": "The method works async instead of isActive() or isEnabled().",
+      "params": [
+      ]
+    },
+    {
+      "name": "wakeUp",
+      "description": "Turn screen on",
+      "params": [
+      ]
+    },
+    {
+      "name": "unlock",
+      "description": "Turn screen on and show app even locked",
+      "params": [
+      ]
+    }
+  ]
+}

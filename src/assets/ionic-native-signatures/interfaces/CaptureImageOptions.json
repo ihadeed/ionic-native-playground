@@ -1,0 +1,12 @@
+{
+  "name": "CaptureImageOptions",
+  "parent": "MediaCapture",
+  "properties": [
+    {
+      "name": "limit",
+      "description": "Maximum number of images to capture. This limit is not supported on iOS, only one image will be taken per invocation.",
+      "type": "number",
+      "optional":true
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "name": "AdMobOptions",
+  "parent": "AdMob",
+  "properties": [
+    {
+      "name": "adId",
+      "description": "Banner ad ID",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "adSize",
+      "description": "Banner Ad Size, defaults to `SMART_BANNER`. IT can be: `SMART_BANNER`, `BANNER`, `MEDIUM_RECTANGLE`, `FULL_BANNER`, `LEADERBOARD`, `SKYSCRAPER`, or `CUSTOM`",
+      "type": "AdSize",
+      "optional":true
+    },
+    {
+      "name": "width",
+      "description": "Banner width, valid when `adSize` is set to `CUSTOM`",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "height",
+      "description": "Banner height, valid when `adSize` is set to `CUSTOM`",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "overlap",
+      "description": "Allow banner to overlap webview, or else it will push webview up or down to avoid overlap. Defaults to false.",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "position",
+      "description": "Position of banner ad. Defaults to `TOP_CENTER`. You can use the `AdMob.AD_POSITION` property to select other values.",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "x",
+      "description": "X in pixels. Valid when `position` is set to `POS_XY`",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "y",
+      "description": "Y in pixels. Valid when `position` is set to `POS_XY`",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "isTesting",
+      "description": "Set to true to receive test ad for testing purposes",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "autoShow",
+      "description": "Auto show interstitial ad when loaded. Set to false if hope to control the show timing with prepareInterstitial/showInterstitial",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "orientationRenew",
+      "description": "Re-create the banner on web view orientation change (not screen orientation), or else just move the banner. Default:true.",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "adExtras",
+      "description": "Set extra color style for Ad",
+      "type": "AdExtras",
+      "optional":true
+    }
+  ]
+}

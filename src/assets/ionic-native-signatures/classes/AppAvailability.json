@@ -1,0 +1,17 @@
+{
+  "name": "AppAvailability",
+  "members": [
+    {
+      "name": "check",
+      "description": "Checks if an app is available on device",
+      "params": [
+        {
+          "name": "app",
+          "description": "Package name on android, or URI scheme on iOS",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

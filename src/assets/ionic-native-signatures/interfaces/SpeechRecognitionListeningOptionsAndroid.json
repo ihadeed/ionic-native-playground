@@ -1,0 +1,30 @@
+{
+  "name": "SpeechRecognitionListeningOptionsAndroid",
+  "parent": "SpeechRecognition",
+  "properties": [
+    {
+      "name": "language",
+      "description": "used language for recognition (default `\"en-US\"`)",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "matches",
+      "description": "number of return matches (maximum number of matches)",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "prompt",
+      "description": "displayed prompt of listener popup window",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "showPopup",
+      "description": "display listener popup window with prompt (default `true`)",
+      "type": "boolean",
+      "optional":true
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "GeolocationOptions",
+  "parent": "Geolocation",
+  "properties": [
+    {
+      "name": "maximumAge",
+      "description": "Is a positive long value indicating the maximum age in milliseconds of apossible cached position that is acceptable to return. If set to 0, itmeans that the device cannot use a cached position and must attempt toretrieve the real current position. If set to Infinity the device mustreturn a cached position regardless of its age. Default: 0.",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "timeout",
+      "description": "Is a positive long value representing the maximum length of time(in milliseconds) the device is allowed to take in order to return aposition. The default value is Infinity, meaning that getCurrentPosition()won't return until the position is available.",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "enableHighAccuracy",
+      "description": "Indicates the application would like to receive the best possible results.If true and if the device is able to provide a more accurate position, itwill do so. Note that this can result in slower response times or increasedpower consumption (with a GPS chip on a mobile device for example). On theother hand, if false, the device can take the liberty to save resources byresponding more quickly and/or using less power. Default: false.",
+      "type": "boolean",
+      "optional":true
+    }
+  ]
+}

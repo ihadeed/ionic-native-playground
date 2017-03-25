@@ -1,0 +1,60 @@
+{
+  "name": "IBeaconDelegate",
+  "parent": "IBeacon",
+  "properties": [
+    {
+      "name": "didChangeAuthorizationStatus",
+      "description": "An observable that publishes information about the location permission authorization status.",
+      "type": "Observable&lt;string&gt;",
+      "optional":false
+    },
+    {
+      "name": "didDetermineStateForRegion",
+      "description": "An Observable that publishes event data to it's subscriberswhen the native layer is able to determine the device's state.This event is called when the phone begins starts monitoring,when requestStateForRegion is called, etc.",
+      "type": "Observable&lt;IBeaconPluginResult&gt;",
+      "optional":false
+    },
+    {
+      "name": "didEnterRegion",
+      "description": "An Observable that publishes event data to it's subscriberswhen the phone enters a region that it was asked to monitor.If the user has given the app Always-Location permission, this function will be called even when the app is not running on iOS.The app will run silently in the background for a small amount of time.",
+      "type": "Observable&lt;IBeaconPluginResult&gt;",
+      "optional":false
+    },
+    {
+      "name": "didExitRegion",
+      "description": "An Observable that publishes event data to it's subscriberswhen the phone exits a region that it was asked to monitor.If the user has given the app Always-Location permission, this function will be called even when the app is not running on iOS.The app will run silently in the background for a small amount of time.",
+      "type": "Observable&lt;IBeaconPluginResult&gt;",
+      "optional":false
+    },
+    {
+      "name": "didRangeBeaconsInRegion",
+      "description": "An Observable that publishes event data to it's subscribers each time that the device ranges beacons. Modern Android and iOS devices rangeaproximately once per second.",
+      "type": "Observable&lt;IBeaconPluginResult&gt;",
+      "optional":false
+    },
+    {
+      "name": "didStartMonitoringForRegion",
+      "description": "An Observable that publishes event data to it's subscribers when the device begins monitoring a region.",
+      "type": "Observable&lt;IBeaconPluginResult&gt;",
+      "optional":false
+    },
+    {
+      "name": "monitoringDidFailForRegionWithError",
+      "description": "An Observable that publishes event data to it's subscribers when the device fails to monitor a region.",
+      "type": "Observable&lt;IBeaconPluginResult&gt;",
+      "optional":false
+    },
+    {
+      "name": "peripheralManagerDidStartAdvertising",
+      "description": "An Observable that publishes event data to it's subscribers when the device begins advertising as an iBeacon.",
+      "type": "Observable&lt;IBeaconPluginResult&gt;",
+      "optional":false
+    },
+    {
+      "name": "peripheralManagerDidUpdateState",
+      "description": "An Observable that publishes event data to it's subscriberswhen the state of the peripheral manager's state updates.",
+      "type": "Observable&lt;IBeaconPluginResult&gt;",
+      "optional":false
+    }
+  ]
+}

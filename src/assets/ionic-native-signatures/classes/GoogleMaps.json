@@ -1,0 +1,29 @@
+{
+  "name": "GoogleMaps",
+  "members": [
+    {
+      "name": "isAvailable",
+      "description": "Checks if a map object has been created and is available.",
+      "params": [
+      ]
+    },
+    {
+      "name": "create",
+      "description": "Creates a new GoogleMap instance",
+      "params": [
+        {
+          "name": "element",
+          "description": "Element ID or reference to attach the map to",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "options",
+          "description": "Options",
+          "type": "any",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

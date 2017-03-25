@@ -1,0 +1,29 @@
+{
+  "name": "BrowserTab",
+  "members": [
+    {
+      "name": "isAvailable",
+      "description": "Check if BrowserTab option is available",
+      "params": [
+      ]
+    },
+    {
+      "name": "openUrl",
+      "description": "Opens the provided URL using a browser tab",
+      "params": [
+        {
+          "name": "url",
+          "description": "The URL you want to open",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "close",
+      "description": "Closes browser tab",
+      "params": [
+      ]
+    }
+  ]
+}

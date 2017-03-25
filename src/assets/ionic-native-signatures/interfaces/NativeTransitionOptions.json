@@ -1,0 +1,78 @@
+{
+  "name": "NativeTransitionOptions",
+  "parent": "NativePageTransitions",
+  "properties": [
+    {
+      "name": "direction",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "duration",
+      "description": "",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "slowdownfactor",
+      "description": "",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "slidePixels",
+      "description": "",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "iosdelay",
+      "description": "",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "androiddelay",
+      "description": "",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "winphonedelay",
+      "description": "",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "fixedPixelsTop",
+      "description": "",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "fixedPixelsBottom",
+      "description": "",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "action",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "origin",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "href",
+      "description": "",
+      "type": "string",
+      "optional":true
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "name": "Entry",
+  "parent": "File",
+  "properties": [
+    {
+      "name": "isFile",
+      "description": "Entry is a file.",
+      "type": "boolean",
+      "optional":false
+    },
+    {
+      "name": "isDirectory",
+      "description": "Entry is a directory.",
+      "type": "boolean",
+      "optional":false
+    },
+    {
+      "name": "name",
+      "description": "The name of the entry, excluding the path leading to it.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "fullPath",
+      "description": "The full absolute path from the root to the entry.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "filesystem",
+      "description": "The file system on which the entry resides.",
+      "type": "FileSystem",
+      "optional":false
+    },
+    {
+      "name": "nativeURL",
+      "description": "",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "getMetadata",
+      "description": "Look up metadata about this entry.",
+      "type": "void",
+      "optional":false
+    },
+    {
+      "name": "moveTo",
+      "description": "Move an entry to a different location on the file system. It is an error to try to:    move a directory inside itself or to any child at any depth;move an entry into its parent if a name different from its current one isn't provided;    move a file to a path occupied by a directory;    move a directory to a path occupied by a file;    move any element to a path occupied by a directory which is not empty.A move of a file on top of an existing file must attempt to delete and replace that file.A move of a directory on top of an existing empty directory must attempt to delete and replace that directory.",
+      "type": "void",
+      "optional":false
+    },
+    {
+      "name": "copyTo",
+      "description": "Copy an entry to a different location on the file system. It is an error to try to:    copy a directory inside itself or to any child at any depth;    copy an entry into its parent if a name different from its current one isn't provided;    copy a file to a path occupied by a directory;    copy a directory to a path occupied by a file;    copy any element to a path occupied by a directory which is not empty.    A copy of a file on top of an existing file must attempt to delete and replace that file.    A copy of a directory on top of an existing empty directory must attempt to delete and replace that directory.Directory copies are always recursive--that is, they copy all contents of the directory.",
+      "type": "void",
+      "optional":false
+    },
+    {
+      "name": "toURL",
+      "description": "Returns a URL that can be used as the src attribute of a <video> or <audio> tag.If that is not possible, construct a cdvfile:// URL.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "toInternalURL",
+      "description": "Return a URL that can be passed across the bridge to identify this entry.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "remove",
+      "description": "Deletes a file or directory. It is an error to attempt to delete a directory that is not empty. It is an error to attempt to delete the root directory of a filesystem.",
+      "type": "void",
+      "optional":false
+    },
+    {
+      "name": "getParent",
+      "description": "Look up the parent DirectoryEntry containing this Entry. If this Entry is the root of its filesystem, its parent is itself.",
+      "type": "void",
+      "optional":false
+    }
+  ]
+}

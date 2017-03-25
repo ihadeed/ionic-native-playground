@@ -1,0 +1,29 @@
+{
+  "name": "AppVersion",
+  "members": [
+    {
+      "name": "getAppName",
+      "description": "Returns the name of the app",
+      "params": [
+      ]
+    },
+    {
+      "name": "getPackageName",
+      "description": "Returns the package name of the app",
+      "params": [
+      ]
+    },
+    {
+      "name": "getVersionCode",
+      "description": "Returns the build identifier of the app",
+      "params": [
+      ]
+    },
+    {
+      "name": "getVersionNumber",
+      "description": "Returns the version of the app",
+      "params": [
+      ]
+    }
+  ]
+}

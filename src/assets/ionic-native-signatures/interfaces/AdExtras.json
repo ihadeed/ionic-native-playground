@@ -1,0 +1,42 @@
+{
+  "name": "AdExtras",
+  "parent": "AdMob",
+  "properties": [
+    {
+      "name": "color_bg",
+      "description": "",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "color_bg_top",
+      "description": "",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "color_border",
+      "description": "",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "color_link",
+      "description": "",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "color_text",
+      "description": "",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "color_url",
+      "description": "",
+      "type": "string",
+      "optional":false
+    }
+  ]
+}

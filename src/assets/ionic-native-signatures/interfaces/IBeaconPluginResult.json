@@ -1,0 +1,42 @@
+{
+  "name": "IBeaconPluginResult",
+  "parent": "IBeacon",
+  "properties": [
+    {
+      "name": "eventType",
+      "description": "The name of the delegate function that produced the PluginResult object.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "region",
+      "description": "The region that triggered the event.",
+      "type": "Region",
+      "optional":false
+    },
+    {
+      "name": "beacons",
+      "description": "An array of beacon objects",
+      "type": "Beacon[]",
+      "optional":false
+    },
+    {
+      "name": "authorizationStatus",
+      "description": "The status of the location permission for iOS.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "state",
+      "description": "The state of the phone in relation to the region. Inside/outside for example.",
+      "type": "&#39;CLRegionStateInside&#39; | &#39;CLRegionStateOutside&#39;",
+      "optional":false
+    },
+    {
+      "name": "error",
+      "description": "Error message, used only with monitoringDidFailForRegionWithError delegate.",
+      "type": "string",
+      "optional":false
+    }
+  ]
+}

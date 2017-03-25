@@ -1,0 +1,42 @@
+{
+  "name": "NativeGeocoderReverseResult",
+  "parent": "NativeGeocoder",
+  "properties": [
+    {
+      "name": "street",
+      "description": "The street.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "houseNumber",
+      "description": "The house number.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "postalCode",
+      "description": "The postal code.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "city",
+      "description": "The city.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "countryName",
+      "description": "The country name.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "countryCode",
+      "description": "The country code.",
+      "type": "string",
+      "optional":false
+    }
+  ]
+}

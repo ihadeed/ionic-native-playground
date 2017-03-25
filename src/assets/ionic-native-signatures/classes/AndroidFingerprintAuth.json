@@ -1,0 +1,41 @@
+{
+  "name": "AndroidFingerprintAuth",
+  "members": [
+    {
+      "name": "encrypt",
+      "description": "Opens a native dialog fragment to use the device hardware fingerprint scanner to authenticate against fingerprints registered for the device.",
+      "params": [
+        {
+          "name": "options",
+          "description": "Options",
+          "type": "AFAAuthOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "decrypt",
+      "description": "Opens a native dialog fragment to use the device hardware fingerprint scanner to authenticate against fingerprints registered for the device.",
+      "params": [
+        {
+          "name": "options",
+          "description": "Options",
+          "type": "AFAAuthOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "isAvailable",
+      "description": "Check if service is available",
+      "params": [
+      ]
+    },
+    {
+      "name": "delete",
+      "description": "Delete the cipher used for encryption and decryption by username",
+      "params": [
+      ]
+    }
+  ]
+}

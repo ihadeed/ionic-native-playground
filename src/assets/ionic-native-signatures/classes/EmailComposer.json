@@ -1,0 +1,53 @@
+{
+  "name": "EmailComposer",
+  "members": [
+    {
+      "name": "isAvailable",
+      "description": "Verifies if sending emails is supported on the device.",
+      "params": [
+        {
+          "name": "app",
+          "description": "App id or uri scheme.",
+          "type": "string",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "addAlias",
+      "description": "Adds a new mail app alias.",
+      "params": [
+        {
+          "name": "alias",
+          "description": "The alias name",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "packageName",
+          "description": "The package name",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "open",
+      "description": "Displays the email composer pre-filled with data.",
+      "params": [
+        {
+          "name": "options",
+          "description": "Email",
+          "type": "EmailComposerOptions",
+          "optional": false
+        },
+        {
+          "name": "scope",
+          "description": "Scope for the promise",
+          "type": "any",
+          "optional": true
+        }
+      ]
+    }
+  ]
+}

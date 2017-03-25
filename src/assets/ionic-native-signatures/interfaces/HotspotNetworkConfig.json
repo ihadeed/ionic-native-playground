@@ -1,0 +1,30 @@
+{
+  "name": "HotspotNetworkConfig",
+  "parent": "Hotspot",
+  "properties": [
+    {
+      "name": "deviceIPAddress",
+      "description": "Device IP Address",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "deviceMacAddress",
+      "description": "Device MAC Address",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "gatewayIPAddress",
+      "description": "Gateway IP Address",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "gatewayMacAddress",
+      "description": "Gateway MAC Address",
+      "type": "string",
+      "optional":false
+    }
+  ]
+}

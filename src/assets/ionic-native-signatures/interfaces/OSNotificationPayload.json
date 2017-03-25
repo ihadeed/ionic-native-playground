@@ -1,0 +1,120 @@
+{
+  "name": "OSNotificationPayload",
+  "parent": "OneSignal",
+  "properties": [
+    {
+      "name": "notificationID",
+      "description": "OneSignal notification UUID.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "title",
+      "description": "Title of the notification.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "body",
+      "description": "Body of the notification.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "additionalData",
+      "description": "Custom additional data that was sent with the notification. Set on the dashboard under Options > Additional Dataor with the 'data' field on the REST API.",
+      "type": "any",
+      "optional":true
+    },
+    {
+      "name": "smallIcon",
+      "description": "**ANDROID** - Small icon resource name set on the notification.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "largeIcon",
+      "description": "**ANDROID** - Large icon set on the notification.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "bigPicture",
+      "description": "**ANDROID** - Big picture image set on the notification.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "smallIconAccentColor",
+      "description": "**ANDROID** - Accent color shown around small notification icon on Android 5+ devices. ARGB format.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "launchUrl",
+      "description": "URL to open when opening the notification.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "sound",
+      "description": "Sound resource to play when the notification is shown.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "ledColor",
+      "description": "**ANDROID** - Devices that have a notification LED will blink in this color. ARGB format.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "lockScreenVisibility",
+      "description": "",
+      "type": "OSLockScreenVisibility",
+      "optional":true
+    },
+    {
+      "name": "groupKey",
+      "description": "**ANDROID** - Notifications with this same key will be grouped together as a single summary notification.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "groupMessage",
+      "description": "**ANDROID** - Summary text displayed in the summary notification.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "actionButtons",
+      "description": "List of action buttons on the notification.",
+      "type": "OSActionButton[]",
+      "optional":false
+    },
+    {
+      "name": "fromProjectNumber",
+      "description": "**ANDROID** - The Google project number the notification was sent under.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "backgroundImageLayout",
+      "description": "**ANDROID** - If a background image was set this object will be available.",
+      "type": "OSBackgroundImageLayout",
+      "optional":true
+    },
+    {
+      "name": "priority",
+      "description": "",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "rawPayload",
+      "description": "List of action buttons on the notification.",
+      "type": "string",
+      "optional":false
+    }
+  ]
+}

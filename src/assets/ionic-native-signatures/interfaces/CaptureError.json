@@ -1,0 +1,12 @@
+{
+  "name": "CaptureError",
+  "parent": "MediaCapture",
+  "properties": [
+    {
+      "name": "code",
+      "description": "",
+      "type": "string",
+      "optional":false
+    }
+  ]
+}

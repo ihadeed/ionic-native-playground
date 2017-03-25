@@ -1,0 +1,60 @@
+{
+  "name": "CalendarOptions",
+  "parent": "Calendar",
+  "properties": [
+    {
+      "name": "id",
+      "description": "Id",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "firstReminderMinutes",
+      "description": "",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "secondReminderMinutes",
+      "description": "",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "recurrence",
+      "description": "Recurrence. Can be set to `daily`, `weekly`, `monthly` or `yearly`",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "recurrenceInterval",
+      "description": "Recurrence interval. Valid only when `recurrence` option is set.",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "recurrenceEndDate",
+      "description": "Recurrence end date. Valid only when `recurrence` option is set.",
+      "type": "Date",
+      "optional":true
+    },
+    {
+      "name": "calendarName",
+      "description": "Calendar name. Ths is supported by `iOS` only.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "calendarId",
+      "description": "Calendar id",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "url",
+      "description": "URL",
+      "type": "string",
+      "optional":true
+    }
+  ]
+}

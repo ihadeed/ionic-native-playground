@@ -1,0 +1,24 @@
+{
+  "name": "SerialPermissionOptions",
+  "parent": "Serial",
+  "properties": [
+    {
+      "name": "vid",
+      "description": "",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "pid",
+      "description": "",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "driver",
+      "description": "",
+      "type": "string",
+      "optional":false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Base64ToGallery",
+  "members": [
+    {
+      "name": "base64ToGallery",
+      "description": "Converts a base64 string to an image file in the device gallery",
+      "params": [
+        {
+          "name": "data",
+          "description": "The actual base64 string that you want to save",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "options",
+          "description": "An object with properties: prefix: string, mediaScanner: boolean. Prefix will be prepended to the filename. If true, mediaScanner runs Media Scanner on Android and saves to Camera Roll on iOS; if false, saves to Library folder on iOS.",
+          "type": "any",
+          "optional": true
+        }
+      ]
+    }
+  ]
+}

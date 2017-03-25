@@ -1,0 +1,36 @@
+{
+  "name": "HotspotConnectionInfo",
+  "parent": "Hotspot",
+  "properties": [
+    {
+      "name": "SSID",
+      "description": "The service set identifier (SSID) of the current 802.11 network.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "BSSID",
+      "description": "The basic service set identifier (BSSID) of the current access point.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "linkSpeed",
+      "description": "The current link speed in Mbps",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "IPAddress",
+      "description": "The IP Address",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "networkID",
+      "description": "Each configured network has a unique small integer ID, used to identify the network when performing operations on the supplicant.",
+      "type": "string",
+      "optional":false
+    }
+  ]
+}

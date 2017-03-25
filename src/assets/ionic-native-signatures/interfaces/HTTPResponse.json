@@ -1,0 +1,30 @@
+{
+  "name": "HTTPResponse",
+  "parent": "HTTP",
+  "properties": [
+    {
+      "name": "status",
+      "description": "The status number of the response",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "data",
+      "description": "The data that is in the response. This property usually exists when a promise returned by a request method resolves.",
+      "type": "any",
+      "optional":true
+    },
+    {
+      "name": "headers",
+      "description": "The headers of the response",
+      "type": "any",
+      "optional":false
+    },
+    {
+      "name": "error",
+      "description": "Error response from the server. This property usually exists when a promise returned by a request method rejects.",
+      "type": "string",
+      "optional":true
+    }
+  ]
+}

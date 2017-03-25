@@ -1,0 +1,36 @@
+{
+  "name": "MediaFileData",
+  "parent": "MediaCapture",
+  "properties": [
+    {
+      "name": "codecs",
+      "description": "The actual format of the audio and video content.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "bitrate",
+      "description": "The average bitrate of the content. The value is zero for images.",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "height",
+      "description": "The height of the image or video in pixels. The value is zero for audio clips.",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "width",
+      "description": "The width of the image or video in pixels. The value is zero for audio clips.",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "duration",
+      "description": "The length of the video or sound clip in seconds. The value is zero for images.",
+      "type": "number",
+      "optional":false
+    }
+  ]
+}

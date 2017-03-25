@@ -1,0 +1,29 @@
+{
+  "name": "Geolocation",
+  "members": [
+    {
+      "name": "getCurrentPosition",
+      "description": "Get the device's current position.",
+      "params": [
+        {
+          "name": "options",
+          "description": "The [geolocation options](https://developer.mozilla.org/en-US/docs/Web/API/PositionOptions).",
+          "type": "GeolocationOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "watchPosition",
+      "description": "Watch the current device's position.  Clear the watch by unsubscribing fromObservable changes.```typescriptvar subscription = Geolocation.watchPosition()                              .filter((p) => p.coords !== undefined) //Filter Out Errors                              .subscribe(position => {  console.log(position.coords.longitude + ' ' + position.coords.latitude);});// To stop notificationssubscription.unsubscribe();```",
+      "params": [
+        {
+          "name": "options",
+          "description": "The [geolocation options](https://developer.mozilla.org/en-US/docs/Web/API/PositionOptions).",
+          "type": "GeolocationOptions",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

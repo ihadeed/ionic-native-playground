@@ -1,0 +1,12 @@
+{
+  "name": "DeviceMotionAccelerometerOptions",
+  "parent": "DeviceMotion",
+  "properties": [
+    {
+      "name": "frequency",
+      "description": "Requested period of calls to accelerometerSuccess with acceleration data in Milliseconds. Default: 10000",
+      "type": "number",
+      "optional":true
+    }
+  ]
+}

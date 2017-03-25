@@ -1,0 +1,167 @@
+{
+  "name": "BluetoothSerial",
+  "members": [
+    {
+      "name": "connect",
+      "description": "Connect to a Bluetooth device",
+      "params": [
+        {
+          "name": "macAddress_or_uuid",
+          "description": "Identifier of the remote device",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "connectInsecure",
+      "description": "Connect insecurely to a Bluetooth device",
+      "params": [
+        {
+          "name": "macAddress",
+          "description": "Identifier of the remote device",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "disconnect",
+      "description": "Disconnect from the connected device",
+      "params": [
+      ]
+    },
+    {
+      "name": "write",
+      "description": "Writes data to the serial port",
+      "params": [
+        {
+          "name": "data",
+          "description": "ArrayBuffer of data",
+          "type": "any",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "available",
+      "description": "Gets the number of bytes of data available",
+      "params": [
+      ]
+    },
+    {
+      "name": "read",
+      "description": "Reads data from the buffer",
+      "params": [
+      ]
+    },
+    {
+      "name": "readUntil",
+      "description": "Reads data from the buffer until it reaches a delimiter",
+      "params": [
+        {
+          "name": "delimiter",
+          "description": "string that you want to search until",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "subscribe",
+      "description": "Subscribe to be notified when data is received",
+      "params": [
+        {
+          "name": "delimiter",
+          "description": "the string you want to watch for",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "subscribeRawData",
+      "description": "Subscribe to be notified when data is received",
+      "params": [
+      ]
+    },
+    {
+      "name": "clear",
+      "description": "Clears data in buffer",
+      "params": [
+      ]
+    },
+    {
+      "name": "list",
+      "description": "Lists bonded devices",
+      "params": [
+      ]
+    },
+    {
+      "name": "isEnabled",
+      "description": "Reports if bluetooth is enabled",
+      "params": [
+      ]
+    },
+    {
+      "name": "isConnected",
+      "description": "Reports the connection status",
+      "params": [
+      ]
+    },
+    {
+      "name": "readRSSI",
+      "description": "Reads the RSSI from the connected peripheral",
+      "params": [
+      ]
+    },
+    {
+      "name": "showBluetoothSettings",
+      "description": "Show the Bluetooth settings on the device",
+      "params": [
+      ]
+    },
+    {
+      "name": "enable",
+      "description": "Enable Bluetooth on the device",
+      "params": [
+      ]
+    },
+    {
+      "name": "discoverUnpaired",
+      "description": "Discover unpaired devices",
+      "params": [
+      ]
+    },
+    {
+      "name": "setDeviceDiscoveredListener",
+      "description": "Subscribe to be notified on Bluetooth device discovery. Discovery process must be initiated with the `discoverUnpaired` function.",
+      "params": [
+      ]
+    },
+    {
+      "name": "setName",
+      "description": "Sets the human readable device name that is broadcasted to other devices",
+      "params": [
+        {
+          "name": "newName",
+          "description": "Desired name of device",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "setDiscoverable",
+      "description": "Makes the device discoverable by other devices",
+      "params": [
+        {
+          "name": "discoverableDuration",
+          "description": "Desired number of seconds device should be discoverable for",
+          "type": "number",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

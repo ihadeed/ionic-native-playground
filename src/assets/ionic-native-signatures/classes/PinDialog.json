@@ -1,0 +1,29 @@
+{
+  "name": "PinDialog",
+  "members": [
+    {
+      "name": "prompt",
+      "description": "Show pin dialog",
+      "params": [
+        {
+          "name": "message",
+          "description": "Message to show the user",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "title",
+          "description": "Title of the dialog",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "buttons",
+          "description": "Buttons to show",
+          "type": "string[]",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

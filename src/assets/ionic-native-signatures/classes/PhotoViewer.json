@@ -1,0 +1,29 @@
+{
+  "name": "PhotoViewer",
+  "members": [
+    {
+      "name": "show",
+      "description": "Shows an image in full screen",
+      "params": [
+        {
+          "name": "url",
+          "description": "URL or path to image",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "title",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "options",
+          "description": "",
+          "type": "any",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

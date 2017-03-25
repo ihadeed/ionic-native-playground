@@ -1,0 +1,84 @@
+{
+  "name": "BackgroundGeolocationResponse",
+  "parent": "BackgroundGeolocation",
+  "properties": [
+    {
+      "name": "locationId",
+      "description": "ID of location as stored in DB (or null)",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "serviceProvider",
+      "description": "Service provider",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "debug",
+      "description": "true if location recorded as part of debug",
+      "type": "boolean",
+      "optional":false
+    },
+    {
+      "name": "time",
+      "description": "UTC time of this fix, in milliseconds since January 1, 1970.",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "latitude",
+      "description": "latitude, in degrees.",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "longitude",
+      "description": "longitude, in degrees.",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "accuracy",
+      "description": "estimated accuracy of this location, in meters.",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "speed",
+      "description": "speed if it is available, in meters/second over ground.",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "altitude",
+      "description": "altitude if available, in meters above the WGS 84 reference ellipsoid.",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "altitudeAccuracy",
+      "description": "accuracy of the altitude if available.",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "bearing",
+      "description": "bearing, in degrees.",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "coords",
+      "description": "A Coordinates object defining the current location",
+      "type": "Coordinates",
+      "optional":false
+    },
+    {
+      "name": "timestamp",
+      "description": "A timestamp representing the time at which the location was retrieved.",
+      "type": "number",
+      "optional":false
+    }
+  ]
+}

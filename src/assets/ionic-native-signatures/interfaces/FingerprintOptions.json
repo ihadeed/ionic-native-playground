@@ -1,0 +1,24 @@
+{
+  "name": "FingerprintOptions",
+  "parent": "FingerprintAIO",
+  "properties": [
+    {
+      "name": "clientId",
+      "description": "Key for platform keychain",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "clientSecret",
+      "description": "Secret password. Only for android",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "disableBackup",
+      "description": "Disable 'use backup' option. Only for android (optional)",
+      "type": "boolean",
+      "optional":true
+    }
+  ]
+}

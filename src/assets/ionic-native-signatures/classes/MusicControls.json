@@ -1,0 +1,59 @@
+{
+  "name": "MusicControls",
+  "members": [
+    {
+      "name": "create",
+      "description": "Create the media controls",
+      "params": [
+        {
+          "name": "options",
+          "description": "",
+          "type": "MusicControlsOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "destroy",
+      "description": "Destroy the media controller",
+      "params": [
+      ]
+    },
+    {
+      "name": "subscribe",
+      "description": "Subscribe to the events of the media controller",
+      "params": [
+      ]
+    },
+    {
+      "name": "listen",
+      "description": "Start listening for events, this enables the Observable from the subscribe method",
+      "params": [
+      ]
+    },
+    {
+      "name": "updateIsPlaying",
+      "description": "Toggle play/pause:",
+      "params": [
+        {
+          "name": "isPlaying",
+          "description": "",
+          "type": "boolean",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "updateDismissable",
+      "description": "Toggle dismissable:",
+      "params": [
+        {
+          "name": "dismissable",
+          "description": "",
+          "type": "boolean",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

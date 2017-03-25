@@ -1,0 +1,35 @@
+{
+  "name": "NativeGeocoder",
+  "members": [
+    {
+      "name": "reverseGeocode",
+      "description": "Reverse geocode a given latitude and longitude to find location address",
+      "params": [
+        {
+          "name": "latitude",
+          "description": "The latitude",
+          "type": "number",
+          "optional": false
+        },
+        {
+          "name": "longitude",
+          "description": "The longitude",
+          "type": "number",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "forwardGeocode",
+      "description": "Forward geocode a given address to find coordinates",
+      "params": [
+        {
+          "name": "addressString",
+          "description": "The address to be geocoded",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "PushOptions",
+  "parent": "Push",
+  "properties": [
+    {
+      "name": "ios",
+      "description": "",
+      "type": "IOSPushOptions",
+      "optional":true
+    },
+    {
+      "name": "android",
+      "description": "",
+      "type": "AndroidPushOptions",
+      "optional":true
+    },
+    {
+      "name": "windows",
+      "description": "",
+      "type": "any",
+      "optional":true
+    }
+  ]
+}

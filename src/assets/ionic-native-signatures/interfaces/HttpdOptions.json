@@ -1,0 +1,24 @@
+{
+  "name": "HttpdOptions",
+  "parent": "Httpd",
+  "properties": [
+    {
+      "name": "www_root",
+      "description": "The public root directory for your web server. This path is relative to your app's www directory.Default is current directory.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "port",
+      "description": "The port number to use.Default is 8888",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "localhost_only",
+      "description": "Setting this option to false will allow remote access to your web server (over any IP).Default is false.",
+      "type": "boolean",
+      "optional":true
+    }
+  ]
+}

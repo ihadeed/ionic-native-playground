@@ -1,0 +1,149 @@
+{
+  "name": "PhotoLibrary",
+  "members": [
+    {
+      "name": "getLibrary",
+      "description": "Retrieves library items. Library item contains photo metadata like width and height, as well as photoURL and thumbnailURL.",
+      "params": [
+        {
+          "name": "options",
+          "description": "Optional, like thumbnail size and chunks settings.",
+          "type": "GetLibraryOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "requestAuthorization",
+      "description": "Asks user permission to access photo library.",
+      "params": [
+        {
+          "name": "options",
+          "description": "Optional, like whether only read access needed or read/write.",
+          "type": "RequestAuthorizationOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "getAlbums",
+      "description": "Returns list of photo albums on device.",
+      "params": [
+      ]
+    },
+    {
+      "name": "getThumbnailURL",
+      "description": "Provides means to request URL of thumbnail, with specified size or quality.",
+      "params": [
+        {
+          "name": "photo",
+          "description": "Id of photo, or LibraryItem.",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "options",
+          "description": "Options, like thumbnail size or quality.",
+          "type": "GetThumbnailOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "getPhotoURL",
+      "description": "Provides means to request photo URL by id.",
+      "params": [
+        {
+          "name": "photo",
+          "description": "Id or LibraryItem.",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "options",
+          "description": "Optional options.",
+          "type": "GetPhotoOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "getThumbnail",
+      "description": "Returns thumbnail as Blob.",
+      "params": [
+        {
+          "name": "photo",
+          "description": "Id or LibraryItem.",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "options",
+          "description": "Options, like thumbnail size or quality.",
+          "type": "GetThumbnailOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "getPhoto",
+      "description": "Returns photo as Blob.",
+      "params": [
+        {
+          "name": "photo",
+          "description": "Id or LibraryItem.",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "options",
+          "description": "Optional options.",
+          "type": "GetPhotoOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "saveImage",
+      "description": "Saves image to specified album. Album will be created if not exists.LibraryItem that represents saved image is returned.",
+      "params": [
+        {
+          "name": "url",
+          "description": "URL of a file, or DataURL.",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "album",
+          "description": "Name of an album or AlbumItem object.",
+          "type": "AlbumItem",
+          "optional": false
+        },
+        {
+          "name": "options",
+          "description": "Options, like thumbnail size for resulting LibraryItem.",
+          "type": "GetThumbnailOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "saveVideo",
+      "description": "Saves video to specified album. Album will be created if not exists.",
+      "params": [
+        {
+          "name": "url",
+          "description": "URL of a file, or DataURL.",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "album",
+          "description": "Name of an album or AlbumItem object.",
+          "type": "AlbumItem",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

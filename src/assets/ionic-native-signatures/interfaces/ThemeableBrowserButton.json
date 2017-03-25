@@ -1,0 +1,48 @@
+{
+  "name": "ThemeableBrowserButton",
+  "parent": "ThemeableBrowser",
+  "properties": [
+    {
+      "name": "wwwImage",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "image",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "wwwImagePressed",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "imagePressed",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "wwwImageDensity",
+      "description": "",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "align",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "event",
+      "description": "",
+      "type": "string",
+      "optional":true
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "name": "Mixpanel",
+  "members": [
+    {
+      "name": "alias",
+      "description": "",
+      "params": [
+        {
+          "name": "aliasId",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "originalId",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "distinctId",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "flush",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "identify",
+      "description": "",
+      "params": [
+        {
+          "name": "distinctId",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "init",
+      "description": "",
+      "params": [
+        {
+          "name": "token",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "registerSuperProperties",
+      "description": "",
+      "params": [
+        {
+          "name": "superProperties",
+          "description": "",
+          "type": "any",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "reset",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "track",
+      "description": "",
+      "params": [
+        {
+          "name": "eventName",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "eventProperties",
+          "description": "optional",
+          "type": "any",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "showSurvey",
+      "description": "",
+      "params": [
+      ]
+    }
+  ]
+}

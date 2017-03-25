@@ -1,0 +1,23 @@
+{
+  "name": "TwitterConnect",
+  "members": [
+    {
+      "name": "login",
+      "description": "Logs in",
+      "params": [
+      ]
+    },
+    {
+      "name": "logout",
+      "description": "Logs out",
+      "params": [
+      ]
+    },
+    {
+      "name": "showUser",
+      "description": "Returns user's profile information",
+      "params": [
+      ]
+    }
+  ]
+}

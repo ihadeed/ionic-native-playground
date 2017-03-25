@@ -1,0 +1,35 @@
+{
+  "name": "SMS",
+  "members": [
+    {
+      "name": "send",
+      "description": "Sends sms to a number",
+      "params": [
+        {
+          "name": "phoneNumber",
+          "description": "Phone number",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "message",
+          "description": "Message",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "options",
+          "description": "Options",
+          "type": "SmsOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "hasPermission",
+      "description": "This function lets you know if the app has permission to send SMS",
+      "params": [
+      ]
+    }
+  ]
+}

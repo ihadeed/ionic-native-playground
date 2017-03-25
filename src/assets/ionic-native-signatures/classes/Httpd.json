@@ -1,0 +1,29 @@
+{
+  "name": "Httpd",
+  "members": [
+    {
+      "name": "startServer",
+      "description": "Starts a web server.",
+      "params": [
+        {
+          "name": "options",
+          "description": "",
+          "type": "HttpdOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "getUrl",
+      "description": "Gets the URL of the running server",
+      "params": [
+      ]
+    },
+    {
+      "name": "getLocalPath",
+      "description": "Get the local path of the running webserver",
+      "params": [
+      ]
+    }
+  ]
+}

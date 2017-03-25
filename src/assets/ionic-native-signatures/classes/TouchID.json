@@ -1,0 +1,53 @@
+{
+  "name": "TouchID",
+  "members": [
+    {
+      "name": "isAvailable",
+      "description": "Checks Whether TouchID is available or not.",
+      "params": [
+      ]
+    },
+    {
+      "name": "verifyFingerprint",
+      "description": "Show TouchID dialog and wait for a fingerprint scan. If user taps 'Enter Password' button, brings up standard system passcode screen.",
+      "params": [
+        {
+          "name": "message",
+          "description": "The message to display",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "verifyFingerprintWithCustomPasswordFallback",
+      "description": "Show TouchID dialog and wait for a fingerprint scan. If user taps 'Enter Password' button, rejects with code '-3' (see above).",
+      "params": [
+        {
+          "name": "message",
+          "description": "The message to display",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "verifyFingerprintWithCustomPasswordFallbackAndEnterPasswordLabel",
+      "description": "Show TouchID dialog with custom 'Enter Password' message and wait for a fingerprint scan. If user taps 'Enter Password' button, rejects with code '-3' (see above).",
+      "params": [
+        {
+          "name": "message",
+          "description": "The message to display",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "enterPasswordLabel",
+          "description": "Custom text for the 'Enter Password' button",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "HeaderColor",
+  "members": [
+    {
+      "name": "tint",
+      "description": "Set a color to the task header",
+      "params": [
+        {
+          "name": "color",
+          "description": "The hex value of the color",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

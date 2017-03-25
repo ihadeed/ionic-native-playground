@@ -1,0 +1,60 @@
+{
+  "name": "AndroidPushOptions",
+  "parent": "Push",
+  "properties": [
+    {
+      "name": "senderID",
+      "description": "Maps to the project number in the Google Developer Console.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "icon",
+      "description": "The name of a drawable resource to use as the small-icon. The name shouldnot include the extension.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "iconColor",
+      "description": "Sets the background color of the small icon on Android 5.0 and greater.[Supported Formats](http://developer.android.com/intl/ru/reference/android/graphics/Color.html#parseColor(java.lang.String))",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "sound",
+      "description": "If true it plays the sound specified in the push data or the default systemsound.",
+      "type": "boolean | string",
+      "optional":true
+    },
+    {
+      "name": "vibrate",
+      "description": "If true the device vibrates on receipt of notification.",
+      "type": "boolean | string",
+      "optional":true
+    },
+    {
+      "name": "clearBadge",
+      "description": "If true the icon badge will be cleared on init and before push messages are processed.",
+      "type": "boolean | string",
+      "optional":true
+    },
+    {
+      "name": "clearNotifications",
+      "description": "If true the app clears all pending notifications when it is closed.",
+      "type": "boolean | string",
+      "optional":true
+    },
+    {
+      "name": "forceShow",
+      "description": "If true will always show a notification, even when the app is on theforeground.",
+      "type": "boolean | string",
+      "optional":true
+    },
+    {
+      "name": "topics",
+      "description": "If the array contains one or more strings each string will be used tosubscribe to a GcmPubSub topic.",
+      "type": "string[]",
+      "optional":true
+    }
+  ]
+}

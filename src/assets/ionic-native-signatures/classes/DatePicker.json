@@ -1,0 +1,17 @@
+{
+  "name": "DatePicker",
+  "members": [
+    {
+      "name": "show",
+      "description": "Shows the date and/or time picker dialog(s)",
+      "params": [
+        {
+          "name": "options",
+          "description": "Options for the date picker.",
+          "type": "DatePickerOptions",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

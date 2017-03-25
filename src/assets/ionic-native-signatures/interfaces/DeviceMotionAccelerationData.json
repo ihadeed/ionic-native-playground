@@ -1,0 +1,30 @@
+{
+  "name": "DeviceMotionAccelerationData",
+  "parent": "DeviceMotion",
+  "properties": [
+    {
+      "name": "x",
+      "description": "Amount of acceleration on the x-axis. (in m/s^2)",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "y",
+      "description": "Amount of acceleration on the y-axis. (in m/s^2)",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "z",
+      "description": "Amount of acceleration on the z-axis. (in m/s^2)",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "timestamp",
+      "description": "Creation timestamp in milliseconds.",
+      "type": "any",
+      "optional":false
+    }
+  ]
+}

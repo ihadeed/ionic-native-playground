@@ -1,0 +1,30 @@
+{
+  "name": "InAppBrowserEvent",
+  "parent": "InAppBrowser",
+  "properties": [
+    {
+      "name": "type",
+      "description": "the eventname, either loadstart, loadstop, loaderror, or exit.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "url",
+      "description": "the URL that was loaded.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "code",
+      "description": "the error code, only in the case of loaderror.",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "message",
+      "description": "the error message, only in the case of loaderror.",
+      "type": "string",
+      "optional":false
+    }
+  ]
+}

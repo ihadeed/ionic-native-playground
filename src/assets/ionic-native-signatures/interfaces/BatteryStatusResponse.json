@@ -1,0 +1,18 @@
+{
+  "name": "BatteryStatusResponse",
+  "parent": "BatteryStatus",
+  "properties": [
+    {
+      "name": "level",
+      "description": "The battery charge percentage",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "isPlugged",
+      "description": "A boolean that indicates whether the device is plugged in",
+      "type": "boolean",
+      "optional":false
+    }
+  ]
+}

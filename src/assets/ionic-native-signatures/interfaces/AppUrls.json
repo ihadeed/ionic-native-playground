@@ -1,0 +1,36 @@
+{
+  "name": "AppUrls",
+  "parent": "AppRate",
+  "properties": [
+    {
+      "name": "ios",
+      "description": "application id in AppStore",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "android",
+      "description": "application URL in GooglePlay",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "windows",
+      "description": "application URL in Windows Store",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "blackberry",
+      "description": "application URL in AppWorld",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "windows8",
+      "description": "application URL in WindowsStore",
+      "type": "string",
+      "optional":true
+    }
+  ]
+}

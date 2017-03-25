@@ -1,0 +1,36 @@
+{
+  "name": "AnimateCameraOptions",
+  "parent": "GoogleMaps",
+  "properties": [
+    {
+      "name": "target",
+      "description": "",
+      "type": "LatLng | Array&lt;Marker&gt; | LatLngBounds",
+      "optional":true
+    },
+    {
+      "name": "tilt",
+      "description": "",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "zoom",
+      "description": "",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "bearing",
+      "description": "",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "duration",
+      "description": "",
+      "type": "number",
+      "optional":true
+    }
+  ]
+}

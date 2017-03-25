@@ -1,0 +1,18 @@
+{
+  "name": "FileSystem",
+  "parent": "File",
+  "properties": [
+    {
+      "name": "name",
+      "description": "",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "root",
+      "description": "The root directory of the file system.",
+      "type": "DirectoryEntry",
+      "optional":false
+    }
+  ]
+}

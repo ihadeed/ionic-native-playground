@@ -1,0 +1,77 @@
+{
+  "name": "LinkedIn",
+  "members": [
+    {
+      "name": "login",
+      "description": "Login with the LinkedIn App",
+      "params": [
+        {
+          "name": "scopes",
+          "description": "Scopes to authorize",
+          "type": "string[]",
+          "optional": false
+        },
+        {
+          "name": "promptToInstall",
+          "description": "set to true to prompt the user to download the LinkedIn app if it's not installed",
+          "type": "boolean",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "logout",
+      "description": "Clears the current session",
+      "params": [
+      ]
+    },
+    {
+      "name": "getRequest",
+      "description": "Make a get request",
+      "params": [
+        {
+          "name": "path",
+          "description": "request path",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "postRequest",
+      "description": "Make a post request",
+      "params": [
+        {
+          "name": "path",
+          "description": "request path",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "body",
+          "description": "request body",
+          "type": "Object",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "openProfile",
+      "description": "Opens a member's profile",
+      "params": [
+        {
+          "name": "memberId",
+          "description": "Member id",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "hasActiveSession",
+      "description": "Checks if there is already an existing active session. This should be used to avoid unecessary login.",
+      "params": [
+      ]
+    }
+  ]
+}

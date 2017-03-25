@@ -1,0 +1,36 @@
+{
+  "name": "TrimOptions",
+  "parent": "VideoEditor",
+  "properties": [
+    {
+      "name": "fileUri",
+      "description": "Path to input video.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "trimStart",
+      "description": "Time to start trimming in seconds",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "trimEnd",
+      "description": "Time to end trimming in seconds",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "outputFileName",
+      "description": "Output file name",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "progress",
+      "description": "Progress on transcode. info will be a number from 0 to 100",
+      "type": "(info: any) =&gt; void",
+      "optional":true
+    }
+  ]
+}

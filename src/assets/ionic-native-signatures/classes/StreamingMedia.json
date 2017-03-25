@@ -1,0 +1,59 @@
+{
+  "name": "StreamingMedia",
+  "members": [
+    {
+      "name": "playVideo",
+      "description": "Streams a video",
+      "params": [
+        {
+          "name": "videoUrl",
+          "description": "The URL of the video",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "options",
+          "description": "Options",
+          "type": "StreamingVideoOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "playAudio",
+      "description": "Streams an audio",
+      "params": [
+        {
+          "name": "audioUrl",
+          "description": "The URL of the audio stream",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "options",
+          "description": "Options",
+          "type": "StreamingAudioOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "stopAudio",
+      "description": "Stops streaming audio",
+      "params": [
+      ]
+    },
+    {
+      "name": "pauseAudio",
+      "description": "Pauses streaming audio",
+      "params": [
+      ]
+    },
+    {
+      "name": "resumeAudio",
+      "description": "Resumes streaming audio",
+      "params": [
+      ]
+    }
+  ]
+}

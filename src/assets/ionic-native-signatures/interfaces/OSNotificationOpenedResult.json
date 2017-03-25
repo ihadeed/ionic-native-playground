@@ -1,0 +1,20 @@
+{
+  "name": "OSNotificationOpenedResult",
+  "parent": "OneSignal",
+  "properties": [
+    {
+      "name": "action",
+      "description": "",
+      "type": "*/
+    actionID?: string;
+  }",
+      "optional":false
+    },
+    {
+      "name": "notification",
+      "description": "",
+      "type": "OSNotification",
+      "optional":false
+    }
+  ]
+}

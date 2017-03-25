@@ -1,0 +1,59 @@
+{
+  "name": "Camera",
+  "members": [
+    {
+      "name": "DestinationType",
+      "description": "Constant for possible destination types",
+      "params": [
+      ]
+    },
+    {
+      "name": "EncodingType",
+      "description": "Convenience constant",
+      "params": [
+      ]
+    },
+    {
+      "name": "MediaType",
+      "description": "Convenience constant",
+      "params": [
+      ]
+    },
+    {
+      "name": "PictureSourceType",
+      "description": "Convenience constant",
+      "params": [
+      ]
+    },
+    {
+      "name": "PopoverArrowDirection",
+      "description": "Convenience constant",
+      "params": [
+      ]
+    },
+    {
+      "name": "Direction",
+      "description": "Convenience constant",
+      "params": [
+      ]
+    },
+    {
+      "name": "getPicture",
+      "description": "Take a picture or video, or load one from the library.",
+      "params": [
+        {
+          "name": "options",
+          "description": "Options that you want to pass to the camera. Encoding type, quality, etc. Platform-specific quirks are described in the [Cordova plugin docs](https://github.com/apache/cordova-plugin-camera#cameraoptions-errata-).",
+          "type": "CameraOptions",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "cleanup",
+      "description": "Remove intermediate image files that are kept in temporary storage after calling camera.getPicture.Applies only when the value of Camera.sourceType equals Camera.PictureSourceType.CAMERA and the Camera.destinationType equals Camera.DestinationType.FILE_URI.",
+      "params": [
+      ]
+    }
+  ]
+}

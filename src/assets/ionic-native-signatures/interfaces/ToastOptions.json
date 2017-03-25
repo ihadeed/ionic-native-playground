@@ -1,0 +1,49 @@
+{
+  "name": "ToastOptions",
+  "parent": "Toast",
+  "properties": [
+    {
+      "name": "message",
+      "description": "Message to display",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "duration",
+      "description": "Duration in ms to show",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "position",
+      "description": "Position",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "addPixelsY",
+      "description": "Add negative value to move it up a bit",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "data",
+      "description": "Pass JSON object to be sent back in success callback",
+      "type": "any",
+      "optional":true
+    },
+    {
+      "name": "styling",
+      "description": "Styling",
+      "type": "{
+    opacity?: number;
+    backgroundColor?: string;
+    textColor?: string;
+    cornerRadius?: number;
+    horizontalPadding?: number;
+    verticalPadding?: number;
+  }",
+      "optional":true
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "name": "VideoEditor",
+  "members": [
+    {
+      "name": "OptimizeForNetworkUse",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "OutputFileType",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "transcodeVideo",
+      "description": "Transcode a video",
+      "params": [
+        {
+          "name": "options",
+          "description": "Options",
+          "type": "TranscodeOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "trim",
+      "description": "Trim a video",
+      "params": [
+        {
+          "name": "options",
+          "description": "Options",
+          "type": "TrimOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "createThumbnail",
+      "description": "Create a JPEG thumbnail from a video",
+      "params": [
+        {
+          "name": "options",
+          "description": "Options",
+          "type": "CreateThumbnailOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "getVideoInfo",
+      "description": "Get info on a video (width, height, orientation, duration, size, & bitrate)",
+      "params": [
+        {
+          "name": "options",
+          "description": "Options",
+          "type": "GetVideoInfoOptions",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

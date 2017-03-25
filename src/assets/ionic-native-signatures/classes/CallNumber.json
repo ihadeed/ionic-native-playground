@@ -1,0 +1,23 @@
+{
+  "name": "CallNumber",
+  "members": [
+    {
+      "name": "callNumber",
+      "description": "Calls a phone number",
+      "params": [
+        {
+          "name": "numberToCall",
+          "description": "The phone number to call as a string",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "bypassAppChooser",
+          "description": "Set to true to bypass the app chooser and go directly to dialer",
+          "type": "boolean",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

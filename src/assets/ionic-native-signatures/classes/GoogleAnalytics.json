@@ -1,0 +1,335 @@
+{
+  "name": "GoogleAnalytics",
+  "members": [
+    {
+      "name": "startTrackerWithId",
+      "description": "In your 'deviceready' handler, set up your Analytics tracker.https://developers.google.com/analytics/devguides/collection/analyticsjs/",
+      "params": [
+        {
+          "name": "id",
+          "description": "Your Google Analytics Mobile App property",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "interval",
+          "description": "Optional dispatch period in seconds. Defaults to 30.",
+          "type": "number",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "setAllowIDFACollection",
+      "description": "Enabling Advertising Features in Google Analytics allows you to take advantage of Remarketing, Demographics & Interests reports, and more",
+      "params": [
+        {
+          "name": "allow",
+          "description": "",
+          "type": "boolean",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "setUserId",
+      "description": "Set a UserIdhttps://developers.google.com/analytics/devguides/collection/analyticsjs/user-id",
+      "params": [
+        {
+          "name": "id",
+          "description": "User ID",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "setAnonymizeIp",
+      "description": "Set a anonymize Ip address",
+      "params": [
+        {
+          "name": "anonymize",
+          "description": "Set to true to anonymize the IP Address",
+          "type": "boolean",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "setAppVersion",
+      "description": "Sets the app version",
+      "params": [
+        {
+          "name": "appVersion",
+          "description": "App version",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "setOptOut",
+      "description": "Set OptOut",
+      "params": [
+        {
+          "name": "optout",
+          "description": "",
+          "type": "boolean",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "debugMode",
+      "description": "Enable verbose logging",
+      "params": [
+      ]
+    },
+    {
+      "name": "trackMetric",
+      "description": "Track custom metric",
+      "params": [
+        {
+          "name": "key",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "value",
+          "description": "",
+          "type": "any",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "trackView",
+      "description": "Track a screenhttps://developers.google.com/analytics/devguides/collection/analyticsjs/screens",
+      "params": [
+        {
+          "name": "title",
+          "description": "Screen title",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "campaignUrl",
+          "description": "Campaign url for measuring referrals",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "newSession",
+          "description": "Set to true to create a new session",
+          "type": "boolean",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "addCustomDimension",
+      "description": "Add a Custom Dimensionhttps://developers.google.com/analytics/devguides/platform/customdimsmets",
+      "params": [
+        {
+          "name": "key",
+          "description": "",
+          "type": "number",
+          "optional": false
+        },
+        {
+          "name": "value",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "trackEvent",
+      "description": "Track an eventhttps://developers.google.com/analytics/devguides/collection/analyticsjs/events",
+      "params": [
+        {
+          "name": "category",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "action",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "label",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "value",
+          "description": "",
+          "type": "number",
+          "optional": false
+        },
+        {
+          "name": "newSession",
+          "description": "Set to true to create a new session",
+          "type": "boolean",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "trackException",
+      "description": "Track an exception",
+      "params": [
+        {
+          "name": "description",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "fatal",
+          "description": "",
+          "type": "boolean",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "trackTiming",
+      "description": "Track User Timing (App Speed)",
+      "params": [
+        {
+          "name": "category",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "intervalInMilliseconds",
+          "description": "",
+          "type": "number",
+          "optional": false
+        },
+        {
+          "name": "variable",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "label",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "addTransaction",
+      "description": "Add a Transaction (Ecommerce)https://developers.google.com/analytics/devguides/collection/analyticsjs/ecommerce#addTrans",
+      "params": [
+        {
+          "name": "id",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "affiliation",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "revenue",
+          "description": "",
+          "type": "number",
+          "optional": false
+        },
+        {
+          "name": "tax",
+          "description": "",
+          "type": "number",
+          "optional": false
+        },
+        {
+          "name": "shipping",
+          "description": "",
+          "type": "number",
+          "optional": false
+        },
+        {
+          "name": "currencyCode",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "addTransactionItem",
+      "description": "Add a Transaction Item (Ecommerce)https://developers.google.com/analytics/devguides/collection/analyticsjs/ecommerce#addItem",
+      "params": [
+        {
+          "name": "id",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "name",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "sku",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "category",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "price",
+          "description": "",
+          "type": "number",
+          "optional": false
+        },
+        {
+          "name": "quantity",
+          "description": "",
+          "type": "number",
+          "optional": false
+        },
+        {
+          "name": "currencyCode",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "enableUncaughtExceptionReporting",
+      "description": "Enable/disable automatic reporting of uncaught exceptions",
+      "params": [
+        {
+          "name": "shouldEnable",
+          "description": "",
+          "type": "boolean",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

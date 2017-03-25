@@ -1,0 +1,54 @@
+{
+  "name": "PinterestBoard",
+  "parent": "Pinterest",
+  "properties": [
+    {
+      "name": "id",
+      "description": "The unique string of numbers and letters that identifies the board on Pinterest.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "name",
+      "description": "The name of the board.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "url",
+      "description": "The link to the board.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "description",
+      "description": "The user-entered description of the board.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "creator",
+      "description": "The first and last name, ID and profile URL of the user who created the board.",
+      "type": "PinterestUser",
+      "optional":true
+    },
+    {
+      "name": "created_at",
+      "description": "The date the user created the board.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "counts",
+      "description": "The board’s stats, including how many Pins, followers, user's following and collaborators it has.",
+      "type": "any",
+      "optional":true
+    },
+    {
+      "name": "image",
+      "description": "The user’s profile image. The response returns the image’s URL, width and height.",
+      "type": "any",
+      "optional":true
+    }
+  ]
+}

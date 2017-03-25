@@ -1,0 +1,42 @@
+{
+  "name": "HotspotNetwork",
+  "parent": "Hotspot",
+  "properties": [
+    {
+      "name": "SSID",
+      "description": "Human readable network name",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "BSSID",
+      "description": "MAC Address of the access point",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "frequency",
+      "description": "The primary 20 MHz frequency (in MHz) of the channel over which the client is communicating with the access point.",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "level",
+      "description": "The detected signal level in dBm, also known as the RSSI.",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "timestamp",
+      "description": "Timestamp in microseconds (since boot) when this result was last seen.",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "capabilities",
+      "description": "Describes the authentication, key management, and encryption schemes supported by the access point.",
+      "type": "string",
+      "optional":false
+    }
+  ]
+}

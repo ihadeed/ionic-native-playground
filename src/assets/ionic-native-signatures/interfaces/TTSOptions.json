@@ -1,0 +1,24 @@
+{
+  "name": "TTSOptions",
+  "parent": "TextToSpeech",
+  "properties": [
+    {
+      "name": "text",
+      "description": "text to speak",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "locale",
+      "description": "a string like 'en-US', 'zh-CN', etc",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "rate",
+      "description": "speed rate, 0 ~ 1",
+      "type": "number",
+      "optional":true
+    }
+  ]
+}

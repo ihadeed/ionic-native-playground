@@ -1,0 +1,24 @@
+{
+  "name": "DeeplinkMatch",
+  "parent": "Deeplinks",
+  "properties": [
+    {
+      "name": "$route",
+      "description": "The route info for the matched route",
+      "type": "any",
+      "optional":false
+    },
+    {
+      "name": "$args",
+      "description": "Any arguments passed either through route parameters or GET parameters",
+      "type": "any",
+      "optional":false
+    },
+    {
+      "name": "$link",
+      "description": "The deeplink object processed from the plugin, along with anyany internal native data available as \"extras\" at the timethe route was matched (for example, Facebook sometimes adds extra data)",
+      "type": "any",
+      "optional":false
+    }
+  ]
+}

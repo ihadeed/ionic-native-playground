@@ -1,0 +1,156 @@
+{
+  "name": "BackgroundGeolocationConfig",
+  "parent": "BackgroundGeolocation",
+  "properties": [
+    {
+      "name": "desiredAccuracy",
+      "description": "Desired accuracy in meters. Possible values [0, 10, 100, 1000]. The lowerthe number, the more power devoted to GeoLocation resulting in higheraccuracy readings. 1000 results in lowest power drain and least accuratereadings. @see Apple docs (https://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManager_Class/index.html#//apple_ref/occ/instp/CLLocationManager/desiredAccuracy)",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "stationaryRadius",
+      "description": "Stationary radius in meters. When stopped, the minimum distance the devicemust move beyond the stationary location for aggressive background-trackingto engage.",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "debug",
+      "description": "When enabled, the plugin will emit sounds for life-cycle events ofbackground-geolocation! See debugging sounds table.",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "distanceFilter",
+      "description": "The minimum distance (measured in meters) a device must move horizontallybefore an update event is generated. @see Apple docs. (https://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManager_Class/CLLocationManager/CLLocationManager.html#//apple_ref/occ/instp/CLLocationManager/distanceFilter)",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "stopOnTerminate",
+      "description": "IOS, ANDROID ONLYEnable this in order to force a stop() when the application terminated(e.g. on iOS, double-tap home button, swipe away the app).oDefaults to true",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "startOnBoot",
+      "description": "ANDROID ONLY Start background service on device boot. Defaults to false",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "startForeground",
+      "description": "ANDROID ONLY If false location service will not be started in foreground and no notification will be shown.Defaults to true",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "interval",
+      "description": "ANDROID, WP8 ONLYWhen using BackgroundGeolocation.LocationProvider.ANDROID_DISTANCE_FILTER_PROVIDER:The minimum time interval between location updates in milliseconds.",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "notificationTitle",
+      "description": "ANDROID ONLYCustom notification title in the drawer.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "notificationText",
+      "description": "ANDROID ONLYCustom notification text in the drawer.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "notificationIconColor",
+      "description": "ANDROID ONLYThe accent color to use for notification. Eg. #4CAF50.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "notificationIconLarge",
+      "description": "ANDROID ONLY The filename of a custom notification icon. See android quirks. NOTE: Only available for API Level >=21.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "notificationIconSmall",
+      "description": "ANDROID ONLY The filename of a custom notification icon. See android quirks. NOTE: Only available for API Level >=21.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "locationProvider",
+      "description": "ANDROID ONLYSet location service provider @see wiki (https://github.com/mauron85/cordova-plugin-background-geolocation/wiki/Android-providers)",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "activityType",
+      "description": "IOS ONLY[AutomotiveNavigation, OtherNavigation, Fitness, Other] Presumably,this affects iOS GPS algorithm. @see Apple docs for more information(https://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManager_Class/CLLocationManager/CLLocationManager.html#//apple_ref/occ/instp/CLLocationManager/activityType)",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "pauseLocationUpdates",
+      "description": "IOS ONLY Pauses location updates when app is paused Defaults to true",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "url",
+      "description": "Server url where to send HTTP POST with recorded locations ",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "syncUrl",
+      "description": "Server url where to send fail to post locations ",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "syncThreshold",
+      "description": "Specifies how many previously failed locations will be sent to server at once Defaults to 100",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "httpHeaders",
+      "description": "Optional HTTP headers sent along in HTTP request",
+      "type": "any",
+      "optional":true
+    },
+    {
+      "name": "saveBatteryOnBackground",
+      "description": "IOS ONLY Switch to less accurate significant changes and region monitory when in background (default)Defaults to 100",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "maxLocations",
+      "description": "Limit maximum number of locations stored into db Defaults to 10000",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "fastestInterval",
+      "description": "ANDROID ONLY with BackgroundGeolocation.LocationProvider.ANDROID_ACTIVITY_PROVIDERFastest rate in milliseconds at which your app can handle location updates.",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "activitiesInterval",
+      "description": "ANDROID ONLY with BackgroundGeolocation.LocationProvider.ANDROID_ACTIVITY_PROVIDERRate in milliseconds at which activity recognition occurs. Larger values will result in fewer activity detections while improving battery life.",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "stopOnStillActivity",
+      "description": "ANDROID ONLY with BackgroundGeolocation.LocationProvider.ANDROID_ACTIVITY_PROVIDERstop() is forced, when the STILL activity is detected (default is true)",
+      "type": "boolean",
+      "optional":true
+    }
+  ]
+}

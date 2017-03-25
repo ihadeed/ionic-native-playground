@@ -1,0 +1,36 @@
+{
+  "name": "ThreeDeeTouchQuickAction",
+  "parent": "ThreeDeeTouch",
+  "properties": [
+    {
+      "name": "type",
+      "description": "Type that can be used in the onHomeIconPressed callback",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "title",
+      "description": "Title",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "subtitle",
+      "description": "Subtitle",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "iconType",
+      "description": "Icon type. Case insensitive",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "iconTemplate",
+      "description": "Icon template",
+      "type": "string",
+      "optional":true
+    }
+  ]
+}

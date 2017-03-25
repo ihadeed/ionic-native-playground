@@ -1,0 +1,30 @@
+{
+  "name": "IContactFindOptions",
+  "parent": "Contacts",
+  "properties": [
+    {
+      "name": "filter",
+      "description": "The search string used to find navigator.contacts.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "multiple",
+      "description": "Determines if the find operation returns multiple navigator.contacts. Defaults to false.",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "desiredFields",
+      "description": "Contact fields to be returned back. If specified, the resulting Contact object only features values for these fields.",
+      "type": "string[]",
+      "optional":true
+    },
+    {
+      "name": "hasPhoneNumber",
+      "description": "(Android only): Filters the search to only return contacts with a phone number informed.",
+      "type": "boolean",
+      "optional":true
+    }
+  ]
+}

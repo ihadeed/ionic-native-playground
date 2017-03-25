@@ -1,0 +1,167 @@
+{
+  "name": "BackgroundGeolocation",
+  "members": [
+    {
+      "name": "LocationProvider",
+      "description": "Set location service provider @see https://github.com/mauron85/cordova-plugin-background-geolocation/wiki/Android-providers Possible values: ANDROID_DISTANCE_FILTER_PROVIDER: 0,  ANDROID_ACTIVITY_PROVIDER: 1 ",
+      "params": [
+      ]
+    },
+    {
+      "name": "Accuracy",
+      "description": "Desired accuracy in meters. Possible values [0, 10, 100, 1000]. The lower the number, the more power devoted to GeoLocation resulting in higher accuracy readings. 1000 results in lowest power drain and least accurate readings. Possible values: HIGH: 0  MEDIUM: 10  LOW: 100  PASSIVE: 1000enum {number}",
+      "params": [
+      ]
+    },
+    {
+      "name": "Mode",
+      "description": "Used in the switchMode function Possible values: BACKGROUND: 0 FOREGROUND: 1 ",
+      "params": [
+      ]
+    },
+    {
+      "name": "configure",
+      "description": "Configure the plugin.",
+      "params": [
+        {
+          "name": "options",
+          "description": "options An object of type Config",
+          "type": "BackgroundGeolocationConfig",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "start",
+      "description": "Turn ON the background-geolocation system.The user will be tracked whenever they suspend the app.",
+      "params": [
+      ]
+    },
+    {
+      "name": "stop",
+      "description": "Turn OFF background-tracking",
+      "params": [
+      ]
+    },
+    {
+      "name": "finish",
+      "description": "Inform the native plugin that you're finished, the background-task may be completed",
+      "params": [
+      ]
+    },
+    {
+      "name": "changePace",
+      "description": "Force the plugin to enter \"moving\" or \"stationary\" state",
+      "params": [
+        {
+          "name": "isMoving",
+          "description": "",
+          "type": "boolean",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "setConfig",
+      "description": "Setup configuration",
+      "params": [
+        {
+          "name": "options",
+          "description": "",
+          "type": "BackgroundGeolocationConfig",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "getStationaryLocation",
+      "description": "Returns current stationaryLocation if available. null if not",
+      "params": [
+      ]
+    },
+    {
+      "name": "onStationary",
+      "description": "Add a stationary-region listener. Whenever the devices enters \"stationary-mode\",your #success callback will be executed with #location param containing #radius of region",
+      "params": [
+      ]
+    },
+    {
+      "name": "isLocationEnabled",
+      "description": "Check if location is enabled on the device",
+      "params": [
+      ]
+    },
+    {
+      "name": "showAppSettings",
+      "description": "Display app settings to change permissions",
+      "params": [
+      ]
+    },
+    {
+      "name": "showLocationSettings",
+      "description": "Display device location settings",
+      "params": [
+      ]
+    },
+    {
+      "name": "watchLocationMode",
+      "description": "Method can be used to detect user changes in location services settings.If user enable or disable location services then success callback will be executed.In case or error (SettingNotFoundException) fail callback will be executed.",
+      "params": [
+      ]
+    },
+    {
+      "name": "stopWatchingLocationMode",
+      "description": "Stop watching for location mode changes.",
+      "params": [
+      ]
+    },
+    {
+      "name": "getLocations",
+      "description": "Method will return all stored locations.Locations are stored when: - config.stopOnTerminate is false and main activity was killed   by the system or - option.debug is true",
+      "params": [
+      ]
+    },
+    {
+      "name": "getValidLocations",
+      "description": "Method will return locations, which has not been yet posted to server. NOTE: Locations does contain locationId. ",
+      "params": [
+      ]
+    },
+    {
+      "name": "deleteLocation",
+      "description": "Delete stored location by given locationId.",
+      "params": [
+        {
+          "name": "locationId",
+          "description": "",
+          "type": "number",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "deleteAllLocations",
+      "description": "Delete all stored locations.",
+      "params": [
+      ]
+    },
+    {
+      "name": "switchMode",
+      "description": "Normally plugin will handle switching between BACKGROUND and FOREGROUND mode itself.Calling switchMode you can override plugin behavior and force plugin to switch into other mode.In FOREGROUND mode plugin uses iOS local manager to receive locations and behavior is affected by option.desiredAccuracy and option.distanceFilter.In BACKGROUND mode plugin uses significant changes and region monitoring to receive locations and uses option.stationaryRadius only. BackgroundGeolocation.Mode.FOREGROUNDBackgroundGeolocation.Mode.BACKGROUND *",
+      "params": [
+        {
+          "name": "modeId",
+          "description": "",
+          "type": "number",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "getLogEntries",
+      "description": "Return all logged events. Useful for plugin debugging. Parameter limit limits number of returned entries. @see https://github.com/mauron85/cordova-plugin-background-geolocation/tree/v2.2.1#debugging for more information. @param limit {number} Limits the number of entries ",
+      "params": [
+      ]
+    }
+  ]
+}

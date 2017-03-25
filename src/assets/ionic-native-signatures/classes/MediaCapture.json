@@ -1,0 +1,71 @@
+{
+  "name": "MediaCapture",
+  "members": [
+    {
+      "name": "supportedImageModes",
+      "description": "The recording image sizes and formats supported by the device.",
+      "params": [
+      ]
+    },
+    {
+      "name": "supportedAudioModes",
+      "description": "The audio recording formats supported by the device.",
+      "params": [
+      ]
+    },
+    {
+      "name": "supportedVideoModes",
+      "description": "The recording video resolutions and formats supported by the device.",
+      "params": [
+      ]
+    },
+    {
+      "name": "captureAudio",
+      "description": "Start the audio recorder application and return information about captured audio clip files.",
+      "params": [
+        {
+          "name": "options",
+          "description": "",
+          "type": "",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "captureImage",
+      "description": "Start the camera application and return information about captured image files.",
+      "params": [
+        {
+          "name": "options",
+          "description": "",
+          "type": "",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "captureVideo",
+      "description": "Start the video recorder application and return information about captured video clip files.",
+      "params": [
+        {
+          "name": "options",
+          "description": "",
+          "type": "",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "onPendingCaptureResult",
+      "description": "is fired if the capture call is successful",
+      "params": [
+      ]
+    },
+    {
+      "name": "onPendingCaptureError",
+      "description": "is fired if the capture call is unsuccessful",
+      "params": [
+      ]
+    }
+  ]
+}

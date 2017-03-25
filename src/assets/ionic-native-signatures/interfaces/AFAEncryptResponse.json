@@ -1,0 +1,24 @@
+{
+  "name": "AFAEncryptResponse",
+  "parent": "AndroidFingerprintAuth",
+  "properties": [
+    {
+      "name": "withFingerprint",
+      "description": "Biometric authentication",
+      "type": "boolean",
+      "optional":false
+    },
+    {
+      "name": "withBackup",
+      "description": "Authentication using backup credential activity",
+      "type": "boolean",
+      "optional":false
+    },
+    {
+      "name": "token",
+      "description": "base64encoded string representation of user credentials",
+      "type": "string",
+      "optional":false
+    }
+  ]
+}

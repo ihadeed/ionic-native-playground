@@ -1,0 +1,29 @@
+{
+  "name": "ActionSheet",
+  "members": [
+    {
+      "name": "ANDROID_THEMES",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "show",
+      "description": "Show a native ActionSheet component. See below for options.",
+      "params": [
+        {
+          "name": "options",
+          "description": "Options See table below",
+          "type": "ActionSheetOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "hide",
+      "description": "Progamtically hide the native ActionSheet",
+      "params": [
+      ]
+    }
+  ]
+}

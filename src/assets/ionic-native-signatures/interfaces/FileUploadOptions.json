@@ -1,0 +1,48 @@
+{
+  "name": "FileUploadOptions",
+  "parent": "Transfer",
+  "properties": [
+    {
+      "name": "fileKey",
+      "description": "The name of the form element.Defaults to 'file'.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "fileName",
+      "description": "The file name to use when saving the file on the server.Defaults to 'image.jpg'.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "httpMethod",
+      "description": "The HTTP method to use - either PUT or POST.Defaults to POST.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "mimeType",
+      "description": "The mime type of the data to upload.Defaults to image/jpeg.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "params",
+      "description": "A set of optional key/value pairs to pass in the HTTP request.",
+      "type": "{ [s: string]: any; }",
+      "optional":true
+    },
+    {
+      "name": "chunkedMode",
+      "description": "Whether to upload the data in chunked streaming mode.Defaults to true.",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "headers",
+      "description": "A map of header name/header values. Use an array to specify morethan one value. On iOS, FireOS, and Android, if a header namedContent-Type is present, multipart form data will NOT be used.",
+      "type": "{ [s: string]: any; }",
+      "optional":true
+    }
+  ]
+}

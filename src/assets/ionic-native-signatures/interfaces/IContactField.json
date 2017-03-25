@@ -1,0 +1,24 @@
+{
+  "name": "IContactField",
+  "parent": "Contacts",
+  "properties": [
+    {
+      "name": "type",
+      "description": "A string that indicates what type of field this is, home for example.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "value",
+      "description": "The value of the field, such as a phone number or email address.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "pref",
+      "description": "Set to true if this ContactField contains the user's preferred value.",
+      "type": "boolean",
+      "optional":true
+    }
+  ]
+}

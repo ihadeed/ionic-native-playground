@@ -1,0 +1,53 @@
+{
+  "name": "Device",
+  "members": [
+    {
+      "name": "cordova",
+      "description": "Get the version of Cordova running on the device.",
+      "params": [
+      ]
+    },
+    {
+      "name": "model",
+      "description": "The device.model returns the name of the device's model or product. The value is setby the device manufacturer and may be different across versions of the same product.",
+      "params": [
+      ]
+    },
+    {
+      "name": "platform",
+      "description": "Get the device's operating system name.",
+      "params": [
+      ]
+    },
+    {
+      "name": "uuid",
+      "description": "Get the device's Universally Unique Identifier (UUID).",
+      "params": [
+      ]
+    },
+    {
+      "name": "version",
+      "description": "Get the operating system version.",
+      "params": [
+      ]
+    },
+    {
+      "name": "manufacturer",
+      "description": "Get the device's manufacturer.",
+      "params": [
+      ]
+    },
+    {
+      "name": "isVirtual",
+      "description": "Whether the device is running on a simulator.",
+      "params": [
+      ]
+    },
+    {
+      "name": "serial",
+      "description": "Get the device hardware serial number.",
+      "params": [
+      ]
+    }
+  ]
+}

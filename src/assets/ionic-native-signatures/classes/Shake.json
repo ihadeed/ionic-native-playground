@@ -1,0 +1,17 @@
+{
+  "name": "Shake",
+  "members": [
+    {
+      "name": "startWatch",
+      "description": "Watch for shake gesture",
+      "params": [
+        {
+          "name": "sensitivity",
+          "description": "Optional sensitivity parameter. Defaults to 40",
+          "type": "number",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

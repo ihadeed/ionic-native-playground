@@ -1,0 +1,24 @@
+{
+  "name": "WriteOptions",
+  "parent": "File",
+  "properties": [
+    {
+      "name": "replace",
+      "description": "",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "append",
+      "description": "",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "truncate",
+      "description": "",
+      "type": "number",
+      "optional":true
+    }
+  ]
+}

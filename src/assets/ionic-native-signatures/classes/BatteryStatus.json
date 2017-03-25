@@ -1,0 +1,23 @@
+{
+  "name": "BatteryStatus",
+  "members": [
+    {
+      "name": "onChange",
+      "description": "Watch the change in battery level",
+      "params": [
+      ]
+    },
+    {
+      "name": "onLow",
+      "description": "Watch when the battery level goes low",
+      "params": [
+      ]
+    },
+    {
+      "name": "onCritical",
+      "description": "Watch when the battery level goes to critial",
+      "params": [
+      ]
+    }
+  ]
+}

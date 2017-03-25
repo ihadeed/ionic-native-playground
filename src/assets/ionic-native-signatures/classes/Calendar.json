@@ -1,0 +1,569 @@
+{
+  "name": "Calendar",
+  "members": [
+    {
+      "name": "hasReadWritePermission",
+      "description": "This function checks if we have permission to read/write from/to the calendar.The promise will resolve with `true` when:- You're running on iOS, or- You're targetting API level lower than 23, or- You're using Android < 6, or- You've already granted permissionIf this returns false, you should call the `requestReadWritePermission` function",
+      "params": [
+      ]
+    },
+    {
+      "name": "hasReadPermission",
+      "description": "Check if we have read permission",
+      "params": [
+      ]
+    },
+    {
+      "name": "hasWritePermission",
+      "description": "Check if we have write permission",
+      "params": [
+      ]
+    },
+    {
+      "name": "requestWritePermission",
+      "description": "Request write permission",
+      "params": [
+      ]
+    },
+    {
+      "name": "requestReadPermission",
+      "description": "Request read permission",
+      "params": [
+      ]
+    },
+    {
+      "name": "requestReadWritePermission",
+      "description": "Requests read/write permissions",
+      "params": [
+      ]
+    },
+    {
+      "name": "createCalendar",
+      "description": "Create a calendar. (iOS only)",
+      "params": [
+        {
+          "name": "nameOrOptions",
+          "description": "either a string name or a options object. If string, provide the calendar name. IF an object, provide a calendar name as a string and a calendar color in hex format as a string",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "deleteCalendar",
+      "description": "Delete a calendar. (iOS only)",
+      "params": [
+        {
+          "name": "name",
+          "description": "Name of the calendar to delete.",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "getCalendarOptions",
+      "description": "Returns the default calendar options.",
+      "params": [
+      ]
+    },
+    {
+      "name": "createEvent",
+      "description": "Silently create an event.",
+      "params": [
+        {
+          "name": "title",
+          "description": "The event title",
+          "type": "string",
+          "optional": true
+        },
+        {
+          "name": "location",
+          "description": "The event location",
+          "type": "string",
+          "optional": true
+        },
+        {
+          "name": "notes",
+          "description": "The event notes",
+          "type": "string",
+          "optional": true
+        },
+        {
+          "name": "startDate",
+          "description": "The event start date",
+          "type": "Date",
+          "optional": true
+        },
+        {
+          "name": "endDate",
+          "description": "The event end date",
+          "type": "Date",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "createEventWithOptions",
+      "description": "Silently create an event with additional options.",
+      "params": [
+        {
+          "name": "title",
+          "description": "The event title",
+          "type": "string",
+          "optional": true
+        },
+        {
+          "name": "location",
+          "description": "The event location",
+          "type": "string",
+          "optional": true
+        },
+        {
+          "name": "notes",
+          "description": "The event notes",
+          "type": "string",
+          "optional": true
+        },
+        {
+          "name": "startDate",
+          "description": "The event start date",
+          "type": "Date",
+          "optional": true
+        },
+        {
+          "name": "endDate",
+          "description": "The event end date",
+          "type": "Date",
+          "optional": true
+        },
+        {
+          "name": "options",
+          "description": "Additional options, see `getCalendarOptions`",
+          "type": "CalendarOptions",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "createEventInteractively",
+      "description": "Interactively create an event.",
+      "params": [
+        {
+          "name": "title",
+          "description": "The event title",
+          "type": "string",
+          "optional": true
+        },
+        {
+          "name": "location",
+          "description": "The event location",
+          "type": "string",
+          "optional": true
+        },
+        {
+          "name": "notes",
+          "description": "The event notes",
+          "type": "string",
+          "optional": true
+        },
+        {
+          "name": "startDate",
+          "description": "The event start date",
+          "type": "Date",
+          "optional": true
+        },
+        {
+          "name": "endDate",
+          "description": "The event end date",
+          "type": "Date",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "createEventInteractivelyWithOptions",
+      "description": "Interactively create an event with additional options.",
+      "params": [
+        {
+          "name": "title",
+          "description": "The event title",
+          "type": "string",
+          "optional": true
+        },
+        {
+          "name": "location",
+          "description": "The event location",
+          "type": "string",
+          "optional": true
+        },
+        {
+          "name": "notes",
+          "description": "The event notes",
+          "type": "string",
+          "optional": true
+        },
+        {
+          "name": "startDate",
+          "description": "The event start date",
+          "type": "Date",
+          "optional": true
+        },
+        {
+          "name": "endDate",
+          "description": "The event end date",
+          "type": "Date",
+          "optional": true
+        },
+        {
+          "name": "options",
+          "description": "Additional options, see `getCalendarOptions`",
+          "type": "CalendarOptions",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "findEvent",
+      "description": "Find an event.",
+      "params": [
+        {
+          "name": "title",
+          "description": "The event title",
+          "type": "string",
+          "optional": true
+        },
+        {
+          "name": "location",
+          "description": "The event location",
+          "type": "string",
+          "optional": true
+        },
+        {
+          "name": "notes",
+          "description": "The event notes",
+          "type": "string",
+          "optional": true
+        },
+        {
+          "name": "startDate",
+          "description": "The event start date",
+          "type": "Date",
+          "optional": true
+        },
+        {
+          "name": "endDate",
+          "description": "The event end date",
+          "type": "Date",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "findEventWithOptions",
+      "description": "Find an event with additional options.",
+      "params": [
+        {
+          "name": "title",
+          "description": "The event title",
+          "type": "string",
+          "optional": true
+        },
+        {
+          "name": "location",
+          "description": "The event location",
+          "type": "string",
+          "optional": true
+        },
+        {
+          "name": "notes",
+          "description": "The event notes",
+          "type": "string",
+          "optional": true
+        },
+        {
+          "name": "startDate",
+          "description": "The event start date",
+          "type": "Date",
+          "optional": true
+        },
+        {
+          "name": "endDate",
+          "description": "The event end date",
+          "type": "Date",
+          "optional": true
+        },
+        {
+          "name": "options",
+          "description": "Additional options, see `getCalendarOptions`",
+          "type": "CalendarOptions",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "listEventsInRange",
+      "description": "Find a list of events within the specified date range. (Android only)",
+      "params": [
+        {
+          "name": "startDate",
+          "description": "The start date",
+          "type": "Date",
+          "optional": true
+        },
+        {
+          "name": "endDate",
+          "description": "The end date",
+          "type": "Date",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "listCalendars",
+      "description": "Get a list of all calendars.",
+      "params": [
+      ]
+    },
+    {
+      "name": "findAllEventsInNamedCalendar",
+      "description": "Get a list of all future events in the specified calendar. (iOS only)",
+      "params": [
+      ]
+    },
+    {
+      "name": "modifyEvent",
+      "description": "Modify an event. (iOS only)",
+      "params": [
+        {
+          "name": "title",
+          "description": "The event title",
+          "type": "string",
+          "optional": true
+        },
+        {
+          "name": "location",
+          "description": "The event location",
+          "type": "string",
+          "optional": true
+        },
+        {
+          "name": "notes",
+          "description": "The event notes",
+          "type": "string",
+          "optional": true
+        },
+        {
+          "name": "startDate",
+          "description": "The event start date",
+          "type": "Date",
+          "optional": true
+        },
+        {
+          "name": "endDate",
+          "description": "The event end date",
+          "type": "Date",
+          "optional": true
+        },
+        {
+          "name": "newTitle",
+          "description": "The new event title",
+          "type": "string",
+          "optional": true
+        },
+        {
+          "name": "newLocation",
+          "description": "The new event location",
+          "type": "string",
+          "optional": true
+        },
+        {
+          "name": "newNotes",
+          "description": "The new event notes",
+          "type": "string",
+          "optional": true
+        },
+        {
+          "name": "newStartDate",
+          "description": "The new event start date",
+          "type": "Date",
+          "optional": true
+        },
+        {
+          "name": "newEndDate",
+          "description": "The new event end date",
+          "type": "Date",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "modifyEventWithOptions",
+      "description": "Modify an event with additional options. (iOS only)",
+      "params": [
+        {
+          "name": "title",
+          "description": "The event title",
+          "type": "string",
+          "optional": true
+        },
+        {
+          "name": "location",
+          "description": "The event location",
+          "type": "string",
+          "optional": true
+        },
+        {
+          "name": "notes",
+          "description": "The event notes",
+          "type": "string",
+          "optional": true
+        },
+        {
+          "name": "startDate",
+          "description": "The event start date",
+          "type": "Date",
+          "optional": true
+        },
+        {
+          "name": "endDate",
+          "description": "The event end date",
+          "type": "Date",
+          "optional": true
+        },
+        {
+          "name": "newTitle",
+          "description": "The new event title",
+          "type": "string",
+          "optional": true
+        },
+        {
+          "name": "newLocation",
+          "description": "The new event location",
+          "type": "string",
+          "optional": true
+        },
+        {
+          "name": "newNotes",
+          "description": "The new event notes",
+          "type": "string",
+          "optional": true
+        },
+        {
+          "name": "newStartDate",
+          "description": "The new event start date",
+          "type": "Date",
+          "optional": true
+        },
+        {
+          "name": "newEndDate",
+          "description": "The new event end date",
+          "type": "Date",
+          "optional": true
+        },
+        {
+          "name": "filterOptions",
+          "description": "Event Options, see `getCalendarOptions`",
+          "type": "CalendarOptions",
+          "optional": true
+        },
+        {
+          "name": "newOptions",
+          "description": "New event options, see `getCalendarOptions`",
+          "type": "CalendarOptions",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "deleteEvent",
+      "description": "Delete an event.",
+      "params": [
+        {
+          "name": "title",
+          "description": "The event title",
+          "type": "string",
+          "optional": true
+        },
+        {
+          "name": "location",
+          "description": "The event location",
+          "type": "string",
+          "optional": true
+        },
+        {
+          "name": "notes",
+          "description": "The event notes",
+          "type": "string",
+          "optional": true
+        },
+        {
+          "name": "startDate",
+          "description": "The event start date",
+          "type": "Date",
+          "optional": true
+        },
+        {
+          "name": "endDate",
+          "description": "The event end date",
+          "type": "Date",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "deleteEventFromNamedCalendar",
+      "description": "Delete an event from the specified Calendar. (iOS only)",
+      "params": [
+        {
+          "name": "title",
+          "description": "The event title",
+          "type": "string",
+          "optional": true
+        },
+        {
+          "name": "location",
+          "description": "The event location",
+          "type": "string",
+          "optional": true
+        },
+        {
+          "name": "notes",
+          "description": "The event notes",
+          "type": "string",
+          "optional": true
+        },
+        {
+          "name": "startDate",
+          "description": "The event start date",
+          "type": "Date",
+          "optional": true
+        },
+        {
+          "name": "endDate",
+          "description": "The event end date",
+          "type": "Date",
+          "optional": true
+        },
+        {
+          "name": "calendarName",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "openCalendar",
+      "description": "Open the calendar at the specified date.",
+      "params": [
+        {
+          "name": "date",
+          "description": "The date you want to open the calendar on",
+          "type": "Date",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

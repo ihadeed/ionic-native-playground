@@ -1,0 +1,149 @@
+{
+  "name": "AdMob",
+  "members": [
+    {
+      "name": "AD_POSITION",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "createBanner",
+      "description": "Create a banner",
+      "params": [
+        {
+          "name": "adIdOrOptions",
+          "description": "Ad ID or Options",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "removeBanner",
+      "description": "Destroy the banner, remove it from screen.",
+      "params": [
+      ]
+    },
+    {
+      "name": "showBanner",
+      "description": "Show banner at position",
+      "params": [
+        {
+          "name": "position",
+          "description": "Position. Use `AdMob.AD_POSITION` to set values.",
+          "type": "number",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "showBannerAtXY",
+      "description": "Show banner at custom position",
+      "params": [
+        {
+          "name": "x",
+          "description": "Offset from screen left.",
+          "type": "number",
+          "optional": false
+        },
+        {
+          "name": "y",
+          "description": "Offset from screen top.",
+          "type": "number",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "hideBanner",
+      "description": "Hide the banner, remove it from screen, but can show it later",
+      "params": [
+      ]
+    },
+    {
+      "name": "prepareInterstitial",
+      "description": "Prepare interstitial banner",
+      "params": [
+        {
+          "name": "adIdOrOptions",
+          "description": "Ad ID or Options",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "showInterstitial",
+      "description": "Show interstitial ad when it's ready",
+      "params": [
+      ]
+    },
+    {
+      "name": "prepareRewardVideoAd",
+      "description": "Prepare a reward video ad",
+      "params": [
+        {
+          "name": "adIdOrOptions",
+          "description": "Ad ID or Options",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "showRewardVideoAd",
+      "description": "Show a reward video ad",
+      "params": [
+      ]
+    },
+    {
+      "name": "setOptions",
+      "description": "Sets the values for configuration and targeting",
+      "params": [
+        {
+          "name": "options",
+          "description": "Options",
+          "type": "AdMobOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "getAdSettings",
+      "description": "Get user ad settings",
+      "params": [
+      ]
+    },
+    {
+      "name": "onAdFailLoad",
+      "description": "Triggered when failed to receive Ad",
+      "params": [
+      ]
+    },
+    {
+      "name": "onAdLoaded",
+      "description": "Triggered when Ad received",
+      "params": [
+      ]
+    },
+    {
+      "name": "onAdPresent",
+      "description": "Triggered when Ad will be showed on screen",
+      "params": [
+      ]
+    },
+    {
+      "name": "onAdLeaveApp",
+      "description": "Triggered when user click the Ad, and will jump out of your App",
+      "params": [
+      ]
+    },
+    {
+      "name": "onAdDismiss",
+      "description": "Triggered when dismiss the Ad and back to your App",
+      "params": [
+      ]
+    }
+  ]
+}

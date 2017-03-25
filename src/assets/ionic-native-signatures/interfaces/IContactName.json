@@ -1,0 +1,42 @@
+{
+  "name": "IContactName",
+  "parent": "Contacts",
+  "properties": [
+    {
+      "name": "formatted",
+      "description": "The complete name of the contact.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "familyName",
+      "description": "The contact's family name.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "givenName",
+      "description": "The contact's given name.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "middleName",
+      "description": "The contact's middle name.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "honorificPrefix",
+      "description": "The contact's prefix (example Mr. or Dr.)",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "honorificSuffix",
+      "description": "The contact's suffix (example Esq.).",
+      "type": "string",
+      "optional":true
+    }
+  ]
+}

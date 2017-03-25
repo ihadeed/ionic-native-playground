@@ -1,0 +1,36 @@
+{
+  "name": "BackgroundModeConfiguration",
+  "parent": "BackgroundMode",
+  "properties": [
+    {
+      "name": "title",
+      "description": "Title of the background task",
+      "type": "String",
+      "optional":true
+    },
+    {
+      "name": "ticker",
+      "description": "The text that scrolls itself on statusbar",
+      "type": "String",
+      "optional":true
+    },
+    {
+      "name": "text",
+      "description": "Description of background task",
+      "type": "String",
+      "optional":true
+    },
+    {
+      "name": "silent",
+      "description": "if true plugin will not display a notification. Default is false.",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "resume",
+      "description": "By default the app will come to foreground when taping on the notification. If false, plugin wont come to foreground when tapped.",
+      "type": "boolean",
+      "optional":true
+    }
+  ]
+}

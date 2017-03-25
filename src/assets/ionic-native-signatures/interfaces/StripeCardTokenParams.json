@@ -1,0 +1,78 @@
+{
+  "name": "StripeCardTokenParams",
+  "parent": "Stripe",
+  "properties": [
+    {
+      "name": "number",
+      "description": "Card number",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "expMonth",
+      "description": "Expiry month",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "expYear",
+      "description": "Expiry year",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "cvc",
+      "description": "CVC / CVV",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "name",
+      "description": "Cardholder name",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "address_line1",
+      "description": "Address line 1",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "address_line2",
+      "description": "Address line 2",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "address_city",
+      "description": "City",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "address_state",
+      "description": "State / Province",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "address_country",
+      "description": "Country",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "postal_code",
+      "description": "Postal code / ZIP Code",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "currency",
+      "description": "3-letter ISO code for currency",
+      "type": "string",
+      "optional":true
+    }
+  ]
+}

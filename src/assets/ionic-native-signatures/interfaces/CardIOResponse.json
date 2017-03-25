@@ -1,0 +1,54 @@
+{
+  "name": "CardIOResponse",
+  "parent": "CardIO",
+  "properties": [
+    {
+      "name": "cardType",
+      "description": "Card type",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "redactedCardNumber",
+      "description": "Masked card number, showing only last 4 digits",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "cardNumber",
+      "description": "Full card number",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "expiryMonth",
+      "description": "Expiry month",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "expiryYear",
+      "description": "Expiry year",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "cvv",
+      "description": "CVV",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "postalCode",
+      "description": "Postal code",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "cardholderName",
+      "description": "Cardholder name",
+      "type": "string",
+      "optional":false
+    }
+  ]
+}

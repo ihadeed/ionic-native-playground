@@ -1,0 +1,23 @@
+{
+  "name": "Crop",
+  "members": [
+    {
+      "name": "crop",
+      "description": "Crops an image",
+      "params": [
+        {
+          "name": "pathToImage",
+          "description": "",
+          "type": "",
+          "optional": false
+        },
+        {
+          "name": "options",
+          "description": "",
+          "type": "",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "FileError",
+  "parent": "File",
+  "properties": [
+    {
+      "name": "code",
+      "description": "Error code",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "message",
+      "description": "",
+      "type": "string",
+      "optional":false
+    }
+  ]
+}

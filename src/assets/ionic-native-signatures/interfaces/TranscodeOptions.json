@@ -1,0 +1,96 @@
+{
+  "name": "TranscodeOptions",
+  "parent": "VideoEditor",
+  "properties": [
+    {
+      "name": "fileUri",
+      "description": "The path to the video on the device.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "outputFileName",
+      "description": "The file name for the transcoded video",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "outputFileType",
+      "description": "Instructions on how to encode the video. Android is always mp4",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "optimizeForNetworkUse",
+      "description": "Should the video be processed with quailty or speed in mind. iOS only",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "saveToLibrary",
+      "description": "Save the new video the library. Not supported in windows. Defaults to true",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "deleteInputFile",
+      "description": "Delete the original video. Android only. Defaults to false",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "maintainAspectRatio",
+      "description": "iOS only. Defaults to true",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "width",
+      "description": "Width of the result",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "height",
+      "description": "Height of the result",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "videoBitrate",
+      "description": "Bitrate in bits. Defaults to 1 megabit (1000000).",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "fps",
+      "description": "Frames per second of the result. Android only. Defaults to 24.",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "audioChannels",
+      "description": "Number of audio channels. iOS only. Defaults to 2.",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "audioSampleRate",
+      "description": "Sample rate for the audio. iOS only. Defaults to 44100",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "audioBitrate",
+      "description": "Sample rate for the audio. iOS only. Defaults to 128 kilobits (128000).",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "progress",
+      "description": "Not supported in windows, progress on the transcode. info will be a number from 0 to 100",
+      "type": "(info: number) =&gt; void",
+      "optional":true
+    }
+  ]
+}

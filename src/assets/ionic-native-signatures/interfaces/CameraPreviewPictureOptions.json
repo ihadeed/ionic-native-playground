@@ -1,0 +1,24 @@
+{
+  "name": "CameraPreviewPictureOptions",
+  "parent": "CameraPreview",
+  "properties": [
+    {
+      "name": "width",
+      "description": "The width in pixels, default 0",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "height",
+      "description": "The height in pixels, default 0",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "quality",
+      "description": "The picture quality, 0 - 100, default 85",
+      "type": "number",
+      "optional":true
+    }
+  ]
+}

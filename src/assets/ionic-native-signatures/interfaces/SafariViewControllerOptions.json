@@ -1,0 +1,54 @@
+{
+  "name": "SafariViewControllerOptions",
+  "parent": "SafariViewController",
+  "properties": [
+    {
+      "name": "url",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "hidden",
+      "description": "",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "toolbarColor",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "animated",
+      "description": "",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "showDefaultShareMenuItem",
+      "description": "",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "enterReaderModeIfAvailable",
+      "description": "",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "tintColor",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "transition",
+      "description": "",
+      "type": "string",
+      "optional":true
+    }
+  ]
+}

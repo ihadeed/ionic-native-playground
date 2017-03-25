@@ -1,0 +1,18 @@
+{
+  "name": "DeviceOrientationCompassOptions",
+  "parent": "DeviceOrientation",
+  "properties": [
+    {
+      "name": "frequency",
+      "description": "How often to retrieve the compass heading in milliseconds. (Number) (Default: 100)",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "filter",
+      "description": "The change in degrees required to initiate a watchHeading success callback. When this value is set, frequency is ignored. (Number)",
+      "type": "number",
+      "optional":true
+    }
+  ]
+}

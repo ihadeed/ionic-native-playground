@@ -1,0 +1,12 @@
+{
+  "name": "MyLocationOptions",
+  "parent": "GoogleMaps",
+  "properties": [
+    {
+      "name": "enableHighAccuracy",
+      "description": "",
+      "type": "boolean",
+      "optional":true
+    }
+  ]
+}

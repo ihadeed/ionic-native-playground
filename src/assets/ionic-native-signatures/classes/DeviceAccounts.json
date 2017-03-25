@@ -1,0 +1,29 @@
+{
+  "name": "DeviceAccounts",
+  "members": [
+    {
+      "name": "get",
+      "description": "Gets all accounts registered on the Android Device",
+      "params": [
+      ]
+    },
+    {
+      "name": "getByType",
+      "description": "Get all accounts registered on Android device for requested type",
+      "params": [
+      ]
+    },
+    {
+      "name": "getEmails",
+      "description": "Get all emails registered on Android device (accounts with 'com.google' type)",
+      "params": [
+      ]
+    },
+    {
+      "name": "getEmail",
+      "description": "Get the first email registered on Android device",
+      "params": [
+      ]
+    }
+  ]
+}

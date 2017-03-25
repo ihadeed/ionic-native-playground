@@ -1,0 +1,155 @@
+{
+  "name": "Globalization",
+  "members": [
+    {
+      "name": "getPreferredLanguage",
+      "description": "Returns the BCP-47 compliant language identifier tag to the successCallback with a properties object as a parameter. That object should have a value property with a String value.",
+      "params": [
+      ]
+    },
+    {
+      "name": "getLocaleName",
+      "description": "Returns the BCP 47 compliant locale identifier string to the successCallback with a properties object as a parameter.",
+      "params": [
+      ]
+    },
+    {
+      "name": "dateToString",
+      "description": "Converts date to string",
+      "params": [
+        {
+          "name": "date",
+          "description": "Date you wish to convert",
+          "type": "Date",
+          "optional": false
+        },
+        {
+          "name": "options",
+          "description": "Options for the converted date. Length, selector.",
+          "type": "",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "stringToDate",
+      "description": "Parses a date formatted as a string, according to the client's user preferences and calendar using the time zone of the client, and returns the corresponding date object.",
+      "params": [
+        {
+          "name": "dateString",
+          "description": "Date as a string to be converted",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "options",
+          "description": "Options for the converted date. Length, selector.",
+          "type": "",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "getDatePattern",
+      "description": "Returns a pattern string to format and parse dates according to the client's user preferences.",
+      "params": [
+        {
+          "name": "options",
+          "description": "Object with the format length and selector",
+          "type": "",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "getDateNames",
+      "description": "Returns an array of the names of the months or days of the week, depending on the client's user preferences and calendar.",
+      "params": [
+        {
+          "name": "options",
+          "description": "Object with type (narrow or wide) and item (month or days).",
+          "type": "",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "isDayLightSavingsTime",
+      "description": "Indicates whether daylight savings time is in effect for a given date using the client's time zone and calendar.",
+      "params": [
+        {
+          "name": "date",
+          "description": "Date to process",
+          "type": "data",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "getFirstDayOfWeek",
+      "description": "Returns the first day of the week according to the client's user preferences and calendar.",
+      "params": [
+      ]
+    },
+    {
+      "name": "numberToString",
+      "description": "Returns a number formatted as a string according to the client's user preferences.",
+      "params": [
+        {
+          "name": "numberToConvert",
+          "description": "The number to convert",
+          "type": "Number",
+          "optional": false
+        },
+        {
+          "name": "options",
+          "description": "Object with property `type` that can be set to: decimal, percent, or currency.",
+          "type": "Object",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "stringToNumber",
+      "description": "",
+      "params": [
+        {
+          "name": "stringToConvert",
+          "description": "String you want to conver to a number",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "options",
+          "description": "The type of number you want to return. Can be decimal, percent, or currency.",
+          "type": "",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "getNumberPattern",
+      "description": "Returns a pattern string to format and parse numbers according to the client's user preferences.",
+      "params": [
+        {
+          "name": "options",
+          "description": "Can be decimal, percent, or currency.",
+          "type": "",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "getCurrencyPattern",
+      "description": "Returns a pattern string to format and parse currency values according to the client's user preferences and ISO 4217 currency code.",
+      "params": [
+        {
+          "name": "currencyCode",
+          "description": "Currency Code.A",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

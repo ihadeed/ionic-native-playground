@@ -1,0 +1,24 @@
+{
+  "name": "SpeechRecognitionListeningOptionsIOS",
+  "parent": "SpeechRecognition",
+  "properties": [
+    {
+      "name": "language",
+      "description": "used language for recognition (default `\"en-US\"`)",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "matches",
+      "description": "umber of return matches (default `5`)",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "showPartial",
+      "description": "Allow partial results to be returned (default `false`)",
+      "type": "boolean",
+      "optional":true
+    }
+  ]
+}

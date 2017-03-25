@@ -1,0 +1,30 @@
+{
+  "name": "ThreeDeeTouchForceTouch",
+  "parent": "ThreeDeeTouch",
+  "properties": [
+    {
+      "name": "force",
+      "description": "Touch force",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "timestamp",
+      "description": "Timestamp of action",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "x",
+      "description": "X coordinate of action",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "y",
+      "description": "Y coordinate of action",
+      "type": "number",
+      "optional":false
+    }
+  ]
+}

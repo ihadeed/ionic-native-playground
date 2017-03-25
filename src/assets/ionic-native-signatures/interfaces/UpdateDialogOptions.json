@@ -1,0 +1,54 @@
+{
+  "name": "UpdateDialogOptions",
+  "parent": "CodePush",
+  "properties": [
+    {
+      "name": "mandatoryUpdateMessage",
+      "description": "If a mandatory update is available and this option is set, the message will be displayed to the user in an alert dialog before downloading and installing the update.The user will not be able to cancel the operation, since the update is mandatory.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "optionalUpdateMessage",
+      "description": "If an optional update is available and this option is set, the message will be displayed to the user in a confirmation dialog.If the user confirms the update, it will be downloaded and installed. Otherwise, the update update is not downloaded.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "updateTitle",
+      "description": "The title of the dialog box used for interacting with the user in case of a mandatory or optional update.This title will only be used if at least one of mandatoryUpdateMessage or optionalUpdateMessage options are set.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "optionalInstallButtonLabel",
+      "description": "The label of the confirmation button in case of an optional update.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "optionalIgnoreButtonLabel",
+      "description": "The label of the cancel button in case of an optional update.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "mandatoryContinueButtonLabel",
+      "description": "The label of the continue button in case of a mandatory update.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "appendReleaseDescription",
+      "description": "Flag indicating if the update description provided by the CodePush server should be displayed in the dialog box appended to the update message.",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "descriptionPrefix",
+      "description": "Optional prefix to add to the release description.",
+      "type": "string",
+      "optional":true
+    }
+  ]
+}

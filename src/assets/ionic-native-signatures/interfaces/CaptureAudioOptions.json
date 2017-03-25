@@ -1,0 +1,18 @@
+{
+  "name": "CaptureAudioOptions",
+  "parent": "MediaCapture",
+  "properties": [
+    {
+      "name": "limit",
+      "description": "Maximum number of audio clips. Defaults to 1.On iOS you can only record one file.",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "duration",
+      "description": "Maximum duration of an audio sound clip, in seconds. This does not work on Android devices.",
+      "type": "number",
+      "optional":true
+    }
+  ]
+}

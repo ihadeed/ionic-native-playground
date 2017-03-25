@@ -1,0 +1,36 @@
+{
+  "name": "FileWriter",
+  "parent": "File",
+  "properties": [
+    {
+      "name": "position",
+      "description": "The byte offset at which the next write to the file will occur. This always less or equal than length.A newly-created FileWriter will have position set to 0.",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "length",
+      "description": "The length of the file. If the user does not have read access to the file,this will be the highest byte offset at which the user has written.",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "write",
+      "description": "Write the supplied data to the file at position.",
+      "type": "void",
+      "optional":false
+    },
+    {
+      "name": "seek",
+      "description": "The file position at which the next write will occur.",
+      "type": "void",
+      "optional":false
+    },
+    {
+      "name": "truncate",
+      "description": "Changes the length of the file to that specified. If shortening the file, data beyond the new lengthwill be discarded. If extending the file, the existing data will be zero-padded up to the new length.",
+      "type": "void",
+      "optional":false
+    }
+  ]
+}

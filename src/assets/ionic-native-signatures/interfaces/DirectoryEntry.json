@@ -1,0 +1,30 @@
+{
+  "name": "DirectoryEntry",
+  "parent": "File",
+  "properties": [
+    {
+      "name": "createReader",
+      "description": "Creates a new DirectoryReader to read Entries from this Directory.",
+      "type": "DirectoryReader",
+      "optional":false
+    },
+    {
+      "name": "getFile",
+      "description": "Creates or looks up a file.",
+      "type": "void",
+      "optional":false
+    },
+    {
+      "name": "getDirectory",
+      "description": "Creates or looks up a directory.",
+      "type": "void",
+      "optional":false
+    },
+    {
+      "name": "removeRecursively",
+      "description": "Deletes a directory and all of its contents, if any. In the event of an error (e.g. tryingto delete a directory that contains a file that cannot be removed), some of the contentsof the directory may be deleted. It is an error to attempt to delete the root directory of a filesystem.",
+      "type": "void",
+      "optional":false
+    }
+  ]
+}

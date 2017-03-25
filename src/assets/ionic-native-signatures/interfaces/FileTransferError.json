@@ -1,0 +1,42 @@
+{
+  "name": "FileTransferError",
+  "parent": "Transfer",
+  "properties": [
+    {
+      "name": "code",
+      "description": "One of the predefined error codes listed below.",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "source",
+      "description": "URL to the source.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "target",
+      "description": "URL to the target.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "http_status",
+      "description": "HTTP status code. This attribute is only available when a responsecode is received from the HTTP connection.",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "body",
+      "description": "Response body. This attribute is only available when a response is received from the HTTP connection.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "exception",
+      "description": "Either e.getMessage or e.toString.",
+      "type": "string",
+      "optional":false
+    }
+  ]
+}

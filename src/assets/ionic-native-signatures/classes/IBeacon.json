@@ -1,0 +1,269 @@
+{
+  "name": "IBeacon",
+  "members": [
+    {
+      "name": "Delegate",
+      "description": "Instances of this class are delegates between the <a href="LocationManager">LocationManager</a> andthe code that consumes the messages generated on in the native layer.",
+      "params": [
+      ]
+    },
+    {
+      "name": "BeaconRegion",
+      "description": "Creates a new BeaconRegion",
+      "params": [
+        {
+          "name": "identifier",
+          "description": "@see {CLRegion}",
+          "type": "String",
+          "optional": false
+        },
+        {
+          "name": "uuid",
+          "description": "The proximity ID of the beacon being targeted.This value must not be blank nor invalid as a UUID.",
+          "type": "String",
+          "optional": false
+        },
+        {
+          "name": "major",
+          "description": "The major value that you use to identify one or more beacons.",
+          "type": "Number",
+          "optional": false
+        },
+        {
+          "name": "minor",
+          "description": "The minor value that you use to identify a specific beacon.",
+          "type": "Number",
+          "optional": false
+        },
+        {
+          "name": "notifyEntryStateOnDisplay",
+          "description": "",
+          "type": "BOOL",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "getDelegate",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "setDelegate",
+      "description": "",
+      "params": [
+        {
+          "name": "delegate",
+          "description": "An instance of a delegate to register with the native layer.",
+          "type": "IBeaconDelegate",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "onDomDelegateReady",
+      "description": "Signals the native layer that the client side is ready to consume messages.Readiness here means that it has a {IBeaconDelegate} set by the consumer javascriptcode.The {LocationManager.setDelegate()} will implicitly call this method as well,therefore the only case when you have to call this manually is if you don'twish to specify a {IBeaconDelegate} of yours.The purpose of this signaling mechanism is to make the events work when theapp is being woken up by the Operating System to give it a chance to handleregion monitoring events for example.If you don't set a {IBeaconDelegate} and don't call this method manually, an errormessage get emitted in the native runtime and the DOM as well after a certainperiod of time.",
+      "params": [
+      ]
+    },
+    {
+      "name": "isBluetoothEnabled",
+      "description": "Determines if bluetooth is switched on, according to the native layer.",
+      "params": [
+      ]
+    },
+    {
+      "name": "enableBluetooth",
+      "description": "Enables Bluetooth using the native Layer. (ANDROID ONLY)",
+      "params": [
+      ]
+    },
+    {
+      "name": "disableBluetooth",
+      "description": "Disables Bluetooth using the native Layer. (ANDROID ONLY)",
+      "params": [
+      ]
+    },
+    {
+      "name": "startMonitoringForRegion",
+      "description": "Start monitoring the specified region.If a region of the same type with the same identifier is already beingmonitored for this application,it will be removed from monitoring. For circular regions, the regionmonitoring service will prioritizeregions by their size, favoring smaller regions over larger regions.This is done asynchronously and may not be immediately reflected in monitoredRegions.",
+      "params": [
+        {
+          "name": "region",
+          "description": "An instance of {Region} which will be monitoredby the operating system.",
+          "type": "Region",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "stopMonitoringForRegion",
+      "description": "Stop monitoring the specified region.  It is valid to callstopMonitoringForRegion: for a region that was registered for monitoringwith a different location manager object, during this or previouslaunches of your application.This is done asynchronously and may not be immediately reflected in monitoredRegions.",
+      "params": [
+        {
+          "name": "region",
+          "description": "An instance of {Region} which will be monitoredby the operating system.",
+          "type": "Region",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "requestStateForRegion",
+      "description": "Request state the for specified region. When result is readydidDetermineStateForRegion is triggered. This can be any region,also those which is not currently monitored.This is done asynchronously and may not be immediately reflected in monitoredRegions.",
+      "params": [
+        {
+          "name": "region",
+          "description": "An instance of {Region} which will be monitoredby the operating system.",
+          "type": "Region",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "startRangingBeaconsInRegion",
+      "description": "Start ranging the specified beacon region.If a region of the same type with the same identifier is already beingmonitored for this application, it will be removed from monitoring.This is done asynchronously and may not be immediately reflected in rangedRegions.",
+      "params": [
+        {
+          "name": "region",
+          "description": "An instance of {BeaconRegion} which will be monitoredby the operating system.",
+          "type": "Region",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "stopRangingBeaconsInRegion",
+      "description": "Stop ranging the specified region.  It is valid to callstopMonitoringForRegion: for a region that was registered for rangingwith a different location manager object, during this or previouslaunches of your application.This is done asynchronously and may not be immediately reflected in rangedRegions.",
+      "params": [
+        {
+          "name": "region",
+          "description": "An instance of {BeaconRegion} which will be monitoredby the operating system.",
+          "type": "Region",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "getAuthorizationStatus",
+      "description": "Queries the native layer to determine the current authorization in effect.",
+      "params": [
+      ]
+    },
+    {
+      "name": "requestWhenInUseAuthorization",
+      "description": "For iOS 8 and above only. The permission model has changed by Apple in iOS 8, making it necessary for apps toexplicitly request permissions via methods like these:<a href=\"https://developer.apple.com/library/prerelease/iOS/documentation/CoreLocation/Reference/CLLocationManager_Class/index.html#//apple_ref/occ/instm/CLLocationManager/requestWhenInUseAuthorization\">requestWhenInUseAuthorization</a><a href=\"https://developer.apple.com/library/prerelease/iOS/documentation/CoreLocation/Reference/CLLocationManager_Class/index.html#//apple_ref/occ/instm/CLLocationManager/requestAlwaysAuthorization\">requestAlwaysAuthorization</a>If you are using this plugin on Android devices only, you will never have to use this, nor {@code requestAlwaysAuthorization}",
+      "params": [
+      ]
+    },
+    {
+      "name": "requestAlwaysAuthorization",
+      "description": "See the documentation of {@code requestWhenInUseAuthorization} for further details.",
+      "params": [
+      ]
+    },
+    {
+      "name": "getMonitoredRegions",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "getRangedRegions",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "isRangingAvailable",
+      "description": "Determines if ranging is available or not, according to the native layer.",
+      "params": [
+      ]
+    },
+    {
+      "name": "isMonitoringAvailableForClass",
+      "description": "Determines if region type is supported or not, according to the native layer.",
+      "params": [
+        {
+          "name": "region",
+          "description": "An instance of {Region} which will be checkedby the operating system.",
+          "type": "Region",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "startAdvertising",
+      "description": "Start advertising the specified region.If a region a different identifier is already being advertised forthis application, it will be replaced with the new identifier.This call will accept a valid beacon even when no BlueTooth is available,and will start when BlueTooth is powered on. See {IBeaconDelegate.}",
+      "params": [
+        {
+          "name": "region",
+          "description": "An instance of {Region} which will be advertisedby the operating system.",
+          "type": "Region",
+          "optional": false
+        },
+        {
+          "name": "measuredPower:",
+          "description": "Optional parameter, if left empty, the device willuse it's own default value.",
+          "type": "Integer",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "stopAdvertising",
+      "description": "Stop advertising as a beacon.This is done asynchronously and may not be immediately reflected in isAdvertising.",
+      "params": [
+      ]
+    },
+    {
+      "name": "isAdvertisingAvailable",
+      "description": "Determines if advertising is available or not, according to the native layer.",
+      "params": [
+      ]
+    },
+    {
+      "name": "isAdvertising",
+      "description": "Determines if advertising is currently active, according to the native layer.",
+      "params": [
+      ]
+    },
+    {
+      "name": "disableDebugLogs",
+      "description": "Disables debug logging in the native layer. Use this method if you wantto prevent this plugin from writing to the device logs.",
+      "params": [
+      ]
+    },
+    {
+      "name": "enableDebugNotifications",
+      "description": "Enables the posting of debug notifications in the native layer. Use this method if you wantto allow the plugin the posting local notifications.This can be very helpful when debugging how to apps behave when launched into the background.",
+      "params": [
+      ]
+    },
+    {
+      "name": "disableDebugNotifications",
+      "description": "Disables the posting of debug notifications in the native layer. Use this method if you wantto prevent the plugin from posting local notifications.",
+      "params": [
+      ]
+    },
+    {
+      "name": "enableDebugLogs",
+      "description": "Enables debug logging in the native layer. Use this method if you wanta debug the inner workings of this plugin.",
+      "params": [
+      ]
+    },
+    {
+      "name": "appendToDeviceLog",
+      "description": "Appends the provided [message] to the device logs.Note: If debug logging is turned off, this won't do anything.",
+      "params": [
+        {
+          "name": "message",
+          "description": "The message to append to the device logs.",
+          "type": "String",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

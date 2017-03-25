@@ -1,0 +1,131 @@
+{
+  "name": "NativeAudio",
+  "members": [
+    {
+      "name": "preloadSimple",
+      "description": "Loads an audio file into memory. Optimized for short clips / single shots (up to five seconds). Cannot be stopped / looped.",
+      "params": [
+        {
+          "name": "id",
+          "description": "unique ID for the audio file",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "assetPath",
+          "description": "the relative path or absolute URL (inluding http://) to the audio asset.",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "preloadComplex",
+      "description": "Loads an audio file into memory. Optimized for background music / ambient sound. Uses highlevel native APIs with a larger footprint. (iOS: AVAudioPlayer). Can be stopped / looped and used with multiple voices. Can be faded in and out using the delay parameter.",
+      "params": [
+        {
+          "name": "id",
+          "description": "unique ID for the audio file",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "assetPath",
+          "description": "the relative path or absolute URL (inluding http://) to the audio asset.",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "volume",
+          "description": "the volume of the preloaded sound (0.1 to 1.0)",
+          "type": "number",
+          "optional": false
+        },
+        {
+          "name": "voices",
+          "description": "the number of multichannel voices available",
+          "type": "number",
+          "optional": false
+        },
+        {
+          "name": "delay",
+          "description": "",
+          "type": "number",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "play",
+      "description": "Plays an audio asset",
+      "params": [
+        {
+          "name": "id",
+          "description": "unique ID for the audio file",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "completeCallback",
+          "description": "optional. Callback to be invoked when audio is done playing",
+          "type": "Function",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "stop",
+      "description": "Stops playing an audio",
+      "params": [
+        {
+          "name": "id",
+          "description": "unique ID for the audio file",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "loop",
+      "description": "Loops an audio asset infinitely, this only works for complex assets",
+      "params": [
+        {
+          "name": "id",
+          "description": "unique ID for the audio file",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "unload",
+      "description": "Unloads an audio file from memory",
+      "params": [
+        {
+          "name": "id",
+          "description": "unique ID for the audio file",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "setVolumeForComplexAsset",
+      "description": "Changes the volume for preloaded complex assets.",
+      "params": [
+        {
+          "name": "id",
+          "description": "unique ID for the audio file",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "volume",
+          "description": "the volume of the audio asset (0.1 to 1.0)",
+          "type": "number",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

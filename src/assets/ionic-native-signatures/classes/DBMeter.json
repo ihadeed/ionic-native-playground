@@ -1,0 +1,23 @@
+{
+  "name": "DBMeter",
+  "members": [
+    {
+      "name": "start",
+      "description": "Starts listening",
+      "params": [
+      ]
+    },
+    {
+      "name": "isListening",
+      "description": "Check if the DB Meter is listening",
+      "params": [
+      ]
+    },
+    {
+      "name": "delete",
+      "description": "Delete the DB Meter instance",
+      "params": [
+      ]
+    }
+  ]
+}

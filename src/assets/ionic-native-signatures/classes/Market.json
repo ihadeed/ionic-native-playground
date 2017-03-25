@@ -1,0 +1,29 @@
+{
+  "name": "Market",
+  "members": [
+    {
+      "name": "open",
+      "description": "Opens an app in Google Play / App Store",
+      "params": [
+        {
+          "name": "appId",
+          "description": "Package name",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "search",
+      "description": "Search apps by keyword",
+      "params": [
+        {
+          "name": "keyword",
+          "description": "Keyword",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

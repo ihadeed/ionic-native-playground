@@ -1,0 +1,24 @@
+{
+  "name": "OSActionButton",
+  "parent": "OneSignal",
+  "properties": [
+    {
+      "name": "id",
+      "description": "Id assigned to the button.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "text",
+      "description": "Text show on the button to the user.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "icon",
+      "description": "**ANDROID** - Icon shown on the button.",
+      "type": "string",
+      "optional":false
+    }
+  ]
+}

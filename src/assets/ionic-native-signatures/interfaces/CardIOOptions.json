@@ -1,0 +1,102 @@
+{
+  "name": "CardIOOptions",
+  "parent": "CardIO",
+  "properties": [
+    {
+      "name": "requireExpiry",
+      "description": "Set to true to require expiry date",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "requireCVV",
+      "description": "The user will be prompted for the card CVV",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "requirePostalCode",
+      "description": "The user will be prompted for the card billing postal code.",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "supressManual",
+      "description": "Removes the keyboard button from the scan screen.",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "restrictPostalCodeToNumericOnly",
+      "description": "The postal code will only collect numeric input. Set this if you know the expected country's postal code has only numeric postal codes.",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "keepApplicationTheme",
+      "description": "The theme for the card.io Activity's will be set to the theme of the application.",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "requireCardholderName",
+      "description": "The user will be prompted for the cardholder name",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "scanInstructions",
+      "description": "Used to display instructions to the user while they are scanning their card.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "noCamera",
+      "description": "If set, the card will not be scanned with the camera.",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "scanExpiry",
+      "description": "If scanExpiry is true, an attempt to extract the expiry from the card image will be made.",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "languageOrLocale",
+      "description": "The preferred language for all strings appearing in the user interface. If not set, or if set to null, defaults to the device's current language setting.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "guideColor",
+      "description": "Changes the color of the guide overlay on the camera. The color is provided in hexadecimal format (e.g. `#FFFFFF`)",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "supressConfirmation",
+      "description": "The user will not be prompted to confirm their card number after processing.",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "hideCardIOLogo",
+      "description": "The card.io logo will not be shown overlaid on the camera.",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "useCardIOLogo",
+      "description": "The card.io logo will be shown instead of the PayPal logo.",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "supressScan",
+      "description": "Once a card image has been captured but before it has been processed, this value will determine whether to continue processing as usual.",
+      "type": "boolean",
+      "optional":true
+    }
+  ]
+}

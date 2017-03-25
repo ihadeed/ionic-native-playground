@@ -1,0 +1,12 @@
+{
+  "name": "BackgroundFetchConfig",
+  "parent": "BackgroundFetch",
+  "properties": [
+    {
+      "name": "stopOnTerminate",
+      "description": "Set true to cease background-fetch from operating after user \"closes\" the app. Defaults to true.",
+      "type": "boolean",
+      "optional":true
+    }
+  ]
+}

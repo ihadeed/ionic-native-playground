@@ -1,0 +1,30 @@
+{
+  "name": "SpinnerDialogIOSOptions",
+  "parent": "SpinnerDialog",
+  "properties": [
+    {
+      "name": "overlayOpacity",
+      "description": "",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "textColorRed",
+      "description": "",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "textColorGreen",
+      "description": "",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "textColorBlue",
+      "description": "",
+      "type": "number",
+      "optional":true
+    }
+  ]
+}

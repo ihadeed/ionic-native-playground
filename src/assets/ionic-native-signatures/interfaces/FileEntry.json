@@ -1,0 +1,18 @@
+{
+  "name": "FileEntry",
+  "parent": "File",
+  "properties": [
+    {
+      "name": "createWriter",
+      "description": "Creates a new FileWriter associated with the file that this FileEntry represents.",
+      "type": "void",
+      "optional":false
+    },
+    {
+      "name": "file",
+      "description": "Returns a File that represents the current state of the file that this FileEntry represents.",
+      "type": "void",
+      "optional":false
+    }
+  ]
+}

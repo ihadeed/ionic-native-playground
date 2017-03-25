@@ -1,0 +1,17 @@
+{
+  "name": "FilePath",
+  "members": [
+    {
+      "name": "resolveNativePath",
+      "description": "Resolve native path for given content URL/path.",
+      "params": [
+        {
+          "name": "path",
+          "description": "Content URL/path.",
+          "type": "String",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

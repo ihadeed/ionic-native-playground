@@ -1,0 +1,41 @@
+{
+  "name": "SpinnerDialog",
+  "members": [
+    {
+      "name": "show",
+      "description": "Shows the spinner dialog",
+      "params": [
+        {
+          "name": "title",
+          "description": "Spinner title (shows on Android only)",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "message",
+          "description": "Spinner message",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "cancelCallback",
+          "description": "Set to true to set spinner not cancelable. Or provide a function to call when the user cancels the spinner.",
+          "type": "boolean",
+          "optional": false
+        },
+        {
+          "name": "iOSOptions",
+          "description": "Options for iOS only",
+          "type": "object",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "hide",
+      "description": "Hides the spinner dialog if visible",
+      "params": [
+      ]
+    }
+  ]
+}

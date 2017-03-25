@@ -1,0 +1,131 @@
+{
+  "name": "JinsMeme",
+  "members": [
+    {
+      "name": "setAppClientID",
+      "description": "Authentication and authorization of App and SDK.Must call this method at first.",
+      "params": [
+        {
+          "name": "setAppClientID",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "clientSecret",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "startScan",
+      "description": "Starts scanning for JINS MEME.",
+      "params": [
+      ]
+    },
+    {
+      "name": "stopScan",
+      "description": "Stops scanning JINS MEME.",
+      "params": [
+      ]
+    },
+    {
+      "name": "connect",
+      "description": "Establishes connection to JINS MEME.",
+      "params": [
+        {
+          "name": "target",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "setAutoConnect",
+      "description": "Set auto connection mode.",
+      "params": [
+        {
+          "name": "flag",
+          "description": "",
+          "type": "Boolean",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "isConnected",
+      "description": "Returns whether a connection to JINS MEME has been established.",
+      "params": [
+      ]
+    },
+    {
+      "name": "disconnect",
+      "description": "Disconnects from JINS MEME.",
+      "params": [
+      ]
+    },
+    {
+      "name": "startDataReport",
+      "description": "Starts receiving realtime data.",
+      "params": [
+      ]
+    },
+    {
+      "name": "stopDataReport",
+      "description": "Stops receiving data.",
+      "params": [
+      ]
+    },
+    {
+      "name": "getSDKVersion",
+      "description": "Returns SDK version.",
+      "params": [
+      ]
+    },
+    {
+      "name": "getConnectedByOthers",
+      "description": "Returns JINS MEME connected with other apps.",
+      "params": [
+      ]
+    },
+    {
+      "name": "isCalibrated",
+      "description": "Returns calibration status",
+      "params": [
+      ]
+    },
+    {
+      "name": "getConnectedDeviceType",
+      "description": "Returns device type.",
+      "params": [
+      ]
+    },
+    {
+      "name": "getConnectedDeviceSubType",
+      "description": "Returns hardware version.",
+      "params": [
+      ]
+    },
+    {
+      "name": "getFWVersion",
+      "description": "Returns FW Version.",
+      "params": [
+      ]
+    },
+    {
+      "name": "getHWVersion",
+      "description": "Returns HW Version.",
+      "params": [
+      ]
+    },
+    {
+      "name": "isDataReceiving",
+      "description": "Returns response about whether data was received or not.",
+      "params": [
+      ]
+    }
+  ]
+}

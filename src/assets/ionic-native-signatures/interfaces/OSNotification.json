@@ -1,0 +1,402 @@
+{
+  "name": "OSNotification",
+  "parent": "OneSignal",
+  "properties": [
+    {
+      "name": "isAppInFocus",
+      "description": "Was app in focus.",
+      "type": "boolean",
+      "optional":false
+    },
+    {
+      "name": "shown",
+      "description": "Was notification shown to the user. Will be false for silent notifications.",
+      "type": "boolean",
+      "optional":false
+    },
+    {
+      "name": "androidNotificationId",
+      "description": "**ANDROID** - Android Notification assigned to the notification. Can be used to cancel or replace the notification.",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "payload",
+      "description": "Payload received from OneSignal.",
+      "type": "OSNotificationPayload",
+      "optional":false
+    },
+    {
+      "name": "displayType",
+      "description": "How the notification was displayed to the user. Can be set to `Notification`, `InAppAlert`, or `None` if it was not displayed.",
+      "type": "OSDisplayType",
+      "optional":false
+    },
+    {
+      "name": "groupedNotifications",
+      "description": "**ANDROID** - Notification is a summary notification for a group this will contain all notification payloads it was created from.",
+      "type": "OSNotificationPayload[]",
+      "optional":true
+    },
+    {
+      "name": "app_id",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "contents",
+      "description": "",
+      "type": "any",
+      "optional":false
+    },
+    {
+      "name": "headings",
+      "description": "",
+      "type": "any",
+      "optional":true
+    },
+    {
+      "name": "isIos",
+      "description": "",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "isAndroid",
+      "description": "",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "isWP",
+      "description": "",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "isWP_WNS",
+      "description": "",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "isAdm",
+      "description": "",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "isChrome",
+      "description": "",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "isChromeWeb",
+      "description": "",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "isSafari",
+      "description": "",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "isAnyWeb",
+      "description": "",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "included_segments",
+      "description": "",
+      "type": "string[]",
+      "optional":true
+    },
+    {
+      "name": "excluded_segments",
+      "description": "",
+      "type": "string[]",
+      "optional":true
+    },
+    {
+      "name": "include_player_ids",
+      "description": "",
+      "type": "string[]",
+      "optional":true
+    },
+    {
+      "name": "include_ios_tokens",
+      "description": "",
+      "type": "string[]",
+      "optional":true
+    },
+    {
+      "name": "include_android_reg_ids",
+      "description": "",
+      "type": "string[]",
+      "optional":true
+    },
+    {
+      "name": "include_wp_uris",
+      "description": "",
+      "type": "string[]",
+      "optional":true
+    },
+    {
+      "name": "include_wp_wns_uris",
+      "description": "",
+      "type": "string[]",
+      "optional":true
+    },
+    {
+      "name": "include_amazon_reg_ids",
+      "description": "",
+      "type": "string[]",
+      "optional":true
+    },
+    {
+      "name": "include_chrome_reg_ids",
+      "description": "",
+      "type": "string[]",
+      "optional":true
+    },
+    {
+      "name": "include_chrome_web_reg_ids",
+      "description": "",
+      "type": "string[]",
+      "optional":true
+    },
+    {
+      "name": "app_ids",
+      "description": "",
+      "type": "string[]",
+      "optional":true
+    },
+    {
+      "name": "tags",
+      "description": "",
+      "type": "any[]",
+      "optional":true
+    },
+    {
+      "name": "ios_badgeType",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "ios_badgeCount",
+      "description": "",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "ios_sound",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "android_sound",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "adm_sound",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "wp_sound",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "wp_wns_sound",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "data",
+      "description": "",
+      "type": "any",
+      "optional":true
+    },
+    {
+      "name": "buttons",
+      "description": "",
+      "type": "any",
+      "optional":true
+    },
+    {
+      "name": "small_icon",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "large_icon",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "big_picture",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "adm_small_icon",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "adm_large_icon",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "adm_big_picture",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "chrome_icon",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "chrome_big_picture",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "chrome_web_icon",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "firefox_icon",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "url",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "send_after",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "delayed_option",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "delivery_time_of_day",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "android_led_color",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "android_accent_color",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "android_visibility",
+      "description": "",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "content_available",
+      "description": "",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "amazon_background_data",
+      "description": "",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "template_id",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "android_group",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "android_group_message",
+      "description": "",
+      "type": "any",
+      "optional":true
+    },
+    {
+      "name": "adm_group",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "adm_group_message",
+      "description": "",
+      "type": "any",
+      "optional":true
+    },
+    {
+      "name": "ttl",
+      "description": "",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "priority",
+      "description": "",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "ios_category",
+      "description": "",
+      "type": "string",
+      "optional":true
+    }
+  ]
+}

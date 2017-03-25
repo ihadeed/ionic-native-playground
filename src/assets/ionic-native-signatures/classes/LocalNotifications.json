@@ -1,0 +1,203 @@
+{
+  "name": "LocalNotifications",
+  "members": [
+    {
+      "name": "schedule",
+      "description": "Schedules a single or multiple notifications",
+      "params": [
+        {
+          "name": "options",
+          "description": "optional",
+          "type": "Notification",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "update",
+      "description": "Updates a previously scheduled notification. Must include the id in the options parameter.",
+      "params": [
+        {
+          "name": "options",
+          "description": "optional",
+          "type": "ILocalNotification",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "clear",
+      "description": "Clears single or multiple notifications",
+      "params": [
+        {
+          "name": "notificationId",
+          "description": "A single notification id, or an array of notification ids.",
+          "type": "any",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "clearAll",
+      "description": "Clears all notifications",
+      "params": [
+      ]
+    },
+    {
+      "name": "cancel",
+      "description": "Cancels single or multiple notifications",
+      "params": [
+        {
+          "name": "notificationId",
+          "description": "A single notification id, or an array of notification ids.",
+          "type": "any",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "cancelAll",
+      "description": "Cancels all notifications",
+      "params": [
+      ]
+    },
+    {
+      "name": "isPresent",
+      "description": "Checks presence of a notification",
+      "params": [
+        {
+          "name": "notificationId",
+          "description": "",
+          "type": "number",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "isScheduled",
+      "description": "Checks is a notification is scheduled",
+      "params": [
+        {
+          "name": "notificationId",
+          "description": "",
+          "type": "number",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "isTriggered",
+      "description": "Checks if a notification is triggered",
+      "params": [
+        {
+          "name": "notificationId",
+          "description": "",
+          "type": "number",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "getAllIds",
+      "description": "Get all the notification ids",
+      "params": [
+      ]
+    },
+    {
+      "name": "getTriggeredIds",
+      "description": "Get the ids of triggered notifications",
+      "params": [
+      ]
+    },
+    {
+      "name": "getScheduledIds",
+      "description": "Get the ids of scheduled notifications",
+      "params": [
+      ]
+    },
+    {
+      "name": "get",
+      "description": "Get a notification object",
+      "params": [
+        {
+          "name": "notificationId",
+          "description": "The id of the notification to get",
+          "type": "any",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "getScheduled",
+      "description": "Get a scheduled notification object",
+      "params": [
+        {
+          "name": "notificationId",
+          "description": "The id of the notification to get",
+          "type": "any",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "getTriggered",
+      "description": "Get a triggered notification object",
+      "params": [
+        {
+          "name": "notificationId",
+          "description": "The id of the notification to get",
+          "type": "",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "getAll",
+      "description": "Get all notification objects",
+      "params": [
+      ]
+    },
+    {
+      "name": "getAllScheduled",
+      "description": "Get all scheduled notification objects",
+      "params": [
+      ]
+    },
+    {
+      "name": "getAllTriggered",
+      "description": "Get all triggered notification objects",
+      "params": [
+      ]
+    },
+    {
+      "name": "registerPermission",
+      "description": "Register permission to show notifications if not already granted.",
+      "params": [
+      ]
+    },
+    {
+      "name": "hasPermission",
+      "description": "Informs if the app has the permission to show notifications.",
+      "params": [
+      ]
+    },
+    {
+      "name": "on",
+      "description": "Sets a callback for a specific event",
+      "params": [
+        {
+          "name": "eventName",
+          "description": "The name of the event. Available events: schedule, trigger, click, update, clear, clearall, cancel, cancelall",
+          "type": "",
+          "optional": false
+        },
+        {
+          "name": "callback",
+          "description": "Call back function. All events return notification and state parameter. clear and clearall return state parameter only.",
+          "type": "",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

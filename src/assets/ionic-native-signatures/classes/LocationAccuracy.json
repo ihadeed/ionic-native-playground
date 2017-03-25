@@ -1,0 +1,107 @@
+{
+  "name": "LocationAccuracy",
+  "members": [
+    {
+      "name": "canRequest",
+      "description": "Indicates if you can request accurate location",
+      "params": [
+      ]
+    },
+    {
+      "name": "isRequesting",
+      "description": "Indicates if a request is currently in progress",
+      "params": [
+      ]
+    },
+    {
+      "name": "request",
+      "description": "Requests accurate location",
+      "params": [
+        {
+          "name": "accuracy",
+          "description": "Accuracy, from 0 to 4. You can use the static properties of this class that start with REQUEST_PRIORITY_",
+          "type": "number",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "REQUEST_PRIORITY_NO_POWER",
+      "description": "Convenience constant",
+      "params": [
+      ]
+    },
+    {
+      "name": "REQUEST_PRIORITY_LOW_POWER",
+      "description": "Convenience constant",
+      "params": [
+      ]
+    },
+    {
+      "name": "REQUEST_PRIORITY_BALANCED_POWER_ACCURACY",
+      "description": "Convenience constant",
+      "params": [
+      ]
+    },
+    {
+      "name": "REQUEST_PRIORITY_HIGH_ACCURACY",
+      "description": "Convenience constant",
+      "params": [
+      ]
+    },
+    {
+      "name": "SUCCESS_SETTINGS_SATISFIED",
+      "description": "Convenience constant",
+      "params": [
+      ]
+    },
+    {
+      "name": "SUCCESS_USER_AGREED",
+      "description": "Convenience constant",
+      "params": [
+      ]
+    },
+    {
+      "name": "ERROR_ALREADY_REQUESTING",
+      "description": "Convenience constant",
+      "params": [
+      ]
+    },
+    {
+      "name": "ERROR_INVALID_ACTION",
+      "description": "Convenience constant",
+      "params": [
+      ]
+    },
+    {
+      "name": "ERROR_INVALID_ACCURACY",
+      "description": "Convenience constant",
+      "params": [
+      ]
+    },
+    {
+      "name": "ERROR_EXCEPTION",
+      "description": "Convenience constant",
+      "params": [
+      ]
+    },
+    {
+      "name": "ERROR_CANNOT_CHANGE_ACCURACY",
+      "description": "Convenience constant",
+      "params": [
+      ]
+    },
+    {
+      "name": "ERROR_USER_DISAGREED",
+      "description": "Convenience constant",
+      "params": [
+      ]
+    },
+    {
+      "name": "ERROR_GOOGLE_API_CONNECTION_FAILED",
+      "description": "Convenience constant",
+      "params": [
+      ]
+    }
+  ]
+}

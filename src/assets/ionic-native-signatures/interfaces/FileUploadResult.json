@@ -1,0 +1,30 @@
+{
+  "name": "FileUploadResult",
+  "parent": "Transfer",
+  "properties": [
+    {
+      "name": "bytesSent",
+      "description": "The number of bytes sent to the server as part of the upload.",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "responseCode",
+      "description": "The HTTP response code returned by the server.",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "response",
+      "description": "The HTTP response returned by the server.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "headers",
+      "description": "The HTTP response headers by the server.",
+      "type": "{ [s: string]: any; }",
+      "optional":false
+    }
+  ]
+}

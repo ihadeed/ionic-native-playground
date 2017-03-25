@@ -1,0 +1,54 @@
+{
+  "name": "IContactAddress",
+  "parent": "Contacts",
+  "properties": [
+    {
+      "name": "pref",
+      "description": "Set to true if this ContactAddress contains the user's preferred value.",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "type",
+      "description": "A string indicating what type of field this is, home for example.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "formatted",
+      "description": "The full address formatted for display.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "streetAddress",
+      "description": "The full street address.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "locality",
+      "description": "The city or locality.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "region",
+      "description": "The state or region.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "postalCode",
+      "description": "The zip code or postal code.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "country",
+      "description": "The country name.",
+      "type": "string",
+      "optional":true
+    }
+  ]
+}

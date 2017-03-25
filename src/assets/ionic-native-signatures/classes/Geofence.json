@@ -1,0 +1,59 @@
+{
+  "name": "Geofence",
+  "members": [
+    {
+      "name": "TransitionType",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "onTrasitionReceived",
+      "description": "Subscribe to get notified when a transition is received",
+      "params": [
+      ]
+    },
+    {
+      "name": "initialize",
+      "description": "Initializes the plugin. User will be prompted to allow the app to use location and notifications.",
+      "params": [
+      ]
+    },
+    {
+      "name": "addOrUpdate",
+      "description": "Adds a new geofence or array of geofences. For geofence object, see above.",
+      "params": [
+      ]
+    },
+    {
+      "name": "remove",
+      "description": "Removes a geofence or array of geofences. `geofenceID` corresponds to one or more IDs specified when thegeofence was created.",
+      "params": [
+      ]
+    },
+    {
+      "name": "removeAll",
+      "description": "Removes all geofences.",
+      "params": [
+      ]
+    },
+    {
+      "name": "getWatched",
+      "description": "Returns an array of geofences currently being monitored.",
+      "params": [
+      ]
+    },
+    {
+      "name": "onTransitionReceived",
+      "description": "Called when a geofence is crossed in the direction specified by `TransitType`.",
+      "params": [
+      ]
+    },
+    {
+      "name": "onNotificationClicked",
+      "description": "Called when the user clicks a geofence notification. iOS and Android only.",
+      "params": [
+      ]
+    }
+  ]
+}

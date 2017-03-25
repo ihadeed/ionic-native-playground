@@ -1,0 +1,24 @@
+{
+  "name": "AFADecryptOptions",
+  "parent": "AndroidFingerprintAuth",
+  "properties": [
+    {
+      "name": "withFingerprint",
+      "description": "Biometric authentication",
+      "type": "boolean",
+      "optional":false
+    },
+    {
+      "name": "withBackup",
+      "description": "Authentication using backup credential activity",
+      "type": "boolean",
+      "optional":false
+    },
+    {
+      "name": "password",
+      "description": "FingerprintAuth.CipherMode.DECRYPTDecrypted password",
+      "type": "string",
+      "optional":false
+    }
+  ]
+}

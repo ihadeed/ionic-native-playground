@@ -1,0 +1,78 @@
+{
+  "name": "MusicControlsOptions",
+  "parent": "MusicControls",
+  "properties": [
+    {
+      "name": "track",
+      "description": "",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "artist",
+      "description": "",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "cover",
+      "description": "",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "isPlaying",
+      "description": "",
+      "type": "boolean",
+      "optional":false
+    },
+    {
+      "name": "dismissable",
+      "description": "",
+      "type": "boolean",
+      "optional":false
+    },
+    {
+      "name": "hasPrev",
+      "description": "",
+      "type": "boolean",
+      "optional":false
+    },
+    {
+      "name": "hasNext",
+      "description": "",
+      "type": "boolean",
+      "optional":false
+    },
+    {
+      "name": "hasClose",
+      "description": "",
+      "type": "boolean",
+      "optional":false
+    },
+    {
+      "name": "album",
+      "description": "",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "duration",
+      "description": "",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "elapsed",
+      "description": "",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "ticker",
+      "description": "",
+      "type": "string",
+      "optional":false
+    }
+  ]
+}

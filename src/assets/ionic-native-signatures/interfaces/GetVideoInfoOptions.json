@@ -1,0 +1,12 @@
+{
+  "name": "GetVideoInfoOptions",
+  "parent": "VideoEditor",
+  "properties": [
+    {
+      "name": "fileUri",
+      "description": "The path to the video on the device.",
+      "type": "string",
+      "optional":false
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "ImagePickerOptions",
+  "parent": "ImagePicker",
+  "properties": [
+    {
+      "name": "maximumImagesCount",
+      "description": "max images to be selected, defaults to 15. If this is set to 1, upon selection of a single image, the plugin will return it.",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "width",
+      "description": "Max width to allow images to be",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "height",
+      "description": "Max height to allow images to be",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "quality",
+      "description": "Quality of images, defaults to 100",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "outputType",
+      "description": "Output type, defaults to 0  (FILE_URI).",
+      "type": "number",
+      "optional":true
+    }
+  ]
+}

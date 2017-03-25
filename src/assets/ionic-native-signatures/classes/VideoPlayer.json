@@ -1,0 +1,29 @@
+{
+  "name": "VideoPlayer",
+  "members": [
+    {
+      "name": "play",
+      "description": "Plays the video from the passed url.",
+      "params": [
+        {
+          "name": "fileUrl",
+          "description": "File url to the video.",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "options",
+          "description": "Optional video playback settings. See options above.",
+          "type": "VideoOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "close",
+      "description": "Stops the video playback immediatly.",
+      "params": [
+      ]
+    }
+  ]
+}

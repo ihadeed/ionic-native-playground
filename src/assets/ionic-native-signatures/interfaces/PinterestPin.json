@@ -1,0 +1,84 @@
+{
+  "name": "PinterestPin",
+  "parent": "Pinterest",
+  "properties": [
+    {
+      "name": "id",
+      "description": "The unique string of numbers and letters that identifies the Pin on Pinterest.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "link",
+      "description": "The URL of the webpage where the Pin was created.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "url",
+      "description": "The URL of the Pin on Pinterest.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "creator",
+      "description": "The first and last name, ID and profile URL of the user who created the board.",
+      "type": "PinterestUser",
+      "optional":true
+    },
+    {
+      "name": "board",
+      "description": "The board that the Pin is on.",
+      "type": "PinterestBoard",
+      "optional":true
+    },
+    {
+      "name": "created_at",
+      "description": "The date the Pin was created.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "note",
+      "description": "The user-entered description of the Pin.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "color",
+      "description": "The dominant color of the Pin’s image in hex code format.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "counts",
+      "description": "The Pin’s stats, including the number of repins, comments and likes.",
+      "type": "any",
+      "optional":true
+    },
+    {
+      "name": "media",
+      "description": "The media type of the Pin (image or video).",
+      "type": "any",
+      "optional":true
+    },
+    {
+      "name": "attribution",
+      "description": "The source data for videos, including the title, URL, provider, author name, author URL and provider name.",
+      "type": "any",
+      "optional":true
+    },
+    {
+      "name": "image",
+      "description": "The Pin’s image. The default response returns the image’s URL, width and height.",
+      "type": "any",
+      "optional":true
+    },
+    {
+      "name": "metadata",
+      "description": "Extra information about the Pin for Rich Pins. Includes the Pin type (e.g., article, recipe) and related information (e.g., ingredients, author).",
+      "type": "any",
+      "optional":true
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "name": "ILocalNotification",
+  "parent": "LocalNotifications",
+  "properties": [
+    {
+      "name": "id",
+      "description": "A unique identifier required to clear, cancel, update or retrieve the local notification in the futureDefault: 0",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "title",
+      "description": "First row of the notificationDefault: Empty string (iOS) or the app name (Android)",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "text",
+      "description": "Second row of the notificationDefault: Empty string",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "every",
+      "description": "The interval at which to reschedule the local notification. That can be a value of second, minute, hour, day, week, month or yearDefault: 0 (which means that the system triggers the local notification once)",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "at",
+      "description": "The date and time when the system should deliver the local notification. If the specified value is nil or is a date in the past, the local notification is delivered immediately.Default: now ~ new Date()",
+      "type": "any",
+      "optional":true
+    },
+    {
+      "name": "firstAt",
+      "description": "",
+      "type": "any",
+      "optional":true
+    },
+    {
+      "name": "badge",
+      "description": "The number currently set as the badge of the app icon in Springboard (iOS) or at the right-hand side of the local notification (Android)Default: 0 (which means don't show a number)",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "sound",
+      "description": "Uri of the file containing the sound to play when an alert is displayedDefault: res://platform_default",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "data",
+      "description": "Arbitrary data, objects will be encoded to JSON stringDefault: null",
+      "type": "any",
+      "optional":true
+    },
+    {
+      "name": "icon",
+      "description": "ANDROID ONLYUri of the icon that is shown in the ticker and notificationDefault: res://icon",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "smallIcon",
+      "description": "ANDROID ONLYUri of the resource (only res://) to use in the notification layouts. Different classes of devices may return different sizesDefault: res://ic_popup_reminder",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "color",
+      "description": "ANDROID ONLYRGB value for the background color of the smallIcon.Default: Androids COLOR_DEFAULT, which will vary based on Android version.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "ongoing",
+      "description": "ANDROID ONLYOngoing notifications differ from regular notifications in the following ways:- They are sorted above the regular notifications in the notification panel- They do not have an 'X' close button, and are not affected by the \"Clear all\" buttonDefault: false",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "led",
+      "description": "ANDROID ONLYARGB value that you would like the LED on the device to blinkDefault: FFFFFF",
+      "type": "string",
+      "optional":true
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "name": "CameraPreviewOptions",
+  "parent": "CameraPreview",
+  "properties": [
+    {
+      "name": "x",
+      "description": "The left edge in pixels, default 0",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "y",
+      "description": "The top edge in pixels, default 0",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "width",
+      "description": "The width in pixels, default window.screen.width",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "height",
+      "description": "The height in pixels, default window.screen.height",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "camera",
+      "description": "Choose the camera to use 'front' or 'rear', default 'front'",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "tapPhoto",
+      "description": "Tap to take a photo, default true (picture quality by default : 85)",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "previewDrag",
+      "description": "Preview box drag across the screen, default 'false'",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "toBack",
+      "description": "Preview box to the back of the webview (true => back, false => front) , default false",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "alpha",
+      "description": "Alpha channel of the preview box, float, [0,1], default 1",
+      "type": "number",
+      "optional":true
+    }
+  ]
+}

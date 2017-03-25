@@ -1,0 +1,11 @@
+{
+  "name": "FileChooser",
+  "members": [
+    {
+      "name": "open",
+      "description": "Open a file",
+      "params": [
+      ]
+    }
+  ]
+}

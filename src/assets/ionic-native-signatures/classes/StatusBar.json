@@ -1,0 +1,83 @@
+{
+  "name": "StatusBar",
+  "members": [
+    {
+      "name": "overlaysWebView",
+      "description": "Set whether the status bar overlays the main app view. The defaultis true.",
+      "params": [
+        {
+          "name": "doesOverlay",
+          "description": "Whether the status bar overlays the main app view.",
+          "type": "boolean",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "styleDefault",
+      "description": "Use the default statusbar (dark text, for light backgrounds).",
+      "params": [
+      ]
+    },
+    {
+      "name": "styleLightContent",
+      "description": "Use the lightContent statusbar (light text, for dark backgrounds).",
+      "params": [
+      ]
+    },
+    {
+      "name": "styleBlackTranslucent",
+      "description": "Use the blackTranslucent statusbar (light text, for dark backgrounds).",
+      "params": [
+      ]
+    },
+    {
+      "name": "styleBlackOpaque",
+      "description": "Use the blackOpaque statusbar (light text, for dark backgrounds).",
+      "params": [
+      ]
+    },
+    {
+      "name": "backgroundColorByName",
+      "description": "Set the status bar to a specific named color. Valid options:black, darkGray, lightGray, white, gray, red, green, blue, cyan, yellow, magenta, orange, purple, brown.iOS note: you must call StatusBar.overlaysWebView(false) to enable color changing.",
+      "params": [
+        {
+          "name": "colorName",
+          "description": "The name of the color (from above)",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "backgroundColorByHexString",
+      "description": "Set the status bar to a specific hex color (CSS shorthand supported!).iOS note: you must call StatusBar.overlaysWebView(false) to enable color changing.",
+      "params": [
+        {
+          "name": "hexString",
+          "description": "The hex value of the color.",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "hide",
+      "description": "Hide the StatusBar",
+      "params": [
+      ]
+    },
+    {
+      "name": "show",
+      "description": "Show the StatusBar",
+      "params": [
+      ]
+    },
+    {
+      "name": "isVisible",
+      "description": "Whether the StatusBar is currently visible or not.",
+      "params": [
+      ]
+    }
+  ]
+}

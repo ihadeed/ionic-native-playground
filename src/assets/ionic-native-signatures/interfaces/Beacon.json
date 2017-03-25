@@ -1,0 +1,48 @@
+{
+  "name": "Beacon",
+  "parent": "IBeacon",
+  "properties": [
+    {
+      "name": "uuid",
+      "description": "The physical device's identifier.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "major",
+      "description": "The beacon's major identifier number.",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "minor",
+      "description": "The beacon's major identifier number.",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "proximity",
+      "description": "The proximity of the beacon relative to the phone.Possible options are:ProximityImmediateProximityNearProximityFarProximityUnknown",
+      "type": "&#39;ProximityImmediate&#39; | &#39;ProximityNear&#39; | &#39;ProximityFar&#39; | &#39;ProximityUnknown&#39;",
+      "optional":false
+    },
+    {
+      "name": "tx",
+      "description": "Transmission Power of the beacon. A constant emitted by the beacon which indicates what's the expected RSSI at a distance of 1 meter to the beacon.",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "rssi",
+      "description": "Received Signal Strength Indicator. The strength of the beacon's signal when it reaches the device. RSSI ranges from aprox -26 (a few inches) to -100 (40-50 m distance).",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "accuracy",
+      "description": "The accuracy of the ranging.",
+      "type": "number",
+      "optional":false
+    }
+  ]
+}

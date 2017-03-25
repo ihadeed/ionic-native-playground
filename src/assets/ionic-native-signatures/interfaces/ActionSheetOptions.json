@@ -1,0 +1,54 @@
+{
+  "name": "ActionSheetOptions",
+  "parent": "ActionSheet",
+  "properties": [
+    {
+      "name": "buttonLabels",
+      "description": "The labels for the buttons. Uses the index x",
+      "type": "string[]",
+      "optional":false
+    },
+    {
+      "name": "title",
+      "description": "The title for the actionsheet",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "androidTheme",
+      "description": "Theme to be used on Android",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "androidEnableCancelButton",
+      "description": "Enable a cancel on Android",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "winphoneEnableCancelButton",
+      "description": "Enable a cancel on Windows Phone",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "addCancelButtonWithLabel",
+      "description": "Add a cancel button with text",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "addDestructiveButtonWithLabel",
+      "description": "Add a destructive button with text",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "position",
+      "description": "On an iPad, set the X,Y position",
+      "type": "number[]",
+      "optional":true
+    }
+  ]
+}

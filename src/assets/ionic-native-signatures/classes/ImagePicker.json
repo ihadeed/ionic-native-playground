@@ -1,0 +1,29 @@
+{
+  "name": "ImagePicker",
+  "members": [
+    {
+      "name": "getPictures",
+      "description": "Pick pictures from the library.",
+      "params": [
+        {
+          "name": "options",
+          "description": "",
+          "type": "ImagePickerOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "hasReadPermission",
+      "description": "Check if we have permission to read images",
+      "params": [
+      ]
+    },
+    {
+      "name": "requestReadPermission",
+      "description": "Request permission to read images",
+      "params": [
+      ]
+    }
+  ]
+}

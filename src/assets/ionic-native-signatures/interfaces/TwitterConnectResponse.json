@@ -1,0 +1,30 @@
+{
+  "name": "TwitterConnectResponse",
+  "parent": "TwitterConnect",
+  "properties": [
+    {
+      "name": "userName",
+      "description": "Twitter Username",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "userId",
+      "description": "Twitter User ID",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "secret",
+      "description": "Twitter OAuth Secret",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "token",
+      "description": "Twitter OAuth Token",
+      "type": "string",
+      "optional":false
+    }
+  ]
+}

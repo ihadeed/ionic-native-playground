@@ -1,0 +1,29 @@
+{
+  "name": "CardIO",
+  "members": [
+    {
+      "name": "canScan",
+      "description": "Check whether card scanning is currently available. (May vary bydevice, OS version, network connectivity, etc.)",
+      "params": [
+      ]
+    },
+    {
+      "name": "scan",
+      "description": "Scan a credit card with card.io.",
+      "params": [
+        {
+          "name": "options",
+          "description": "Options for configuring the plugin",
+          "type": "CardIOOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "version",
+      "description": "Retrieve the version of the card.io library. Useful when contacting support.",
+      "params": [
+      ]
+    }
+  ]
+}

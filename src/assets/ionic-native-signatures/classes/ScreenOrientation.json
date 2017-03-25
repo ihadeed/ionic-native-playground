@@ -1,0 +1,41 @@
+{
+  "name": "ScreenOrientation",
+  "members": [
+    {
+      "name": "ORIENTATIONS",
+      "description": "Convenience enum for possible orientations",
+      "params": [
+      ]
+    },
+    {
+      "name": "onChange",
+      "description": "Listen to orientation change event",
+      "params": [
+      ]
+    },
+    {
+      "name": "lock",
+      "description": "Lock the orientation to the passed value.See below for accepted values",
+      "params": [
+        {
+          "name": "orientation",
+          "description": "The orientation which should be locked. Accepted values see table above.",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "unlock",
+      "description": "Unlock and allow all orientations.",
+      "params": [
+      ]
+    },
+    {
+      "name": "type",
+      "description": "Get the current orientation of the device.",
+      "params": [
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "DialogsPromptCallback",
+  "parent": "Dialogs",
+  "properties": [
+    {
+      "name": "buttonIndex",
+      "description": "The index of the pressed button. (Number) Note that the index uses one-based indexing, so the value is 1, 2, 3, etc.",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "input1",
+      "description": "The text entered in the prompt dialog box. (String)",
+      "type": "string",
+      "optional":false
+    }
+  ]
+}

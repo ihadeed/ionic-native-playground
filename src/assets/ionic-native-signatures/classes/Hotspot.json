@@ -1,0 +1,287 @@
+{
+  "name": "Hotspot",
+  "members": [
+    {
+      "name": "isAvailable",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "toggleWifi",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "createHotspot",
+      "description": "Configures and starts hotspot with SSID and Password",
+      "params": [
+        {
+          "name": "SSID",
+          "description": "SSID of your new Access Point",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "mode",
+          "description": "encryption mode (Open, WEP, WPA, WPA_PSK)",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "password",
+          "description": "password for your new Access Point",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "startHotspot",
+      "description": "Turns on Access Point",
+      "params": [
+      ]
+    },
+    {
+      "name": "configureHotspot",
+      "description": "Configures hotspot with SSID and Password",
+      "params": [
+        {
+          "name": "SSID",
+          "description": "SSID of your new Access Point",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "mode",
+          "description": "encryption mode (Open, WEP, WPA, WPA_PSK)",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "password",
+          "description": "password for your new Access Point",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "stopHotspot",
+      "description": "Turns off Access Point",
+      "params": [
+      ]
+    },
+    {
+      "name": "isHotspotEnabled",
+      "description": "Checks if hotspot is enabled",
+      "params": [
+      ]
+    },
+    {
+      "name": "getAllHotspotDevices",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "connectToWifi",
+      "description": "Connect to a WiFi network",
+      "params": [
+        {
+          "name": "ssid",
+          "description": "SSID to connect",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "password",
+          "description": "password to use",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "connectToWifiAuthEncrypt",
+      "description": "Connect to a WiFi network",
+      "params": [
+        {
+          "name": "ssid",
+          "description": "SSID to connect",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "password",
+          "description": "Password to use",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "authentication",
+          "description": "Authentication modes to use (LEAP, SHARED, OPEN)",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "encryption",
+          "description": "Encryption modes to use (CCMP, TKIP, WEP104, WEP40)",
+          "type": "string[]",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "addWifiNetwork",
+      "description": "Add a WiFi network",
+      "params": [
+        {
+          "name": "ssid",
+          "description": "SSID of network",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "mode",
+          "description": "Authentication mode of (Open, WEP, WPA, WPA_PSK)",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "password",
+          "description": "Password for network",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "removeWifiNetwork",
+      "description": "Remove a WiFi network",
+      "params": [
+        {
+          "name": "ssid",
+          "description": "SSID of network",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "isConnectedToInternet",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "isConnectedToInternetViaWifi",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "isWifiOn",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "isWifiSupported",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "isWifiDirectSupported",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "scanWifi",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "scanWifiByLevel",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "startWifiPeriodicallyScan",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "stopWifiPeriodicallyScan",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "getNetConfig",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "getConnectionInfo",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "pingHost",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "getMacAddressOfHost",
+      "description": "Gets MAC Address associated with IP Address from ARP File",
+      "params": [
+        {
+          "name": "ip",
+          "description": "IP Address that you want the MAC Address of",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "isDnsLive",
+      "description": "Checks if IP is live using DNS",
+      "params": [
+        {
+          "name": "ip",
+          "description": "IP Address you want to test",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "isPortLive",
+      "description": "Checks if IP is live using socket And PORT",
+      "params": [
+        {
+          "name": "ip",
+          "description": "IP Address you want to test",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "isRooted",
+      "description": "Checks if device is rooted",
+      "params": [
+      ]
+    }
+  ]
+}

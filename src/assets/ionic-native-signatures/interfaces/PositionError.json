@@ -1,0 +1,18 @@
+{
+  "name": "PositionError",
+  "parent": "Geolocation",
+  "properties": [
+    {
+      "name": "code",
+      "description": "A code that indicates the error that occurred",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "message",
+      "description": "A message that can describe the error that occurred",
+      "type": "string",
+      "optional":false
+    }
+  ]
+}

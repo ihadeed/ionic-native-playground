@@ -1,0 +1,29 @@
+{
+  "name": "Gyroscope",
+  "members": [
+    {
+      "name": "watch",
+      "description": "Watching for gyroscope sensor changes",
+      "params": [
+        {
+          "name": "options",
+          "description": "",
+          "type": "GyroscopeOptions",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "getCurrent",
+      "description": "Get current data from gyroscope sensor",
+      "params": [
+        {
+          "name": "options",
+          "description": "",
+          "type": "GyroscopeOptions",
+          "optional": true
+        }
+      ]
+    }
+  ]
+}

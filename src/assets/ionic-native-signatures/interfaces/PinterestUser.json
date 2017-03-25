@@ -1,0 +1,54 @@
+{
+  "name": "PinterestUser",
+  "parent": "Pinterest",
+  "properties": [
+    {
+      "name": "id",
+      "description": "The unique string of numbers and letters that identifies the user on Pinterest.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "username",
+      "description": "The user’s Pinterest username.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "first_name",
+      "description": "The user’s first name.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "last_name",
+      "description": "The user’s last name.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "bio",
+      "description": "The text in the user’s “About you” section in their profile.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "created_at",
+      "description": "The date the user created their account in ISO 8601 format",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "counts",
+      "description": "The user’s stats, including how many Pins, follows, boards and likes they have.",
+      "type": "any",
+      "optional":true
+    },
+    {
+      "name": "image",
+      "description": "The user’s profile image. The response returns the image’s URL, width and height.",
+      "type": "any",
+      "optional":true
+    }
+  ]
+}

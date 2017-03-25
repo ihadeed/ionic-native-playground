@@ -1,0 +1,23 @@
+{
+  "name": "AppRate",
+  "members": [
+    {
+      "name": "preferences",
+      "description": "Configure various settings for the Rating View.See table below for options",
+      "params": [
+      ]
+    },
+    {
+      "name": "promptForRating",
+      "description": "Prompts the user for rating",
+      "params": [
+        {
+          "name": "immediately",
+          "description": "Show the rating prompt immediately.",
+          "type": "boolean",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

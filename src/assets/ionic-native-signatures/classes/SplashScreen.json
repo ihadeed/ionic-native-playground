@@ -1,0 +1,17 @@
+{
+  "name": "SplashScreen",
+  "members": [
+    {
+      "name": "show",
+      "description": "Shows the splashscreen",
+      "params": [
+      ]
+    },
+    {
+      "name": "hide",
+      "description": "Hides the splashscreen",
+      "params": [
+      ]
+    }
+  ]
+}

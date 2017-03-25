@@ -1,0 +1,12 @@
+{
+  "name": "SmsOptionsAndroid",
+  "parent": "SMS",
+  "properties": [
+    {
+      "name": "intent",
+      "description": "Set to \"INTENT\" to send SMS with the native android SMS messaging. Leaving it empty will send the SMS without opening any app.",
+      "type": "string",
+      "optional":true
+    }
+  ]
+}

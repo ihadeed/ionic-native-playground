@@ -1,0 +1,24 @@
+{
+  "name": "IRemotePackage",
+  "parent": "CodePush",
+  "properties": [
+    {
+      "name": "downloadUrl",
+      "description": "The URL at which the package is available for download.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "download",
+      "description": "Downloads the package update from the CodePush service.",
+      "type": "void",
+      "optional":false
+    },
+    {
+      "name": "abortDownload",
+      "description": "Aborts the current download session, previously started with download().",
+      "type": "void",
+      "optional":false
+    }
+  ]
+}

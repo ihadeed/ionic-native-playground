@@ -1,0 +1,90 @@
+{
+  "name": "IContactProperties",
+  "parent": "Contacts",
+  "properties": [
+    {
+      "name": "id",
+      "description": "A globally unique identifier.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "displayName",
+      "description": "The name of this Contact, suitable for display to end users.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "name",
+      "description": "An object containing all components of a persons name.",
+      "type": "IContactName",
+      "optional":true
+    },
+    {
+      "name": "nickname",
+      "description": "A casual name by which to address the contact.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "phoneNumbers",
+      "description": "An array of all the contact's phone numbers.",
+      "type": "IContactField[]",
+      "optional":true
+    },
+    {
+      "name": "emails",
+      "description": "An array of all the contact's email addresses.",
+      "type": "IContactField[]",
+      "optional":true
+    },
+    {
+      "name": "addresses",
+      "description": "An array of all the contact's addresses.",
+      "type": "IContactAddress[]",
+      "optional":true
+    },
+    {
+      "name": "ims",
+      "description": "An array of all the contact's IM addresses.",
+      "type": "IContactField[]",
+      "optional":true
+    },
+    {
+      "name": "organizations",
+      "description": "An array of all the contact's organizations.",
+      "type": "IContactOrganization[]",
+      "optional":true
+    },
+    {
+      "name": "birthday",
+      "description": "The birthday of the contact.",
+      "type": "Date",
+      "optional":true
+    },
+    {
+      "name": "note",
+      "description": "A note about the contact.",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "photos",
+      "description": "An array of the contact's photos.",
+      "type": "IContactField[]",
+      "optional":true
+    },
+    {
+      "name": "categories",
+      "description": "An array of all the user-defined categories associated with the contact.",
+      "type": "IContactField[]",
+      "optional":true
+    },
+    {
+      "name": "urls",
+      "description": "An array of web pages associated with the contact.",
+      "type": "IContactField[]",
+      "optional":true
+    }
+  ]
+}

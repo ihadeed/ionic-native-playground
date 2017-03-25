@@ -1,0 +1,17 @@
+{
+  "name": "YoutubeVideoPlayer",
+  "members": [
+    {
+      "name": "openVideo",
+      "description": "Plays a YouTube video",
+      "params": [
+        {
+          "name": "videoId",
+          "description": "Video ID",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

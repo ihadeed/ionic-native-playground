@@ -1,0 +1,12 @@
+{
+  "name": "RegistrationEventResponse",
+  "parent": "Push",
+  "properties": [
+    {
+      "name": "registrationId",
+      "description": "The registration ID provided by the 3rd party remote push service.",
+      "type": "string",
+      "optional":false
+    }
+  ]
+}

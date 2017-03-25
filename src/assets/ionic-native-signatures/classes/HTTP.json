@@ -1,0 +1,209 @@
+{
+  "name": "HTTP",
+  "members": [
+    {
+      "name": "getBasicAuthHeader",
+      "description": "This returns an object representing a basic HTTP Authorization header of the form.",
+      "params": [
+        {
+          "name": "username",
+          "description": "Username",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "password",
+          "description": "Password",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "useBasicAuth",
+      "description": "This sets up all future requests to use Basic HTTP authentication with the given username and password.",
+      "params": [
+        {
+          "name": "username",
+          "description": "Username",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "password",
+          "description": "Password",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "setHeader",
+      "description": "Set a header for all future requests. Takes a header and a value.",
+      "params": [
+        {
+          "name": "header",
+          "description": "The name of the header",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "value",
+          "description": "The value of the header",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "enableSSLPinning",
+      "description": "Enable or disable SSL Pinning. This defaults to false.To use SSL pinning you must include at least one .cer SSL certificate in your app project. You can pin to your server certificate or to one of the issuing CA certificates. For ios include your certificate in the root level of your bundle (just add the .cer file to your project/target at the root level). For android include your certificate in your project's platforms/android/assets folder. In both cases all .cer files found will be loaded automatically. If you only have a .pem certificate see this stackoverflow answer. You want to convert it to a DER encoded certificate with a .cer extension.As an alternative, you can store your .cer files in the www/certificates folder.",
+      "params": [
+        {
+          "name": "enable",
+          "description": "Set to true to enable",
+          "type": "boolean",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "acceptAllCerts",
+      "description": "Accept all SSL certificates. Or disabled accepting all certificates. Defaults to false.",
+      "params": [
+        {
+          "name": "accept",
+          "description": "Set to true to accept",
+          "type": "boolean",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "validateDomainName",
+      "description": "Whether or not to validate the domain name in the certificate. This defaults to true.",
+      "params": [
+        {
+          "name": "validate",
+          "description": "Set to true to validate",
+          "type": "boolean",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "post",
+      "description": "Make a POST request",
+      "params": [
+        {
+          "name": "url",
+          "description": "The url to send the request to",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "body",
+          "description": "The body of the request",
+          "type": "Object",
+          "optional": false
+        },
+        {
+          "name": "headers",
+          "description": "The headers to set for this request",
+          "type": "Object",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "get",
+      "description": "",
+      "params": [
+        {
+          "name": "url",
+          "description": "The url to send the request to",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "parameters",
+          "description": "Parameters to send with the request",
+          "type": "Object",
+          "optional": false
+        },
+        {
+          "name": "headers",
+          "description": "The headers to set for this request",
+          "type": "Object",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "uploadFile",
+      "description": "",
+      "params": [
+        {
+          "name": "url",
+          "description": "The url to send the request to",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "body",
+          "description": "The body of the request",
+          "type": "Object",
+          "optional": false
+        },
+        {
+          "name": "headers",
+          "description": "The headers to set for this request",
+          "type": "Object",
+          "optional": false
+        },
+        {
+          "name": "filePath",
+          "description": "The local path of the file to upload",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "name",
+          "description": "The name of the parameter to pass the file along as",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "downloadFile",
+      "description": "",
+      "params": [
+        {
+          "name": "url",
+          "description": "The url to send the request to",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "body",
+          "description": "The body of the request",
+          "type": "Object",
+          "optional": false
+        },
+        {
+          "name": "headers",
+          "description": "The headers to set for this request",
+          "type": "Object",
+          "optional": false
+        },
+        {
+          "name": "filePath",
+          "description": "The path to donwload the file to, including the file name.",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

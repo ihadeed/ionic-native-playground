@@ -1,0 +1,18 @@
+{
+  "name": "Metadata",
+  "parent": "File",
+  "properties": [
+    {
+      "name": "modificationTime",
+      "description": "This is the time at which the file or directory was last modified.",
+      "type": "Date",
+      "optional":false
+    },
+    {
+      "name": "size",
+      "description": "The size of the file, in bytes. This must return 0 for directories.",
+      "type": "number",
+      "optional":false
+    }
+  ]
+}

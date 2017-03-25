@@ -1,0 +1,29 @@
+{
+  "name": "InAppBrowser",
+  "members": [
+    {
+      "name": "create",
+      "description": "Opens a URL in a new InAppBrowser instance, the current browser instance, or the system browser.",
+      "params": [
+        {
+          "name": "url",
+          "description": "The URL to load.",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "target",
+          "description": "The target in which to load the URL, an optional parameter that defaults to _self.",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "options",
+          "description": "Options for the InAppBrowser. Optional, defaulting to: location=yes.                The options string must not contain any blank space, and each feature's                name/value pairs must be separated by a comma. Feature names are case insensitive.",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

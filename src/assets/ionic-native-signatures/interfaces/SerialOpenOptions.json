@@ -1,0 +1,12 @@
+{
+  "name": "SerialOpenOptions",
+  "parent": "Serial",
+  "properties": [
+    {
+      "name": "baudRate",
+      "description": "",
+      "type": "number",
+      "optional":false
+    }
+  ]
+}

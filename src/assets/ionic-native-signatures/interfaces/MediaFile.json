@@ -1,0 +1,42 @@
+{
+  "name": "MediaFile",
+  "parent": "MediaCapture",
+  "properties": [
+    {
+      "name": "name",
+      "description": "The name of the file, without path information.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "fullPath",
+      "description": "The full path of the file, including the name.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "type",
+      "description": "The file's mime type",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "lastModifiedDate",
+      "description": "The date and time when the file was last modified.",
+      "type": "Date",
+      "optional":false
+    },
+    {
+      "name": "size",
+      "description": "The size of the file, in bytes.",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "getFormatData",
+      "description": "Retrieves the format information of the media file.",
+      "type": "",
+      "optional":false
+    }
+  ]
+}

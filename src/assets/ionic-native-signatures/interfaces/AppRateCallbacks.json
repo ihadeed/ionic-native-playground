@@ -1,0 +1,18 @@
+{
+  "name": "AppRateCallbacks",
+  "parent": "AppRate",
+  "properties": [
+    {
+      "name": "onButtonClicked",
+      "description": "call back function. called when user clicked on rate-dialog buttons",
+      "type": "Function",
+      "optional":true
+    },
+    {
+      "name": "onRateDialogShow",
+      "description": "call back function. called when rate-dialog showing",
+      "type": "Function",
+      "optional":true
+    }
+  ]
+}

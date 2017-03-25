@@ -1,0 +1,42 @@
+{
+  "name": "VideoInfo",
+  "parent": "VideoEditor",
+  "properties": [
+    {
+      "name": "width",
+      "description": "Width of the video in pixels.",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "height",
+      "description": "Height of the video in pixels.",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "orientation",
+      "description": "Orientation of the video. Will be either portrait or landscape.",
+      "type": "&#39;portrait&#39; | &#39;landscape&#39;",
+      "optional":false
+    },
+    {
+      "name": "duration",
+      "description": "Duration of the video in seconds.",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "size",
+      "description": "Size of the video in bytes.",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "bitrate",
+      "description": "Bitrate of the video in bits per second.",
+      "type": "number",
+      "optional":false
+    }
+  ]
+}

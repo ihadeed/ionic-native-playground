@@ -1,0 +1,11 @@
+{
+  "name": "Rollbar",
+  "members": [
+    {
+      "name": "init",
+      "description": "This function initializes the monitoring of your application",
+      "params": [
+      ]
+    }
+  ]
+}

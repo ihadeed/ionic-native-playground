@@ -1,0 +1,11 @@
+{
+  "name": "IsDebug",
+  "members": [
+    {
+      "name": "getIsDebug",
+      "description": "Determine if an app was installed via xcode / eclipse / the ionic CLI etc",
+      "params": [
+      ]
+    }
+  ]
+}

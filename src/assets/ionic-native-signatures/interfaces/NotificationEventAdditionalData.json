@@ -1,0 +1,36 @@
+{
+  "name": "NotificationEventAdditionalData",
+  "parent": "Push",
+  "properties": [
+    {
+      "name": "foreground",
+      "description": "Whether the notification was received while the app was in the foreground",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "collapse_key",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "coldstart",
+      "description": "",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "from",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "notId",
+      "description": "",
+      "type": "string",
+      "optional":true
+    }
+  ]
+}

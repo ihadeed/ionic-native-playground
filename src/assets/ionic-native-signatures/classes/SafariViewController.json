@@ -1,0 +1,53 @@
+{
+  "name": "SafariViewController",
+  "members": [
+    {
+      "name": "isAvailable",
+      "description": "Checks if SafariViewController is available",
+      "params": [
+      ]
+    },
+    {
+      "name": "show",
+      "description": "Shows Safari View Controller",
+      "params": [
+        {
+          "name": "options",
+          "description": "optional",
+          "type": "SafariViewControllerOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "hide",
+      "description": "Hides Safari View Controller",
+      "params": [
+      ]
+    },
+    {
+      "name": "connectToService",
+      "description": "Tries to connect to the  Chrome's custom tabs service. you must call this method before calling any of the other methods listed below.",
+      "params": [
+      ]
+    },
+    {
+      "name": "warmUp",
+      "description": "Call this method whenever there's a chance the user will open an external url.",
+      "params": [
+      ]
+    },
+    {
+      "name": "mayLaunchUrl",
+      "description": "For even better performance optimization, call this methods if there's more than a 50% chance the user will open a certain URL.",
+      "params": [
+        {
+          "name": "url",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

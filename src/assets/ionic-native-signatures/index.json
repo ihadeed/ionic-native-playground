@@ -1,0 +1,443 @@
+{
+  "interfaces": [
+    
+    "ActionSheetOptions",
+    
+    "AdMobOptions",
+    
+    "AdExtras",
+    
+    "AlipayOrder",
+    
+    "AFAAuthOptions",
+    
+    "AFADecryptOptions",
+    
+    "AFAEncryptResponse",
+    
+    "AppRatePreferences",
+    
+    "AppRateCallbacks",
+    
+    "AppUrls",
+    
+    "BackgroundFetchConfig",
+    
+    "BackgroundGeolocationResponse",
+    
+    "BackgroundGeolocationConfig",
+    
+    "BackgroundModeConfiguration",
+    
+    "BarcodeScannerOptions",
+    
+    "BatteryStatusResponse",
+    
+    "CalendarOptions",
+    
+    "CameraPreviewDimensions",
+    
+    "CameraPreviewOptions",
+    
+    "CameraPreviewPictureOptions",
+    
+    "CameraOptions",
+    
+    "CameraPopoverOptions",
+    
+    "CardIOOptions",
+    
+    "CardIOResponse",
+    
+    "IPackage",
+    
+    "IRemotePackage",
+    
+    "ILocalPackage",
+    
+    "Callback",
+    
+    "SuccessCallback",
+    
+    "ErrorCallback",
+    
+    "InstallOptions",
+    
+    "SyncOptions",
+    
+    "UpdateDialogOptions",
+    
+    "DownloadProgress",
+    
+    "IContactProperties",
+    
+    "IContactName",
+    
+    "IContactField",
+    
+    "IContactAddress",
+    
+    "IContactOrganization",
+    
+    "IContactFindOptions",
+    
+    "DatePickerOptions",
+    
+    "DeeplinkMatch",
+    
+    "DeviceMotionAccelerationData",
+    
+    "DeviceMotionAccelerometerOptions",
+    
+    "DeviceOrientationCompassHeading",
+    
+    "DeviceOrientationCompassOptions",
+    
+    "DialogsPromptCallback",
+    
+    "EmailComposerOptions",
+    
+    "EstimoteBeaconRegion",
+    
+    "FacebookLoginResponse",
+    
+    "FileSystem",
+    
+    "Entry",
+    
+    "Metadata",
+    
+    "DirectoryEntry",
+    
+    "RemoveResult",
+    
+    "Flags",
+    
+    "WriteOptions",
+    
+    "DirectoryReader",
+    
+    "FileEntry",
+    
+    "FileSaver",
+    
+    "FileWriter",
+    
+    "FileReader",
+    
+    "FileError",
+    
+    "FingerprintOptions",
+    
+    "Coordinates",
+    
+    "Geoposition",
+    
+    "PositionError",
+    
+    "GeolocationOptions",
+    
+    "AnimateCameraOptions",
+    
+    "CameraPosition",
+    
+    "MyLocation",
+    
+    "MyLocationOptions",
+    
+    "VisibleRegion",
+    
+    "HotspotConnectionInfo",
+    
+    "HotspotNetwork",
+    
+    "HotspotNetworkConfig",
+    
+    "HotspotDevice",
+    
+    "HTTPResponse",
+    
+    "HttpdOptions",
+    
+    "Beacon",
+    
+    "BeaconRegion",
+    
+    "CircularRegion",
+    
+    "IBeaconPluginResult",
+    
+    "IBeaconDelegate",
+    
+    "ImagePickerOptions",
+    
+    "ImageResizerOptions",
+    
+    "InAppBrowserOptions",
+    
+    "InAppBrowserEvent",
+    
+    "LaunchNavigatorOptions",
+    
+    "ILocalNotification",
+    
+    "MediaFile",
+    
+    "MediaFileData",
+    
+    "CaptureError",
+    
+    "CaptureAudioOptions",
+    
+    "CaptureImageOptions",
+    
+    "CaptureVideoOptions",
+    
+    "ConfigurationData",
+    
+    "MusicControlsOptions",
+    
+    "NativeGeocoderReverseResult",
+    
+    "NativeGeocoderForwardResult",
+    
+    "NativeTransitionOptions",
+    
+    "OSNotification",
+    
+    "OSNotificationPayload",
+    
+    "OSActionButton",
+    
+    "OSBackgroundImageLayout",
+    
+    "OSNotificationOpenedResult",
+    
+    "PayPalEnvironment",
+    
+    "IPedometerData",
+    
+    "PinterestUser",
+    
+    "PinterestBoard",
+    
+    "PinterestPin",
+    
+    "PrintOptions",
+    
+    "RegistrationEventResponse",
+    
+    "NotificationEventResponse",
+    
+    "NotificationEventAdditionalData",
+    
+    "IOSPushOptions",
+    
+    "CategoryArray",
+    
+    "CategoryAction",
+    
+    "CategoryActionData",
+    
+    "AndroidPushOptions",
+    
+    "PushOptions",
+    
+    "SafariViewControllerOptions",
+    
+    "SerialPermissionOptions",
+    
+    "SerialOpenOptions",
+    
+    "SmsOptions",
+    
+    "SmsOptionsAndroid",
+    
+    "SpeechRecognitionListeningOptionsIOS",
+    
+    "SpeechRecognitionListeningOptionsAndroid",
+    
+    "SpinnerDialogIOSOptions",
+    
+    "StreamingVideoOptions",
+    
+    "StreamingAudioOptions",
+    
+    "StripeCardTokenParams",
+    
+    "StripeBankAccountParams",
+    
+    "TTSOptions",
+    
+    "ThemeableBrowserButton",
+    
+    "ThemeableBrowserOptions",
+    
+    "ThreeDeeTouchQuickAction",
+    
+    "ThreeDeeTouchForceTouch",
+    
+    "ToastOptions",
+    
+    "FileUploadOptions",
+    
+    "FileUploadResult",
+    
+    "FileTransferError",
+    
+    "TwitterConnectResponse",
+    
+    "TranscodeOptions",
+    
+    "TrimOptions",
+    
+    "CreateThumbnailOptions",
+    
+    "GetVideoInfoOptions",
+    
+    "VideoInfo",
+    
+    "VideoOptions",
+    
+    "ZBarOptions"
+    
+  ],
+  "classes": [
+    "ActionSheet",
+    "AdMob",
+    "Alipay",
+    "AndroidFingerprintAuth",
+    "AppAvailability",
+    "AppPreferences",
+    "AppRate",
+    "AppUpdate",
+    "AppVersion",
+    "Appodeal",
+    "BackgroundFetch",
+    "BackgroundGeolocation",
+    "BackgroundMode",
+    "Backlight",
+    "Badge",
+    "BarcodeScanner",
+    "Base64ToGallery",
+    "BatteryStatus",
+    "BLE",
+    "BluetoothSerial",
+    "Brightness",
+    "Broadcaster",
+    "BrowserTab",
+    "Calendar",
+    "CallNumber",
+    "CameraPreview",
+    "Camera",
+    "CardIO",
+    "Clipboard",
+    "CodePush",
+    "Contacts",
+    "CouchbaseLite",
+    "Crop",
+    "DatePicker",
+    "DBMeter",
+    "Deeplinks",
+    "DeviceAccounts",
+    "DeviceFeedback",
+    "DeviceMotion",
+    "DeviceOrientation",
+    "Device",
+    "Diagnostic",
+    "Dialogs",
+    "EmailComposer",
+    "EstimoteBeacons",
+    "Facebook",
+    "FileChooser",
+    "FileOpener",
+    "FilePath",
+    "File",
+    "FingerprintAIO",
+    "Firebase",
+    "Flashlight",
+    "Geofence",
+    "Geolocation",
+    "Globalization",
+    "GoogleAnalytics",
+    "GoogleMaps",
+    "GooglePlus",
+    "Gyroscope",
+    "HeaderColor",
+    "Health",
+    "Hotspot",
+    "HTTP",
+    "Httpd",
+    "IBeacon",
+    "ImagePicker",
+    "ImageResizer",
+    "InAppBrowser",
+    "InAppPurchase",
+    "Insomnia",
+    "Instagram",
+    "IsDebug",
+    "JinsMeme",
+    "Keyboard",
+    "LaunchNavigator",
+    "LaunchReview",
+    "LinkedIn",
+    "LocalNotifications",
+    "LocationAccuracy",
+    "Market",
+    "MediaCapture",
+    "MediaPlugin",
+    "Mixpanel",
+    "MusicControls",
+    "NativeAudio",
+    "NativeGeocoder",
+    "NativePageTransitions",
+    "NativeStorage",
+    "NavigationBar",
+    "Network",
+    "NFC",
+    "OneSignal",
+    "PayPal",
+    "Pedometer",
+    "PhotoLibrary",
+    "PhotoViewer",
+    "PinDialog",
+    "Pinterest",
+    "PowerManagement",
+    "Printer",
+    "Push",
+    "Rollbar",
+    "SafariViewController",
+    "ScreenOrientation",
+    "Screenshot",
+    "SecureStorage",
+    "Serial",
+    "Shake",
+    "Sim",
+    "SMS",
+    "SocialSharing",
+    "SpeechRecognition",
+    "SpinnerDialog",
+    "SplashScreen",
+    "SQLite",
+    "StatusBar",
+    "Stepcounter",
+    "StreamingMedia",
+    "Stripe",
+    "TextToSpeech",
+    "ThemeableBrowser",
+    "ThreeDeeTouch",
+    "Toast",
+    "TouchID",
+    "Transfer",
+    "TwitterConnect",
+    "UniqueDeviceID",
+    "Vibration",
+    "VideoEditor",
+    "VideoPlayer",
+    "WebIntent",
+    "YoutubeVideoPlayer",
+    "ZBar",
+    "Zip"
+    
+  ]
+}

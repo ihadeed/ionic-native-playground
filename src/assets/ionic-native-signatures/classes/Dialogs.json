@@ -1,0 +1,95 @@
+{
+  "name": "Dialogs",
+  "members": [
+    {
+      "name": "alert",
+      "description": "Shows a custom alert or dialog box.",
+      "params": [
+        {
+          "name": "message",
+          "description": "Dialog message.",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "title",
+          "description": "Dialog title. (Optional, defaults to Alert)",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "buttonName",
+          "description": "Button name. (Optional, defaults to OK)",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "confirm",
+      "description": "Displays a customizable confirmation dialog box.",
+      "params": [
+        {
+          "name": "message",
+          "description": "Dialog message.",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "title",
+          "description": "Dialog title. (Optional, defaults to Confirm)",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "buttonLabels",
+          "description": "Array of strings specifying button labels. (Optional, defaults to [OK,Cancel])",
+          "type": "Array<string>",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "prompt",
+      "description": "Displays a native dialog box that is more customizable than the browser's prompt function.",
+      "params": [
+        {
+          "name": "message",
+          "description": "Dialog message.",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "title",
+          "description": "Dialog title. (Optional, defaults to Prompt)",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "buttonLabels",
+          "description": "Array of strings specifying button labels. (Optional, defaults to [\"OK\",\"Cancel\"])",
+          "type": "Array<string>",
+          "optional": false
+        },
+        {
+          "name": "defaultText",
+          "description": "Default textbox input value.  (Optional, Default: empty string)",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "beep",
+      "description": "The device plays a beep sound.",
+      "params": [
+        {
+          "name": "times",
+          "description": "The number of times to repeat the beep.",
+          "type": "numbers",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}
