@@ -1,305 +1,755 @@
 {
   "interfaces": [
     
-    "ActionSheetOptions",
-    
-    "AdMobOptions",
-    
-    "AdExtras",
-    
-    "AlipayOrder",
-    
-    "AFAAuthOptions",
-    
-    "AFADecryptOptions",
-    
-    "AFAEncryptResponse",
-    
-    "AppRatePreferences",
-    
-    "AppRateCallbacks",
-    
-    "AppUrls",
-    
-    "BackgroundFetchConfig",
-    
-    "BackgroundGeolocationResponse",
-    
-    "BackgroundGeolocationConfig",
-    
-    "BackgroundModeConfiguration",
-    
-    "BarcodeScannerOptions",
-    
-    "BatteryStatusResponse",
-    
-    "CalendarOptions",
-    
-    "CameraPreviewDimensions",
-    
-    "CameraPreviewOptions",
-    
-    "CameraPreviewPictureOptions",
-    
-    "CameraOptions",
-    
-    "CameraPopoverOptions",
-    
-    "CardIOOptions",
-    
-    "CardIOResponse",
-    
-    "IPackage",
-    
-    "IRemotePackage",
-    
-    "ILocalPackage",
-    
-    "Callback",
-    
-    "SuccessCallback",
-    
-    "ErrorCallback",
-    
-    "InstallOptions",
-    
-    "SyncOptions",
-    
-    "UpdateDialogOptions",
-    
-    "DownloadProgress",
-    
-    "IContactProperties",
-    
-    "IContactName",
-    
-    "IContactField",
-    
-    "IContactAddress",
-    
-    "IContactOrganization",
-    
-    "IContactFindOptions",
-    
-    "DatePickerOptions",
-    
-    "DeeplinkMatch",
-    
-    "DeviceMotionAccelerationData",
-    
-    "DeviceMotionAccelerometerOptions",
-    
-    "DeviceOrientationCompassHeading",
-    
-    "DeviceOrientationCompassOptions",
-    
-    "DialogsPromptCallback",
-    
-    "EmailComposerOptions",
-    
-    "EstimoteBeaconRegion",
-    
-    "FacebookLoginResponse",
-    
-    "FileSystem",
-    
-    "Entry",
-    
-    "Metadata",
-    
-    "DirectoryEntry",
-    
-    "RemoveResult",
-    
-    "Flags",
-    
-    "WriteOptions",
-    
-    "DirectoryReader",
-    
-    "FileEntry",
-    
-    "FileSaver",
-    
-    "FileWriter",
-    
-    "FileReader",
-    
-    "FileError",
-    
-    "FingerprintOptions",
-    
-    "Coordinates",
-    
-    "Geoposition",
-    
-    "PositionError",
-    
-    "GeolocationOptions",
-    
-    "AnimateCameraOptions",
-    
-    "CameraPosition",
-    
-    "MyLocation",
-    
-    "MyLocationOptions",
-    
-    "VisibleRegion",
-    
-    "HotspotConnectionInfo",
-    
-    "HotspotNetwork",
-    
-    "HotspotNetworkConfig",
-    
-    "HotspotDevice",
-    
-    "HTTPResponse",
-    
-    "HttpdOptions",
-    
-    "Beacon",
-    
-    "BeaconRegion",
-    
-    "CircularRegion",
-    
-    "IBeaconPluginResult",
-    
-    "IBeaconDelegate",
-    
-    "ImagePickerOptions",
-    
-    "ImageResizerOptions",
-    
-    "InAppBrowserOptions",
-    
-    "InAppBrowserEvent",
-    
-    "LaunchNavigatorOptions",
-    
-    "ILocalNotification",
-    
-    "MediaFile",
-    
-    "MediaFileData",
-    
-    "CaptureError",
-    
-    "CaptureAudioOptions",
-    
-    "CaptureImageOptions",
-    
-    "CaptureVideoOptions",
-    
-    "ConfigurationData",
-    
-    "MusicControlsOptions",
-    
-    "NativeGeocoderReverseResult",
-    
-    "NativeGeocoderForwardResult",
-    
-    "NativeTransitionOptions",
-    
-    "OSNotification",
-    
-    "OSNotificationPayload",
-    
-    "OSActionButton",
-    
-    "OSBackgroundImageLayout",
-    
-    "OSNotificationOpenedResult",
-    
-    "PayPalEnvironment",
-    
-    "IPedometerData",
-    
-    "PinterestUser",
-    
-    "PinterestBoard",
-    
-    "PinterestPin",
-    
-    "PrintOptions",
-    
-    "RegistrationEventResponse",
-    
-    "NotificationEventResponse",
-    
-    "NotificationEventAdditionalData",
-    
-    "IOSPushOptions",
-    
-    "CategoryArray",
-    
-    "CategoryAction",
-    
-    "CategoryActionData",
-    
-    "AndroidPushOptions",
-    
-    "PushOptions",
-    
-    "SafariViewControllerOptions",
-    
-    "SerialPermissionOptions",
-    
-    "SerialOpenOptions",
-    
-    "SmsOptions",
-    
-    "SmsOptionsAndroid",
-    
-    "SpeechRecognitionListeningOptionsIOS",
-    
-    "SpeechRecognitionListeningOptionsAndroid",
-    
-    "SpinnerDialogIOSOptions",
-    
-    "StreamingVideoOptions",
-    
-    "StreamingAudioOptions",
-    
-    "StripeCardTokenParams",
-    
-    "StripeBankAccountParams",
-    
-    "TTSOptions",
-    
-    "ThemeableBrowserButton",
-    
-    "ThemeableBrowserOptions",
-    
-    "ThreeDeeTouchQuickAction",
-    
-    "ThreeDeeTouchForceTouch",
-    
-    "ToastOptions",
-    
-    "FileUploadOptions",
-    
-    "FileUploadResult",
-    
-    "FileTransferError",
-    
-    "TwitterConnectResponse",
-    
-    "TranscodeOptions",
-    
-    "TrimOptions",
-    
-    "CreateThumbnailOptions",
-    
-    "GetVideoInfoOptions",
-    
-    "VideoInfo",
-    
-    "VideoOptions",
-    
-    "ZBarOptions"
+    {
+      "name": "ActionSheetOptions",
+      "parent": "ActionSheet"
+    },
+    
+    {
+      "name": "AdMobOptions",
+      "parent": "AdMob"
+    },
+    
+    {
+      "name": "AdExtras",
+      "parent": "AdMob"
+    },
+    
+    {
+      "name": "AlipayOrder",
+      "parent": "Alipay"
+    },
+    
+    {
+      "name": "AFAAuthOptions",
+      "parent": "AndroidFingerprintAuth"
+    },
+    
+    {
+      "name": "AFADecryptOptions",
+      "parent": "AndroidFingerprintAuth"
+    },
+    
+    {
+      "name": "AFAEncryptResponse",
+      "parent": "AndroidFingerprintAuth"
+    },
+    
+    {
+      "name": "AppRatePreferences",
+      "parent": "AppRate"
+    },
+    
+    {
+      "name": "AppRateCallbacks",
+      "parent": "AppRate"
+    },
+    
+    {
+      "name": "AppUrls",
+      "parent": "AppRate"
+    },
+    
+    {
+      "name": "BackgroundFetchConfig",
+      "parent": "BackgroundFetch"
+    },
+    
+    {
+      "name": "BackgroundGeolocationResponse",
+      "parent": "BackgroundGeolocation"
+    },
+    
+    {
+      "name": "BackgroundGeolocationConfig",
+      "parent": "BackgroundGeolocation"
+    },
+    
+    {
+      "name": "BackgroundModeConfiguration",
+      "parent": "BackgroundMode"
+    },
+    
+    {
+      "name": "BarcodeScannerOptions",
+      "parent": "BarcodeScanner"
+    },
+    
+    {
+      "name": "BatteryStatusResponse",
+      "parent": "BatteryStatus"
+    },
+    
+    {
+      "name": "CalendarOptions",
+      "parent": "Calendar"
+    },
+    
+    {
+      "name": "CameraPreviewDimensions",
+      "parent": "CameraPreview"
+    },
+    
+    {
+      "name": "CameraPreviewOptions",
+      "parent": "CameraPreview"
+    },
+    
+    {
+      "name": "CameraPreviewPictureOptions",
+      "parent": "CameraPreview"
+    },
+    
+    {
+      "name": "CameraOptions",
+      "parent": "Camera"
+    },
+    
+    {
+      "name": "CameraPopoverOptions",
+      "parent": "Camera"
+    },
+    
+    {
+      "name": "CardIOOptions",
+      "parent": "CardIO"
+    },
+    
+    {
+      "name": "CardIOResponse",
+      "parent": "CardIO"
+    },
+    
+    {
+      "name": "IPackage",
+      "parent": "CodePush"
+    },
+    
+    {
+      "name": "IRemotePackage",
+      "parent": "CodePush"
+    },
+    
+    {
+      "name": "ILocalPackage",
+      "parent": "CodePush"
+    },
+    
+    {
+      "name": "Callback",
+      "parent": "CodePush"
+    },
+    
+    {
+      "name": "SuccessCallback",
+      "parent": "CodePush"
+    },
+    
+    {
+      "name": "ErrorCallback",
+      "parent": "CodePush"
+    },
+    
+    {
+      "name": "InstallOptions",
+      "parent": "CodePush"
+    },
+    
+    {
+      "name": "SyncOptions",
+      "parent": "CodePush"
+    },
+    
+    {
+      "name": "UpdateDialogOptions",
+      "parent": "CodePush"
+    },
+    
+    {
+      "name": "DownloadProgress",
+      "parent": "CodePush"
+    },
+    
+    {
+      "name": "IContactProperties",
+      "parent": "Contacts"
+    },
+    
+    {
+      "name": "IContactName",
+      "parent": "Contacts"
+    },
+    
+    {
+      "name": "IContactField",
+      "parent": "Contacts"
+    },
+    
+    {
+      "name": "IContactAddress",
+      "parent": "Contacts"
+    },
+    
+    {
+      "name": "IContactOrganization",
+      "parent": "Contacts"
+    },
+    
+    {
+      "name": "IContactFindOptions",
+      "parent": "Contacts"
+    },
+    
+    {
+      "name": "DatePickerOptions",
+      "parent": "DatePicker"
+    },
+    
+    {
+      "name": "DeeplinkMatch",
+      "parent": "Deeplinks"
+    },
+    
+    {
+      "name": "DeviceMotionAccelerationData",
+      "parent": "DeviceMotion"
+    },
+    
+    {
+      "name": "DeviceMotionAccelerometerOptions",
+      "parent": "DeviceMotion"
+    },
+    
+    {
+      "name": "DeviceOrientationCompassHeading",
+      "parent": "DeviceOrientation"
+    },
+    
+    {
+      "name": "DeviceOrientationCompassOptions",
+      "parent": "DeviceOrientation"
+    },
+    
+    {
+      "name": "DialogsPromptCallback",
+      "parent": "Dialogs"
+    },
+    
+    {
+      "name": "EmailComposerOptions",
+      "parent": "EmailComposer"
+    },
+    
+    {
+      "name": "EstimoteBeaconRegion",
+      "parent": "EstimoteBeacons"
+    },
+    
+    {
+      "name": "FacebookLoginResponse",
+      "parent": "Facebook"
+    },
+    
+    {
+      "name": "FileSystem",
+      "parent": "File"
+    },
+    
+    {
+      "name": "Entry",
+      "parent": "File"
+    },
+    
+    {
+      "name": "Metadata",
+      "parent": "File"
+    },
+    
+    {
+      "name": "DirectoryEntry",
+      "parent": "File"
+    },
+    
+    {
+      "name": "RemoveResult",
+      "parent": "File"
+    },
+    
+    {
+      "name": "Flags",
+      "parent": "File"
+    },
+    
+    {
+      "name": "WriteOptions",
+      "parent": "File"
+    },
+    
+    {
+      "name": "DirectoryReader",
+      "parent": "File"
+    },
+    
+    {
+      "name": "FileEntry",
+      "parent": "File"
+    },
+    
+    {
+      "name": "FileSaver",
+      "parent": "File"
+    },
+    
+    {
+      "name": "FileWriter",
+      "parent": "File"
+    },
+    
+    {
+      "name": "FileReader",
+      "parent": "File"
+    },
+    
+    {
+      "name": "FileError",
+      "parent": "File"
+    },
+    
+    {
+      "name": "FingerprintOptions",
+      "parent": "FingerprintAIO"
+    },
+    
+    {
+      "name": "Coordinates",
+      "parent": "Geolocation"
+    },
+    
+    {
+      "name": "Geoposition",
+      "parent": "Geolocation"
+    },
+    
+    {
+      "name": "PositionError",
+      "parent": "Geolocation"
+    },
+    
+    {
+      "name": "GeolocationOptions",
+      "parent": "Geolocation"
+    },
+    
+    {
+      "name": "AnimateCameraOptions",
+      "parent": "GoogleMaps"
+    },
+    
+    {
+      "name": "CameraPosition",
+      "parent": "GoogleMaps"
+    },
+    
+    {
+      "name": "MyLocation",
+      "parent": "GoogleMaps"
+    },
+    
+    {
+      "name": "MyLocationOptions",
+      "parent": "GoogleMaps"
+    },
+    
+    {
+      "name": "VisibleRegion",
+      "parent": "GoogleMaps"
+    },
+    
+    {
+      "name": "HotspotConnectionInfo",
+      "parent": "Hotspot"
+    },
+    
+    {
+      "name": "HotspotNetwork",
+      "parent": "Hotspot"
+    },
+    
+    {
+      "name": "HotspotNetworkConfig",
+      "parent": "Hotspot"
+    },
+    
+    {
+      "name": "HotspotDevice",
+      "parent": "Hotspot"
+    },
+    
+    {
+      "name": "HTTPResponse",
+      "parent": "HTTP"
+    },
+    
+    {
+      "name": "HttpdOptions",
+      "parent": "Httpd"
+    },
+    
+    {
+      "name": "Beacon",
+      "parent": "IBeacon"
+    },
+    
+    {
+      "name": "BeaconRegion",
+      "parent": "IBeacon"
+    },
+    
+    {
+      "name": "CircularRegion",
+      "parent": "IBeacon"
+    },
+    
+    {
+      "name": "IBeaconPluginResult",
+      "parent": "IBeacon"
+    },
+    
+    {
+      "name": "IBeaconDelegate",
+      "parent": "IBeacon"
+    },
+    
+    {
+      "name": "ImagePickerOptions",
+      "parent": "ImagePicker"
+    },
+    
+    {
+      "name": "ImageResizerOptions",
+      "parent": "ImageResizer"
+    },
+    
+    {
+      "name": "InAppBrowserOptions",
+      "parent": "InAppBrowser"
+    },
+    
+    {
+      "name": "InAppBrowserEvent",
+      "parent": "InAppBrowser"
+    },
+    
+    {
+      "name": "LaunchNavigatorOptions",
+      "parent": "LaunchNavigator"
+    },
+    
+    {
+      "name": "ILocalNotification",
+      "parent": "LocalNotifications"
+    },
+    
+    {
+      "name": "MediaFile",
+      "parent": "MediaCapture"
+    },
+    
+    {
+      "name": "MediaFileData",
+      "parent": "MediaCapture"
+    },
+    
+    {
+      "name": "CaptureError",
+      "parent": "MediaCapture"
+    },
+    
+    {
+      "name": "CaptureAudioOptions",
+      "parent": "MediaCapture"
+    },
+    
+    {
+      "name": "CaptureImageOptions",
+      "parent": "MediaCapture"
+    },
+    
+    {
+      "name": "CaptureVideoOptions",
+      "parent": "MediaCapture"
+    },
+    
+    {
+      "name": "ConfigurationData",
+      "parent": "MediaCapture"
+    },
+    
+    {
+      "name": "MusicControlsOptions",
+      "parent": "MusicControls"
+    },
+    
+    {
+      "name": "NativeGeocoderReverseResult",
+      "parent": "NativeGeocoder"
+    },
+    
+    {
+      "name": "NativeGeocoderForwardResult",
+      "parent": "NativeGeocoder"
+    },
+    
+    {
+      "name": "NativeTransitionOptions",
+      "parent": "NativePageTransitions"
+    },
+    
+    {
+      "name": "OSNotification",
+      "parent": "OneSignal"
+    },
+    
+    {
+      "name": "OSNotificationPayload",
+      "parent": "OneSignal"
+    },
+    
+    {
+      "name": "OSActionButton",
+      "parent": "OneSignal"
+    },
+    
+    {
+      "name": "OSBackgroundImageLayout",
+      "parent": "OneSignal"
+    },
+    
+    {
+      "name": "OSNotificationOpenedResult",
+      "parent": "OneSignal"
+    },
+    
+    {
+      "name": "PayPalEnvironment",
+      "parent": "PayPal"
+    },
+    
+    {
+      "name": "IPedometerData",
+      "parent": "Pedometer"
+    },
+    
+    {
+      "name": "PinterestUser",
+      "parent": "Pinterest"
+    },
+    
+    {
+      "name": "PinterestBoard",
+      "parent": "Pinterest"
+    },
+    
+    {
+      "name": "PinterestPin",
+      "parent": "Pinterest"
+    },
+    
+    {
+      "name": "PrintOptions",
+      "parent": "Printer"
+    },
+    
+    {
+      "name": "RegistrationEventResponse",
+      "parent": "Push"
+    },
+    
+    {
+      "name": "NotificationEventResponse",
+      "parent": "Push"
+    },
+    
+    {
+      "name": "NotificationEventAdditionalData",
+      "parent": "Push"
+    },
+    
+    {
+      "name": "IOSPushOptions",
+      "parent": "Push"
+    },
+    
+    {
+      "name": "CategoryArray",
+      "parent": "Push"
+    },
+    
+    {
+      "name": "CategoryAction",
+      "parent": "Push"
+    },
+    
+    {
+      "name": "CategoryActionData",
+      "parent": "Push"
+    },
+    
+    {
+      "name": "AndroidPushOptions",
+      "parent": "Push"
+    },
+    
+    {
+      "name": "PushOptions",
+      "parent": "Push"
+    },
+    
+    {
+      "name": "SafariViewControllerOptions",
+      "parent": "SafariViewController"
+    },
+    
+    {
+      "name": "SerialPermissionOptions",
+      "parent": "Serial"
+    },
+    
+    {
+      "name": "SerialOpenOptions",
+      "parent": "Serial"
+    },
+    
+    {
+      "name": "SmsOptions",
+      "parent": "SMS"
+    },
+    
+    {
+      "name": "SmsOptionsAndroid",
+      "parent": "SMS"
+    },
+    
+    {
+      "name": "SpeechRecognitionListeningOptionsIOS",
+      "parent": "SpeechRecognition"
+    },
+    
+    {
+      "name": "SpeechRecognitionListeningOptionsAndroid",
+      "parent": "SpeechRecognition"
+    },
+    
+    {
+      "name": "SpinnerDialogIOSOptions",
+      "parent": "SpinnerDialog"
+    },
+    
+    {
+      "name": "StreamingVideoOptions",
+      "parent": "StreamingMedia"
+    },
+    
+    {
+      "name": "StreamingAudioOptions",
+      "parent": "StreamingMedia"
+    },
+    
+    {
+      "name": "StripeCardTokenParams",
+      "parent": "Stripe"
+    },
+    
+    {
+      "name": "StripeBankAccountParams",
+      "parent": "Stripe"
+    },
+    
+    {
+      "name": "TTSOptions",
+      "parent": "TextToSpeech"
+    },
+    
+    {
+      "name": "ThemeableBrowserButton",
+      "parent": "ThemeableBrowser"
+    },
+    
+    {
+      "name": "ThemeableBrowserOptions",
+      "parent": "ThemeableBrowser"
+    },
+    
+    {
+      "name": "ThreeDeeTouchQuickAction",
+      "parent": "ThreeDeeTouch"
+    },
+    
+    {
+      "name": "ThreeDeeTouchForceTouch",
+      "parent": "ThreeDeeTouch"
+    },
+    
+    {
+      "name": "ToastOptions",
+      "parent": "Toast"
+    },
+    
+    {
+      "name": "FileUploadOptions",
+      "parent": "Transfer"
+    },
+    
+    {
+      "name": "FileUploadResult",
+      "parent": "Transfer"
+    },
+    
+    {
+      "name": "FileTransferError",
+      "parent": "Transfer"
+    },
+    
+    {
+      "name": "TwitterConnectResponse",
+      "parent": "TwitterConnect"
+    },
+    
+    {
+      "name": "TranscodeOptions",
+      "parent": "VideoEditor"
+    },
+    
+    {
+      "name": "TrimOptions",
+      "parent": "VideoEditor"
+    },
+    
+    {
+      "name": "CreateThumbnailOptions",
+      "parent": "VideoEditor"
+    },
+    
+    {
+      "name": "GetVideoInfoOptions",
+      "parent": "VideoEditor"
+    },
+    
+    {
+      "name": "VideoInfo",
+      "parent": "VideoEditor"
+    },
+    
+    {
+      "name": "VideoOptions",
+      "parent": "VideoPlayer"
+    },
+    
+    {
+      "name": "ZBarOptions",
+      "parent": "ZBar"
+    }
     
   ],
   "classes": [

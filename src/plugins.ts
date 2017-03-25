@@ -51,7 +51,6 @@ class Plugin {
     if (params) {
       this.params.sig = this.params.provider.name;
       this.params.name = name;
-      console.log(this.params);
     }
   }
 }

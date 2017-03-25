@@ -1,11 +1,13 @@
 import { NavParams, ViewController, AlertController, ModalController } from 'ionic-angular';
 import { ObjectCreatorPage } from './pages/object-creator/object-creator';
+import {HelpPage} from "./pages/help/help";
 
 export class ObjectCreator {
 
   type: string;
   signature: any;
 
+  actualType: string;
 
   values: any[] = [];
   items: any[] = [];
@@ -122,39 +124,12 @@ export class ObjectCreator {
   editObject(i: number) {
     const modal = this.modalCtrl.create(ObjectCreatorPage, {
       type: this.items[i].type,
-      value: this.values[i]
+      value: this.values[i],
+      actualType: this.items[i].actualType
     });
 
     modal.present();
     modal.onDidDismiss(value => value && (this.values[i] = value));
-  }
-
-  protected _addItem(type: string = 'string', value?: any, name?: string) {
-    this.items.push({ type, name });
-    this.setValue(this.values.length, type, value);
-  }
-
-  protected setValue(i: number, type: string, value?: any) {
-    switch (type) {
-      case 'boolean':
-        this.values[i] = value || false;
-        break;
-      case 'number':
-        this.values[i] = value || 0;
-        break;
-      case 'string':
-        this.values[i] = value || '';
-        break;
-      case 'object':
-        this.values[i] = value || '{}';
-        break;
-      case 'array':
-        this.values[i] = value || '[]';
-        break;
-      default:
-        this.values[i] = '';
-        break;
-    }
   }
 
   reorderItems(indexes) {
@@ -178,4 +153,60 @@ export class ObjectCreator {
   cancel() {
     this.viewCtrl.dismiss();
   }
+
+  showHelp() {
+    this.modalCtrl.create(HelpPage, { interfaceName: this.actualType }).present();
+  }
+
+  protected _addItem(type: string = 'string', value?: any, name?: string, actualType?: string) {
+    this.items.push({ type, name, actualType });
+    this.setValue(this.values.length, type, value);
+  }
+
+  protected setValue(i: number, type: string, value?: any) {
+    this.values[i] = value || this.getDefaultValue(type);
+  }
+
+  protected getDefaultValue(type: string) {
+    switch (type) {
+      case 'boolean':
+        return false;
+      case 'number':
+        return 0;
+      case 'string':
+        return '';
+      case 'object':
+        return '{}';
+      case 'array':
+        return '[]';
+      default:
+        return '';
+    }
+  }
+
+  protected parseType(type: string) {
+
+    // lets start with string as default type
+    if (!type) return 'string';
+
+    // first things first
+    type = type.toLowerCase();
+
+    switch (type) {
+      case 'string':
+      case 'number':
+      case 'boolean':
+      case 'date':
+        // no processing needed
+        return type;
+
+      default:
+        // check if array
+        if (type.indexOf('[]') > -1 || type.indexOf('array') > -1) return 'array';
+        // if it's none of the above, it's probably a custom type, which is most likely an object
+        else return 'object';
+    }
+
+  }
+
 }

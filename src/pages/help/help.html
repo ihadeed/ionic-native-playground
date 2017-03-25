@@ -1,9 +1,9 @@
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>Help</ion-title>
-    <ion-buttons end>
-      <button ion-button (click)="dismiss()">
+  <ion-navbar color="dark">
+    <ion-title>{{ sig? sig.name : 'Interface Docs'}}</ion-title>
+    <ion-buttons end *ngIf="!isChild">
+      <button ion-button (click)="close()">
         Close
       </button>
     </ion-buttons>
@@ -15,10 +15,10 @@
 <ion-content>
 
   <ion-list *ngIf="sig">
-    <ion-list-header text-wrap color="light">
-      {{ sig.name }}
-    </ion-list-header>
-    <ion-item *ngFor="let prop of sig.properties">
+    <!--<ion-list-header text-wrap color="light">-->
+      <!--{{ sig.name }}-->
+    <!--</ion-list-header>-->
+    <ion-item *ngFor="let prop of sig.properties" text-wrap>
       <h2>{{ prop.name }}</h2>
       <p>{{ prop.description }}</p>
       <ion-note item-right *ngIf="!!prop.type">{{ prop.type }}</ion-note>
@@ -26,10 +26,16 @@
     </ion-item>
   </ion-list>
 
-  <ion-list *ngIf="interfaces">
-    <button ion-item *ngIf="let int of interfaces" (click)="diveDeeper(int.name)" text-wrap>
+  <ion-searchbar *ngIf="interfaces && interfaces.length" [showCancelButton]="true" (ionCancel)="resetInterfaces()" (ionClear)="resetInterfaces()" (ionInput)="onSearchInput($event)"></ion-searchbar>
+
+  <ion-list *ngIf="interfaces && interfaces.length">
+    <ion-list-header color="light" text-wrap>
+      <ion-note item-left>Interface name</ion-note>
+      <ion-note item-right>Parent class</ion-note>
+    </ion-list-header>
+    <button ion-item *ngFor="let int of filteredInterfaces" (click)="diveDeeper(int.name)" text-wrap>
       <h2>{{ int.name }}</h2>
-      <p>Parent plugin: {{ int.parent }}</p>
+      <ion-note item-right>{{ int.parent }}</ion-note>
     </button>
   </ion-list>
 

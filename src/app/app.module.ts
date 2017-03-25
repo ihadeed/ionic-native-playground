@@ -30,6 +30,7 @@ import {IonicStorageModule} from "@ionic/storage";
 import {DynamicPluginPage} from "../pages/dynamic-plugin/dyanmic-plugin";
 import {SignatureService} from "../providers/signature";
 import {HttpModule} from "@angular/http";
+import { HelpPage } from '../pages/help/help';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import {HttpModule} from "@angular/http";
     PluginParamsPage,
     DynamicPluginPage,
     ObjectCreatorPage,
+    HelpPage,
 
     ActionSheetPage,
     BarcodeScannerPage,
@@ -63,6 +65,7 @@ import {HttpModule} from "@angular/http";
     PluginParamsPage,
     DynamicPluginPage,
     ObjectCreatorPage,
+    HelpPage,
 
     ActionSheetPage,
     BarcodeScannerPage,

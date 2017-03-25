@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavParams, ViewController, AlertController, ModalController } from 'ionic-angular';
 import { ObjectCreator } from '../../object-creator.class';
+import _ from 'lodash';
+import {SignatureService} from "../../providers/signature";
 
 @Component({
   selector: 'object-creator',
@@ -13,28 +15,50 @@ export class ObjectCreatorPage extends ObjectCreator {
     , viewCtrl: ViewController
     , alertCtrl: AlertController
     , modalCtrl: ModalController
+    , sig: SignatureService
   ) {
     super(navParams, viewCtrl, alertCtrl, modalCtrl);
     const value = navParams.get('value');
-    if (value) {
+
+    this.actualType = navParams.get('actualType');
+
+    if (value && value != this.getDefaultValue(this.type)) {
+
       try {
-        this.values = JSON.parse(value);
+        const parsed = JSON.parse(value);
+
+        for (let prop in parsed) {
+          let propType: string = typeof parsed[prop];
+          if (propType === 'object' && _.isArray(parsed[prop])) propType = 'array';
+          this.items.push({
+            name: prop,
+            type: propType
+          });
+          this.values.push(parsed[prop]);
+        }
+
       } catch (e) {
         console.log(e);
       }
+    } else if (this.actualType) {
+      sig.getInterfaceProperties(this.actualType)
+        .then(props => {
+          props.forEach(prop => this._addItem(this.parseType(prop.type), null, prop.name, prop.type))
+        }).catch(_.noop);
     }
+
   }
 
   save() {
+
     if (this.type == 'object') {
-      const obj = {};
-      this.items.forEach((item, i) => {
-        obj[item.name] = this.values[i];
-      });
+      let obj = {};
+      this.items.forEach((item, i) => obj[item.name] = this.values[i]);
       this.viewCtrl.dismiss(JSON.stringify(obj));
     } else {
       this.viewCtrl.dismiss(JSON.stringify(this.values));
     }
+
   }
 
 

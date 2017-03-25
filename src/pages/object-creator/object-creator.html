@@ -20,17 +20,17 @@
 
   <ion-list>
     <ion-list-header color="light">Params</ion-list-header>
-    <ion-item-group reorder="true" (ionItemReorder)="reorderItems($event)">
+    <ion-item-group [reorder]="type != 'object' && items.length > 1" (ionItemReorder)="reorderItems($event)">
       <ion-item *ngFor="let item of items; let i = index" >
         <ion-label *ngIf="type == 'object'">{{ item.name }}</ion-label>
         <ion-input *ngIf="['string', 'number'].indexOf(item.type) > -1" [type]="item.type" [(ngModel)]="values[i]"></ion-input>
         <ion-toggle *ngIf="item.type === 'boolean'" [(ngModel)]="values[i]"></ion-toggle>
         <ion-textarea *ngIf="['object', 'array'].indexOf(item.type) > -1" [(ngModel)]="values[i]" disabled></ion-textarea>
-        <button ion-button icon-only clear item-right (click)="changeType(i)">
-          <ion-icon name="build"></ion-icon>
-        </button>
         <button ion-button icon-only clear item-right *ngIf="['object', 'array'].indexOf(item.type) > -1" (click)="editObject(i)">
           <ion-icon name="create"></ion-icon>
+        </button>
+        <button ion-button icon-only clear item-right (click)="changeType(i)">
+          <ion-icon name="build"></ion-icon>
         </button>
         <button ion-button icon-only clear color="danger" item-right (click)="removeItem(i)">
           <ion-icon name="remove-circle"></ion-icon>
@@ -39,5 +39,10 @@
     </ion-item-group>
   </ion-list>
 
+  <ion-fab bottom right>
+    <button ion-fab (click)="showHelp()" class="help-button">
+      <ion-icon name="help"></ion-icon>
+    </button>
+  </ion-fab>
 
 </ion-content>

@@ -11,7 +11,7 @@ export class SignatureService {
 
   private SIG_PATH = 'assets/ionic-native-signatures/';
 
-  private interfaces: string[] = [];
+  private interfaces: any[] = [];
   private plugins: string[] = [];
 
   constructor(
@@ -20,7 +20,7 @@ export class SignatureService {
     this.fetchIndex();
   }
 
-  getInterfaces(): string[] {
+  getInterfaces(): any[] {
     return this.interfaces;
   }
 
@@ -29,11 +29,10 @@ export class SignatureService {
   }
 
   getMethodSignature(methodName: string, pluginName: string) {
-
     return this.getFileContents(this.getPluginSigPath(pluginName))
       .then((sig: any) => {
         const match = _.find(sig.members, { name: methodName });
-        !!match && Promise.resolve(match) || Promise.reject(null);
+        return match? Promise.resolve(match) : Promise.reject(null);
       });
 
   }
@@ -43,8 +42,15 @@ export class SignatureService {
   }
 
   getInterfaceProperties(interfaceName: string) {
+    if (!this.interfaceExists(interfaceName))
+      return Promise.reject('No interface exists for this type.');
+
     return this.getInterfaceSignature(interfaceName)
       .then(sig => Promise.resolve(sig.properties));
+  }
+
+  interfaceExists(interfaceName: string) {
+    return _.find(this.interfaces, { name: interfaceName });
   }
 
   private fetchIndex() {
@@ -52,17 +58,13 @@ export class SignatureService {
       .then((index: any) => {
         this.interfaces = index.interfaces;
         this.plugins = index.classes;
-      })
-      .catch(e => {
-        console.log('error getting index', e);
       });
   }
 
   private getFileContents(path): any {
     return this.http.get(path)
       .map(res => res.json())
-      .toPromise()
-      .catch(e => console.log(`Error getting file contents: ${ path }`, e))
+      .toPromise();
   }
 
   private getInterfaceSigPath(interfaceName: string) {
