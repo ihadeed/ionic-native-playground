@@ -59,8 +59,6 @@ export class PluginMethodsComponent {
   private processPlugin() {
     if (!this._plugin) return;
 
-    window['myp'] = this._plugin;
-
     for (let member in this._plugin) {
       const isFunction = typeof this._plugin[member] == 'function';
 
@@ -91,6 +89,8 @@ export class PluginMethodsComponent {
             if (this.sigName) {
               this.sig.getMethodSignature(member, this.sigName)
                 .then(res => {
+                  console.log(res);
+                  console.log(member);
                   if (res && res.params && res.params.length > 0) {
                     this.getParams(res)
                       .then(params => !!params && getResult(params));

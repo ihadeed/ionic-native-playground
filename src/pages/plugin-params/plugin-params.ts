@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {AlertController, ModalController, NavParams, ViewController} from 'ionic-angular';
 import { ObjectCreator } from '../../object-creator2.class';
+import {HelpPage} from "../help/help";
 
 @Component({
   selector: 'page-plugin-params',
@@ -66,6 +67,10 @@ export class PluginParamsPage extends ObjectCreator {
     });
     console.log('Returning params', params);
     this.viewCtrl.dismiss(params);
+  }
+
+  showHelp() {
+    this.modalCtrl.create(HelpPage).present();
   }
 
 }

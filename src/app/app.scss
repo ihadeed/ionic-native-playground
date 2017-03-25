@@ -18,3 +18,7 @@
 ion-app .nav-decor{
   background-color: transparent !important;
 }
+
+ion-fab.help-button {
+  z-index: 10000 !important;
+}

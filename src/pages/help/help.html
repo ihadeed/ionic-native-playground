@@ -1,0 +1,36 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Help</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="dismiss()">
+        Close
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <ion-list *ngIf="sig">
+    <ion-list-header text-wrap color="light">
+      {{ sig.name }}
+    </ion-list-header>
+    <ion-item *ngFor="let prop of sig.properties">
+      <h2>{{ prop.name }}</h2>
+      <p>{{ prop.description }}</p>
+      <ion-note item-right *ngIf="!!prop.type">{{ prop.type }}</ion-note>
+      <ion-note item-right *ngIf="prop.optional">(optional)</ion-note>
+    </ion-item>
+  </ion-list>
+
+  <ion-list *ngIf="interfaces">
+    <button ion-item *ngIf="let int of interfaces" (click)="diveDeeper(int.name)" text-wrap>
+      <h2>{{ int.name }}</h2>
+      <p>Parent plugin: {{ int.parent }}</p>
+    </button>
+  </ion-list>
+
+</ion-content>
