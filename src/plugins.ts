@@ -41,62 +41,106 @@ import { Market } from '@ionic-native/market';
 import { Keyboard } from '@ionic-native/keyboard';
 import { GooglePlus } from '@ionic-native/google-plus';
 import { CardIO } from '@ionic-native/card-io';
+import { Stripe } from "@ionic-native/stripe";
+import { OneSignal } from '@ionic-native/onesignal';
+import {PinDialog} from "@ionic-native/pin-dialog";
+import {PowerManagement} from "@ionic-native/power-management";
+import {SafariViewController} from "@ionic-native/safari-view-controller";
+import {Screenshot} from "@ionic-native/screenshot";
+import {ScreenOrientation} from "@ionic-native/screen-orientation";
+import {SecureStorage} from "@ionic-native/secure-storage";
+import {StatusBar} from "@ionic-native/status-bar";
+import {Stepcounter} from "@ionic-native/stepcounter";
+import {StreamingMedia} from "@ionic-native/streaming-media";
+import {Toast} from "@ionic-native/toast";
+import {SocialSharing} from "@ionic-native/social-sharing";
+import {Sim} from "@ionic-native/sim";
+import {TouchID} from "@ionic-native/touch-id";
+import {UniqueDeviceID} from "@ionic-native/unique-device-id";
 
 class Plugin {
   constructor(
     public name: string,
-    public component: any,
-    public params?: any
-  ) {
-    if (params) {
-      this.params.sig = this.params.provider.getPluginName().replace(/\s/g, '');
-      this.params.name = name;
-    }
+    public component: any
+  ) {}
+}
+
+class DynamicPlugin {
+
+  params: any;
+  name: string;
+  component: any = DynamicPluginPage;
+
+  constructor(provider: any) {
+    this.name = provider.getPluginName();
+    this.params = {
+      sig: provider.getPluginName().replace(/\s/g, ''),
+      name: provider.getPluginName(),
+      provider
+    };
   }
+
 }
 
 
 const plugins = [
   new Plugin('Action Sheet', ActionSheetPage),
   new Plugin('Barcode Scanner', BarcodeScannerPage),
-  new Plugin('Battery Status', DynamicPluginPage, { provider: BatteryStatus, sig: 'battery-status' }),
   new Plugin('Brightness', BrightnessPage),
   new Plugin('Camera', CameraPage),
-  new Plugin('CardIO', DynamicPluginPage, { provider: CardIO, sig: 'card-io' }),
-  new Plugin('Clipboard', DynamicPluginPage, { provider: Clipboard, sig: 'clipboard' }),
   new Plugin('Contacts', ContactsPage),
-  new Plugin('Device', DynamicPluginPage, { provider: Device, sig: 'device' }),
-  new Plugin('Device Accounts', DynamicPluginPage, { provider: DeviceAccounts, sig: 'device-accounts' }),
-  new Plugin('Market', DynamicPluginPage, { provider: Market, sig: 'market' }),
-  new Plugin('Keyboard', DynamicPluginPage, { provider: Keyboard, sig: 'keyboard' }),
-  new Plugin('Google Plus', DynamicPluginPage, { provider: GooglePlus, sig: 'google-plus' }),
   new Plugin('Google Maps', GoogleMapsPage),
-  new Plugin('Geolocation', DynamicPluginPage, { provider: Geolocation, sig: 'geolocation' }),
-  new Plugin('Diagnostic', DynamicPluginPage, { provider: Diagnostic, sig: 'diagnostic' }),
-  new Plugin('Android Fingerprint Auth', DynamicPluginPage, { provider: AndroidFingerprintAuth, sig: 'android-fingerprint-auth' }),
-  new Plugin('App Rate', DynamicPluginPage, { provider: AppRate, sig: 'app-rate' }),
-  new Plugin('Badge', DynamicPluginPage, { provider: Badge, sig: 'badge' }),
-  new Plugin('App Availability', DynamicPluginPage, { provider: AppAvailability, sig: 'app-availability' }),
-  new Plugin('Browser Tab', DynamicPluginPage, { provider: BrowserTab, sig: 'browser-tab' }),
-  new Plugin('Calendar', DynamicPluginPage, { provider: Calendar, sig: 'calendar' }),
-  new Plugin('Call Number', DynamicPluginPage, { provider: CallNumber, sig: 'call-number' }),
-  new Plugin('Date Picker', DynamicPluginPage, { provider: DatePicker, sig: 'date-picker' }),
-  new Plugin('App preferences', DynamicPluginPage, { provider: AppPreferences, sig: 'app-preferences' }),
-  new Plugin('AdMob', DynamicPluginPage, { provider: AdMob, sig: 'admob' }),
-  new Plugin('Background Geolocation', DynamicPluginPage, { provider: BackgroundGeolocation, sig: 'background-geolocation' }),
-  new Plugin('App Version', DynamicPluginPage, { provider: AppVersion, sig: 'app-version' }),
-  new Plugin('DB Meter', DynamicPluginPage, { provider: DBMeter, sig: 'db-meter' }),
-  new Plugin('Device Motion', DynamicPluginPage, { provider: DeviceMotion, sig: 'device-motion' }),
-  new Plugin('Device Orientation', DynamicPluginPage, { provider: DeviceOrientation, sig: 'device-orientation' }),
-  new Plugin('Dialogs', DynamicPluginPage, { provider: Dialogs, sig: 'dialogs' }),
-  new Plugin('File Chooser', DynamicPluginPage, { provider: FileChooser, sig: 'file-chooser' }),
-  new Plugin('Flashlight', DynamicPluginPage, { provider: Flashlight, sig: 'flashlight' }),
-  new Plugin('Globalization', DynamicPluginPage, { provider: Globalization, sig: 'globalization' }),
-  new Plugin('Gyroscope', DynamicPluginPage, { provider: Gyroscope, sig: 'gyroscope' }),
-  new Plugin('SMS', DynamicPluginPage, { provider: SMS, sig: 'sms' }),
-  new Plugin('Text to Speech', DynamicPluginPage, { provider: TextToSpeech, sig: 'text-to-speech' }),
-  new Plugin('Vibration', DynamicPluginPage, { provider: Vibration, sig: 'vibration' }),
-  new Plugin('Speech Recognition', DynamicPluginPage, { provider: SpeechRecognition, sig: 'speech-regognition' })
+
+  new DynamicPlugin(BatteryStatus),
+  new DynamicPlugin(CardIO),
+  new DynamicPlugin(Clipboard),
+  new DynamicPlugin(Device),
+  new DynamicPlugin(DeviceAccounts),
+  new DynamicPlugin(Market),
+  new DynamicPlugin(Keyboard),
+  new DynamicPlugin(GooglePlus),
+  new DynamicPlugin(Geolocation),
+  new DynamicPlugin(Diagnostic),
+  new DynamicPlugin(AndroidFingerprintAuth),
+  new DynamicPlugin(AppRate),
+  new DynamicPlugin(Badge),
+  new DynamicPlugin(AppAvailability),
+  new DynamicPlugin(BrowserTab),
+  new DynamicPlugin(Calendar),
+  new DynamicPlugin(CallNumber),
+  new DynamicPlugin(DatePicker),
+  new DynamicPlugin(AppPreferences),
+  new DynamicPlugin(AdMob),
+  new DynamicPlugin(BackgroundGeolocation),
+  new DynamicPlugin(AppVersion),
+  new DynamicPlugin(DBMeter),
+  new DynamicPlugin(DeviceMotion),
+  new DynamicPlugin(DeviceOrientation),
+  new DynamicPlugin(Dialogs),
+  new DynamicPlugin(FileChooser),
+  new DynamicPlugin(Flashlight),
+  new DynamicPlugin(Globalization),
+  new DynamicPlugin(Gyroscope),
+  new DynamicPlugin(SMS),
+  new DynamicPlugin(TextToSpeech),
+  new DynamicPlugin(Vibration),
+  new DynamicPlugin(SpeechRecognition),
+  new DynamicPlugin(Stripe),
+  new DynamicPlugin(OneSignal),
+  new DynamicPlugin(PinDialog),
+  new DynamicPlugin(PowerManagement),
+  new DynamicPlugin(SafariViewController),
+  new DynamicPlugin(ScreenOrientation),
+  new DynamicPlugin(Screenshot),
+  new DynamicPlugin(SecureStorage),
+  new DynamicPlugin(Sim),
+  new DynamicPlugin(SocialSharing),
+  new DynamicPlugin(StatusBar),
+  new DynamicPlugin(Stepcounter),
+  new DynamicPlugin(StreamingMedia),
+  new DynamicPlugin(Toast),
+  new DynamicPlugin(TouchID),
+  new DynamicPlugin(UniqueDeviceID),
 ];
 
 export default _.sortBy(plugins, ['name']);

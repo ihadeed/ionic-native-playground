@@ -10,6 +10,12 @@ import {SignatureService} from "../../providers/signature";
 })
 export class PluginMethodsComponent {
 
+  @Input()
+  pluginResult: PluginResultComponent;
+
+  @Input()
+  sigName: string;
+
   _plugin: any;
 
   @Input()
@@ -17,12 +23,6 @@ export class PluginMethodsComponent {
     this._plugin = val;
     this.processPlugin();
   }
-
-  @Input()
-  pluginResult: PluginResultComponent;
-
-  @Input()
-  sigName: string;
 
   @Output()
   onResult = new EventEmitter<any>();
@@ -54,13 +54,25 @@ export class PluginMethodsComponent {
   properties: any[] = [];
   methods: any[] = [];
 
-  constructor(private ngZone: NgZone, private modalCtrl: ModalController, private sig: SignatureService){}
+  constructor(private ngZone: NgZone, private modalCtrl: ModalController, private sig: SignatureService){
+    console.log('wubalalsdlasdsada');
+  }
 
-  private processPlugin() {
+  private async processPlugin() {
     if (!this._plugin) return;
+
+    this.properties = [];
+    this.methods = [];
 
     for (let member in this._plugin) {
       const isFunction = typeof this._plugin[member] == 'function';
+
+      let desc;
+
+      if (this.sigName) {
+        desc = (await this.sig.getMethodSignature(member, this.sigName)).description;
+        console.log('desc is ', desc);
+      } else console.log('no sig', this.sigName);
 
       const button = {
         text: member,
@@ -110,7 +122,8 @@ export class PluginMethodsComponent {
             this.success(method);
           }
 
-        }
+        },
+        desc: desc
       };
 
       isFunction ? this.methods.push(button) : this.properties.push(button);

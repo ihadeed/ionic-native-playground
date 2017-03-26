@@ -11,15 +11,16 @@
 
   <ion-item-group *ngIf="methods.length > 0">
 
-    <ion-list-header color="light">
+    <ion-list-header color="light" text-wrap>
       <h2>Methods</h2>
       <p *ngIf="!sigName">Swipe to the left to call with params</p>
       <p *ngIf="sigName">Click on the method name to call. You will be prompted for params if needed.</p>
     </ion-list-header>
 
     <ion-item-sliding *ngFor="let btn of methods">
-      <button ion-item (click)="btn.handler()">
-        {{ btn.text }}
+      <button ion-item (click)="btn.handler()" text-wrap>
+        <h2>{{ btn.text }}</h2>
+        <p *ngIf="btn.desc">{{ btn.desc }}</p>
       </button>
       <ion-item-options *ngIf="!sigName" side="right">
         <button ion-button (click)="btn.handler(true)">

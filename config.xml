@@ -43,4 +43,5 @@
         <variable name="API_KEY_FOR_ANDROID" value="AIzaSyDprtwhsBk0oonfHN1i0QJF51b_jeWTx6A" />
         <variable name="API_KEY_FOR_IOS" value="AIzaSyDprtwhsBk0oonfHN1i0QJF51b_jeWTx6A" />
     </plugin>
+    <plugin name="cordova-plugin-stripe" spec="~1.4.0" />
 </widget>
