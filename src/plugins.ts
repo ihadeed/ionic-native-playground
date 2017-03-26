@@ -57,6 +57,15 @@ import {SocialSharing} from "@ionic-native/social-sharing";
 import {Sim} from "@ionic-native/sim";
 import {TouchID} from "@ionic-native/touch-id";
 import {UniqueDeviceID} from "@ionic-native/unique-device-id";
+import {YoutubeVideoPlayer} from "@ionic-native/youtube-video-player";
+import {Network} from "@ionic-native/network";
+import {NativePageTransitions} from "@ionic-native/native-page-transitions";
+import {GoogleAnalytics} from "@ionic-native/google-analytics";
+import {Pedometer} from "@ionic-native/pedometer";
+import {NativeGeocoder} from "@ionic-native/native-geocoder";
+import {HTTP} from "@ionic-native/http";
+import {DeviceFeedback} from "@ionic-native/device-feedback";
+import {InAppBrowser} from "@ionic-native/in-app-browser";
 
 class Plugin {
   constructor(
@@ -141,6 +150,15 @@ const plugins = [
   new DynamicPlugin(Toast),
   new DynamicPlugin(TouchID),
   new DynamicPlugin(UniqueDeviceID),
+  new DynamicPlugin(YoutubeVideoPlayer),
+  new DynamicPlugin(NativeGeocoder),
+  new DynamicPlugin(Pedometer),
+  new DynamicPlugin(Network),
+  new DynamicPlugin(NativePageTransitions),
+  new DynamicPlugin(InAppBrowser),
+  new DynamicPlugin(HTTP),
+  new DynamicPlugin(GoogleAnalytics),
+  new DynamicPlugin(DeviceFeedback),
 ];
 
 export default _.sortBy(plugins, ['name']);

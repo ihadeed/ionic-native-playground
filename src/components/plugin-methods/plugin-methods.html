@@ -4,8 +4,9 @@
     <ion-list-header color="light">
       <h2>Properties</h2>
     </ion-list-header>
-    <button ion-item *ngFor="let btn of properties" (click)="btn.handler()">
-      {{ btn.text }}
+    <button ion-item text-wrap *ngFor="let btn of properties" (click)="btn.handler()">
+      <h2>{{ btn.text }}</h2>
+      <p *ngIf="btn.desc">{{ btn.desc }}</p>
     </button>
   </ion-item-group>
 

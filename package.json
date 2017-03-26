@@ -43,7 +43,7 @@
     "@ionic-native/db-meter": "^3.2.2",
     "@ionic-native/device": "^3.2.2",
     "@ionic-native/device-accounts": "^3.2.2",
-    "@ionic-native/device-feedback": "^3.2.2",
+    "@ionic-native/device-feedback": "^3.2.3",
     "@ionic-native/device-motion": "^3.2.2",
     "@ionic-native/device-orientation": "^3.2.2",
     "@ionic-native/diagnostic": "^3.2.2",
@@ -52,12 +52,19 @@
     "@ionic-native/flashlight": "^3.2.2",
     "@ionic-native/geolocation": "^3.2.2",
     "@ionic-native/globalization": "^3.2.2",
+    "@ionic-native/google-analytics": "^3.2.3",
     "@ionic-native/google-maps": "^3.2.2",
     "@ionic-native/google-plus": "^3.2.2",
     "@ionic-native/gyroscope": "^3.2.2",
+    "@ionic-native/http": "^3.2.3",
+    "@ionic-native/in-app-browser": "^3.2.3",
     "@ionic-native/keyboard": "^3.2.2",
     "@ionic-native/market": "^3.2.2",
+    "@ionic-native/native-geocoder": "^3.2.3",
+    "@ionic-native/native-page-transitions": "^3.2.3",
+    "@ionic-native/network": "^3.2.3",
     "@ionic-native/onesignal": "^3.2.3",
+    "@ionic-native/pedometer": "^3.2.3",
     "@ionic-native/pin-dialog": "^3.2.3",
     "@ionic-native/power-management": "^3.2.3",
     "@ionic-native/safari-view-controller": "^3.2.3",
@@ -78,6 +85,7 @@
     "@ionic-native/touch-id": "^3.2.3",
     "@ionic-native/unique-device-id": "^3.2.3",
     "@ionic-native/vibration": "^3.2.2",
+    "@ionic-native/youtube-video-player": "^3.2.3",
     "@ionic/storage": "2.0.1",
     "@types/lodash": "^4.14.57",
     "ionic-angular": "2.1.0-201703201940",
@@ -115,10 +123,7 @@
       "locator": "https://github.com/loicknuchel/cordova-device-accounts.git",
       "id": "org.loicknuchel.cordova.deviceaccounts"
     },
-    {
-      "locator": "cordova-plugin-market",
-      "id": "com.xmartlabs.cordova.market"
-    },
+    "com.xmartlabs.cordova.market",
     "cordova-plugin-file",
     "cordova-plugin-geolocation",
     "cordova-plugin-app-version",
@@ -158,7 +163,43 @@
       "locator": "https://github.com/ihadeed/cordova-plugin-googlemaps",
       "id": "cordova-plugin-googlemaps"
     },
-    "cordova-plugin-call-number"
+    "cordova-plugin-call-number",
+    "cordova-plugin-stripe",
+    "onesignal-cordova-plugin",
+    "cordova-plugin-pin-dialog",
+    "at.gofg.sportscomputer.powermanagement",
+    "cordova-plugin-safariviewcontroller",
+    "cordova-plugin-screen-orientation",
+    {
+      "locator": "https://github.com/vstirbu/PromisesPlugin.git",
+      "id": "es6-promise-plugin"
+    },
+    {
+      "locator": "https://github.com/gitawego/cordova-screenshot.git",
+      "id": "com.darktalker.cordova.screenshot"
+    },
+    "cordova-plugin-secure-storage",
+    "cordova-plugin-sim",
+    "cordova-plugin-x-socialsharing",
+    {
+      "locator": "https://github.com/Slidee/cordova-plugin-stepcounter",
+      "id": "net.texh.cordovapluginstepcounter"
+    },
+    "com.hutchind.cordova.plugins.streamingmedia",
+    "cordova-plugin-x-toast",
+    "cordova-plugin-touch-id",
+    "cordova-plugin-uniquedeviceid",
+    {
+      "locator": "https://github.com/Glitchbone/CordovaYoutubeVideoPlayer.git",
+      "id": "com.bunkerpalace.cordova.YoutubeVideoPlayer"
+    },
+    "cordova-plugin-nativegeocoder",
+    "cordova-plugin-pedometer",
+    "cordova-plugin-network-information",
+    "com.telerik.plugins.nativepagetransitions",
+    "cordova-plugin-inappbrowser",
+    "cordova-plugin-http",
+    "cordova-plugin-google-analytics"
   ],
   "description": "ionic-native-playground: An Ionic project"
 }
