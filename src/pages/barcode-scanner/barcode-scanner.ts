@@ -34,7 +34,6 @@ export class BarcodeScannerPage {
   }
 
   encode() {
-    console.log('Encoding');
     this.barcodeScanner.encode(this.barcodeScanner.Encode.TEXT_TYPE, 'https://justpost.io')
       .then(v => this.result = v)
       .catch(e => this.error = e);

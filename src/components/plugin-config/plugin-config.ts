@@ -13,7 +13,6 @@ export class PluginConfigComponent {
 
   @Input()
   set config(val: any) {
-    console.log('Got config object', val);
     this._config = val;
     this.processConfig();
   }

@@ -54,9 +54,7 @@ export class PluginMethodsComponent {
   properties: any[] = [];
   methods: any[] = [];
 
-  constructor(private ngZone: NgZone, private modalCtrl: ModalController, private sig: SignatureService){
-    console.log('wubalalsdlasdsada');
-  }
+  constructor(private ngZone: NgZone, private modalCtrl: ModalController, private sig: SignatureService){}
 
   private async processPlugin() {
     if (!this._plugin) return;
@@ -71,8 +69,7 @@ export class PluginMethodsComponent {
 
       if (this.sigName) {
         desc = (await this.sig.getMethodSignature(member, this.sigName)).description;
-        console.log('desc is ', desc);
-      } else console.log('no sig', this.sigName);
+      }
 
       const button = {
         text: member,

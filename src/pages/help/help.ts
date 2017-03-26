@@ -33,8 +33,6 @@ export class HelpPage {
 
     this.isChild = this.navParams.get('isChild') == true;
 
-    console.log(interfaceName);
-
     if (interfaceName && !this.sigs.interfaceExists(interfaceName)) {
       interfaceName = undefined;
     }
@@ -55,7 +53,6 @@ export class HelpPage {
   }
 
   resetInterfaces() {
-    console.log('reetting interfaces yo');
     this.filteredInterfaces = this.interfaces;
   }
 
