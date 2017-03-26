@@ -48,6 +48,7 @@
     "@ionic-native/device-orientation": "^3.2.4",
     "@ionic-native/diagnostic": "^3.2.4",
     "@ionic-native/dialogs": "^3.2.4",
+    "@ionic-native/file": "^3.2.4",
     "@ionic-native/file-chooser": "^3.2.4",
     "@ionic-native/flashlight": "^3.2.4",
     "@ionic-native/geolocation": "^3.2.4",
