@@ -32,26 +32,54 @@ import {SignatureService} from "../providers/signature";
 import {HttpModule} from "@angular/http";
 import { HelpPage } from '../pages/help/help';
 
-@NgModule({
-  declarations: [
-    MyApp,
-    HomePage,
-    GoogleMapComponent,
-    PluginResultComponent,
-    PluginConfigComponent,
-    PluginMethodsComponent,
-    PluginParamsPage,
-    DynamicPluginPage,
-    ObjectCreatorPage,
-    HelpPage,
+const components = [
+  MyApp,
+  HomePage,
+  PluginParamsPage,
+  DynamicPluginPage,
+  ObjectCreatorPage,
+  HelpPage,
 
-    ActionSheetPage,
-    BarcodeScannerPage,
-    BrightnessPage,
-    CameraPage,
-    ContactsPage,
-    GoogleMapsPage
-  ],
+  ActionSheetPage,
+  BarcodeScannerPage,
+  BrightnessPage,
+  CameraPage,
+  ContactsPage,
+  GoogleMapsPage,
+  GoogleMapComponent,
+  PluginResultComponent,
+  PluginConfigComponent,
+  PluginMethodsComponent
+];
+
+const providers = [
+  {
+    provide: ErrorHandler,
+    useClass: IonicErrorHandler
+  },
+  SignatureService,
+
+  ActionSheet,
+  BarcodeScanner,
+  Brightness,
+  Camera,
+  Contacts,
+  GoogleMaps,
+
+  SplashScreen,
+  StatusBar
+];
+
+export function getComponents() {
+  return components;
+}
+
+export function getProviders() {
+  return providers;
+}
+
+@NgModule({
+  declarations: getComponents(),
   imports: [
     BrowserModule,
     HttpModule,
@@ -59,37 +87,7 @@ import { HelpPage } from '../pages/help/help';
     IonicStorageModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
-  entryComponents: [
-    MyApp,
-    HomePage,
-    PluginParamsPage,
-    DynamicPluginPage,
-    ObjectCreatorPage,
-    HelpPage,
-
-    ActionSheetPage,
-    BarcodeScannerPage,
-    BrightnessPage,
-    CameraPage,
-    ContactsPage,
-    GoogleMapsPage
-  ],
-  providers: [
-    {
-      provide: ErrorHandler,
-      useClass: IonicErrorHandler
-    },
-    SignatureService,
-
-    ActionSheet,
-    BarcodeScanner,
-    Brightness,
-    Camera,
-    Contacts,
-    GoogleMaps,
-
-    SplashScreen,
-    StatusBar
-  ]
+  entryComponents: getComponents(),
+  providers: getProviders()
 })
 export class AppModule {}

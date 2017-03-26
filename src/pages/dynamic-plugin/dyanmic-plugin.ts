@@ -22,7 +22,7 @@ export class DynamicPluginPage {
 
     // get signature name if available
     this.sigName = navParams.get('sig');
-    console.log('we set the sig name yo');
+
     // inject provider
     const injector = ReflectiveInjector.resolveAndCreate([pluginProvider]);
 
