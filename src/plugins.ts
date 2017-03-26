@@ -49,7 +49,7 @@ class Plugin {
     public params?: any
   ) {
     if (params) {
-      this.params.sig = this.params.provider.name;
+      this.params.sig = this.params.provider.getPluginName().replace(/\s/g, '');
       this.params.name = name;
     }
   }

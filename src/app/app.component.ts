@@ -1,5 +1,5 @@
-import { Component, NgZone } from '@angular/core';
-import {ModalController, Platform} from 'ionic-angular';
+import { Component } from '@angular/core';
+import { Platform } from 'ionic-angular';
 
 import { HomePage } from '../pages/home/home';
 
@@ -17,7 +17,6 @@ export class MyApp {
     platform: Platform
     , statusBar: StatusBar
     , splashScreen: SplashScreen
-    , private modalCtrl: ModalController
     , sigs: SignatureService
   ) {
     platform.ready().then(() => {
@@ -25,11 +24,6 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       statusBar.backgroundColorByHexString('#387ef5');
       splashScreen.hide();
-    });
-
-    document.addEventListener('deviceready', () => {
-      console.log(NgZone.isInAngularZone());
-
     });
   }
 

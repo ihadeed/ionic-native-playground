@@ -34,7 +34,6 @@ export class SignatureService {
         const match = _.find(sig.members, { name: methodName });
         return match? Promise.resolve(match) : Promise.reject(null);
       });
-
   }
 
   getInterfaceSignature(interfaceName: string) {
