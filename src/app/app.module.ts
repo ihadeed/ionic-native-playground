@@ -31,8 +31,17 @@ import {DynamicPluginPage} from "../pages/dynamic-plugin/dyanmic-plugin";
 import {SignatureService} from "../providers/signature";
 import {HttpModule} from "@angular/http";
 import { HelpPage } from '../pages/help/help';
+import { CameraPreviewPage } from '../pages/camera-preview/camera-preview';
+import { CameraPreview } from '@ionic-native/camera-preview'
 
 const components = [
+  GoogleMapComponent,
+  PluginResultComponent,
+  PluginConfigComponent,
+  PluginMethodsComponent
+];
+
+const pages = [
   MyApp,
   HomePage,
   PluginParamsPage,
@@ -46,10 +55,7 @@ const components = [
   CameraPage,
   ContactsPage,
   GoogleMapsPage,
-  GoogleMapComponent,
-  PluginResultComponent,
-  PluginConfigComponent,
-  PluginMethodsComponent
+  CameraPreviewPage
 ];
 
 const providers = [
@@ -65,13 +71,18 @@ const providers = [
   Camera,
   Contacts,
   GoogleMaps,
+  CameraPreview,
 
   SplashScreen,
   StatusBar
 ];
 
-export function getComponents() {
-  return components;
+export function getDeclarations() {
+  return [components, pages];
+}
+
+export function getEntryComponents() {
+  return pages;
 }
 
 export function getProviders() {
@@ -79,7 +90,7 @@ export function getProviders() {
 }
 
 @NgModule({
-  declarations: getComponents(),
+  declarations: getDeclarations(),
   imports: [
     BrowserModule,
     HttpModule,
@@ -87,7 +98,7 @@ export function getProviders() {
     IonicStorageModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
-  entryComponents: getComponents(),
+  entryComponents: getEntryComponents(),
   providers: getProviders()
 })
 export class AppModule {}
