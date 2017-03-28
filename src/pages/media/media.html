@@ -1,0 +1,25 @@
+<!--
+  Generated template for the Media page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Media</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <plugin-result [result]="result" [error]="error"></plugin-result>
+
+  <button ion-button block round mode="ios" [disabled]="isRecording || isPlaying" (click)="startRecording()">Start recording</button>
+  <button ion-button block round mode="ios" [disabled]="!isRecording" (click)="stopRecording()">Stop recording</button>
+  <button ion-button block round mode="ios" [disabled]="!mediaObject || isRecording || isPlaying" (click)="startPlaying()">Start playing</button>
+  <button ion-button block round mode="ios" [disabled]="!isPlaying" (click)="stopPlaying()">Stop playing</button>
+
+</ion-content>

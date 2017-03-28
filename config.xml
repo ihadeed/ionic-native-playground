@@ -52,7 +52,6 @@
     <plugin name="cordova-clipboard" spec="~1.0.0" />
     <plugin name="org.loicknuchel.cordova.deviceaccounts" spec="https://github.com/loicknuchel/cordova-device-accounts.git" />
     <plugin name="com.xmartlabs.cordova.market" spec="1.1" />
-    <plugin name="cordova-plugin-file" spec="~4.3.1" />
     <plugin name="cordova-plugin-geolocation" spec="~2.4.2" />
     <plugin name="cordova-plugin-app-version" spec="~0.1.9" />
     <plugin name="cordova.plugins.diagnostic" spec="~3.4.2" />
@@ -111,4 +110,6 @@
     <plugin name="cordova-plugin-inappbrowser" spec="~1.7.0" />
     <plugin name="cordova-plugin-http" spec="~1.2.0" />
     <plugin name="cordova-plugin-google-analytics" spec="~1.7.5" />
+    <plugin name="cordova-plugin-media" spec="~3.0.0" />
+    <plugin name="cordova-plugin-file" spec="~4.3.1" />
 </widget>

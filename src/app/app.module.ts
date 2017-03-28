@@ -33,6 +33,9 @@ import {HttpModule} from "@angular/http";
 import { HelpPage } from '../pages/help/help';
 import { CameraPreviewPage } from '../pages/camera-preview/camera-preview';
 import { CameraPreview } from '@ionic-native/camera-preview'
+import {MediaPage} from "../pages/media/media";
+import { MediaPlugin } from '@ionic-native/media';
+import { File } from '@ionic-native/file';
 
 const components = [
   GoogleMapComponent,
@@ -55,7 +58,8 @@ const pages = [
   CameraPage,
   ContactsPage,
   GoogleMapsPage,
-  CameraPreviewPage
+  CameraPreviewPage,
+  MediaPage
 ];
 
 const providers = [
@@ -72,6 +76,8 @@ const providers = [
   Contacts,
   GoogleMaps,
   CameraPreview,
+  MediaPlugin,
+  File,
 
   SplashScreen,
   StatusBar

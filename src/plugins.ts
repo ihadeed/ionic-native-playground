@@ -67,6 +67,7 @@ import {HTTP} from "@ionic-native/http";
 import {DeviceFeedback} from "@ionic-native/device-feedback";
 import {InAppBrowser} from "@ionic-native/in-app-browser";
 import {CameraPreviewPage} from "./pages/camera-preview/camera-preview";
+import {MediaPage} from "./pages/media/media";
 
 class Plugin {
   constructor(
@@ -101,6 +102,7 @@ const plugins = [
   new Plugin('Contacts', ContactsPage),
   new Plugin('Google Maps', GoogleMapsPage),
   new Plugin('CameraPreview', CameraPreviewPage),
+  new Plugin('Media', MediaPage),
 
   new DynamicPlugin(BatteryStatus),
   new DynamicPlugin(CardIO),
