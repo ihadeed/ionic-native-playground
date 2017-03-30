@@ -2,7 +2,6 @@
   "name": "ionic-native-playground",
   "author": "Ibby Hadeed <i.hadeed@zyra.ca>",
   "homepage": "https://zyramedia.com",
-  "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",
     "build": "ionic-app-scripts build",
@@ -99,9 +98,8 @@
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
-    "@ionic/app-scripts": "^1.1.4",
-    "@ionic/cli-plugin-cordova": "0.0.9",
-    "typescript": "~2.2.1"
+    "@ionic/app-scripts": "^1.2.2",
+    "typescript": "^2.2.2"
   },
   "cordovaPlugins": [
     "cordova-plugin-whitelist",
