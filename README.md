@@ -1,5 +1,5 @@
 # Ionic Native Playground
-This demo Cordova app demonstrates the usage and the features of Ionic Native. To read more about Ionic Native please visit their [repo here](https://github.com/driftyco/ionic-native). 
+This demo app puts all the plugins below in action, using Ionic Native wrappers. To learn more about Ionic Native, please visit their [repo here](https://github.com/driftyco/ionic-native). 
 
 ## Implemented plugins
 - Action Sheet
