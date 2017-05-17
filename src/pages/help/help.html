@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header [attr.no-shadow]="interfaces && interfaces.length" [attr.no-border]="interfaces && interfaces.length">
 
   <ion-navbar color="dark">
     <ion-title>{{ sig? sig.name : 'Interface Docs'}}</ion-title>
@@ -26,7 +26,9 @@
     </ion-item>
   </ion-list>
 
-  <ion-searchbar *ngIf="interfaces && interfaces.length" [showCancelButton]="true" (ionCancel)="resetInterfaces()" (ionClear)="resetInterfaces()" (ionInput)="onSearchInput($event)"></ion-searchbar>
+  <ion-toolbar color="dark" *ngIf="interfaces && interfaces.length">
+    <ion-searchbar [showCancelButton]="true" (ionCancel)="resetInterfaces()" (ionClear)="resetInterfaces()" (ionInput)="onSearchInput($event)"></ion-searchbar>
+  </ion-toolbar>
 
   <ion-list *ngIf="interfaces && interfaces.length">
     <ion-list-header color="light" text-wrap>
