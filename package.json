@@ -1,6 +1,6 @@
 {
   "name": "ionic-native-playground",
-  "author": "Ibby Hadeed <i.hadeed@zyra.ca>",
+  "author": "Ibby Hadeed <ibby@zyra.ca>",
   "homepage": "https://zyramedia.com",
   "scripts": {
     "clean": "ionic-app-scripts clean",
