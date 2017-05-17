@@ -22,3 +22,7 @@ ion-app .nav-decor{
 ion-fab.help-button {
   z-index: 10000 !important;
 }
+
+ion-app._gmaps_cdv_ .nav-decor {
+  background-color: rgba(0,0,0,0);
+}
