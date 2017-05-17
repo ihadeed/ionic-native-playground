@@ -1,6 +1,6 @@
 import {Component, EventEmitter, Input, NgZone, Output} from '@angular/core';
 import {PluginResultComponent} from "../plugin-result/plugin-result";
-import {ModalController} from "ionic-angular";
+import {Content, ModalController} from "ionic-angular";
 import {PluginParamsPage} from "../../pages/plugin-params/plugin-params";
 import {SignatureService} from "../../providers/signature";
 
@@ -55,7 +55,12 @@ export class PluginMethodsComponent {
   methods: any[] = [];
   subscription: any;
 
-  constructor(private ngZone: NgZone, private modalCtrl: ModalController, private sig: SignatureService){
+  constructor(
+    private ngZone: NgZone,
+    private modalCtrl: ModalController,
+    private sig: SignatureService,
+    private content: Content
+  ){
   }
 
   ngOnDestroy() {
@@ -104,6 +109,11 @@ export class PluginMethodsComponent {
               } else {
                 this.success(result);
               }
+
+              if (this.content && this.content.scrollToTop) {
+                this.content.scrollToTop();
+              }
+
             };
 
             if (this.sigName) {

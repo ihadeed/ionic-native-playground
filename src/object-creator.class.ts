@@ -158,8 +158,8 @@ export class ObjectCreator {
     this.modalCtrl.create(HelpPage, { interfaceName: this.actualType }).present();
   }
 
-  protected _addItem(type: string = 'string', value?: any, name?: string, actualType?: string) {
-    this.items.push({ type, name, actualType });
+  protected _addItem(type: string = 'string', value?: any, name?: string, actualType?: string, optional: boolean = false) {
+    this.items.push({ type, name, actualType, optional });
     this.setValue(this.values.length, type, value);
   }
 

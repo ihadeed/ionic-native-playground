@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {AlertController, ModalController, NavParams, ViewController} from 'ionic-angular';
 import { ObjectCreator } from '../../object-creator2.class';
-import {HelpPage} from "../help/help";
+import { HelpPage } from "../help/help";
 
 @Component({
   selector: 'page-plugin-params',
@@ -18,7 +18,7 @@ export class PluginParamsPage extends ObjectCreator {
     super(navParams, viewCtrl, alertCtrl, modalCtrl);
 
     if (this.signature) {
-      this.signature.params.forEach(param => this._addItem(this.parseType(param.type), null, param.name, param.type));
+      this.signature.params.forEach(param => this._addItem(this.parseType(param.type), null, param.name, param.type, param.optional));
     }
 
   }

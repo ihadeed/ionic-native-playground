@@ -1,6 +1,6 @@
 import { NavParams, ViewController, AlertController, ModalController } from 'ionic-angular';
 import { ObjectCreatorPage } from './pages/object-creator/object-creator';
-import {HelpPage} from "./pages/help/help";
+import { HelpPage } from './pages/help/help';
 
 export class ObjectCreator {
 
@@ -158,8 +158,8 @@ export class ObjectCreator {
     this.modalCtrl.create(HelpPage, { interfaceName: this.actualType }).present();
   }
 
-  protected _addItem(type: string = 'string', value?: any, name?: string, actualType?: string) {
-    this.items.push({ type, name, actualType });
+  protected _addItem(type: string = 'string', value?: any, name?: string, actualType?: string, optional: boolean = false) {
+    this.items.push({ type, name, actualType, optional });
     this.setValue(this.values.length, type, value);
   }
 

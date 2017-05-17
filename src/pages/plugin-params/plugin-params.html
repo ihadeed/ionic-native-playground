@@ -22,7 +22,10 @@
     <ion-list-header color="light">Params</ion-list-header>
     <ion-item-group [reorder]="!signature" (ionItemReorder)="reorderItems($event)">
       <ion-item *ngFor="let item of items; let i = index" >
-        <ion-label *ngIf="!!signature">{{ item.name }}</ion-label>
+        <ion-label *ngIf="!!signature">
+          <h2>{{ item.name }}</h2>
+          <small *ngIf="item.optional">(optional)</small>
+        </ion-label>
         <ion-input *ngIf="['string', 'number'].indexOf(item.type) > -1" [type]="item.type" [(ngModel)]="values[i]"></ion-input>
         <ion-toggle *ngIf="item.type === 'boolean'" [(ngModel)]="values[i]"></ion-toggle>
         <ion-textarea *ngIf="['object', 'array'].indexOf(item.type) > -1" [(ngModel)]="values[i]" disabled></ion-textarea>
