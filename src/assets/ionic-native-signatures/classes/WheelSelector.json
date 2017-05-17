@@ -1,0 +1,23 @@
+{
+  "name": "WheelSelector",
+  "members": [
+    {
+      "name": "show",
+      "description": "Shows the wheel selector",
+      "params": [
+        {
+          "name": "options",
+          "description": "Options for the wheel selector",
+          "type": "WheelSelectorOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "hideSelector",
+      "description": "Hide the selector",
+      "params": [
+      ]
+    }
+  ]
+}

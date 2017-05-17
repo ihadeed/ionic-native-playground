@@ -1,0 +1,24 @@
+{
+  "name": "SQLiteDatabaseConfig",
+  "parent": "SQLite",
+  "properties": [
+    {
+      "name": "name",
+      "description": "Name of the database. Example: 'my.db'",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "location",
+      "description": "Location of the database. Example: 'default'",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "iosDatabaseLocation",
+      "description": "iOS Database Location. Example: 'Library'",
+      "type": "string",
+      "optional":true
+    }
+  ]
+}

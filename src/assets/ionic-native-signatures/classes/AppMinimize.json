@@ -1,0 +1,11 @@
+{
+  "name": "AppMinimize",
+  "members": [
+    {
+      "name": "minimize",
+      "description": "Minimizes the application",
+      "params": [
+      ]
+    }
+  ]
+}

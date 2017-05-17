@@ -1,0 +1,12 @@
+{
+  "name": "NotificationData",
+  "parent": "FCM",
+  "properties": [
+    {
+      "name": "wasTapped",
+      "description": "Determines whether the notification was pressed or not",
+      "type": "boolean",
+      "optional":false
+    }
+  ]
+}

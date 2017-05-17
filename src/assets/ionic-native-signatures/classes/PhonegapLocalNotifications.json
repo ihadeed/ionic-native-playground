@@ -1,0 +1,29 @@
+{
+  "name": "PhonegapLocalNotifications",
+  "members": [
+    {
+      "name": "create",
+      "description": "A global object that lets you interact with the Notification API.",
+      "params": [
+        {
+          "name": "title",
+          "description": "Title of the local notification.",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "Options",
+          "description": "An object containing optional property/value pairs.",
+          "type": "LocalNotificationOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "requestPermission",
+      "description": "requests permission from the user to show a local notification.",
+      "params": [
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "name": "FileEncryption",
+  "members": [
+    {
+      "name": "encrypt",
+      "description": "Enrcypt a file",
+      "params": [
+        {
+          "name": "file",
+          "description": "A string representing a local URI",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "key",
+          "description": "A key for the crypto operations",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "decrypt",
+      "description": "Decrypt a file",
+      "params": [
+        {
+          "name": "file",
+          "description": "A string representing a local URI",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "key",
+          "description": "A key for the crypto operations",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

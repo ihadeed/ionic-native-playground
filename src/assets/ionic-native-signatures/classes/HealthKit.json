@@ -1,0 +1,221 @@
+{
+  "name": "HealthKit",
+  "members": [
+    {
+      "name": "available",
+      "description": "Check if HealthKit is supported (iOS8+, not on iPad)",
+      "params": [
+      ]
+    },
+    {
+      "name": "checkAuthStatus",
+      "description": "Pass in a type and get back on of undetermined | denied | authorized",
+      "params": [
+        {
+          "name": "options",
+          "description": "",
+          "type": "HealthKitOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "requestAuthorization",
+      "description": "Ask some or all permissions up front",
+      "params": [
+        {
+          "name": "options",
+          "description": "",
+          "type": "HealthKitOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "readDateOfBirth",
+      "description": "Formatted as yyyy-MM-dd",
+      "params": [
+      ]
+    },
+    {
+      "name": "readGender",
+      "description": "Output = male|female|other|unknown",
+      "params": [
+      ]
+    },
+    {
+      "name": "readBloodType",
+      "description": "Output = A+|A-|B+|B-|AB+|AB-|O+|O-|unknown",
+      "params": [
+      ]
+    },
+    {
+      "name": "readFitzpatrickSkinType",
+      "description": "Output = I|II|III|IV|V|VI|unknown",
+      "params": [
+      ]
+    },
+    {
+      "name": "saveWeight",
+      "description": "Pass in unit (g=gram, kg=kilogram, oz=ounce, lb=pound, st=stone) and amount",
+      "params": [
+        {
+          "name": "options",
+          "description": "",
+          "type": "HealthKitOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "readWeight",
+      "description": "Pass in unit (g=gram, kg=kilogram, oz=ounce, lb=pound, st=stone)",
+      "params": [
+        {
+          "name": "options",
+          "description": "",
+          "type": "HealthKitOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "saveHeight",
+      "description": "Pass in unit (mm=millimeter, cm=centimeter, m=meter, in=inch, ft=foot) and amount",
+      "params": [
+        {
+          "name": "options",
+          "description": "",
+          "type": "HealthKitOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "readHeight",
+      "description": "Pass in unit (mm=millimeter, cm=centimeter, m=meter, in=inch, ft=foot)",
+      "params": [
+        {
+          "name": "options",
+          "description": "",
+          "type": "HealthKitOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "findWorkouts",
+      "description": "no params yet, so this will return all workouts ever of any type",
+      "params": [
+      ]
+    },
+    {
+      "name": "saveWorkout",
+      "description": "",
+      "params": [
+        {
+          "name": "options",
+          "description": "",
+          "type": "HealthKitOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "querySampleType",
+      "description": "",
+      "params": [
+        {
+          "name": "options",
+          "description": "",
+          "type": "HealthKitOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "querySampleTypeAggregated",
+      "description": "",
+      "params": [
+        {
+          "name": "options",
+          "description": "",
+          "type": "HealthKitOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "deleteSamples",
+      "description": "",
+      "params": [
+        {
+          "name": "options",
+          "description": "",
+          "type": "HealthKitOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "monitorSampleType",
+      "description": "",
+      "params": [
+        {
+          "name": "options",
+          "description": "",
+          "type": "HealthKitOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "sumQuantityType",
+      "description": "",
+      "params": [
+        {
+          "name": "options",
+          "description": "",
+          "type": "HealthKitOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "saveQuantitySample",
+      "description": "",
+      "params": [
+        {
+          "name": "options",
+          "description": "",
+          "type": "HealthKitOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "saveCorrelation",
+      "description": "",
+      "params": [
+        {
+          "name": "options",
+          "description": "",
+          "type": "HealthKitOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "queryCorrelationType",
+      "description": "",
+      "params": [
+        {
+          "name": "options",
+          "description": "",
+          "type": "HealthKitOptions",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

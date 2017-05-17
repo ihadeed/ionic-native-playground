@@ -1,0 +1,6 @@
+{
+  "name": "DirectoryEntryCallback",
+  "parent": "FileSaver",
+  "properties": [
+  ]
+}

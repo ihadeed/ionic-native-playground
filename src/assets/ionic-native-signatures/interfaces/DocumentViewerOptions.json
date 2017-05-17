@@ -1,0 +1,76 @@
+{
+  "name": "DocumentViewerOptions",
+  "parent": "DocumentViewer",
+  "properties": [
+    {
+      "name": "title",
+      "description": "",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "documentView",
+      "description": "",
+      "type": "{
+    closeLabel: string;
+  }",
+      "optional":false
+    },
+    {
+      "name": "navigationView",
+      "description": "",
+      "type": "{
+    closeLabel: string;
+  }",
+      "optional":false
+    },
+    {
+      "name": "email",
+      "description": "",
+      "type": "{
+    enabled: boolean;
+  }",
+      "optional":false
+    },
+    {
+      "name": "print",
+      "description": "",
+      "type": "{
+    enabled: boolean;
+  }",
+      "optional":false
+    },
+    {
+      "name": "openWith",
+      "description": "",
+      "type": "{
+    enabled: boolean;
+  }",
+      "optional":false
+    },
+    {
+      "name": "bookmarks",
+      "description": "",
+      "type": "{
+    enabled: boolean;
+  }",
+      "optional":false
+    },
+    {
+      "name": "search",
+      "description": "",
+      "type": "{
+    enabled: boolean;
+  }",
+      "optional":false
+    },
+    {
+      "name": "autoClose",
+      "description": "",
+      "type": "{
+    onPause: boolean;
+  }",
+      "optional":false
+    }
+  ]
+}

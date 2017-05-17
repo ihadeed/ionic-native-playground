@@ -1,0 +1,167 @@
+{
+  "name": "Intercom",
+  "members": [
+    {
+      "name": "registerIdentifiedUser",
+      "description": "Register a identified user",
+      "params": [
+        {
+          "name": "options",
+          "description": "Options",
+          "type": "any",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "registerUnidentifiedUser",
+      "description": "Register a unidentified user",
+      "params": [
+        {
+          "name": "options",
+          "description": "Options",
+          "type": "any",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "reset",
+      "description": "This resets the Intercom integration's cache of your user's identity and wipes the slate clean.",
+      "params": [
+      ]
+    },
+    {
+      "name": "setSecureMode",
+      "description": "",
+      "params": [
+        {
+          "name": "secureHash",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "secureData",
+          "description": "",
+          "type": "any",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "setUserHash",
+      "description": "",
+      "params": [
+        {
+          "name": "secureHash",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "updateUser",
+      "description": "",
+      "params": [
+        {
+          "name": "attributes",
+          "description": "",
+          "type": "any",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "logEvent",
+      "description": "",
+      "params": [
+        {
+          "name": "eventName",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "metaData",
+          "description": "",
+          "type": "any",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "displayMessenger",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "displayMessageComposer",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "displayMessageComposerWithInitialMessage",
+      "description": "",
+      "params": [
+        {
+          "name": "initialMessage",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "displayConversationsList",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "unreadConversationCount",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "setLauncherVisibility",
+      "description": "",
+      "params": [
+        {
+          "name": "visibility",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "setInAppMessageVisibility",
+      "description": "",
+      "params": [
+        {
+          "name": "visibility",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "hideMessenger",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "registerForPush",
+      "description": "",
+      "params": [
+      ]
+    }
+  ]
+}

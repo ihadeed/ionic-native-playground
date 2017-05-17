@@ -1,0 +1,77 @@
+{
+  "name": "SQLitePorter",
+  "members": [
+    {
+      "name": "importSqlToDb",
+      "description": "Executes a set of SQL statements against the defined database. Can be used to import data defined in the SQL statements into the database, and may additionally include commands to create the table structure.",
+      "params": [
+        {
+          "name": "db",
+          "description": "Database object",
+          "type": "Object",
+          "optional": false
+        },
+        {
+          "name": "sql",
+          "description": "SQL statements to execute against the database",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "exportDbToSql",
+      "description": "Exports a SQLite DB as a set of SQL statements.",
+      "params": [
+        {
+          "name": "db",
+          "description": "Database object",
+          "type": "Object",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "importJsonToDb",
+      "description": "Converts table structure and/or row data contained within a JSON structure into SQL statements that can be executed against a SQLite database. Can be used to import data into the database and/or create the table structure.",
+      "params": [
+        {
+          "name": "db",
+          "description": "Database object",
+          "type": "Object",
+          "optional": false
+        },
+        {
+          "name": "json",
+          "description": "JSON structure containing row data and/or table structure as either a JSON object or string",
+          "type": "Object",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "exportDbToJson",
+      "description": "Exports a SQLite DB as a JSON structure",
+      "params": [
+        {
+          "name": "db",
+          "description": "Database object",
+          "type": "Object",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "wipeDb",
+      "description": "Wipes all data from a database by dropping all existing tables",
+      "params": [
+        {
+          "name": "db",
+          "description": "Database object",
+          "type": "Object",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

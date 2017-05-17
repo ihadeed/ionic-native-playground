@@ -1,0 +1,30 @@
+{
+  "name": "FlurryAnalyticsLocation",
+  "parent": "FlurryAnalyticsObject",
+  "properties": [
+    {
+      "name": "latitude",
+      "description": "",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "longitude",
+      "description": "",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "verticalAccuracy",
+      "description": "Set altitudeIt is optional and use only for iOS",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "horizontalAccuracy",
+      "description": "Set radius about 2d pointIt is optional and use only for iOS",
+      "type": "number",
+      "optional":true
+    }
+  ]
+}

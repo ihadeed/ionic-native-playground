@@ -1,0 +1,138 @@
+{
+  "name": "HealthKitOptions",
+  "parent": "HealthKit",
+  "properties": [
+    {
+      "name": "activityType",
+      "description": "HKWorkoutActivityType constantRead more here: https://developer.apple.com/library/ios/documentation/HealthKit/Reference/HKWorkout_Class/#//apple_ref/c/tdef/HKWorkoutActivityType",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "aggregation",
+      "description": "'hour', 'week', 'year' or 'day', default 'day'",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "amount",
+      "description": "",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "correlationType",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "date",
+      "description": "",
+      "type": "any",
+      "optional":true
+    },
+    {
+      "name": "distance",
+      "description": "",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "distanceUnit",
+      "description": "probably useful with the former param",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "duration",
+      "description": "in seconds, optional, use either this or endDate",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "endDate",
+      "description": "",
+      "type": "any",
+      "optional":true
+    },
+    {
+      "name": "energy",
+      "description": "",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "energyUnit",
+      "description": "J|cal|kcal",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "extraData",
+      "description": "",
+      "type": "any",
+      "optional":true
+    },
+    {
+      "name": "metadata",
+      "description": "",
+      "type": "any",
+      "optional":true
+    },
+    {
+      "name": "quantityType",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "readTypes",
+      "description": "",
+      "type": "any",
+      "optional":true
+    },
+    {
+      "name": "requestWritePermission",
+      "description": "",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "samples",
+      "description": "",
+      "type": "any",
+      "optional":true
+    },
+    {
+      "name": "sampleType",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "startDate",
+      "description": "",
+      "type": "any",
+      "optional":true
+    },
+    {
+      "name": "unit",
+      "description": "m|cm|mm|in|ft",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "requestReadPermission",
+      "description": "",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "writeTypes",
+      "description": "",
+      "type": "any",
+      "optional":true
+    }
+  ]
+}

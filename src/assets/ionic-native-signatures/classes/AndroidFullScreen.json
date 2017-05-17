@@ -1,0 +1,59 @@
+{
+  "name": "AndroidFullScreen",
+  "members": [
+    {
+      "name": "isSupported",
+      "description": "Is this plugin supported?",
+      "params": [
+      ]
+    },
+    {
+      "name": "isImmersiveModeSupported",
+      "description": "Is immersive mode supported?",
+      "params": [
+      ]
+    },
+    {
+      "name": "immersiveWidth",
+      "description": "The width of the screen in immersive mode.",
+      "params": [
+      ]
+    },
+    {
+      "name": "immersiveHeight",
+      "description": "The height of the screen in immersive mode.",
+      "params": [
+      ]
+    },
+    {
+      "name": "leanMode",
+      "description": "Hide system UI until user interacts.",
+      "params": [
+      ]
+    },
+    {
+      "name": "showSystemUI",
+      "description": "Show system UI.",
+      "params": [
+      ]
+    },
+    {
+      "name": "showUnderStatusBar",
+      "description": "Extend your app underneath the status bar (Android 4.4+ only).",
+      "params": [
+      ]
+    },
+    {
+      "name": "showUnderSystemUI",
+      "description": "Extend your app underneath the system UI (Android 4.4+ only).",
+      "params": [
+      ]
+    },
+    {
+      "name": "immersiveMode",
+      "description": "Hide system UI and keep it hidden (Android 4.4+ only).",
+      "params": [
+      ]
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "name": "Keychain",
+  "members": [
+    {
+      "name": "get",
+      "description": "Retrieves a value for a key",
+      "params": [
+        {
+          "name": "key",
+          "description": "the key to retrieve",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "touchIDMessage",
+          "description": "the message to show underneath the TouchID prompt (if any)",
+          "type": "string",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "set",
+      "description": "Sets a value for a key",
+      "params": [
+        {
+          "name": "key",
+          "description": "the key to set",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "value",
+          "description": "the value to set",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "useTouchID",
+          "description": "whether to store the value with security such that TouchID will be needed to grab it",
+          "type": "boolean",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "getJson",
+      "description": "Gets a JSON value for a key",
+      "params": [
+        {
+          "name": "key",
+          "description": "the key to retrieve",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "touchIDMessage",
+          "description": "the message to show underneath the TouchID prompt (if any)",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "setJson",
+      "description": "Sets a JSON value for a key",
+      "params": [
+        {
+          "name": "key",
+          "description": "the key to set",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "obj",
+          "description": "value the value to set",
+          "type": "any",
+          "optional": false
+        },
+        {
+          "name": "useTouchId",
+          "description": "Wether to store the value with security such that TouchID will be needed to grab it",
+          "type": "boolean",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "remove",
+      "description": "Removes a value for a key",
+      "params": [
+        {
+          "name": "key",
+          "description": "the key to remove",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

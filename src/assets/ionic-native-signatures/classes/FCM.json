@@ -1,0 +1,47 @@
+{
+  "name": "FCM",
+  "members": [
+    {
+      "name": "getToken",
+      "description": "Get's device's current registration id",
+      "params": [
+      ]
+    },
+    {
+      "name": "onTokenRefresh",
+      "description": "Event firing on the token refresh",
+      "params": [
+      ]
+    },
+    {
+      "name": "subscribeToTopic",
+      "description": "Subscribes you to a [topic](https://firebase.google.com/docs/notifications/android/console-topics)",
+      "params": [
+        {
+          "name": "topic",
+          "description": "Topic to be subscribed to",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "unsubscribeFromTopic",
+      "description": "Unubscribes you from a [topic](https://firebase.google.com/docs/notifications/android/console-topics)",
+      "params": [
+        {
+          "name": "topic",
+          "description": "Topic to be unsubscribed from",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "onNotification",
+      "description": "Watch for incoming notifications",
+      "params": [
+      ]
+    }
+  ]
+}

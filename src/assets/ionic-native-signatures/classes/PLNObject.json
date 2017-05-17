@@ -1,0 +1,11 @@
+{
+  "name": "PLNObject",
+  "members": [
+    {
+      "name": "close",
+      "description": "",
+      "params": [
+      ]
+    }
+  ]
+}

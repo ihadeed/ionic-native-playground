@@ -1,0 +1,53 @@
+{
+  "name": "FileWriter",
+  "members": [
+    {
+      "name": "position",
+      "description": "The byte offset at which the next write to the file will occur. This must be no greater than length.A newly-created FileWriter must have position set to 0.",
+      "params": [
+      ]
+    },
+    {
+      "name": "length",
+      "description": "The length of the file. If the user does not have read access to the file, this must be the highest byte offset at which the user has written.",
+      "params": [
+      ]
+    },
+    {
+      "name": "write",
+      "description": "Write the supplied data to the file at position.",
+      "params": [
+        {
+          "name": "data",
+          "description": "The blob to write.",
+          "type": "",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "seek",
+      "description": "Seek sets the file position at which the next write will occur.",
+      "params": [
+        {
+          "name": "offset",
+          "description": "If nonnegative, an absolute byte offset into the file. If negative, an offset back from the end of the file.",
+          "type": "",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "truncate",
+      "description": "Changes the length of the file to that specified. If shortening the file, data beyond the new length must be discarded. If extending the file, the existing data must be zero-padded up to the new length.",
+      "params": [
+        {
+          "name": "size",
+          "description": "The size to which the length of the file is to be adjusted, measured in bytes.",
+          "type": "",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

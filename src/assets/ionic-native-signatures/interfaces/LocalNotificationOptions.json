@@ -1,0 +1,36 @@
+{
+  "name": "LocalNotificationOptions",
+  "parent": "PLNObject",
+  "properties": [
+    {
+      "name": "dir",
+      "description": "Sets the direction of the notification. One of \"auto\", \"ltr\" or \"rtl\"",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "lang",
+      "description": "Sets the language of the notification",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "body",
+      "description": "Sets the body of the notification",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "tag",
+      "description": "Sets the identifying tag of the notification",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "icon",
+      "description": "Sets the icon of the notification",
+      "type": "string",
+      "optional":true
+    }
+  ]
+}

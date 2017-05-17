@@ -1,0 +1,17 @@
+{
+  "name": "Autostart",
+  "members": [
+    {
+      "name": "enable",
+      "description": "Enable the automatic startup after the boot",
+      "params": [
+      ]
+    },
+    {
+      "name": "disable",
+      "description": "Disable the automatic startup after the boot",
+      "params": [
+      ]
+    }
+  ]
+}

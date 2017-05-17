@@ -1,0 +1,48 @@
+{
+  "name": "AdMobFreeBannerConfig",
+  "parent": "AdMobFree",
+  "properties": [
+    {
+      "name": "id",
+      "description": "Ad Unit ID",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "isTesting",
+      "description": "Receiving test ad",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "autoShow",
+      "description": "Auto show ad when loaded",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "bannerAtTop",
+      "description": "Set to true, to put banner at top",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "overlap",
+      "description": "Set to true, to allow banner overlap WebView",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "offsetTopBar",
+      "description": "Set to true to avoid ios7 status bar overlap",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "size",
+      "description": "Banner  size",
+      "type": "string",
+      "optional":true
+    }
+  ]
+}

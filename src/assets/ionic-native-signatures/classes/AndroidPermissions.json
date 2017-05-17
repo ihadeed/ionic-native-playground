@@ -1,0 +1,59 @@
+{
+  "name": "AndroidPermissions",
+  "members": [
+    {
+      "name": "PERMISSION",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "checkPermission",
+      "description": "Check permission",
+      "params": [
+        {
+          "name": "permission",
+          "description": "The name of the permission",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "requestPermission",
+      "description": "Request permission",
+      "params": [
+        {
+          "name": "permission",
+          "description": "The name of the permission to request",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "requestPermissions",
+      "description": "Request permissions",
+      "params": [
+        {
+          "name": "permissions",
+          "description": "An array with permissions",
+          "type": "Array<string>",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "hasPermission",
+      "description": "This function still works now, will not support in the future.",
+      "params": [
+        {
+          "name": "permission",
+          "description": "The name of the permission",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

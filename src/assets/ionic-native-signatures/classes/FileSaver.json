@@ -1,0 +1,77 @@
+{
+  "name": "FileSaver",
+  "members": [
+    {
+      "name": "abort",
+      "description": "When the abort method is called, user agents must run the steps below:<ol><li> If readyState == DONE or readyState == INIT, terminate this overall series of steps without doing anything else. </li><li> Set readyState to DONE. </li><li> If there are any tasks from the object's FileSaver task source in one of the task queues, then remove those tasks. </li><li> Terminate the write algorithm being processed. </li><li> Set the error attribute to a DOMError object of type \"AbortError\". </li><li> Fire a progress event called abort </li><li> Fire a progress event called writeend </li><li> Terminate this algorithm. </li></ol>",
+      "params": [
+      ]
+    },
+    {
+      "name": "INIT",
+      "description": "The blob is being written.",
+      "params": [
+      ]
+    },
+    {
+      "name": "WRITING",
+      "description": "The object has been constructed, but there is no pending write.",
+      "params": [
+      ]
+    },
+    {
+      "name": "DONE",
+      "description": "The entire Blob has been written to the file, an error occurred during the write, or the write was aborted using abort(). The FileSaver is no longer writing the blob.",
+      "params": [
+      ]
+    },
+    {
+      "name": "readyState",
+      "description": "The FileSaver object can be in one of 3 states. The readyState attribute, on getting, must return the current state, which must be one of the following values:<ul><li>INIT</li><li>WRITING</li><li>DONE</li><ul>",
+      "params": [
+      ]
+    },
+    {
+      "name": "error",
+      "description": "The last error that occurred on the FileSaver.",
+      "params": [
+      ]
+    },
+    {
+      "name": "onwritestart",
+      "description": "Handler for writestart events",
+      "params": [
+      ]
+    },
+    {
+      "name": "onprogress",
+      "description": "Handler for progress events.",
+      "params": [
+      ]
+    },
+    {
+      "name": "onwrite",
+      "description": "Handler for write events.",
+      "params": [
+      ]
+    },
+    {
+      "name": "onabort",
+      "description": "Handler for abort events.",
+      "params": [
+      ]
+    },
+    {
+      "name": "onerror",
+      "description": "Handler for error events.",
+      "params": [
+      ]
+    },
+    {
+      "name": "onwriteend",
+      "description": "Handler for writeend events.",
+      "params": [
+      ]
+    }
+  ]
+}

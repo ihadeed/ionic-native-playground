@@ -1,0 +1,17 @@
+{
+  "name": "IntelSecurity",
+  "members": [
+    {
+      "name": "storage",
+      "description": "returns an IntelSecurityStorage object",
+      "params": [
+      ]
+    },
+    {
+      "name": "data",
+      "description": "Returns an IntelSecurityData object",
+      "params": [
+      ]
+    }
+  ]
+}

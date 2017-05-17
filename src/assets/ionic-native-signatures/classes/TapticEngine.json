@@ -1,0 +1,47 @@
+{
+  "name": "TapticEngine",
+  "members": [
+    {
+      "name": "selection",
+      "description": "Use selection feedback generators to indicate a change in selection.",
+      "params": [
+      ]
+    },
+    {
+      "name": "notification",
+      "description": "Use this to indicate success/failure/warning to the user.",
+      "params": [
+        {
+          "name": "options",
+          "description": "should be of the type { type: 'success' } (or 'warning'/'error')",
+          "type": "Object",
+          "optional": false
+        },
+        {
+          "name": "options.type",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "impact",
+      "description": "Use this to indicate success/failure/warning to the user.",
+      "params": [
+        {
+          "name": "options",
+          "description": "should be of the type { style: 'light' } (or 'medium'/'heavy')",
+          "type": "Object",
+          "optional": false
+        },
+        {
+          "name": "options.type",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

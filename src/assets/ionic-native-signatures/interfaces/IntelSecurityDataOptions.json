@@ -1,0 +1,72 @@
+{
+  "name": "IntelSecurityDataOptions",
+  "parent": "IntelSecurity",
+  "properties": [
+    {
+      "name": "data",
+      "description": "Non-empty string. *",
+      "type": "String",
+      "optional":false
+    },
+    {
+      "name": "tag",
+      "description": "Tag text.",
+      "type": "String",
+      "optional":true
+    },
+    {
+      "name": "extraKey",
+      "description": "Valid secure data instance ID.",
+      "type": "Number",
+      "optional":true
+    },
+    {
+      "name": "appAccessControl",
+      "description": "Application access control policy.",
+      "type": "Number",
+      "optional":true
+    },
+    {
+      "name": "deviceLocality",
+      "description": "Device locality policy.",
+      "type": "Number",
+      "optional":true
+    },
+    {
+      "name": "sensitivityLevel",
+      "description": "Sensitivity level policy.",
+      "type": "Number",
+      "optional":true
+    },
+    {
+      "name": "noStore",
+      "description": "Disallow sealed blob access.",
+      "type": "Boolean",
+      "optional":true
+    },
+    {
+      "name": "noRead",
+      "description": "Disallow plain-text data access.",
+      "type": "Boolean",
+      "optional":true
+    },
+    {
+      "name": "creator",
+      "description": "Creator unique ID.",
+      "type": "Number",
+      "optional":true
+    },
+    {
+      "name": "owners",
+      "description": "Array of owners unique IDs.",
+      "type": "Number[]",
+      "optional":true
+    },
+    {
+      "name": "webOwners",
+      "description": "List of trusted web domains.",
+      "type": "String[]",
+      "optional":true
+    }
+  ]
+}

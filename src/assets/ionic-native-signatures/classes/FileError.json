@@ -1,0 +1,17 @@
+{
+  "name": "FileError",
+  "members": [
+    {
+      "name": "code",
+      "description": "Error code",
+      "params": [
+      ]
+    },
+    {
+      "name": "message",
+      "description": "",
+      "params": [
+      ]
+    }
+  ]
+}

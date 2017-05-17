@@ -1,0 +1,24 @@
+{
+  "name": "BarcodeScanResult",
+  "parent": "BarcodeScanner",
+  "properties": [
+    {
+      "name": "format",
+      "description": "",
+      "type": "&#39;QR_CODE&#39; | &#39;DATA_MATRIX&#39; | &#39;UPC_E&#39; | &#39;UPC_A&#39; | &#39;EAN_8&#39; | &#39;EAN_13&#39; | &#39;CODE_128&#39; | &#39;CODE_39&#39; | &#39;CODE_93&#39; | &#39;CODABAR&#39; | &#39;ITF&#39; | &#39;RSS14&#39; | &#39;RSS_EXPANDED&#39; | &#39;PDF417&#39; | &#39;AZTEC&#39; | &#39;MSI&#39;",
+      "optional":false
+    },
+    {
+      "name": "cancelled",
+      "description": "",
+      "type": "boolean",
+      "optional":false
+    },
+    {
+      "name": "text",
+      "description": "",
+      "type": "string",
+      "optional":false
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "name": "MobileAccessibility",
+  "members": [
+    {
+      "name": "MobileAccessibilityNotifications",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "isScreenReaderRunning",
+      "description": "Makes an asynchronous call to native MobileAccessibility to determine if a screen reader is running.",
+      "params": [
+      ]
+    },
+    {
+      "name": "isVoiceOverRunningCallback",
+      "description": "An iOS-specific proxy for the MobileAccessibility.isScreenReaderRunning method",
+      "params": [
+      ]
+    },
+    {
+      "name": "isTalkBackRunningCallback",
+      "description": "An Android/Amazon Fire OS-specific proxy for the MobileAccessibility.isScreenReaderRunning method.",
+      "params": [
+      ]
+    },
+    {
+      "name": "isChromeVoxActive",
+      "description": "On Android, this method returns true if ChromeVox is active and properly initialized with access to the text to speech API in the WebView.If TalkBack is running but ChromeVox is not active, this method is useful to alert the user of a potential problem.",
+      "params": [
+      ]
+    },
+    {
+      "name": "isBoldTextEnabledCallback",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "isClosedCaptioningEnabledCallback",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "isDarkerSystemColorsEnabledCallback",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "isGrayscaleEnabledCallback",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "isGuidedAccessEnabledCallback",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "isInvertColorsEnabledCallback",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "isMonoAudioEnabledCallback",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "isReduceMotionEnabledCallback",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "isReduceTransparencyEnabledCallback",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "isSpeakScreenEnabledCallback",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "isSpeakSelectionEnabledCallback",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "isSwitchControlRunningCallback",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "isTouchExplorationEnabledCallback",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "getTextZoomCallback",
+      "description": "* @returns {Promise<number>} Returns the result",
+      "params": [
+      ]
+    },
+    {
+      "name": "setTextZoom",
+      "description": "",
+      "params": [
+        {
+          "name": "textZoom",
+          "description": "A percentage value by which text in the WebView should be scaled.",
+          "type": "nuber",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "updateTextZoom",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "usePreferredTextZoom",
+      "description": "A Boolean value which specifies whether to use the preferred text zoom of a default percent value of 100.",
+      "params": [
+        {
+          "name": "value",
+          "description": "Returns the result",
+          "type": "boolean",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "postNotification",
+      "description": "Posts a notification with a string for the screen reader to announce if it is running.",
+      "params": [
+        {
+          "name": "mobileAccessibilityNotification",
+          "description": "",
+          "type": "any",
+          "optional": false
+        },
+        {
+          "name": "value",
+          "description": "A string to be announced by a screen reader.",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "speak",
+      "description": "Speaks a given string through the screenreader. On Android, if ChromeVox is active, it will use the specified queueMode and properties.",
+      "params": [
+        {
+          "name": "value",
+          "description": "",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "queueMode",
+          "description": "",
+          "type": "mumber",
+          "optional": false
+        },
+        {
+          "name": "properties",
+          "description": "",
+          "type": "any",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "stop",
+      "description": "Stops speech.",
+      "params": [
+      ]
+    }
+  ]
+}

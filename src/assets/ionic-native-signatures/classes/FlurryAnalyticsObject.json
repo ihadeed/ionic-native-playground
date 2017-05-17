@@ -1,0 +1,113 @@
+{
+  "name": "FlurryAnalyticsObject",
+  "members": [
+    {
+      "name": "logEvent",
+      "description": "This function set the Event",
+      "params": [
+        {
+          "name": "eventName",
+          "description": "Name of the event",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "params",
+          "description": "Optional params",
+          "type": "Object",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "startTimedEvent",
+      "description": "Start a timed event",
+      "params": [
+        {
+          "name": "eventName",
+          "description": "Name of the event",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "params",
+          "description": "Optional params",
+          "type": "Object",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "endTimedEvent",
+      "description": "Complete a timed event",
+      "params": [
+        {
+          "name": "eventName",
+          "description": "Name of the event",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "params",
+          "description": "Optional params",
+          "type": "Object",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "logError",
+      "description": "This function log an error",
+      "params": [
+        {
+          "name": "code",
+          "description": "",
+          "type": "",
+          "optional": false
+        },
+        {
+          "name": "message",
+          "description": "",
+          "type": "",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "logPageView",
+      "description": "This function log a page view",
+      "params": [
+      ]
+    },
+    {
+      "name": "setLocation",
+      "description": "This function set the location for the event(this is will only be used for very course grained statistics like city)",
+      "params": [
+        {
+          "name": "location",
+          "description": "",
+          "type": "FlurryAnalyticsLocation",
+          "optional": false
+        },
+        {
+          "name": "message",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "startSession",
+      "description": "This function start the sessionOnly needed for older versions of Android",
+      "params": [
+      ]
+    },
+    {
+      "name": "endSession",
+      "description": "This function end the sessionOnly needed for older versions of Android",
+      "params": [
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "name": "ZeroconfService",
+  "parent": "Zeroconf",
+  "properties": [
+    {
+      "name": "domain",
+      "description": "",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "type",
+      "description": "",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "name",
+      "description": "",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "port",
+      "description": "",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "hostname",
+      "description": "",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "ipv4Addresses",
+      "description": "",
+      "type": "Array&lt;string&gt;",
+      "optional":false
+    },
+    {
+      "name": "ipv6Addresses",
+      "description": "",
+      "type": "Array&lt;string&gt;",
+      "optional":false
+    },
+    {
+      "name": "txtRecord",
+      "description": "",
+      "type": "any",
+      "optional":false
+    }
+  ]
+}

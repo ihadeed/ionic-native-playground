@@ -1,0 +1,60 @@
+{
+  "name": "IFile",
+  "parent": "FileSaver",
+  "properties": [
+    {
+      "name": "name",
+      "description": "Name of the file, without path information",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "lastModified",
+      "description": "Last modified date",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "lastModifiedDate",
+      "description": "Last modified date",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "size",
+      "description": "Size in bytes",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "type",
+      "description": "File mime type",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "localURL",
+      "description": "",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "start",
+      "description": "",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "end",
+      "description": "",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "slice",
+      "description": "Returns a \"slice\" of the file. Since Cordova Files don't contain the actualcontent, this really returns a File with adjusted start and end.Slices of slices are supported.",
+      "type": "Blob",
+      "optional":false
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "FlurryAnalytics",
+  "members": [
+    {
+      "name": "create",
+      "description": "Creates a new instance of FlurryAnalyticsObject",
+      "params": [
+        {
+          "name": "options",
+          "description": "options",
+          "type": "FlurryAnalyticsOptions",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

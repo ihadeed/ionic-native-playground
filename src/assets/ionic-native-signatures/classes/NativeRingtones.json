@@ -1,0 +1,35 @@
+{
+  "name": "NativeRingtones",
+  "members": [
+    {
+      "name": "getRingtone",
+      "description": "Get the ringtone list of the device",
+      "params": [
+      ]
+    },
+    {
+      "name": "playRingtone",
+      "description": "This function starts playing the ringtone",
+      "params": [
+        {
+          "name": "ringtoneUri",
+          "description": "The path to the ringtone file",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "stopRingtone",
+      "description": "This function stops playing the ringtone",
+      "params": [
+        {
+          "name": "ringtoneUri",
+          "description": "The path to the ringtone file",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

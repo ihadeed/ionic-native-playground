@@ -1,0 +1,17 @@
+{
+  "name": "VideoCapturePlus",
+  "members": [
+    {
+      "name": "captureVideo",
+      "description": "Starts recordings",
+      "params": [
+        {
+          "name": "options",
+          "description": "Configure options",
+          "type": "VideoCapturePlusOptions",
+          "optional": true
+        }
+      ]
+    }
+  ]
+}

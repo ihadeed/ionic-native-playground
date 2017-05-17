@@ -1,0 +1,89 @@
+{
+  "name": "FileReader",
+  "members": [
+    {
+      "name": "readyState",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "error",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "result",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "onloadstart",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "onprogress",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "onload",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "onerror",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "onloadend",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "onabort",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "abort",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "readAsText",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "readAsDataURL",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "readAsBinaryString",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "readAsArrayBuffer",
+      "description": "",
+      "params": [
+      ]
+    }
+  ]
+}

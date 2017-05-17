@@ -1,0 +1,107 @@
+{
+  "name": "DocumentViewer",
+  "members": [
+    {
+      "name": "getSupportInfo",
+      "description": "Displays the email composer pre-filled with data.",
+      "params": [
+      ]
+    },
+    {
+      "name": "canViewDocument",
+      "description": "Check if the document can be shown",
+      "params": [
+        {
+          "name": "url",
+          "description": "Url to the file",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "contentType",
+          "description": "Content type of the file",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "options",
+          "description": "options",
+          "type": "Array<DocumentViewerOptions>",
+          "optional": false
+        },
+        {
+          "name": "onPossible",
+          "description": "",
+          "type": "Function",
+          "optional": true
+        },
+        {
+          "name": "onMissingApp",
+          "description": "",
+          "type": "Function",
+          "optional": true
+        },
+        {
+          "name": "onImpossible",
+          "description": "",
+          "type": "Function",
+          "optional": true
+        },
+        {
+          "name": "onError",
+          "description": "",
+          "type": "Function",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "viewDocument",
+      "description": "Opens the file",
+      "params": [
+        {
+          "name": "url",
+          "description": "Url to the file",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "contentType",
+          "description": "Content type of the file",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "options",
+          "description": "options",
+          "type": "Array<DocumentViewerOptions>",
+          "optional": false
+        },
+        {
+          "name": "onShow",
+          "description": "",
+          "type": "Function",
+          "optional": true
+        },
+        {
+          "name": "onClose",
+          "description": "",
+          "type": "Function",
+          "optional": true
+        },
+        {
+          "name": "onMissingApp",
+          "description": "",
+          "type": "Function",
+          "optional": true
+        },
+        {
+          "name": "onError",
+          "description": "",
+          "type": "Function",
+          "optional": true
+        }
+      ]
+    }
+  ]
+}

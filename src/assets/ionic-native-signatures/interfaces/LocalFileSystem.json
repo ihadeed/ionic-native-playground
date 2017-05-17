@@ -1,0 +1,36 @@
+{
+  "name": "LocalFileSystem",
+  "parent": "FileSaver",
+  "properties": [
+    {
+      "name": "TEMPORARY",
+      "description": "Used for storage with no guarantee of persistence.",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "PERSISTENT",
+      "description": "Used for storage that should not be removed by the user agent without application or user permission.",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "requestFileSystem",
+      "description": "Requests a filesystem in which to store application data.",
+      "type": "void",
+      "optional":false
+    },
+    {
+      "name": "resolveLocalFileSystemURL",
+      "description": "Allows the user to look up the Entry for a file or directory referred to by a local URL.",
+      "type": "void",
+      "optional":false
+    },
+    {
+      "name": "webkitRequestFileSystem",
+      "description": "see requestFileSystem.",
+      "type": "void",
+      "optional":false
+    }
+  ]
+}

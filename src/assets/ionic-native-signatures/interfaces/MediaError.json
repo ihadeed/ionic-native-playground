@@ -1,0 +1,18 @@
+{
+  "name": "MediaError",
+  "parent": "MediaPlugin",
+  "properties": [
+    {
+      "name": "message",
+      "description": "Error message",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "code",
+      "description": "Error code",
+      "type": "number",
+      "optional":false
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "FileCallback",
+  "parent": "FileSaver",
+  "properties": [
+  ]
+}

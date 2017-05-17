@@ -1,0 +1,41 @@
+{
+  "name": "AdMobFree",
+  "members": [
+    {
+      "name": "events",
+      "description": "Convenience constructor to get event names",
+      "params": [
+      ]
+    },
+    {
+      "name": "on",
+      "description": "Watch an event",
+      "params": [
+        {
+          "name": "event",
+          "description": "event name",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "banner",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "interstitial",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "rewardVideo",
+      "description": "",
+      "params": [
+      ]
+    }
+  ]
+}

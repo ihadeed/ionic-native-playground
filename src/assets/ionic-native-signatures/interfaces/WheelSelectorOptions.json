@@ -1,0 +1,48 @@
+{
+  "name": "WheelSelectorOptions",
+  "parent": "WheelSelector",
+  "properties": [
+    {
+      "name": "title",
+      "description": "The title of the selector's input box",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "items",
+      "description": "The items to display (array of items).",
+      "type": "Array&lt;Array&lt;WheelSelectorItem&gt;&gt;",
+      "optional":false
+    },
+    {
+      "name": "defaultItems",
+      "description": "Which items to display by default, example [\"2\",\"Apple\"] (if items.length is 2 for instance)",
+      "type": "Array&lt;WheelSelectorItem&gt;",
+      "optional":true
+    },
+    {
+      "name": "positiveButtonText",
+      "description": "The 'ok' button textDefault: Done",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "negativeButtonText",
+      "description": "The 'cancel' button textDefault: Cancel",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "theme",
+      "description": "Android only - theme color, 'light' or 'dark'.Default: light",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "wrapWheelText",
+      "description": "Whether to have the wheels 'wrap' (Android only)Default: false",
+      "type": "boolean",
+      "optional":true
+    }
+  ]
+}

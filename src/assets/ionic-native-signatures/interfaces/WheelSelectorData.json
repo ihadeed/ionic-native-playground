@@ -1,0 +1,12 @@
+{
+  "name": "WheelSelectorData",
+  "parent": "WheelSelector",
+  "properties": [
+    {
+      "name": "data",
+      "description": "",
+      "type": "any",
+      "optional":false
+    }
+  ]
+}

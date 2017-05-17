@@ -1,0 +1,84 @@
+{
+  "name": "FlurryAnalyticsOptions",
+  "parent": "FlurryAnalyticsObject",
+  "properties": [
+    {
+      "name": "appKey",
+      "description": "Flurry API key is required",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "version",
+      "description": "Overrides the version of the app",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "continueSessionSeconds",
+      "description": "How long can the app be paused before a new session is created,must be less than or equal to five for Android devices",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "userId",
+      "description": "Set id of the user",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "gender",
+      "description": "Set gender of the userValid values are \"m\", \"M\", \"f\" and \"F\"",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "age",
+      "description": "Set age of the user",
+      "type": "number",
+      "optional":true
+    },
+    {
+      "name": "logLevel",
+      "description": "Set error for logValues: VERBOSE, DEBUG, INFO, WARN, ERROR",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "enableLogging",
+      "description": "Defaults to false",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "enableEventLogging",
+      "description": "Should every event show up the app's log, defaults to true",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "enableCrashReporting",
+      "description": "Should app crashes be recorded in flurry, defaults to false, iOS only",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "enableBackgroundSessions",
+      "description": "Should the session continue when the app is the background, defaults to false, iOS only",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "reportSessionsOnClose",
+      "description": "Should data be pushed to flurry when the app closes, defaults to true, iOS only",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "reportSessionsOnPause",
+      "description": "Should data be pushed to flurry when the app is paused, defaults to true, iOS only",
+      "type": "boolean",
+      "optional":true
+    }
+  ]
+}

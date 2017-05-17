@@ -1,0 +1,119 @@
+{
+  "name": "Zeroconf",
+  "members": [
+    {
+      "name": "getHostname",
+      "description": "Returns this device's hostname.",
+      "params": [
+      ]
+    },
+    {
+      "name": "register",
+      "description": "Publishes a new service.",
+      "params": [
+        {
+          "name": "type",
+          "description": "Service type name, e.g. \"_http._tcp\".",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "domain",
+          "description": "Domain scope of the service, typically \"local.\".",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "name",
+          "description": "Unqualified service instance name.",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "port",
+          "description": "Local port on which the service runs.",
+          "type": "number",
+          "optional": false
+        },
+        {
+          "name": "txtRecord",
+          "description": "Arbitrary key/value pairs describing the service.",
+          "type": "any",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "unregister",
+      "description": "Unregisters a service.",
+      "params": [
+        {
+          "name": "type",
+          "description": "Service type name, e.g. \"_http._tcp\".",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "domain",
+          "description": "Domain scope of the service, typically \"local.\".",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "name",
+          "description": "Unqualified service instance name.",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "stop",
+      "description": "Unregisters all published services.",
+      "params": [
+      ]
+    },
+    {
+      "name": "watch",
+      "description": "Starts watching for services of the specified type.",
+      "params": [
+        {
+          "name": "type",
+          "description": "Service type name, e.g. \"_http._tcp\".",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "domain",
+          "description": "Domain scope of the service, typically \"local.\".",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "unwatch",
+      "description": "Stops watching for services of the specified type.",
+      "params": [
+        {
+          "name": "type",
+          "description": "Service type name, e.g. \"_http._tcp\".",
+          "type": "string",
+          "optional": false
+        },
+        {
+          "name": "domain",
+          "description": "Domain scope of the service, typically \"local.\".",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "close",
+      "description": "Closes the service browser and stops watching.",
+      "params": [
+      ]
+    }
+  ]
+}
