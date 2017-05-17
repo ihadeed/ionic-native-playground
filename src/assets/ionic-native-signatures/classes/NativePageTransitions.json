@@ -60,6 +60,18 @@
           "optional": false
         }
       ]
+    },
+    {
+      "name": "executePendingTransition",
+      "description": "Execute pending transition",
+      "params": [
+      ]
+    },
+    {
+      "name": "cancelPendingTransition",
+      "description": "Cancel pending transition",
+      "params": [
+      ]
     }
   ]
 }

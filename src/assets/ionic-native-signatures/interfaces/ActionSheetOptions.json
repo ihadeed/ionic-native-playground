@@ -15,6 +15,12 @@
       "optional":true
     },
     {
+      "name": "subtitle",
+      "description": "The subtitle for the actionsheet (IOS only)",
+      "type": "string",
+      "optional":true
+    },
+    {
       "name": "androidTheme",
       "description": "Theme to be used on Android",
       "type": "number",
@@ -49,6 +55,12 @@
       "description": "On an iPad, set the X,Y position",
       "type": "number[]",
       "optional":true
+    },
+    {
+      "name": "destructiveButtonLast",
+      "description": "Choose if destructive button will be the last",
+      "type": "boolean",
+      "optional":false
     }
   ]
 }

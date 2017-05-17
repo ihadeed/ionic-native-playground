@@ -1,6 +1,6 @@
 {
   "name": "FileEntry",
-  "parent": "File",
+  "parent": "FileSaver",
   "properties": [
     {
       "name": "createWriter",

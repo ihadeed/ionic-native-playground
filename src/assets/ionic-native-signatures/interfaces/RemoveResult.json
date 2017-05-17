@@ -1,6 +1,6 @@
 {
   "name": "RemoveResult",
-  "parent": "File",
+  "parent": "FileSaver",
   "properties": [
     {
       "name": "success",

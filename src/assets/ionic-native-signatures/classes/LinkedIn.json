@@ -69,7 +69,13 @@
     },
     {
       "name": "hasActiveSession",
-      "description": "Checks if there is already an existing active session. This should be used to avoid unecessary login.",
+      "description": "Checks if there is already an existing active session. This should be used to avoid unnecessary login.",
+      "params": [
+      ]
+    },
+    {
+      "name": "getActiveSession",
+      "description": "Checks if there is an active session and returns the access token if it exists.",
       "params": [
       ]
     }

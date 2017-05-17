@@ -1,10 +1,10 @@
 {
   "name": "FileSystem",
-  "parent": "File",
+  "parent": "FileSaver",
   "properties": [
     {
       "name": "name",
-      "description": "",
+      "description": "This is the name of the file system. The specifics of naming filesystems is unspecified, but a name must be unique across the list of exposed file systems.",
       "type": "string",
       "optional":false
     },
@@ -12,6 +12,18 @@
       "name": "root",
       "description": "The root directory of the file system.",
       "type": "DirectoryEntry",
+      "optional":false
+    },
+    {
+      "name": "toJSON",
+      "description": "",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "encodeURIPath",
+      "description": "",
+      "type": "string",
       "optional":false
     }
   ]

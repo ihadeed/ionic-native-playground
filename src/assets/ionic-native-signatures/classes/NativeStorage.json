@@ -32,6 +32,12 @@
       ]
     },
     {
+      "name": "keys",
+      "description": "Retrieving all keys",
+      "params": [
+      ]
+    },
+    {
       "name": "remove",
       "description": "Removes a single stored item",
       "params": [

@@ -15,7 +15,7 @@
     },
     {
       "name": "watchPosition",
-      "description": "Watch the current device's position.  Clear the watch by unsubscribing fromObservable changes.```typescriptvar subscription = Geolocation.watchPosition()                              .filter((p) => p.coords !== undefined) //Filter Out Errors                              .subscribe(position => {  console.log(position.coords.longitude + ' ' + position.coords.latitude);});// To stop notificationssubscription.unsubscribe();```",
+      "description": "Watch the current device's position.  Clear the watch by unsubscribing fromObservable changes.```typescriptconst subscription = this.geolocation.watchPosition()                              .filter((p) => p.coords !== undefined) //Filter Out Errors                              .subscribe(position => {  console.log(position.coords.longitude + ' ' + position.coords.latitude);});// To stop notificationssubscription.unsubscribe();```",
       "params": [
         {
           "name": "options",

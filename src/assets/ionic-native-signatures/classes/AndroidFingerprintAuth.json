@@ -2,6 +2,12 @@
   "name": "AndroidFingerprintAuth",
   "members": [
     {
+      "name": "ERRORS",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
       "name": "encrypt",
       "description": "Opens a native dialog fragment to use the device hardware fingerprint scanner to authenticate against fingerprints registered for the device.",
       "params": [

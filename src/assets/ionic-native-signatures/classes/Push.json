@@ -12,6 +12,12 @@
           "optional": false
         }
       ]
+    },
+    {
+      "name": "hasPermission",
+      "description": "Check whether the push notification permission has been granted.",
+      "params": [
+      ]
     }
   ]
 }

@@ -14,8 +14,20 @@
         {
           "name": "onStatusUpdate",
           "description": "A callback function to be invoked when the status of the file changes",
+          "type": "MediaStatusUpdateCallback",
+          "optional": true
+        },
+        {
+          "name": "onSuccess",
+          "description": "A callback function to be invoked after the current play, record, or stop action is completed",
           "type": "Function",
-          "optional": false
+          "optional": true
+        },
+        {
+          "name": "onError",
+          "description": "A callback function is be invoked if an error occurs.",
+          "type": "MediaErrorCallback",
+          "optional": true
         }
       ]
     }

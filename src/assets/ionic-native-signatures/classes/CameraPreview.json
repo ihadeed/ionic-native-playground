@@ -2,6 +2,36 @@
   "name": "CameraPreview",
   "members": [
     {
+      "name": "FOCUS_MODE",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "EXPOSURE_MODE",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "FLASH_MODE",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "COLOR_EFFECT",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "CAMERA_DIRECTION",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
       "name": "startCamera",
       "description": "Starts the camera preview instance.",
       "params": [
@@ -74,6 +104,18 @@
       ]
     },
     {
+      "name": "getMaxZoom",
+      "description": "Get the maximum zoom (Android)",
+      "params": [
+      ]
+    },
+    {
+      "name": "getZoom",
+      "description": "Get current zoom (Android)",
+      "params": [
+      ]
+    },
+    {
       "name": "setPreviewSize",
       "description": "Set the preview Size",
       "params": [
@@ -86,6 +128,36 @@
       ]
     },
     {
+      "name": "getFocusMode",
+      "description": "Get focus mode",
+      "params": [
+      ]
+    },
+    {
+      "name": "setFocusMode",
+      "description": "Set the focus mode",
+      "params": [
+        {
+          "name": "focusMode",
+          "description": "'fixed', 'auto', 'continuous-picture', 'continuous-video' (iOS & Android), 'edof', 'infinity', 'macro' (Android Only)",
+          "type": "string",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "getSupportedFocusModes",
+      "description": "Get supported focus modes",
+      "params": [
+      ]
+    },
+    {
+      "name": "getFlashMode",
+      "description": "Get the current flash mode",
+      "params": [
+      ]
+    },
+    {
       "name": "setFlashMode",
       "description": "Set the flashmode",
       "params": [
@@ -94,6 +166,84 @@
           "description": "'off' (iOS & Android), 'on' (iOS & Android), 'auto' (iOS & Android), 'torch' (Android)",
           "type": "string",
           "optional": true
+        }
+      ]
+    },
+    {
+      "name": "getSupportedFlashModes",
+      "description": "Get supported flash modes",
+      "params": [
+      ]
+    },
+    {
+      "name": "getSupportedPictureSizes",
+      "description": "Get supported picture sizes",
+      "params": [
+      ]
+    },
+    {
+      "name": "getExposureMode",
+      "description": "Get exposure mode",
+      "params": [
+      ]
+    },
+    {
+      "name": "getExposureModes",
+      "description": "Get exposure modes",
+      "params": [
+      ]
+    },
+    {
+      "name": "setExposureMode",
+      "description": "Set exposure mode",
+      "params": [
+        {
+          "name": "lock",
+          "description": "",
+          "type": "string",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "getExposureCompensation",
+      "description": "Get exposure compensation (Android)",
+      "params": [
+      ]
+    },
+    {
+      "name": "setExposureCompensation",
+      "description": "Set exposure compensation (Android)",
+      "params": [
+        {
+          "name": "exposureCompensation",
+          "description": "",
+          "type": "number",
+          "optional": true
+        }
+      ]
+    },
+    {
+      "name": "getExposureCompensationRange",
+      "description": "Get exposure compensation range (Android)",
+      "params": [
+      ]
+    },
+    {
+      "name": "tapToFocus",
+      "description": "Set specific focus point. Note, this assumes the camera is full-screen.",
+      "params": [
+        {
+          "name": "xPoint",
+          "description": "",
+          "type": "number",
+          "optional": false
+        },
+        {
+          "name": "yPoint",
+          "description": "",
+          "type": "number",
+          "optional": false
         }
       ]
     }

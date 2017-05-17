@@ -81,7 +81,7 @@
     },
     {
       "name": "write",
-      "description": "Qrites an NdefMessage to a NFC tag.",
+      "description": "Writes an NdefMessage(array of ndef records) to a NFC tag.",
       "params": [
         {
           "name": "message",
@@ -99,7 +99,7 @@
     },
     {
       "name": "share",
-      "description": "Shares an NDEF Message via peer-to-peer.",
+      "description": "Shares an NDEF Message(array of ndef records) via peer-to-peer.",
       "params": [
         {
           "name": "message",
@@ -141,7 +141,7 @@
     },
     {
       "name": "showSettings",
-      "description": "Show the NFC settings on the device.",
+      "description": "Opens the device's NFC settings.",
       "params": [
       ]
     },
@@ -153,7 +153,7 @@
     },
     {
       "name": "bytesToString",
-      "description": "Convert bytes to string",
+      "description": "",
       "params": [
         {
           "name": "bytes",
@@ -165,7 +165,7 @@
     },
     {
       "name": "stringToBytes",
-      "description": "Convert string to bytes",
+      "description": "Convert string to byte array.",
       "params": [
         {
           "name": "str",
@@ -177,7 +177,7 @@
     },
     {
       "name": "bytesToHexString",
-      "description": "Convert bytes to hex string",
+      "description": "Convert byte array to hex string",
       "params": [
         {
           "name": "bytes",

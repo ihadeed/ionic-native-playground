@@ -20,12 +20,6 @@
       ]
     },
     {
-      "name": "ontypechange",
-      "description": "Returns an observable to watch connection type changes",
-      "params": [
-      ]
-    },
-    {
       "name": "onDisconnect",
       "description": "Get notified when the device goes offline",
       "params": [

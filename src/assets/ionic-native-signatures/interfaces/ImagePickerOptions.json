@@ -4,7 +4,7 @@
   "properties": [
     {
       "name": "maximumImagesCount",
-      "description": "max images to be selected, defaults to 15. If this is set to 1, upon selection of a single image, the plugin will return it.",
+      "description": "max images to be selected, defaults to 15. If this is set to 1, upon selection of a single image, the plugin will return it. (Android only)",
       "type": "number",
       "optional":true
     },

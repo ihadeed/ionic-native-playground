@@ -8,6 +8,18 @@
       ]
     },
     {
+      "name": "check",
+      "description": "Checks if the printer service is available (iOS) or if printer services are installed and enabled (Android).",
+      "params": [
+      ]
+    },
+    {
+      "name": "pick",
+      "description": "Displays a system interface allowing the user to select an available printer. To speak with a printer directly you need to know the network address by picking them before via `printer.pick`.",
+      "params": [
+      ]
+    },
+    {
       "name": "print",
       "description": "Sends content to the printer.",
       "params": [

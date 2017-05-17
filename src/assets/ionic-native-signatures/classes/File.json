@@ -326,7 +326,7 @@
         {
           "name": "options",
           "description": "replace file if set to true. See WriteOptions for more information.",
-          "type": "WriteOptions",
+          "type": "IWriteOptions",
           "optional": false
         }
       ]
@@ -375,7 +375,7 @@
     },
     {
       "name": "readAsDataURL",
-      "description": "Read file and return data as a base64 encoded data url.A data url is of the form:     data:[<mediatype>][;base64],<data>",
+      "description": "Read file and return data as a base64 encoded data url.A data url is of the form:     data: [<mediatype>][;base64],<data>",
       "params": [
         {
           "name": "path",

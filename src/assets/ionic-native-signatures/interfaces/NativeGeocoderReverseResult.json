@@ -27,6 +27,12 @@
       "optional":false
     },
     {
+      "name": "district",
+      "description": "The district.",
+      "type": "string",
+      "optional":false
+    },
+    {
       "name": "countryName",
       "description": "The country name.",
       "type": "string",

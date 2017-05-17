@@ -38,7 +38,7 @@
         {
           "name": "value",
           "description": "Value",
-          "type": "string",
+          "type": "any",
           "optional": false
         }
       ]

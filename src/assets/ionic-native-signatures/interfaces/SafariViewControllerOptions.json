@@ -3,25 +3,31 @@
   "parent": "SafariViewController",
   "properties": [
     {
-      "name": "url",
-      "description": "",
-      "type": "string",
-      "optional":true
-    },
-    {
-      "name": "hidden",
+      "name": "animated",
       "description": "",
       "type": "boolean",
       "optional":true
     },
     {
-      "name": "toolbarColor",
+      "name": "barColor",
       "description": "",
       "type": "string",
       "optional":true
     },
     {
-      "name": "animated",
+      "name": "controlTintColor",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "enterReaderModeIfAvailable",
+      "description": "",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "hidden",
       "description": "",
       "type": "boolean",
       "optional":true
@@ -33,19 +39,25 @@
       "optional":true
     },
     {
-      "name": "enterReaderModeIfAvailable",
-      "description": "",
-      "type": "boolean",
-      "optional":true
-    },
-    {
       "name": "tintColor",
       "description": "",
       "type": "string",
       "optional":true
     },
     {
+      "name": "toolbarColor",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
       "name": "transition",
+      "description": "",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "url",
       "description": "",
       "type": "string",
       "optional":true

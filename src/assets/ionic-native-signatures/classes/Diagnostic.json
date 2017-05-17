@@ -59,6 +59,12 @@
       "name": "isCameraAvailable",
       "description": "Checks if the device has a camera. On Android this returns true if the device has a camera. On iOS this returns true if both the device has a camera AND the application is authorized to use it. On Windows 10 Mobile this returns true if both the device has a rear-facing camera AND theapplication is authorized to use it.",
       "params": [
+        {
+          "name": "externalStorage",
+          "description": "Android only: If true, checks permission for READ_EXTERNAL_STORAGE in addition to CAMERA run-time permission. cordova-plugin-camera@2.2+ requires both of these permissions. Defaults to true.",
+          "type": "boolean",
+          "optional": true
+        }
       ]
     },
     {
@@ -161,18 +167,36 @@
       "name": "isCameraAuthorized",
       "description": "Checks if the application is authorized to use the camera.Note for Android: this is intended for Android 6 / API 23 and above. Calling on Android 5 / API 22 and below will always return TRUE as permissions are already granted at installation time.",
       "params": [
+        {
+          "name": "externalStorage",
+          "description": "Android only: If true, checks permission for READ_EXTERNAL_STORAGE in addition to CAMERA run-time permission. cordova-plugin-camera@2.2+ requires both of these permissions. Defaults to true.",
+          "type": "boolean",
+          "optional": true
+        }
       ]
     },
     {
       "name": "getCameraAuthorizationStatus",
       "description": "Returns the camera authorization status for the application.",
       "params": [
+        {
+          "name": "externalStorage",
+          "description": "Android only: If true, checks permission for READ_EXTERNAL_STORAGE in addition to CAMERA run-time permission. cordova-plugin-camera@2.2+ requires both of these permissions. Defaults to true.",
+          "type": "boolean",
+          "optional": true
+        }
       ]
     },
     {
       "name": "requestCameraAuthorization",
       "description": "Requests camera authorization for the application.",
       "params": [
+        {
+          "name": "externalStorage",
+          "description": "Android only: If true, requests permission for READ_EXTERNAL_STORAGE in addition to CAMERA run-time permission. cordova-plugin-camera@2.2+ requires both of these permissions. Defaults to true.",
+          "type": "boolean",
+          "optional": true
+        }
       ]
     },
     {

@@ -30,6 +30,12 @@
       "description": "You MUST call this method in your fetch callbackFn provided to #configure in order to signal to iOS that your fetch action is complete. iOS provides only 30s of background-time for a fetch-event -- if you exceed this 30s, iOS will kill your app.",
       "params": [
       ]
+    },
+    {
+      "name": "status",
+      "description": "Return the status of the background-fetch",
+      "params": [
+      ]
     }
   ]
 }

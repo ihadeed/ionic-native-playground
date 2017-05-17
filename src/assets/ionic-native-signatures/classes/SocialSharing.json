@@ -330,6 +330,18 @@
           "optional": false
         }
       ]
+    },
+    {
+      "name": "setIPadPopupCoordinates",
+      "description": "defines the popup position before call the share method.",
+      "params": [
+        {
+          "name": "targetBounds",
+          "description": "left, top, width, height",
+          "type": "string",
+          "optional": false
+        }
+      ]
     }
   ]
 }

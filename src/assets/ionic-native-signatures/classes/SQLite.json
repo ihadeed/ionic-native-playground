@@ -7,8 +7,26 @@
       "params": [
         {
           "name": "config",
-          "description": "the config for opening the database.",
-          "type": "",
+          "description": "database configuration",
+          "type": "SQLiteDatabaseConfig",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "echoTest",
+      "description": "Verify that both the Javascript and native part of this plugin are installed in your application",
+      "params": [
+      ]
+    },
+    {
+      "name": "deleteDatabase",
+      "description": "Deletes a database",
+      "params": [
+        {
+          "name": "config",
+          "description": "database configuration",
+          "type": "SQLiteDatabaseConfig",
           "optional": false
         }
       ]

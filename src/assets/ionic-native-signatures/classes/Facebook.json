@@ -2,6 +2,12 @@
   "name": "Facebook",
   "members": [
     {
+      "name": "EVENTS",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
       "name": "browserInit",
       "description": "Browser wrapper",
       "params": [
@@ -21,7 +27,7 @@
     },
     {
       "name": "login",
-      "description": "Login to Facebook to authenticate this app.```typescript{  status: \"connected\",  authResponse: {    session_key: true,    accessToken: \"kgkh3g42kh4g23kh4g2kh34g2kg4k2h4gkh3g4k2h4gk23h4gk2h34gk234gk2h34AndSoOn\",    expiresIn: 5183979,    sig: \"...\",    secret: \"...\",    userID: \"634565435\"  }}```",
+      "description": "Login to Facebook to authenticate this app.```typescript{  status: 'connected',  authResponse: {    session_key: true,    accessToken: 'kgkh3g42kh4g23kh4g2kh34g2kg4k2h4gkh3g4k2h4gk23h4gk2h34gk234gk2h34AndSoOn',    expiresIn: 5183979,    sig: '...',    secret: '...',    userID: '634565435'  }}```",
       "params": [
         {
           "name": "permissions",
@@ -39,7 +45,7 @@
     },
     {
       "name": "getLoginStatus",
-      "description": "Determine if a user is logged in to Facebook and has authenticated your app.  There are three possible states for a user:1) the user is logged into Facebook and has authenticated your application (connected)2) the user is logged into Facebook but has not authenticated your application (not_authorized)3) the user is either not logged into Facebook or explicitly logged out of your application so it doesn't attempt to connect to Facebook and thus, we don't know if they've authenticated your application or not (unknown)Resolves with a response like:```{  authResponse: {    userID: \"12345678912345\",    accessToken: \"kgkh3g42kh4g23kh4g2kh34g2kg4k2h4gkh3g4k2h4gk23h4gk2h34gk234gk2h34AndSoOn\",    session_Key: true,    expiresIn: \"5183738\",    sig: \"...\"  },  status: \"connected\"}```For more information see the [Facebook docs](https://developers.facebook.com/docs/reference/javascript/FB.getLoginStatus)",
+      "description": "Determine if a user is logged in to Facebook and has authenticated your app.  There are three possible states for a user:1) the user is logged into Facebook and has authenticated your application (connected)2) the user is logged into Facebook but has not authenticated your application (not_authorized)3) the user is either not logged into Facebook or explicitly logged out of your application so it doesn't attempt to connect to Facebook and thus, we don't know if they've authenticated your application or not (unknown)Resolves with a response like:```{  authResponse: {    userID: '12345678912345',    accessToken: 'kgkh3g42kh4g23kh4g2kh34g2kg4k2h4gkh3g4k2h4gk23h4gk2h34gk234gk2h34AndSoOn',    session_Key: true,    expiresIn: '5183738',    sig: '...'  },  status: 'connected'}```For more information see the [Facebook docs](https://developers.facebook.com/docs/reference/javascript/FB.getLoginStatus)",
       "params": [
       ]
     },
@@ -51,7 +57,7 @@
     },
     {
       "name": "showDialog",
-      "description": "Show one of various Facebook dialogs. Example of options for a Share dialog:```{  method: \"share\",  href: \"http://example.com\",  caption: \"Such caption, very feed.\",  description: \"Much description\",  picture: 'http://example.com/image.png'}```For more options see the [Cordova plugin docs](https://github.com/jeduan/cordova-plugin-facebook4#show-a-dialog) and the [Facebook docs](https://developers.facebook.com/docs/javascript/reference/FB.ui)",
+      "description": "Show one of various Facebook dialogs. Example of options for a Share dialog:```{  method: 'share',  href: 'http://example.com',  caption: 'Such caption, very feed.',  description: 'Much description',  picture: 'http://example.com/image.png'}```For more options see the [Cordova plugin docs](https://github.com/jeduan/cordova-plugin-facebook4#show-a-dialog) and the [Facebook docs](https://developers.facebook.com/docs/javascript/reference/FB.ui)",
       "params": [
         {
           "name": "options",

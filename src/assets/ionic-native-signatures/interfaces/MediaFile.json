@@ -1,6 +1,6 @@
 {
   "name": "MediaFile",
-  "parent": "MediaCapture",
+  "parent": "VideoCapturePlus",
   "properties": [
     {
       "name": "name",
@@ -35,7 +35,7 @@
     {
       "name": "getFormatData",
       "description": "Retrieves the format information of the media file.",
-      "type": "",
+      "type": "any",
       "optional":false
     }
   ]

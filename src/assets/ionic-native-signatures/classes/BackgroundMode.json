@@ -32,7 +32,7 @@
         {
           "name": "options",
           "description": "List of option to configure. See table below",
-          "type": "Configure",
+          "type": "BackgroundModeConfiguration",
           "optional": false
         }
       ]
@@ -44,7 +44,7 @@
         {
           "name": "options",
           "description": "Any options you want to update. See table below.",
-          "type": "Configure",
+          "type": "BackgroundModeConfiguration",
           "optional": false
         }
       ]
@@ -64,6 +64,12 @@
     {
       "name": "moveToBackground",
       "description": "Android allows to programmatically move from foreground to background.",
+      "params": [
+      ]
+    },
+    {
+      "name": "disableWebViewOptimizations",
+      "description": "Enable GPS-tracking in background (Android).",
       "params": [
       ]
     },

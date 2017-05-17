@@ -74,6 +74,18 @@
       ]
     },
     {
+      "name": "timeEvent",
+      "description": "",
+      "params": [
+        {
+          "name": "eventName",
+          "description": "",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
       "name": "track",
       "description": "",
       "params": [
@@ -89,12 +101,6 @@
           "type": "any",
           "optional": false
         }
-      ]
-    },
-    {
-      "name": "showSurvey",
-      "description": "",
-      "params": [
       ]
     }
   ]

@@ -48,6 +48,12 @@
           "optional": false
         }
       ]
+    },
+    {
+      "name": "didFingerprintDatabaseChange",
+      "description": "Checks if the fingerprint database changed.",
+      "params": [
+      ]
     }
   ]
 }

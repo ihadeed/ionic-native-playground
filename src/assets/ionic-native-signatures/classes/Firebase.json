@@ -21,13 +21,13 @@
     },
     {
       "name": "grantPermission",
-      "description": "Grant permission to recieve push notifications",
+      "description": "Grant permission to receive push notifications",
       "params": [
       ]
     },
     {
       "name": "hasPermission",
-      "description": "Check permission to recieve push notifications",
+      "description": "Check permission to receive push notifications",
       "params": [
       ]
     },
@@ -87,6 +87,18 @@
           "name": "data",
           "description": "",
           "type": "Object",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "logError",
+      "description": "Log an Error using FirebaseCrash",
+      "params": [
+        {
+          "name": "message",
+          "description": "",
+          "type": "string",
           "optional": false
         }
       ]

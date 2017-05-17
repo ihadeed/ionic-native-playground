@@ -50,8 +50,32 @@
       ]
     },
     {
+      "name": "ACTION_GET_CONTENT",
+      "description": "Convenience constant for actions",
+      "params": [
+      ]
+    },
+    {
+      "name": "ACTION_PICK",
+      "description": "Convenience constant for actions",
+      "params": [
+      ]
+    },
+    {
       "name": "startActivity",
       "description": "Launches an Android intent",
+      "params": [
+        {
+          "name": "options",
+          "description": "{ action: any, url: string, type?: string }",
+          "type": "Object",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "startActivityForResult",
+      "description": "Starts a new activity and return the result to the application",
       "params": [
         {
           "name": "options",
@@ -107,6 +131,42 @@
           "type": "Object",
           "optional": false
         }
+      ]
+    },
+    {
+      "name": "registerBroadcastReceiver",
+      "description": "Registers a broadcast receiver for the specified filters",
+      "params": [
+        {
+          "name": "filters",
+          "description": "",
+          "type": "any",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "unregisterBroadcastReceiver",
+      "description": "Unregisters a broadcast receiver",
+      "params": [
+      ]
+    },
+    {
+      "name": "onIntent",
+      "description": "Returns the content of the intent used whenever the application activity is launched",
+      "params": [
+      ]
+    },
+    {
+      "name": "onActivityResult",
+      "description": "",
+      "params": [
+      ]
+    },
+    {
+      "name": "getIntent",
+      "description": "",
+      "params": [
       ]
     }
   ]

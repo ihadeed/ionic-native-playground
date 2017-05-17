@@ -9,26 +9,50 @@
       "optional":true
     },
     {
-      "name": "ticker",
-      "description": "The text that scrolls itself on statusbar",
-      "type": "String",
-      "optional":true
-    },
-    {
       "name": "text",
       "description": "Description of background task",
       "type": "String",
       "optional":true
     },
     {
-      "name": "silent",
-      "description": "if true plugin will not display a notification. Default is false.",
-      "type": "boolean",
+      "name": "icon",
+      "description": "This will look for <icon name>.png in platforms/android/res/drawable|mipmap",
+      "type": "string",
+      "optional":true
+    },
+    {
+      "name": "color",
+      "description": "",
+      "type": "string",
       "optional":true
     },
     {
       "name": "resume",
       "description": "By default the app will come to foreground when taping on the notification. If false, plugin wont come to foreground when tapped.",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "hidden",
+      "description": "",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "bigText",
+      "description": "",
+      "type": "boolean",
+      "optional":true
+    },
+    {
+      "name": "ticker",
+      "description": "The text that scrolls itself on statusbar",
+      "type": "String",
+      "optional":true
+    },
+    {
+      "name": "silent",
+      "description": "if true plugin will not display a notification. Default is false.",
       "type": "boolean",
       "optional":true
     }

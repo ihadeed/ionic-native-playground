@@ -7,6 +7,21 @@
     },
     
     {
+      "name": "AdMobFreeBannerConfig",
+      "parent": "AdMobFree"
+    },
+    
+    {
+      "name": "AdMobFreeInterstitialConfig",
+      "parent": "AdMobFree"
+    },
+    
+    {
+      "name": "AdMobFreeRewardVideoConfig",
+      "parent": "AdMobFree"
+    },
+    
+    {
       "name": "AdMobOptions",
       "parent": "AdMob"
     },
@@ -73,6 +88,11 @@
     
     {
       "name": "BarcodeScannerOptions",
+      "parent": "BarcodeScanner"
+    },
+    
+    {
+      "name": "BarcodeScanResult",
       "parent": "BarcodeScanner"
     },
     
@@ -237,6 +257,11 @@
     },
     
     {
+      "name": "DocumentViewerOptions",
+      "parent": "DocumentViewer"
+    },
+    
+    {
       "name": "EmailComposerOptions",
       "parent": "EmailComposer"
     },
@@ -252,73 +277,128 @@
     },
     
     {
-      "name": "FileSystem",
-      "parent": "File"
+      "name": "NotificationData",
+      "parent": "FCM"
     },
     
     {
-      "name": "Entry",
-      "parent": "File"
+      "name": "IFile",
+      "parent": "FileSaver"
+    },
+    
+    {
+      "name": "LocalFileSystem",
+      "parent": "FileSaver"
     },
     
     {
       "name": "Metadata",
-      "parent": "File"
-    },
-    
-    {
-      "name": "DirectoryEntry",
-      "parent": "File"
-    },
-    
-    {
-      "name": "RemoveResult",
-      "parent": "File"
+      "parent": "FileSaver"
     },
     
     {
       "name": "Flags",
-      "parent": "File"
+      "parent": "FileSaver"
     },
     
     {
-      "name": "WriteOptions",
-      "parent": "File"
+      "name": "FileSystem",
+      "parent": "FileSaver"
+    },
+    
+    {
+      "name": "Entry",
+      "parent": "FileSaver"
+    },
+    
+    {
+      "name": "DirectoryEntry",
+      "parent": "FileSaver"
     },
     
     {
       "name": "DirectoryReader",
-      "parent": "File"
+      "parent": "FileSaver"
     },
     
     {
       "name": "FileEntry",
-      "parent": "File"
+      "parent": "FileSaver"
     },
     
     {
-      "name": "FileSaver",
-      "parent": "File"
+      "name": "FileSystemCallback",
+      "parent": "FileSaver"
     },
     
     {
-      "name": "FileWriter",
-      "parent": "File"
+      "name": "EntryCallback",
+      "parent": "FileSaver"
     },
     
     {
-      "name": "FileReader",
-      "parent": "File"
+      "name": "FileEntryCallback",
+      "parent": "FileSaver"
     },
     
     {
-      "name": "FileError",
-      "parent": "File"
+      "name": "DirectoryEntryCallback",
+      "parent": "FileSaver"
+    },
+    
+    {
+      "name": "EntriesCallback",
+      "parent": "FileSaver"
+    },
+    
+    {
+      "name": "MetadataCallback",
+      "parent": "FileSaver"
+    },
+    
+    {
+      "name": "FileWriterCallback",
+      "parent": "FileSaver"
+    },
+    
+    {
+      "name": "FileCallback",
+      "parent": "FileSaver"
+    },
+    
+    {
+      "name": "VoidCallback",
+      "parent": "FileSaver"
+    },
+    
+    {
+      "name": "ErrorCallback",
+      "parent": "FileSaver"
+    },
+    
+    {
+      "name": "RemoveResult",
+      "parent": "FileSaver"
+    },
+    
+    {
+      "name": "IWriteOptions",
+      "parent": "FileSaver"
     },
     
     {
       "name": "FingerprintOptions",
       "parent": "FingerprintAIO"
+    },
+    
+    {
+      "name": "FlurryAnalyticsOptions",
+      "parent": "FlurryAnalyticsObject"
+    },
+    
+    {
+      "name": "FlurryAnalyticsLocation",
+      "parent": "FlurryAnalyticsObject"
     },
     
     {
@@ -364,6 +444,11 @@
     {
       "name": "VisibleRegion",
       "parent": "GoogleMaps"
+    },
+    
+    {
+      "name": "HealthKitOptions",
+      "parent": "HealthKit"
     },
     
     {
@@ -442,6 +527,11 @@
     },
     
     {
+      "name": "IntelSecurityDataOptions",
+      "parent": "IntelSecurity"
+    },
+    
+    {
       "name": "LaunchNavigatorOptions",
       "parent": "LaunchNavigator"
     },
@@ -484,6 +574,11 @@
     {
       "name": "ConfigurationData",
       "parent": "MediaCapture"
+    },
+    
+    {
+      "name": "MediaError",
+      "parent": "MediaPlugin"
     },
     
     {
@@ -539,6 +634,11 @@
     {
       "name": "IPedometerData",
       "parent": "Pedometer"
+    },
+    
+    {
+      "name": "LocalNotificationOptions",
+      "parent": "PLNObject"
     },
     
     {
@@ -647,6 +747,11 @@
     },
     
     {
+      "name": "SQLiteDatabaseConfig",
+      "parent": "SQLite"
+    },
+    
+    {
       "name": "StreamingVideoOptions",
       "parent": "StreamingMedia"
     },
@@ -717,6 +822,21 @@
     },
     
     {
+      "name": "MediaFile",
+      "parent": "VideoCapturePlus"
+    },
+    
+    {
+      "name": "MediaFileData",
+      "parent": "VideoCapturePlus"
+    },
+    
+    {
+      "name": "VideoCapturePlusOptions",
+      "parent": "VideoCapturePlus"
+    },
+    
+    {
       "name": "TranscodeOptions",
       "parent": "VideoEditor"
     },
@@ -747,22 +867,52 @@
     },
     
     {
+      "name": "WheelSelectorItem",
+      "parent": "WheelSelector"
+    },
+    
+    {
+      "name": "WheelSelectorOptions",
+      "parent": "WheelSelector"
+    },
+    
+    {
+      "name": "WheelSelectorData",
+      "parent": "WheelSelector"
+    },
+    
+    {
       "name": "ZBarOptions",
       "parent": "ZBar"
+    },
+    
+    {
+      "name": "ZeroconfService",
+      "parent": "Zeroconf"
+    },
+    
+    {
+      "name": "ZeroconfResult",
+      "parent": "Zeroconf"
     }
     
   ],
   "classes": [
     "ActionSheet",
+    "AdMobFree",
     "AdMob",
     "Alipay",
     "AndroidFingerprintAuth",
+    "AndroidFullScreen",
+    "AndroidPermissions",
     "AppAvailability",
+    "AppMinimize",
     "AppPreferences",
     "AppRate",
     "AppUpdate",
     "AppVersion",
     "Appodeal",
+    "Autostart",
     "BackgroundFetch",
     "BackgroundGeolocation",
     "BackgroundMode",
@@ -796,16 +946,25 @@
     "Device",
     "Diagnostic",
     "Dialogs",
+    "DocumentViewer",
     "EmailComposer",
     "EstimoteBeacons",
     "Facebook",
+    "FCM",
     "FileChooser",
+    "FileEncryption",
     "FileOpener",
     "FilePath",
+    "FileSaver",
+    "FileWriter",
+    "FileError",
+    "FileReader",
     "File",
     "FingerprintAIO",
     "Firebase",
     "Flashlight",
+    "FlurryAnalyticsObject",
+    "FlurryAnalytics",
     "Geofence",
     "Geolocation",
     "Globalization",
@@ -814,6 +973,7 @@
     "GooglePlus",
     "Gyroscope",
     "HeaderColor",
+    "HealthKit",
     "Health",
     "Hotspot",
     "HTTP",
@@ -825,9 +985,12 @@
     "InAppPurchase",
     "Insomnia",
     "Instagram",
+    "IntelSecurity",
+    "Intercom",
     "IsDebug",
     "JinsMeme",
     "Keyboard",
+    "Keychain",
     "LaunchNavigator",
     "LaunchReview",
     "LinkedIn",
@@ -837,10 +1000,12 @@
     "MediaCapture",
     "MediaPlugin",
     "Mixpanel",
+    "MobileAccessibility",
     "MusicControls",
     "NativeAudio",
     "NativeGeocoder",
     "NativePageTransitions",
+    "NativeRingtones",
     "NativeStorage",
     "NavigationBar",
     "Network",
@@ -848,6 +1013,8 @@
     "OneSignal",
     "PayPal",
     "Pedometer",
+    "PLNObject",
+    "PhonegapLocalNotifications",
     "PhotoLibrary",
     "PhotoViewer",
     "PinDialog",
@@ -868,11 +1035,13 @@
     "SpeechRecognition",
     "SpinnerDialog",
     "SplashScreen",
+    "SQLitePorter",
     "SQLite",
     "StatusBar",
     "Stepcounter",
     "StreamingMedia",
     "Stripe",
+    "TapticEngine",
     "TextToSpeech",
     "ThemeableBrowser",
     "ThreeDeeTouch",
@@ -882,11 +1051,14 @@
     "TwitterConnect",
     "UniqueDeviceID",
     "Vibration",
+    "VideoCapturePlus",
     "VideoEditor",
     "VideoPlayer",
     "WebIntent",
+    "WheelSelector",
     "YoutubeVideoPlayer",
     "ZBar",
+    "Zeroconf",
     "Zip"
     
   ]

@@ -1,6 +1,6 @@
 {
   "name": "ErrorCallback",
-  "parent": "CodePush",
+  "parent": "FileSaver",
   "properties": [
   ]
 }

@@ -3,7 +3,7 @@
   "members": [
     {
       "name": "setAppClientID",
-      "description": "Authentication and authorization of App and SDK.Must call this method at first.",
+      "description": "Authentication and authorization of App and SDK.Must call this method first.Sign up for an app ID (and get an app/client secret) at developers.jins.com",
       "params": [
         {
           "name": "setAppClientID",

@@ -73,6 +73,12 @@
       "description": "Set extra color style for Ad",
       "type": "AdExtras",
       "optional":true
+    },
+    {
+      "name": "license",
+      "description": "License key for the plugin",
+      "type": "any",
+      "optional":true
     }
   ]
 }

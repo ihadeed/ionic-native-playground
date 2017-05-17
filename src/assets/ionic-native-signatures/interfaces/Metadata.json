@@ -1,6 +1,6 @@
 {
   "name": "Metadata",
-  "parent": "File",
+  "parent": "FileSaver",
   "properties": [
     {
       "name": "modificationTime",

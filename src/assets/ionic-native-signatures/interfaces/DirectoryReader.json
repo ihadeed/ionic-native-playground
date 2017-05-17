@@ -1,7 +1,19 @@
 {
   "name": "DirectoryReader",
-  "parent": "File",
+  "parent": "FileSaver",
   "properties": [
+    {
+      "name": "localURL",
+      "description": "",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "hasReadEntries",
+      "description": "",
+      "type": "boolean",
+      "optional":false
+    },
     {
       "name": "readEntries",
       "description": "Read the next block of entries from this directory.",

@@ -35,7 +35,7 @@
     {
       "name": "additionalData",
       "description": "An optional collection of data sent by the 3rd party push service that does not fit in the above properties.",
-      "type": "NotificationEventAdditionalData | any",
+      "type": "NotificationEventAdditionalData &amp; any",
       "optional":false
     }
   ]

@@ -1,6 +1,6 @@
 {
   "name": "MediaFileData",
-  "parent": "MediaCapture",
+  "parent": "VideoCapturePlus",
   "properties": [
     {
       "name": "codecs",
