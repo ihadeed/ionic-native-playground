@@ -6,7 +6,7 @@ import {
 
 @Component({
   selector: 'google-map',
-  template: ''
+  template: '<ng-content></ng-content>'
 })
 export class GoogleMapComponent implements OnInit {
 
