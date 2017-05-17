@@ -93,7 +93,7 @@
     "@ionic-native/youtube-video-player": "^3.9.2",
     "@ionic/storage": "2.0.1",
     "@types/lodash": "^4.14.64",
-    "at.gofg.sportscomputer.powermanagement": "~1.1.2",
+    "cordova-plugin-powermanagement-orig": "~1.1.2",
     "card.io.cordova.mobilesdk": "https://github.com/card-io/card.io-Cordova-Plugin",
     "com.bunkerpalace.cordova.YoutubeVideoPlayer": "https://github.com/Glitchbone/CordovaYoutubeVideoPlayer.git",
     "com.darktalker.cordova.screenshot": "https://github.com/gitawego/cordova-screenshot.git",
