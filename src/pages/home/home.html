@@ -8,7 +8,7 @@
 
 <ion-content>
   <ion-list>
-    <button ion-item *ngFor="let plugin of plugins" (click)="show(plugin)">
+    <button ion-item *ngFor="let plugin of plugins" [navPush]="plugin.component" [navParams]="plugin.params">
       {{plugin.name}}
     </button>
   </ion-list>

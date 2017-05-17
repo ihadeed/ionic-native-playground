@@ -20,7 +20,7 @@ export class PluginMethodsComponent {
 
   @Input()
   set plugin(val: any) {
-    this._plugin = val;
+    this._plugin = val.__proto__;
     this.processPlugin();
   }
 
@@ -53,8 +53,16 @@ export class PluginMethodsComponent {
 
   properties: any[] = [];
   methods: any[] = [];
+  subscription: any;
 
-  constructor(private ngZone: NgZone, private modalCtrl: ModalController, private sig: SignatureService){}
+  constructor(private ngZone: NgZone, private modalCtrl: ModalController, private sig: SignatureService){
+  }
+
+  ngOnDestroy() {
+    try {
+      this.subscription.unsubscribe();
+    } catch (e) {}
+  }
 
   private async processPlugin() {
     if (!this._plugin) return;
@@ -65,11 +73,14 @@ export class PluginMethodsComponent {
     for (let member in this._plugin) {
       const isFunction = typeof this._plugin[member] == 'function';
 
+      if (member === 'constructor') continue;
+
       let desc;
 
       if (this.sigName) {
         desc = (await this.sig.getMethodSignature(member, this.sigName)).description;
       }
+
 
       const button = {
         text: member,
@@ -85,7 +96,7 @@ export class PluginMethodsComponent {
               if (result.then) {
                 result.then(this.success.bind(this)).catch(this.error.bind(this));
               } else if (result.subscribe) {
-                result.subscribe({
+                this.subscription = result.subscribe({
                   next: this.success.bind(this),
                   error: this.error.bind(this),
                   completed: this.success.bind(this)

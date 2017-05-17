@@ -1,6 +1,6 @@
 import { NavParams, ViewController, AlertController, ModalController } from 'ionic-angular';
 import { ObjectCreatorPage } from './pages/object-creator/object-creator';
-import {HelpPage} from "./pages/help/help";
+import { HelpPage } from './pages/help/help';
 
 export class ObjectCreator {
 
