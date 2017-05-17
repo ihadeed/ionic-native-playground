@@ -16,9 +16,10 @@ export class ActionSheetPage {
 
   showActionSheet() {
     const options: ActionSheetOptions = {
-      buttonLabels: ['An option', 'Another option', 'A third option'],
+      buttonLabels: ['An option', 'Another option', 'A third option', 'Cancel'],
       title: 'A Native Action Sheet',
-      androidTheme: 4 // TODO replace with this.actionSheet.ANDROID_THEMES.THEME_DEVICE_DEFAULT_DARK
+      androidTheme: this.actionSheet.ANDROID_THEMES.THEME_DEVICE_DEFAULT_DARK,
+      destructiveButtonLast: true
     };
 
     this.actionSheet.show(options)

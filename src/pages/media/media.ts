@@ -28,13 +28,9 @@ export class MediaPage {
   ) {}
 
   startRecording() {
-    this.media.create('file.mp3')
-      .then(media => {
-        media.startRecord();
-        this.isRecording = true;
-        this.mediaObject = media;
-      })
-      .catch(this.onError.bind(this));
+    this.mediaObject = this.media.create('file.mp3');
+    this.mediaObject.startRecord();
+    this.isRecording = true;
   }
 
   stopRecording() {
