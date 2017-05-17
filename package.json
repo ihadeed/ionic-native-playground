@@ -1,5 +1,6 @@
 {
   "name": "ionic-native-playground",
+  "version": "1.0.0",
   "author": "Ibby Hadeed <ibby@zyra.ca>",
   "homepage": "https://zyramedia.com",
   "scripts": {
