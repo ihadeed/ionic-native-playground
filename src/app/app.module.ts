@@ -36,6 +36,8 @@ import { CameraPreview } from '@ionic-native/camera-preview'
 import {MediaPage} from "../pages/media/media";
 import { MediaPlugin } from '@ionic-native/media';
 import { File } from '@ionic-native/file';
+import {Base64ToGallery} from "@ionic-native/base64-to-gallery";
+import {Toast} from "@ionic-native/toast";
 
 const components = [
   GoogleMapComponent,
@@ -78,6 +80,8 @@ const providers = [
   CameraPreview,
   MediaPlugin,
   File,
+  Base64ToGallery,
+  Toast,
 
   SplashScreen,
   StatusBar
