@@ -6,6 +6,7 @@ import { HomePage } from '../pages/home/home';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { SignatureService } from '../providers/signature';
+import '../object-creator';
 
 @Component({
   templateUrl: 'app.html'

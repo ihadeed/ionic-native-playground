@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
-import { NavParams, ViewController, AlertController, ModalController } from 'ionic-angular';
-import { ObjectCreator } from '../../object-creator.class';
+import {NavParams, ViewController, AlertController, ModalController, IonicPage} from 'ionic-angular';
+import { ObjectCreator } from '../../object-creator';
 import _ from 'lodash';
 import {SignatureService} from "../../providers/signature";
 
+@IonicPage({
+  name: 'object-creator'
+})
 @Component({
   selector: 'object-creator',
   templateUrl: 'object-creator.html'

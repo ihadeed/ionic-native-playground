@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import {AlertController, ModalController, NavParams, ViewController} from 'ionic-angular';
-import { ObjectCreator } from '../../object-creator2.class';
-import { HelpPage } from "../help/help";
+import { ObjectCreator } from '../../object-creator';
 
 @Component({
   selector: 'page-plugin-params',

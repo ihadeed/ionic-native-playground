@@ -24,7 +24,6 @@ import {PluginResultComponent} from "../components/plugin-result/plugin-result";
 import { PluginConfigComponent } from '../components/plugin-config/plugin-config';
 import {PluginMethodsComponent} from "../components/plugin-methods/plugin-methods";
 import {PluginParamsPage} from "../pages/plugin-params/plugin-params";
-import { ObjectCreatorPage } from '../pages/object-creator/object-creator';
 
 import {IonicStorageModule} from "@ionic/storage";
 import {DynamicPluginPage} from "../pages/dynamic-plugin/dyanmic-plugin";
@@ -51,7 +50,6 @@ const pages = [
   HomePage,
   PluginParamsPage,
   DynamicPluginPage,
-  ObjectCreatorPage,
   HelpPage,
 
   ActionSheetPage,

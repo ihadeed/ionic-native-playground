@@ -1,5 +1,4 @@
 import { NavParams, ViewController, AlertController, ModalController } from 'ionic-angular';
-import { ObjectCreatorPage } from './pages/object-creator/object-creator';
 import { HelpPage } from './pages/help/help';
 
 export class ObjectCreator {
@@ -102,7 +101,7 @@ export class ObjectCreator {
 
     const onTypeSelect = type => {
       if (['object', 'array'].indexOf(type) > - 1) {
-        const modal = this.modalCtrl.create(ObjectCreatorPage, { type });
+        const modal = this.modalCtrl.create('object-creator', { type });
         modal.present();
         modal.onDidDismiss(value => this._addItem(type, value, name));
       } else {
@@ -122,7 +121,7 @@ export class ObjectCreator {
   }
 
   editObject(i: number) {
-    const modal = this.modalCtrl.create(ObjectCreatorPage, {
+    const modal = this.modalCtrl.create('object-creator', {
       type: this.items[i].type,
       value: this.values[i],
       actualType: this.items[i].actualType
