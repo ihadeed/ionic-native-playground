@@ -89,7 +89,7 @@ export class PluginMethodsComponent {
 
       const button = {
         text: member,
-        handler: (withParams: boolean = false) => {
+        handler: async () => {
 
           const method = this._plugin[member];
 
@@ -116,25 +116,18 @@ export class PluginMethodsComponent {
 
             };
 
+            let args: any[];
+
             if (this.sigName) {
-              this.sig.getMethodSignature(member, this.sigName)
-                .then(res => {
-                  if (res && res.params && res.params.length > 0) {
-                    this.getParams(res)
-                      .then(params => !!params && getResult(params));
-                  } else {
-                    getResult();
-                  }
-                })
-                .catch(e => {
-                  console.log('cant get signature of method ', e);
-                  getResult();
-                });
-            } else if (withParams) {
-              this.getParams().then(params => !!params && getResult(params));
-            } else {
-              getResult();
+              let sig = await this.sig.getMethodSignature(member, this.sigName);
+              if (sig && sig.params && sig.params.length) {
+                let params = await this.getParams(sig);
+                if (params) {
+                  args = params;
+                }
+              }
             }
+            getResult(args);
 
           } else {
             this.success(method);

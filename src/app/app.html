@@ -8,14 +8,14 @@
         <h2>Toggle ads</h2>
         <p>Don't like ads? no problem! Just turn them off.</p>
       </ion-label>
-      <ion-toggle></ion-toggle>
+      <ion-toggle [(ngModel)]="adsEnabled"></ion-toggle>
     </ion-item>
-    <ion-item>
-      <ion-label>
-        <h2>Dark mode</h2>
-      </ion-label>
-      <ion-toggle></ion-toggle>
-    </ion-item>
+    <!--<ion-item>-->
+      <!--<ion-label>-->
+        <!--<h2>Dark mode</h2>-->
+      <!--</ion-label>-->
+      <!--<ion-toggle></ion-toggle>-->
+    <!--</ion-item>-->
     <button ion-item (click)="content.push('AboutAppPage')" menuClose>
       About this app
     </button>

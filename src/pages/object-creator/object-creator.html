@@ -25,7 +25,7 @@
         <ion-label *ngIf="type == 'object'">{{ item.name }}</ion-label>
         <ion-input *ngIf="['string', 'number'].indexOf(item.type) > -1" [type]="item.type" [(ngModel)]="values[i]"></ion-input>
         <ion-toggle *ngIf="item.type === 'boolean'" [(ngModel)]="values[i]"></ion-toggle>
-        <ion-textarea *ngIf="['object', 'array'].indexOf(item.type) > -1" [(ngModel)]="values[i]" disabled></ion-textarea>
+        <ion-textarea *ngIf="['object', 'array'].indexOf(item.type) > -1" [value]="values[i] | stringify" disabled></ion-textarea>
         <button ion-button icon-only clear item-right *ngIf="['object', 'array'].indexOf(item.type) > -1" (click)="editObject(i)">
           <ion-icon name="create"></ion-icon>
         </button>

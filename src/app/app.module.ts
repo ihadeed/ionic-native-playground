@@ -35,6 +35,10 @@ import { File } from '@ionic-native/file';
 import {Base64ToGallery} from "@ionic-native/base64-to-gallery";
 import {Toast} from "@ionic-native/toast";
 import { BrowserTab } from '@ionic-native/browser-tab';
+import { AdMobFree } from '@ionic-native/admob-free';
+import {AppConfigProvider} from "../providers/app-config/app-config";
+import {StringifyPipe} from "../pipes/stringify/stringify";
+import {PipesModule} from "../pipes/pipes.modules";
 
 const components = [
   GoogleMapComponent,
@@ -78,11 +82,13 @@ const providers = [
   BrowserTab,
 
   SplashScreen,
-  StatusBar
+  StatusBar,
+  AdMobFree,
+  AppConfigProvider
 ];
 
 export function getDeclarations() {
-  return [components, pages];
+  return [...components, ...pages];
 }
 
 export function getEntryComponents() {
@@ -99,7 +105,8 @@ export function getProviders() {
     BrowserModule,
     HttpModule,
     IonicModule.forRoot(MyApp),
-    IonicStorageModule.forRoot(MyApp)
+    IonicStorageModule.forRoot(MyApp),
+    PipesModule
   ],
   bootstrap: [IonicApp],
   entryComponents: getEntryComponents(),

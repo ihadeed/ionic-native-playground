@@ -27,11 +27,6 @@ export class PluginParamsPage extends ObjectCreator {
       switch (this.items[i].type) {
         case 'number':
           return Number(p);
-        case 'object':
-          try {
-            return JSON.parse(p);
-          } catch (e) {}
-          break;
         case 'boolean':
           return Boolean(p);
       }

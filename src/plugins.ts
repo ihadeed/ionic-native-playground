@@ -66,6 +66,7 @@ import {DeviceFeedback} from "@ionic-native/device-feedback";
 import {InAppBrowser} from "@ionic-native/in-app-browser";
 import {CameraPreviewPage} from "./pages/camera-preview/camera-preview";
 import {MediaPage} from "./pages/media/media";
+import {LinkedIn} from "@ionic-native/linkedin";
 
 class Plugin {
   constructor(
@@ -162,6 +163,7 @@ const dynamicPlugins = [
   HTTP,
   GoogleAnalytics,
   DeviceFeedback,
+  LinkedIn
 ];
 
 dynamicPlugins.forEach(plugin => plugins.push(new DynamicPlugin(plugin)));

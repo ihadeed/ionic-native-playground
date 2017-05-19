@@ -2,338 +2,338 @@
 # yarn lockfile v1
 
 
-"@angular/common@4.1.2":
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/@angular/common/-/common-4.1.2.tgz#8f6d0496c204210bfe255feb437a72253f06984d"
+"@angular/common@4.1.3":
+  version "4.1.3"
+  resolved "https://registry.yarnpkg.com/@angular/common/-/common-4.1.3.tgz#e7c4791e32131cf74c239428c2a67daab2eef017"
 
-"@angular/compiler-cli@4.1.2":
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/@angular/compiler-cli/-/compiler-cli-4.1.2.tgz#b65ba8980330c048702aed242a956daf0251f02a"
+"@angular/compiler-cli@4.1.3":
+  version "4.1.3"
+  resolved "https://registry.yarnpkg.com/@angular/compiler-cli/-/compiler-cli-4.1.3.tgz#c2362ffdf65756471481f839fab675bcac213f96"
   dependencies:
-    "@angular/tsc-wrapped" "4.1.2"
+    "@angular/tsc-wrapped" "4.1.3"
     minimist "^1.2.0"
     reflect-metadata "^0.1.2"
 
-"@angular/compiler@4.1.2":
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-4.1.2.tgz#09542381162fd8dd962d84559498ce69a05071ea"
+"@angular/compiler@4.1.3":
+  version "4.1.3"
+  resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-4.1.3.tgz#d2dd30853b0cf4a54758b4a314632c231f9c94c3"
 
-"@angular/core@4.1.2":
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/@angular/core/-/core-4.1.2.tgz#37b5c040b9dd37003499aea04319d699e3870596"
+"@angular/core@4.1.3":
+  version "4.1.3"
+  resolved "https://registry.yarnpkg.com/@angular/core/-/core-4.1.3.tgz#285498eb86ab7d0b6f982f8f9f487ef610013b35"
 
-"@angular/forms@4.1.2":
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-4.1.2.tgz#82983e9ec5d0833e7ae14beb8e47dd357c88f490"
+"@angular/forms@4.1.3":
+  version "4.1.3"
+  resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-4.1.3.tgz#380ab4c3af84c5d1d748c2a7d04151c7dc8e4982"
 
-"@angular/http@4.1.2":
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/@angular/http/-/http-4.1.2.tgz#fc378c3330c0410e1fb8aac2546329a6887776e4"
+"@angular/http@4.1.3":
+  version "4.1.3"
+  resolved "https://registry.yarnpkg.com/@angular/http/-/http-4.1.3.tgz#eb9d1c302a0172815f9a573310d9be0bdeb845ae"
 
-"@angular/platform-browser-dynamic@4.1.2":
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/@angular/platform-browser-dynamic/-/platform-browser-dynamic-4.1.2.tgz#d241c61792c794bec627ab64b31a66bea22abb9f"
+"@angular/platform-browser-dynamic@4.1.3":
+  version "4.1.3"
+  resolved "https://registry.yarnpkg.com/@angular/platform-browser-dynamic/-/platform-browser-dynamic-4.1.3.tgz#3c13fdcf591d487f6efdc1d46913f280c6d8c2ec"
 
-"@angular/platform-browser@4.1.2":
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/@angular/platform-browser/-/platform-browser-4.1.2.tgz#16e50a8f75b4d675c9e2903e499e0fe4c6a125ac"
+"@angular/platform-browser@4.1.3":
+  version "4.1.3"
+  resolved "https://registry.yarnpkg.com/@angular/platform-browser/-/platform-browser-4.1.3.tgz#4fa1db5119dd178b315ddae5b329bee1a932a5bd"
 
-"@angular/platform-server@4.1.2":
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/@angular/platform-server/-/platform-server-4.1.2.tgz#3ef2206a59fd2d138d267aad101a50d3d806e39c"
+"@angular/platform-server@4.1.3":
+  version "4.1.3"
+  resolved "https://registry.yarnpkg.com/@angular/platform-server/-/platform-server-4.1.3.tgz#bbfae42b15730357751da0e145d686f925a94431"
   dependencies:
     parse5 "^3.0.1"
     xhr2 "^0.1.4"
 
-"@angular/tsc-wrapped@4.1.2":
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/@angular/tsc-wrapped/-/tsc-wrapped-4.1.2.tgz#26cb145a67b9b80f5dda7874c4f0b1f1e173927d"
+"@angular/tsc-wrapped@4.1.3":
+  version "4.1.3"
+  resolved "https://registry.yarnpkg.com/@angular/tsc-wrapped/-/tsc-wrapped-4.1.3.tgz#2d6372c9187bf1621eacd960b94b39c4f95293cd"
   dependencies:
     tsickle "^0.21.0"
 
-"@ionic-native/action-sheet@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/action-sheet/-/action-sheet-3.9.2.tgz#c895d400238429364d10c715f163240b79a1e3aa"
-
-"@ionic-native/admob@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/admob/-/admob-3.9.2.tgz#38aeed75767e2f5e6532a16b96d1488819e0f888"
-
-"@ionic-native/android-fingerprint-auth@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/android-fingerprint-auth/-/android-fingerprint-auth-3.9.2.tgz#5b7970cae8fe89c13216c2e18815a8dd72d70684"
-
-"@ionic-native/app-availability@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/app-availability/-/app-availability-3.9.2.tgz#40d6ef9ac20de8829bee35e81c61f7eaed99e0ab"
-
-"@ionic-native/app-preferences@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/app-preferences/-/app-preferences-3.9.2.tgz#f5dd899a46d8d8a8db7f4e9b3c2f99d71be9b891"
-
-"@ionic-native/app-rate@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/app-rate/-/app-rate-3.9.2.tgz#1b810966998a13114fa45f8bfa7dfd88706cffe4"
-
-"@ionic-native/app-version@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/app-version/-/app-version-3.9.2.tgz#fd0851fc43838179ecc1b59e7b1d0c26ac699834"
-
-"@ionic-native/background-geolocation@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/background-geolocation/-/background-geolocation-3.9.2.tgz#ae9253ee300c46fbd5d3d83350649ea1c178108b"
-
-"@ionic-native/badge@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/badge/-/badge-3.9.2.tgz#516138e167b9450bc606d6dbc0806c196fb5cef6"
-
-"@ionic-native/barcode-scanner@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/barcode-scanner/-/barcode-scanner-3.9.2.tgz#0c3ee9f2a0568823be75b371cd4044f31e9e0a71"
-
-"@ionic-native/base64-to-gallery@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/base64-to-gallery/-/base64-to-gallery-3.9.2.tgz#512900ddcb5efa0ac71e9276a3897e6e29763fc9"
-
-"@ionic-native/battery-status@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/battery-status/-/battery-status-3.9.2.tgz#54737b244a70ef80378b688d1c39cf479c1353c5"
-
-"@ionic-native/brightness@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/brightness/-/brightness-3.9.2.tgz#aca479b79f42973ec739f7eb608d1fa6070c495a"
-
-"@ionic-native/browser-tab@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/browser-tab/-/browser-tab-3.9.2.tgz#69937326bb83ad36cc46be8d618a89df02bb29c1"
-
-"@ionic-native/calendar@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/calendar/-/calendar-3.9.2.tgz#6c27db418e64f62d857ea6fbf638ad28c851b48f"
-
-"@ionic-native/call-number@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/call-number/-/call-number-3.9.2.tgz#017bc1d2f9f6f448c464770a869aed447563946e"
-
-"@ionic-native/camera-preview@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/camera-preview/-/camera-preview-3.9.2.tgz#0a68da1687554dfc796e77eed9fadfbed7adecb5"
-
-"@ionic-native/camera@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/camera/-/camera-3.9.2.tgz#08cb5220ae8bd7a18cbcff3ccf019aaf67df1815"
-
-"@ionic-native/card-io@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/card-io/-/card-io-3.9.2.tgz#4a0bf05b3ecb31dbe6bc2fc643f7b2cf6ce2f286"
-
-"@ionic-native/clipboard@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/clipboard/-/clipboard-3.9.2.tgz#88739700bbb32f9da84db7be013b59c3a9a2d19c"
-
-"@ionic-native/contacts@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/contacts/-/contacts-3.9.2.tgz#38e2878c475170f1d8006514c4ee67355ee980a4"
-
-"@ionic-native/core@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/core/-/core-3.9.2.tgz#ea016b80540db034de2ed0910599ecd8e678b282"
-
-"@ionic-native/date-picker@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/date-picker/-/date-picker-3.9.2.tgz#5e003fa81fa3a5723d22030beedd2c908e85e4bf"
-
-"@ionic-native/db-meter@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/db-meter/-/db-meter-3.9.2.tgz#6b10302a82f30c288ac0c0a10191ac2ece302dbc"
-
-"@ionic-native/device-accounts@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/device-accounts/-/device-accounts-3.9.2.tgz#a6c29775f2971315ddc8b3fddeda79fa52705fb6"
-
-"@ionic-native/device-feedback@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/device-feedback/-/device-feedback-3.9.2.tgz#0dfa33f913bd381de1c9ab034b2c8e5007291a95"
-
-"@ionic-native/device-motion@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/device-motion/-/device-motion-3.9.2.tgz#b1e7028e74d76732105e91f257ddbea49c45910b"
-
-"@ionic-native/device-orientation@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/device-orientation/-/device-orientation-3.9.2.tgz#1b7658d1fd5c814f45de304e5d0bc5147b8da8e9"
-
-"@ionic-native/device@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/device/-/device-3.9.2.tgz#4db8a793c4d79f8e6c39676e65fb1bcb2c53930d"
-
-"@ionic-native/diagnostic@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/diagnostic/-/diagnostic-3.9.2.tgz#9fe204b4edc658d44d955fe4d611d6d92a76510c"
-
-"@ionic-native/dialogs@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/dialogs/-/dialogs-3.9.2.tgz#4cce4a682ee5b743f50d44c4141e6e1094731a61"
-
-"@ionic-native/file-chooser@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/file-chooser/-/file-chooser-3.9.2.tgz#c665f626da082c6a606ab8d378c39fc67dcbe3cb"
-
-"@ionic-native/file@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/file/-/file-3.9.2.tgz#5e611888705f16811b8f630f85d1058f511d209e"
-
-"@ionic-native/flashlight@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/flashlight/-/flashlight-3.9.2.tgz#1e8e3d64825c3aac3bf1d2db6926fefb748a3189"
-
-"@ionic-native/geolocation@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/geolocation/-/geolocation-3.9.2.tgz#955e07f36e33f46395bcd98da79518d2d72e058e"
-
-"@ionic-native/globalization@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/globalization/-/globalization-3.9.2.tgz#bdcdb994d601da2280492bd43d0a5b326c5d5ce0"
-
-"@ionic-native/google-analytics@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/google-analytics/-/google-analytics-3.9.2.tgz#3055759010f0835ac094b12a609904b9baed3bce"
-
-"@ionic-native/google-maps@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/google-maps/-/google-maps-3.9.2.tgz#2d2d31e2c96d9b2865440a6cac4c58e252f11e44"
-
-"@ionic-native/google-plus@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/google-plus/-/google-plus-3.9.2.tgz#eca07eede94df164287dc84310078fe53dfa7868"
-
-"@ionic-native/gyroscope@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/gyroscope/-/gyroscope-3.9.2.tgz#aad2e2cc9555005dda60b60246aa483964d76bc1"
-
-"@ionic-native/http@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/http/-/http-3.9.2.tgz#25379662362b3afabeb34893512f55fd1049423b"
-
-"@ionic-native/in-app-browser@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/in-app-browser/-/in-app-browser-3.9.2.tgz#32e0e129a51f50a7edf82988baf035f41ad1b2c5"
-
-"@ionic-native/keyboard@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/keyboard/-/keyboard-3.9.2.tgz#9cd7fb972733e1971b2004b5133d235a59a99f9d"
-
-"@ionic-native/market@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/market/-/market-3.9.2.tgz#304a136c2f7bb555420206bcf9892f787e326025"
-
-"@ionic-native/media@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/media/-/media-3.9.2.tgz#d06e9a2492432b358598b70e00807482bfbb5b05"
-
-"@ionic-native/native-geocoder@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/native-geocoder/-/native-geocoder-3.9.2.tgz#fb7d20db822663211c528c8c8853a0275574957b"
-
-"@ionic-native/native-page-transitions@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/native-page-transitions/-/native-page-transitions-3.9.2.tgz#bd3d7751a5ea975c3237c7ccb581206544f7361b"
-
-"@ionic-native/network@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/network/-/network-3.9.2.tgz#511b66c9cdb21683e053f3d407978321bc4a43fb"
-
-"@ionic-native/onesignal@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/onesignal/-/onesignal-3.9.2.tgz#3ddd357d3fec8511566146a373394dac41b6506e"
-
-"@ionic-native/pedometer@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/pedometer/-/pedometer-3.9.2.tgz#c3c22471c427819891643ebd22ef585b158e05b9"
-
-"@ionic-native/pin-dialog@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/pin-dialog/-/pin-dialog-3.9.2.tgz#be1c3e75466655ab7d8934bf8b69814c3a67ed94"
-
-"@ionic-native/power-management@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/power-management/-/power-management-3.9.2.tgz#951aed2e9955040bf15a8769e93d84a9f7976e0b"
-
-"@ionic-native/safari-view-controller@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/safari-view-controller/-/safari-view-controller-3.9.2.tgz#be43f38bc41a302da1a259040fa0c3c7cbfbe0d3"
-
-"@ionic-native/screen-orientation@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/screen-orientation/-/screen-orientation-3.9.2.tgz#c576bdb1739bdcce871f52f93fab6cb035a9fd34"
-
-"@ionic-native/screenshot@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/screenshot/-/screenshot-3.9.2.tgz#2f3d3c268daf51b1fbaf1dc97dca7810bb829b56"
-
-"@ionic-native/secure-storage@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/secure-storage/-/secure-storage-3.9.2.tgz#3ed7db37fde3577933d9ba011e3c617e2d84a07e"
-
-"@ionic-native/sim@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/sim/-/sim-3.9.2.tgz#0061bbb895cc244fd8c51527a69b436dbe6966b5"
-
-"@ionic-native/sms@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/sms/-/sms-3.9.2.tgz#0914e178876180d6def1e1aa78525beffd42b121"
-
-"@ionic-native/social-sharing@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/social-sharing/-/social-sharing-3.9.2.tgz#cc7ce6a02e47b2c04a72ceca3772879d2ef1f1c5"
-
-"@ionic-native/speech-recognition@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/speech-recognition/-/speech-recognition-3.9.2.tgz#4a3f24553d1eebdfa0c5a1653447e46640d51b1b"
-
-"@ionic-native/splash-screen@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/splash-screen/-/splash-screen-3.9.2.tgz#50800e7d0fb6f60fc65ba05aad8d6c12df16cb66"
-
-"@ionic-native/status-bar@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/status-bar/-/status-bar-3.9.2.tgz#9b2e4723084bd040900f77ad72a4e7e0b84d0f7b"
-
-"@ionic-native/stepcounter@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/stepcounter/-/stepcounter-3.9.2.tgz#b879c90af04f3596c5444d2a48e465c17550b8f9"
-
-"@ionic-native/streaming-media@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/streaming-media/-/streaming-media-3.9.2.tgz#2a9f8b45694997d1553d5d9c8de95e77bcf7cd82"
-
-"@ionic-native/stripe@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/stripe/-/stripe-3.9.2.tgz#0837a35bee7024ef81078b4de35c1c0920a4be7f"
-
-"@ionic-native/text-to-speech@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/text-to-speech/-/text-to-speech-3.9.2.tgz#f6a84e48f7c3bb029097a53bcc09e02abe5e1140"
-
-"@ionic-native/toast@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/toast/-/toast-3.9.2.tgz#fda278fd7e8c7cd04592e0e9401c7e495ca8ca8b"
-
-"@ionic-native/touch-id@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/touch-id/-/touch-id-3.9.2.tgz#86d2561383742b26e05deedb250b65ae505ecbfb"
-
-"@ionic-native/unique-device-id@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/unique-device-id/-/unique-device-id-3.9.2.tgz#7d4ddcd4ff97384a4d92f5651e81660e0ce9814b"
-
-"@ionic-native/vibration@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/vibration/-/vibration-3.9.2.tgz#285330daeea6a192125e457ecdb97800325a6aec"
-
-"@ionic-native/youtube-video-player@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@ionic-native/youtube-video-player/-/youtube-video-player-3.9.2.tgz#aed8ea13f5ee5d91994c8a29a5d66590ca60c2ba"
+"@ionic-native/action-sheet@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/action-sheet/-/action-sheet-3.10.0.tgz#f8614a9cb04c06cd397daf666d1415ff663821f1"
+
+"@ionic-native/admob-free@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/admob-free/-/admob-free-3.10.0.tgz#bc3fed9e3cd61efd496834b6072ddb460356cdf1"
+
+"@ionic-native/android-fingerprint-auth@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/android-fingerprint-auth/-/android-fingerprint-auth-3.10.0.tgz#fe5bddce07a9fc16bb72f59ad66c819976f64aa0"
+
+"@ionic-native/app-availability@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/app-availability/-/app-availability-3.10.0.tgz#4f6105704e3ba5073a97907fc440c42ba6ad0088"
+
+"@ionic-native/app-preferences@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/app-preferences/-/app-preferences-3.10.0.tgz#26c403ae6b613067af8df2a7f310c84476c2db26"
+
+"@ionic-native/app-rate@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/app-rate/-/app-rate-3.10.0.tgz#83951ba5f43be90b5ee978d6c44e7d2697758ffb"
+
+"@ionic-native/app-version@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/app-version/-/app-version-3.10.0.tgz#90c1ea655377b32e5ccb96cd37fe189081297130"
+
+"@ionic-native/background-geolocation@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/background-geolocation/-/background-geolocation-3.10.0.tgz#8e8a08044a5551af1972e0b0a040895962fcc8e0"
+
+"@ionic-native/badge@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/badge/-/badge-3.10.0.tgz#65ee421926f7bce4e1f728c9e36f8cdf464863aa"
+
+"@ionic-native/barcode-scanner@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/barcode-scanner/-/barcode-scanner-3.10.0.tgz#abff3c7eb86c622c4da3786bdf49ccd24b731480"
+
+"@ionic-native/base64-to-gallery@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/base64-to-gallery/-/base64-to-gallery-3.10.0.tgz#027eebc71034e289ceb7b5118521c582b173ea09"
+
+"@ionic-native/battery-status@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/battery-status/-/battery-status-3.10.0.tgz#1ffe6a2f245a67c67e363a60ae3330c4fb3a2508"
+
+"@ionic-native/brightness@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/brightness/-/brightness-3.10.0.tgz#6208c03112462163d64f0f5d86ca84a20d10df06"
+
+"@ionic-native/browser-tab@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/browser-tab/-/browser-tab-3.10.0.tgz#3df81a78b154a84246b43da254c26ccfd1f94735"
+
+"@ionic-native/calendar@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/calendar/-/calendar-3.10.0.tgz#4291cc510b98c1d19a95ec0b6e76693fa04b089e"
+
+"@ionic-native/call-number@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/call-number/-/call-number-3.10.0.tgz#becadaa6798fb90deac1e982b494f8d34d13cbf9"
+
+"@ionic-native/camera-preview@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/camera-preview/-/camera-preview-3.10.0.tgz#bfa0ffeb918505fd587e7b048555e80411316174"
+
+"@ionic-native/camera@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/camera/-/camera-3.10.0.tgz#2b841c291ebe2d44f2bcc5b5add669d727fc7b2d"
+
+"@ionic-native/card-io@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/card-io/-/card-io-3.10.0.tgz#0566ba3120db001a48d7230c28f5dfa437a5e382"
+
+"@ionic-native/clipboard@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/clipboard/-/clipboard-3.10.0.tgz#892d2ca99535c702ecc5fccce48f5fdaf0984dc0"
+
+"@ionic-native/contacts@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/contacts/-/contacts-3.10.0.tgz#c9b96d0f8b9a234ea63fb1c91129b41316c3f2e6"
+
+"@ionic-native/core@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/core/-/core-3.10.0.tgz#20cc4607b08dbb4b44f260861d529bc85c3c5eb4"
+
+"@ionic-native/date-picker@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/date-picker/-/date-picker-3.10.0.tgz#a6841fe415011ad9dd3943dc4eb21faba9db33c3"
+
+"@ionic-native/db-meter@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/db-meter/-/db-meter-3.10.0.tgz#2a986a1616db23fe6ac3321d12600605a6b858ed"
+
+"@ionic-native/device-accounts@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/device-accounts/-/device-accounts-3.10.0.tgz#c7e32f7af2d287228e39e9c7da2ba3dc97ad9f02"
+
+"@ionic-native/device-feedback@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/device-feedback/-/device-feedback-3.10.0.tgz#66552b1ebf73ae0b7daf28d120b8203d494737de"
+
+"@ionic-native/device-motion@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/device-motion/-/device-motion-3.10.0.tgz#ae191a3cc7ca5d196de09da3d57ce50e4b316170"
+
+"@ionic-native/device-orientation@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/device-orientation/-/device-orientation-3.10.0.tgz#f0ceb1434656db10215418b7ff486471224f4d7d"
+
+"@ionic-native/device@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/device/-/device-3.10.0.tgz#47b75c2ce4c30f511541f57f92889a21a5f7d8fe"
+
+"@ionic-native/diagnostic@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/diagnostic/-/diagnostic-3.10.0.tgz#44c46574a6c826e51c8be5a71534b4ffa9f01dad"
+
+"@ionic-native/dialogs@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/dialogs/-/dialogs-3.10.0.tgz#c8cab8fbe045cb214cde00b570e4d8e883c706cb"
+
+"@ionic-native/file-chooser@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/file-chooser/-/file-chooser-3.10.0.tgz#30762492d302d7eb94bebb66d99b6988a17e91bd"
+
+"@ionic-native/file@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/file/-/file-3.10.0.tgz#1a0e954790437badfd8ca0f56d89de0e73df939e"
+
+"@ionic-native/flashlight@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/flashlight/-/flashlight-3.10.0.tgz#6b3bf858d42aa64ae63c456c68da149c5973819b"
+
+"@ionic-native/geolocation@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/geolocation/-/geolocation-3.10.0.tgz#5388ed793e1706c5bf89fa454c58ddf433287508"
+
+"@ionic-native/globalization@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/globalization/-/globalization-3.10.0.tgz#6485401617c5ffd83bf66940c757dbc4f4519033"
+
+"@ionic-native/google-analytics@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/google-analytics/-/google-analytics-3.10.0.tgz#43e3558aa86ac9b48c78e28c482444cba597d2b2"
+
+"@ionic-native/google-maps@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/google-maps/-/google-maps-3.10.0.tgz#a40575b4f6386eacdb57b1cc35e3aaf6cb25fb74"
+
+"@ionic-native/google-plus@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/google-plus/-/google-plus-3.10.0.tgz#b1169add4bd8e0a6325e1df46ba77e70e8020c54"
+
+"@ionic-native/gyroscope@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/gyroscope/-/gyroscope-3.10.0.tgz#a56a1a78d44800f8714ef0fe48d8c515ec975a60"
+
+"@ionic-native/http@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/http/-/http-3.10.0.tgz#4e6ce9fbb0f1b8eb147a1b697b800d457356b5dd"
+
+"@ionic-native/in-app-browser@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/in-app-browser/-/in-app-browser-3.10.0.tgz#fb048f9c489096ce069bb6195b8cd164950ff4de"
+
+"@ionic-native/keyboard@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/keyboard/-/keyboard-3.10.0.tgz#be01c6da17edf35fe9eb099d99e1eaa4c02f9f46"
+
+"@ionic-native/market@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/market/-/market-3.10.0.tgz#64e409010c7cf23d45b9765ae7ec5441b2126a5d"
+
+"@ionic-native/media@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/media/-/media-3.10.0.tgz#99a5bd3b21710c7134310fb7b5d1a084dc586bea"
+
+"@ionic-native/native-geocoder@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/native-geocoder/-/native-geocoder-3.10.0.tgz#3ca84c694ad6601413dc17586d5383f6c713b50f"
+
+"@ionic-native/native-page-transitions@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/native-page-transitions/-/native-page-transitions-3.10.0.tgz#a492e0ba05c859403372fc3be4dcd7ca49bb548f"
+
+"@ionic-native/network@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/network/-/network-3.10.0.tgz#79070403d4085a75d901f6a18cd40bae22914507"
+
+"@ionic-native/onesignal@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/onesignal/-/onesignal-3.10.0.tgz#9d394fdb42f125c2066ee6da7f0fd0b5fb47f641"
+
+"@ionic-native/pedometer@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/pedometer/-/pedometer-3.10.0.tgz#985ad8868d02576f30c7bc157f92226016846eec"
+
+"@ionic-native/pin-dialog@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/pin-dialog/-/pin-dialog-3.10.0.tgz#eec43d9e6d229ec19caf5b4bb6bb3b11b7a9bb58"
+
+"@ionic-native/power-management@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/power-management/-/power-management-3.10.0.tgz#0ae4c9595e4a7f94156a3de78560a902efd73264"
+
+"@ionic-native/safari-view-controller@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/safari-view-controller/-/safari-view-controller-3.10.0.tgz#34694fbe8cb21014f029703e86130f9beadcf347"
+
+"@ionic-native/screen-orientation@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/screen-orientation/-/screen-orientation-3.10.0.tgz#fbb40816e739ec84f1bb6b56e791405babe50b1b"
+
+"@ionic-native/screenshot@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/screenshot/-/screenshot-3.10.0.tgz#d0c036c3411924c2aceab4df9c52ebdc5a6ca4dd"
+
+"@ionic-native/secure-storage@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/secure-storage/-/secure-storage-3.10.0.tgz#f70c37c8de4a724ce0d1b9bdf14a89aafbbc7efa"
+
+"@ionic-native/sim@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/sim/-/sim-3.10.0.tgz#0ab6d05fa83d9ee93f898fbd92d84adb0fb9ce68"
+
+"@ionic-native/sms@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/sms/-/sms-3.10.0.tgz#4fdc923611d3fc5c5b8132832f651c5a51157646"
+
+"@ionic-native/social-sharing@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/social-sharing/-/social-sharing-3.10.0.tgz#3846cb912cb1ddd7eedb0b4a3d02a60af8f81b03"
+
+"@ionic-native/speech-recognition@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/speech-recognition/-/speech-recognition-3.10.0.tgz#14e3ece6963e44a02d682c5dd282564f1201dc9c"
+
+"@ionic-native/splash-screen@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/splash-screen/-/splash-screen-3.10.0.tgz#13e40f8089d578bda0d6b2e0c609288e6b6127f2"
+
+"@ionic-native/status-bar@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/status-bar/-/status-bar-3.10.0.tgz#cfd8c5b26c3f753adb1164aaced571d87f04df4e"
+
+"@ionic-native/stepcounter@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/stepcounter/-/stepcounter-3.10.0.tgz#c850a5111a4b1697d57a482f0a50cd8dcb32fd3d"
+
+"@ionic-native/streaming-media@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/streaming-media/-/streaming-media-3.10.0.tgz#0b4dac918a02ec63c53b614f6db7e0095ccb5537"
+
+"@ionic-native/stripe@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/stripe/-/stripe-3.10.0.tgz#1087487f02277498c9804cf281c69a4985037678"
+
+"@ionic-native/text-to-speech@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/text-to-speech/-/text-to-speech-3.10.0.tgz#7da24fb59895f2905e031355e9ea852703eae0c7"
+
+"@ionic-native/toast@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/toast/-/toast-3.10.0.tgz#0c5fc624479d921d381c30a809f22aa2decbd99c"
+
+"@ionic-native/touch-id@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/touch-id/-/touch-id-3.10.0.tgz#659f589be69460cd7387b185f941228d2f43d606"
+
+"@ionic-native/unique-device-id@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/unique-device-id/-/unique-device-id-3.10.0.tgz#d716da6e1d95ea07e8d1a60ddd74e4116900c3d0"
+
+"@ionic-native/vibration@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/vibration/-/vibration-3.10.0.tgz#3080f70f4a78fcfe6a88b36caab700a368548160"
+
+"@ionic-native/youtube-video-player@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/youtube-video-player/-/youtube-video-player-3.10.0.tgz#fc473be40fd2bf82751f68ca7cbcc8f9d024301b"
 
 "@ionic/app-scripts@^1.3.7":
   version "1.3.7"
@@ -1351,7 +1351,7 @@ caniuse-db@^1.0.30000618, caniuse-db@^1.0.30000639:
   version "1.0.30000670"
   resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000670.tgz#90d33b79e3090e25829c311113c56d6b1788bf43"
 
-card.io.cordova.mobilesdk@latest:
+card.io.cordova.mobilesdk@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/card.io.cordova.mobilesdk/-/card.io.cordova.mobilesdk-2.1.0.tgz#583b9306f6f28ab54cd9d2c89fc35ed93e851488"
 
@@ -1490,11 +1490,11 @@ columnify@~1.5.4:
     strip-ansi "^3.0.0"
     wcwidth "^1.0.0"
 
-com.darktalker.cordova.screenshot@0.1.6:
+com.darktalker.cordova.screenshot@^0.1.6:
   version "0.1.6"
   resolved "https://registry.yarnpkg.com/com.darktalker.cordova.screenshot/-/com.darktalker.cordova.screenshot-0.1.6.tgz#647a53450f9617219b63283f586685e27cdb96b3"
 
-com.telerik.plugins.nativepagetransitions@~0.6.5:
+com.telerik.plugins.nativepagetransitions@^0.6.5:
   version "0.6.5"
   resolved "https://registry.yarnpkg.com/com.telerik.plugins.nativepagetransitions/-/com.telerik.plugins.nativepagetransitions-0.6.5.tgz#3a7afdbdd396ff57c3516f08f2488945e5485b1f"
 
@@ -1655,6 +1655,10 @@ cookiejar@^2.0.6:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/cookiejar/-/cookiejar-2.1.1.tgz#41ad57b1b555951ec171412a81942b1e8200d34a"
 
+cordova-admob-sdk@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/cordova-admob-sdk/-/cordova-admob-sdk-0.7.0.tgz#0682c8da04ce7b264e52a1fae2a0e8dfb4b90932"
+
 cordova-android@^6.2.3:
   version "6.2.3"
   resolved "https://registry.yarnpkg.com/cordova-android/-/cordova-android-6.2.3.tgz#249f21b6ce5f1f1c847a7ab83b16909dbed5aa28"
@@ -1670,11 +1674,11 @@ cordova-app-hello-world@^3.11.0:
   version "3.12.0"
   resolved "https://registry.yarnpkg.com/cordova-app-hello-world/-/cordova-app-hello-world-3.12.0.tgz#270e06b67b2ae94bcfee6592ed39eb42303d186f"
 
-cordova-base64-to-gallery@~4.1.2:
+cordova-base64-to-gallery@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/cordova-base64-to-gallery/-/cordova-base64-to-gallery-4.1.2.tgz#698b4e13de3885cc0db2301e28eb8c7eb7f3b5fd"
 
-cordova-clipboard@~1.0.0:
+cordova-clipboard@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/cordova-clipboard/-/cordova-clipboard-1.0.0.tgz#bee88475707ed27a767e3739592796ef352ae999"
 
@@ -1707,7 +1711,7 @@ cordova-create@~1.1.0:
     shelljs "0.3.0"
     valid-identifier "0.0.1"
 
-cordova-custom-config@~3.2.0:
+cordova-custom-config@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/cordova-custom-config/-/cordova-custom-config-3.2.0.tgz#7b242276c45775ffb8abe7a7bda5d43fb03243a5"
   dependencies:
@@ -1764,77 +1768,81 @@ cordova-lib@7.0.1:
     valid-identifier "0.0.1"
     xcode "^0.9.0"
 
-cordova-plugin-actionsheet@~2.3.3:
+cordova-plugin-actionsheet@^2.3.3:
   version "2.3.3"
   resolved "https://registry.yarnpkg.com/cordova-plugin-actionsheet/-/cordova-plugin-actionsheet-2.3.3.tgz#e9261b2d004a8da407388d60df534c156c52ff11"
 
-cordova-plugin-admobpro@~2.28.3:
-  version "2.28.3"
-  resolved "https://registry.yarnpkg.com/cordova-plugin-admobpro/-/cordova-plugin-admobpro-2.28.3.tgz#82f7a9c90f44e24e7b11582d024fbebe957810b3"
+cordova-plugin-admob-free@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/cordova-plugin-admob-free/-/cordova-plugin-admob-free-0.9.0.tgz#c9893f7a49cbca4a860397135ea3a76bee79e242"
 
-cordova-plugin-android-fingerprint-auth@~1.2.7:
+cordova-plugin-android-fingerprint-auth@^1.2.7:
   version "1.2.7"
   resolved "https://registry.yarnpkg.com/cordova-plugin-android-fingerprint-auth/-/cordova-plugin-android-fingerprint-auth-1.2.7.tgz#8dab744d947473ffb124c991b90c8c53aecdb599"
 
-cordova-plugin-app-event@>=1.2.0:
+cordova-plugin-app-event@>=1.2.0, cordova-plugin-app-event@latest:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/cordova-plugin-app-event/-/cordova-plugin-app-event-1.2.0.tgz#ebd3a70bfd8f26300d40e0e6c8249487ec53d5f2"
 
-cordova-plugin-app-preferences@~0.99.3:
+cordova-plugin-app-preferences@^0.99.3:
   version "0.99.3"
   resolved "https://registry.yarnpkg.com/cordova-plugin-app-preferences/-/cordova-plugin-app-preferences-0.99.3.tgz#21f63ecb4698b97bdb812e6c1692ba5f32dc8bd0"
 
-cordova-plugin-app-version@~0.1.9:
+cordova-plugin-app-version@^0.1.9:
   version "0.1.9"
   resolved "https://registry.yarnpkg.com/cordova-plugin-app-version/-/cordova-plugin-app-version-0.1.9.tgz#9db0607863337a710489302e5f50a904f1449bdb"
 
-cordova-plugin-appavailability@~0.4.2:
+cordova-plugin-appavailability@^0.4.2:
   version "0.4.2"
   resolved "https://registry.yarnpkg.com/cordova-plugin-appavailability/-/cordova-plugin-appavailability-0.4.2.tgz#a017aaf0f8827ee599dc778b6245dcc1350bcba8"
 
-cordova-plugin-apprate@1.3:
+cordova-plugin-apprate@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/cordova-plugin-apprate/-/cordova-plugin-apprate-1.3.0.tgz#0f2bbcf680738e972045e9787771048f620abbc5"
   dependencies:
     cordova "*"
 
-cordova-plugin-badge@~0.7.4:
+cordova-plugin-badge@^0.7.4:
   version "0.7.4"
   resolved "https://registry.yarnpkg.com/cordova-plugin-badge/-/cordova-plugin-badge-0.7.4.tgz#031d2b66383e446d4ffa50e9fd49b228c3a5e158"
   dependencies:
     cordova-plugin-app-event ">=1.2.0"
 
-cordova-plugin-battery-status@~1.2.4:
+cordova-plugin-battery-status@^1.2.4:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/cordova-plugin-battery-status/-/cordova-plugin-battery-status-1.2.4.tgz#73a576afc0a61a9dd29aff7765907ecac0c9f1f9"
 
-cordova-plugin-brightness@~0.1.5:
+cordova-plugin-brightness@^0.1.5:
   version "0.1.5"
   resolved "https://registry.yarnpkg.com/cordova-plugin-brightness/-/cordova-plugin-brightness-0.1.5.tgz#ce639069889fc843c243e82f21e7789884ede9ba"
 
-cordova-plugin-browsertab@~0.2.0:
+cordova-plugin-browsertab@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/cordova-plugin-browsertab/-/cordova-plugin-browsertab-0.2.0.tgz#1e07f9872e15467a50e7d14a73fefd874faed64a"
 
-cordova-plugin-calendar@~4.5.5:
+cordova-plugin-calendar@^4.5.5:
   version "4.5.5"
   resolved "https://registry.yarnpkg.com/cordova-plugin-calendar/-/cordova-plugin-calendar-4.5.5.tgz#02c4880859f963a71fdc283f38d810a2cabdbcf8"
 
-cordova-plugin-call-number@~1.0.1:
+cordova-plugin-call-number@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/cordova-plugin-call-number/-/cordova-plugin-call-number-1.0.1.tgz#dd9643bfa2b334a6c68b1e64aa9629e6227c59f1"
 
-"cordova-plugin-camera-preview@https://github.com/cordova-plugin-camera-preview/cordova-plugin-camera-preview.git":
+"cordova-plugin-camera-preview@https://github.com/cordova-plugin-camera-preview/cordova-plugin-camera-preview":
   version "0.9.0"
-  resolved "https://github.com/cordova-plugin-camera-preview/cordova-plugin-camera-preview.git#727710cbaa5e184b5209f34eafa14d46fb1cda2a"
+  resolved "https://github.com/cordova-plugin-camera-preview/cordova-plugin-camera-preview#727710cbaa5e184b5209f34eafa14d46fb1cda2a"
   dependencies:
     cordova "*"
 
-cordova-plugin-camera@~2.4.1:
+cordova-plugin-camera@^2.4.1:
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/cordova-plugin-camera/-/cordova-plugin-camera-2.4.1.tgz#195e34e12db64f1c49e764f7d4e3f261aa3d94c1"
 
-cordova-plugin-console@~1.0.7:
+cordova-plugin-compat@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/cordova-plugin-compat/-/cordova-plugin-compat-1.1.0.tgz#92bdf169feb61205323dcc96a3ff8348e37e87fc"
+
+cordova-plugin-console@^1.0.7:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/cordova-plugin-console/-/cordova-plugin-console-1.0.7.tgz#89b7a92ed1c335888dfc00d902dc417201cf3b0b"
 
@@ -1866,7 +1874,7 @@ cordova-plugin-device@~1.1.6:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/cordova-plugin-device/-/cordova-plugin-device-1.1.6.tgz#2d21764cad7c9b801523e4e09a30e024b249334b"
 
-cordova-plugin-dialogs@~1.3.3:
+cordova-plugin-dialogs@^1.3.3:
   version "1.3.3"
   resolved "https://registry.yarnpkg.com/cordova-plugin-dialogs/-/cordova-plugin-dialogs-1.3.3.tgz#532ff2eb5c86133a5878550dae59c76ab397f8c9"
 
@@ -1886,7 +1894,7 @@ cordova-plugin-geolocation@~2.4.3:
   version "2.4.3"
   resolved "https://registry.yarnpkg.com/cordova-plugin-geolocation/-/cordova-plugin-geolocation-2.4.3.tgz#1dd00023d1f1a2ce330f8767ed08f7b738fe7184"
 
-cordova-plugin-globalization@~1.0.7:
+cordova-plugin-globalization@^1.0.7:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/cordova-plugin-globalization/-/cordova-plugin-globalization-1.0.7.tgz#b9941848fb5eb5dcd633e6971118fad638f648cf"
 
@@ -1910,7 +1918,7 @@ cordova-plugin-http@~1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/cordova-plugin-http/-/cordova-plugin-http-1.2.0.tgz#854aa2c6158c09aec5cc13a11ce6da85c9c4aa17"
 
-cordova-plugin-inappbrowser@~1.7.1:
+cordova-plugin-inappbrowser@^1.7.1:
   version "1.7.1"
   resolved "https://registry.yarnpkg.com/cordova-plugin-inappbrowser/-/cordova-plugin-inappbrowser-1.7.1.tgz#435b43f591fe7bfa95ea98dbe0004841fe59ba51"
 
@@ -1954,9 +1962,9 @@ cordova-plugin-screen-orientation@~2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/cordova-plugin-screen-orientation/-/cordova-plugin-screen-orientation-2.0.1.tgz#d608fd6cdd7e0b58bae3107768ac930af01ff437"
 
-cordova-plugin-secure-storage@~2.6.5:
-  version "2.6.5"
-  resolved "https://registry.yarnpkg.com/cordova-plugin-secure-storage/-/cordova-plugin-secure-storage-2.6.5.tgz#168557b5c46495541be04d5a3e2ac62770f838d7"
+cordova-plugin-secure-storage@~2.6.6:
+  version "2.6.6"
+  resolved "https://registry.yarnpkg.com/cordova-plugin-secure-storage/-/cordova-plugin-secure-storage-2.6.6.tgz#2678e386d0abdfdbfb408f4f1233ac3ae169a601"
 
 cordova-plugin-sim@~1.3.3:
   version "1.3.3"
@@ -2021,6 +2029,10 @@ cordova-plugin-x-toast@~2.6.0:
 cordova-plugin-youtube-video-player@1.0.6:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/cordova-plugin-youtube-video-player/-/cordova-plugin-youtube-video-player-1.0.6.tgz#bc1ac92d0377cb8aef12cdb3c01577f2b172e2f5"
+
+cordova-promise-polyfill@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/cordova-promise-polyfill/-/cordova-promise-polyfill-0.0.2.tgz#6bb7a949c56a7c318e7f554e6338c8f863e505a8"
 
 cordova-registry-mapper@^1.1.8:
   version "1.1.15"
@@ -4477,10 +4489,6 @@ pegjs@^0.10.0:
 performance-now@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-0.2.0.tgz#33ef30c5c77d4ea21c5a53869d91b56d8f2555e5"
-
-phonegap-plugin-barcodescanner@~6.0.6:
-  version "6.0.6"
-  resolved "https://registry.yarnpkg.com/phonegap-plugin-barcodescanner/-/phonegap-plugin-barcodescanner-6.0.6.tgz#c32df9a65332114d63ddbe395f0f4e136d3a20f2"
 
 pify@^2.0.0:
   version "2.3.0"

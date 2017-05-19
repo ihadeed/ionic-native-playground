@@ -3,6 +3,7 @@ import { NavController, NavParams, Platform } from 'ionic-angular';
 import { CameraPreview, CameraPreviewOptions } from '@ionic-native/camera-preview';
 import { Base64ToGallery } from "@ionic-native/base64-to-gallery";
 import {Toast} from "@ionic-native/toast";
+import 'rxjs/add/operator/first';
 
 @Component({
   selector: 'page-camera-preview',
@@ -29,9 +30,10 @@ export class CameraPreviewPage implements AfterViewInit {
       height: this.previewOpts.height,
       quality: 100
     })
-      .then(pic => this.base64ToGallery.base64ToGallery(pic))
+      .then(pic => this.base64ToGallery.base64ToGallery(pic[0], null))
       .then(() => {
-        let sub = this.toast.showShortBottom('Picture taken and saved to gallery').subscribe(() => sub.unsubscribe());
+        this.toast.show('Picture taken and saved to gallery', '5000', 'center').subscribe();
+        console.log('picture taken!');
       })
       .catch(e => console.log(e));
   }

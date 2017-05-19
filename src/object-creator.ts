@@ -175,9 +175,9 @@ export class ObjectCreator {
       case 'string':
         return '';
       case 'object':
-        return '{}';
+        return {};
       case 'array':
-        return '[]';
+        return [];
       default:
         return '';
     }

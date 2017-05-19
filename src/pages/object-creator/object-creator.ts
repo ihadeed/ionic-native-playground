@@ -28,7 +28,8 @@ export class ObjectCreatorPage extends ObjectCreator {
     if (value && value != this.getDefaultValue(this.type)) {
 
       try {
-        const parsed = JSON.parse(value);
+        // const parsed = JSON.parse(value);
+        const parsed = value;
 
         for (let prop in parsed) {
           let propType: string = typeof parsed[prop];
@@ -57,9 +58,9 @@ export class ObjectCreatorPage extends ObjectCreator {
     if (this.type == 'object') {
       let obj = {};
       this.items.forEach((item, i) => obj[item.name] = this.values[i]);
-      this.viewCtrl.dismiss(JSON.stringify(obj));
+      this.viewCtrl.dismiss(obj);
     } else {
-      this.viewCtrl.dismiss(JSON.stringify(this.values));
+      this.viewCtrl.dismiss(this.values);
     }
 
   }
