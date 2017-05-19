@@ -1,7 +1,6 @@
 import _ from 'lodash';
 import { CameraPage } from './pages/camera/camera';
 import { ActionSheetPage } from './pages/action-sheet/action-sheet';
-import { BarcodeScannerPage } from './pages/barcode-scanner/barcode-scanner';
 import { BrightnessPage } from './pages/brightness/brightness';
 import { ContactsPage } from './pages/contacts/contacts';
 import { GoogleMapsPage } from './pages/google-maps/google-maps';
@@ -96,7 +95,6 @@ class DynamicPlugin {
 
 const plugins = [
   new Plugin('Action Sheet', ActionSheetPage),
-  new Plugin('Barcode Scanner', BarcodeScannerPage),
   new Plugin('Brightness', BrightnessPage),
   new Plugin('Camera', CameraPage),
   new Plugin('Contacts', ContactsPage),
