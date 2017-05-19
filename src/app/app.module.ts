@@ -2,18 +2,15 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
 
 import {GoogleMapComponent} from "../components/google-map/google-map";
 
 import {ActionSheetPage} from "../pages/action-sheet/action-sheet";
-import {BarcodeScannerPage} from "../pages/barcode-scanner/barcode-scanner";
 import {BrightnessPage} from "../pages/brightness/brightness";
 import {CameraPage} from "../pages/camera/camera";
 import {ContactsPage} from "../pages/contacts/contacts";
 import {GoogleMapsPage} from "../pages/google-maps/google-maps";
 import {ActionSheet} from "@ionic-native/action-sheet";
-import {BarcodeScanner} from "@ionic-native/barcode-scanner";
 import {Brightness} from "@ionic-native/brightness";
 import {Camera} from "@ionic-native/camera";
 import {Contacts} from "@ionic-native/contacts";
@@ -37,6 +34,7 @@ import { MediaPlugin } from '@ionic-native/media';
 import { File } from '@ionic-native/file';
 import {Base64ToGallery} from "@ionic-native/base64-to-gallery";
 import {Toast} from "@ionic-native/toast";
+import { BrowserTab } from '@ionic-native/browser-tab';
 
 const components = [
   GoogleMapComponent,
@@ -47,13 +45,11 @@ const components = [
 
 const pages = [
   MyApp,
-  HomePage,
   PluginParamsPage,
   DynamicPluginPage,
   HelpPage,
 
   ActionSheetPage,
-  BarcodeScannerPage,
   BrightnessPage,
   CameraPage,
   ContactsPage,
@@ -70,7 +66,6 @@ const providers = [
   SignatureService,
 
   ActionSheet,
-  BarcodeScanner,
   Brightness,
   Camera,
   Contacts,
@@ -80,6 +75,7 @@ const providers = [
   File,
   Base64ToGallery,
   Toast,
+  BrowserTab,
 
   SplashScreen,
   StatusBar

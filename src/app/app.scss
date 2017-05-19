@@ -26,3 +26,24 @@ ion-fab.help-button {
 ion-app._gmaps_cdv_ .nav-decor {
   background-color: rgba(0,0,0,0);
 }
+
+ion-menu {
+  .menu-inner {
+    background: #fff !important;
+  }
+  .icon-container {
+    background: #fff !important;
+    text-align: center;
+    padding: 50px 0;
+
+    img {
+      max-width: 200px;
+    }
+
+  }
+
+  .item {
+    background-color: #fff !important;
+    color: black;
+  }
+}
