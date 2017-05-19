@@ -100,6 +100,7 @@ const plugins = [
   new Plugin('Google Maps', GoogleMapsPage),
   new Plugin('CameraPreview', CameraPreviewPage),
   new Plugin('Media', MediaPage),
+  new Plugin('AdMob Free', 'AdMobFreePage'),
 ];
 
 const dynamicPlugins = [
@@ -122,7 +123,6 @@ const dynamicPlugins = [
   CallNumber,
   DatePicker,
   AppPreferences,
-  AdMob,
   BackgroundGeolocation,
   AppVersion,
   DBMeter,
