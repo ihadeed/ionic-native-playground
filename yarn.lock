@@ -223,6 +223,10 @@
   version "3.10.0"
   resolved "https://registry.yarnpkg.com/@ionic-native/keyboard/-/keyboard-3.10.0.tgz#be01c6da17edf35fe9eb099d99e1eaa4c02f9f46"
 
+"@ionic-native/linkedin@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@ionic-native/linkedin/-/linkedin-3.10.0.tgz#5627408ce8850eff00fd2f73d74793dafb671548"
+
 "@ionic-native/market@^3.10.0":
   version "3.10.0"
   resolved "https://registry.yarnpkg.com/@ionic-native/market/-/market-3.10.0.tgz#64e409010c7cf23d45b9765ae7ec5441b2126a5d"
@@ -1921,6 +1925,10 @@ cordova-plugin-http@~1.2.0:
 cordova-plugin-inappbrowser@^1.7.1:
   version "1.7.1"
   resolved "https://registry.yarnpkg.com/cordova-plugin-inappbrowser/-/cordova-plugin-inappbrowser-1.7.1.tgz#435b43f591fe7bfa95ea98dbe0004841fe59ba51"
+
+cordova-plugin-linkedin@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/cordova-plugin-linkedin/-/cordova-plugin-linkedin-1.2.0.tgz#8ddef43c87a7b12c757910e3538bf707e3ed6759"
 
 cordova-plugin-market-ibby@latest:
   version "1.2.0"
