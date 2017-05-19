@@ -1,0 +1,53 @@
+{
+  "name": "NativeKeyboard",
+  "members": [
+    {
+      "name": "showMessenger",
+      "description": "Show messenger",
+      "params": [
+        {
+          "name": "options",
+          "description": "",
+          "type": "NativeKeyboardOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "hideMessenger",
+      "description": "Hide messenger",
+      "params": [
+        {
+          "name": "options",
+          "description": "",
+          "type": "NativeKeyboardOptions",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "showMessengerKeyboard",
+      "description": "Programmatically pop up the keyboard again if the user dismissed it.",
+      "params": [
+      ]
+    },
+    {
+      "name": "hideMessengerKeyboard",
+      "description": "Programmatically hide the keyboard (but not the messenger bar)",
+      "params": [
+      ]
+    },
+    {
+      "name": "updateMessenger",
+      "description": "Manipulate the messenger while it's open. For instance if you want to update the text programmatically based on what the user typed.",
+      "params": [
+        {
+          "name": "options",
+          "description": "",
+          "type": "",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}

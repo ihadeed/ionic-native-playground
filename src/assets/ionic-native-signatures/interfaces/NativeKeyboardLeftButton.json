@@ -1,0 +1,12 @@
+{
+  "name": "NativeKeyboardLeftButton",
+  "parent": "NativeKeyboard",
+  "properties": [
+    {
+      "name": "disabledWhenTextEntered",
+      "description": "Set to `true` to disable the button once text has been entered.",
+      "type": "boolean",
+      "optional":false
+    }
+  ]
+}

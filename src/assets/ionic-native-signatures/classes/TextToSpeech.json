@@ -6,7 +6,7 @@
       "description": "This function speaks",
       "params": [
         {
-          "name": "options",
+          "name": "textOrOptions",
           "description": "Text to speak or TTSOptions",
           "type": "string",
           "optional": false

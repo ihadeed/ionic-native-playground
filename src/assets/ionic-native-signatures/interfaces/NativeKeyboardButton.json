@@ -1,0 +1,30 @@
+{
+  "name": "NativeKeyboardButton",
+  "parent": "NativeKeyboard",
+  "properties": [
+    {
+      "name": "type",
+      "description": "Either \"text\" (Android only currently), \"fontawesome\" or \"ionicon\".",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "value",
+      "description": "Depends on the type. Examples: for \"text\" use \"Send\", for \"fontawesome\" use \"fa-battery-quarter\", for \"ionicon\" use \"\\uf48a\" (go to http://ionicons.com, right-click and inspect the icon and use the value you find in :before). Note that some fonticons are not supported as the embedded fonts in the plugin may lag behind a little. So try one of the older icons first.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "textStyle",
+      "description": "If type is \"text\" you can set this to either \"normal\", \"bold\" or \"italic\".",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "onPress",
+      "description": "A function invoked when the button is pressed. Use this button to prompt the user what he wants to do next by for instance rendering an ActionSheet.",
+      "type": "Function",
+      "optional":false
+    }
+  ]
+}

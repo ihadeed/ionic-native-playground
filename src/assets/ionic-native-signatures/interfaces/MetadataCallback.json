@@ -1,6 +1,6 @@
 {
   "name": "MetadataCallback",
-  "parent": "FileSaver",
+  "parent": "File",
   "properties": [
   ]
 }

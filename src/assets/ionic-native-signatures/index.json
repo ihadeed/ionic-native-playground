@@ -283,107 +283,107 @@
     
     {
       "name": "IFile",
-      "parent": "FileSaver"
+      "parent": "File"
     },
     
     {
       "name": "LocalFileSystem",
-      "parent": "FileSaver"
+      "parent": "File"
     },
     
     {
       "name": "Metadata",
-      "parent": "FileSaver"
+      "parent": "File"
     },
     
     {
       "name": "Flags",
-      "parent": "FileSaver"
+      "parent": "File"
     },
     
     {
       "name": "FileSystem",
-      "parent": "FileSaver"
+      "parent": "File"
     },
     
     {
       "name": "Entry",
-      "parent": "FileSaver"
+      "parent": "File"
     },
     
     {
       "name": "DirectoryEntry",
-      "parent": "FileSaver"
+      "parent": "File"
     },
     
     {
       "name": "DirectoryReader",
-      "parent": "FileSaver"
+      "parent": "File"
     },
     
     {
       "name": "FileEntry",
-      "parent": "FileSaver"
+      "parent": "File"
     },
     
     {
       "name": "FileSystemCallback",
-      "parent": "FileSaver"
+      "parent": "File"
     },
     
     {
       "name": "EntryCallback",
-      "parent": "FileSaver"
+      "parent": "File"
     },
     
     {
       "name": "FileEntryCallback",
-      "parent": "FileSaver"
+      "parent": "File"
     },
     
     {
       "name": "DirectoryEntryCallback",
-      "parent": "FileSaver"
+      "parent": "File"
     },
     
     {
       "name": "EntriesCallback",
-      "parent": "FileSaver"
+      "parent": "File"
     },
     
     {
       "name": "MetadataCallback",
-      "parent": "FileSaver"
+      "parent": "File"
     },
     
     {
       "name": "FileWriterCallback",
-      "parent": "FileSaver"
+      "parent": "File"
     },
     
     {
       "name": "FileCallback",
-      "parent": "FileSaver"
+      "parent": "File"
     },
     
     {
       "name": "VoidCallback",
-      "parent": "FileSaver"
+      "parent": "File"
     },
     
     {
       "name": "ErrorCallback",
-      "parent": "FileSaver"
+      "parent": "File"
     },
     
     {
       "name": "RemoveResult",
-      "parent": "FileSaver"
+      "parent": "File"
     },
     
     {
       "name": "IWriteOptions",
-      "parent": "FileSaver"
+      "parent": "File"
     },
     
     {
@@ -393,12 +393,12 @@
     
     {
       "name": "FlurryAnalyticsOptions",
-      "parent": "FlurryAnalyticsObject"
+      "parent": "FlurryAnalytics"
     },
     
     {
       "name": "FlurryAnalyticsLocation",
-      "parent": "FlurryAnalyticsObject"
+      "parent": "FlurryAnalytics"
     },
     
     {
@@ -594,6 +594,26 @@
     {
       "name": "NativeGeocoderForwardResult",
       "parent": "NativeGeocoder"
+    },
+    
+    {
+      "name": "NativeKeyboardOptions",
+      "parent": "NativeKeyboard"
+    },
+    
+    {
+      "name": "NativeKeyboardButton",
+      "parent": "NativeKeyboard"
+    },
+    
+    {
+      "name": "NativeKeyboardLeftButton",
+      "parent": "NativeKeyboard"
+    },
+    
+    {
+      "name": "NativeKeyboardUpdateMessengerOptions",
+      "parent": "NativeKeyboard"
     },
     
     {
@@ -955,15 +975,10 @@
     "FileEncryption",
     "FileOpener",
     "FilePath",
-    "FileSaver",
-    "FileWriter",
-    "FileError",
-    "FileReader",
     "File",
     "FingerprintAIO",
     "Firebase",
     "Flashlight",
-    "FlurryAnalyticsObject",
     "FlurryAnalytics",
     "Geofence",
     "Geolocation",
@@ -1004,6 +1019,7 @@
     "MusicControls",
     "NativeAudio",
     "NativeGeocoder",
+    "NativeKeyboard",
     "NativePageTransitions",
     "NativeRingtones",
     "NativeStorage",
@@ -1050,6 +1066,7 @@
     "Transfer",
     "TwitterConnect",
     "UniqueDeviceID",
+    "UserAgent",
     "Vibration",
     "VideoCapturePlus",
     "VideoEditor",

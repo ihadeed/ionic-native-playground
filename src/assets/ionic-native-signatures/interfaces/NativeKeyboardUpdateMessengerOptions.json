@@ -1,0 +1,24 @@
+{
+  "name": "NativeKeyboardUpdateMessengerOptions",
+  "parent": "NativeKeyboard",
+  "properties": [
+    {
+      "name": "text",
+      "description": "Replace the messenger's text by this. The current text remains if omitted.",
+      "type": "string",
+      "optional":false
+    },
+    {
+      "name": "caretIndex",
+      "description": "Position the cursor anywhere in the text range. Defaults to the end of the text.",
+      "type": "number",
+      "optional":false
+    },
+    {
+      "name": "showKeyboard",
+      "description": "If `false` or omitted no changes to the keyboard state are made.",
+      "type": "boolean",
+      "optional":false
+    }
+  ]
+}

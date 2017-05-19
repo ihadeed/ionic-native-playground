@@ -3,7 +3,7 @@
   "members": [
     {
       "name": "events",
-      "description": "Convenience constructor to get event names",
+      "description": "Convenience object to get event names",
       "params": [
       ]
     },
@@ -21,19 +21,19 @@
     },
     {
       "name": "banner",
-      "description": "",
+      "description": "Returns the AdMobFreeBanner object",
       "params": [
       ]
     },
     {
       "name": "interstitial",
-      "description": "",
+      "description": "Returns the AdMobFreeInterstitial object",
       "params": [
       ]
     },
     {
       "name": "rewardVideo",
-      "description": "",
+      "description": "Returns the AdMobFreeRewardVideo object",
       "params": [
       ]
     }

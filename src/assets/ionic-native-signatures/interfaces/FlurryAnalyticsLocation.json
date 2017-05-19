@@ -1,6 +1,6 @@
 {
   "name": "FlurryAnalyticsLocation",
-  "parent": "FlurryAnalyticsObject",
+  "parent": "FlurryAnalytics",
   "properties": [
     {
       "name": "latitude",

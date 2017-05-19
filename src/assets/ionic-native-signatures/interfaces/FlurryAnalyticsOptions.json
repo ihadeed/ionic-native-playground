@@ -1,6 +1,6 @@
 {
   "name": "FlurryAnalyticsOptions",
-  "parent": "FlurryAnalyticsObject",
+  "parent": "FlurryAnalytics",
   "properties": [
     {
       "name": "appKey",

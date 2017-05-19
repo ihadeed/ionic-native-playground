@@ -1,6 +1,6 @@
 {
   "name": "DirectoryReader",
-  "parent": "FileSaver",
+  "parent": "File",
   "properties": [
     {
       "name": "localURL",

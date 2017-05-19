@@ -1,6 +1,6 @@
 {
   "name": "FileWriterCallback",
-  "parent": "FileSaver",
+  "parent": "File",
   "properties": [
   ]
 }

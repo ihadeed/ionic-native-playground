@@ -1,6 +1,6 @@
 {
   "name": "DirectoryEntry",
-  "parent": "FileSaver",
+  "parent": "File",
   "properties": [
     {
       "name": "createReader",

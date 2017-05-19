@@ -1,6 +1,6 @@
 {
   "name": "EntriesCallback",
-  "parent": "FileSaver",
+  "parent": "File",
   "properties": [
   ]
 }

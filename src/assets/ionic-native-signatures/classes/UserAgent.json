@@ -1,0 +1,29 @@
+{
+  "name": "UserAgent",
+  "members": [
+    {
+      "name": "set",
+      "description": "Changes the current user-agent to the one sent by argument.",
+      "params": [
+        {
+          "name": "userAgent",
+          "description": "User-Agent",
+          "type": "string",
+          "optional": false
+        }
+      ]
+    },
+    {
+      "name": "get",
+      "description": "Returns the current user-agent string.",
+      "params": [
+      ]
+    },
+    {
+      "name": "reset",
+      "description": "Sets the user-agent back to default",
+      "params": [
+      ]
+    }
+  ]
+}

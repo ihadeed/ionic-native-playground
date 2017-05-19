@@ -1,6 +1,6 @@
 {
   "name": "LocalFileSystem",
-  "parent": "FileSaver",
+  "parent": "File",
   "properties": [
     {
       "name": "TEMPORARY",

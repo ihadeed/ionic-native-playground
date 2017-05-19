@@ -1,6 +1,6 @@
 {
   "name": "Flags",
-  "parent": "FileSaver",
+  "parent": "File",
   "properties": [
     {
       "name": "create",

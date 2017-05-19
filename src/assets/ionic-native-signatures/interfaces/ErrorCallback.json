@@ -1,6 +1,8 @@
 {
   "name": "ErrorCallback",
-  "parent": "FileSaver",
+  "parent": "File",
   "properties": [
   ]
+}
+
 }

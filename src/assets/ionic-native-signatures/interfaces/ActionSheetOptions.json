@@ -60,7 +60,7 @@
       "name": "destructiveButtonLast",
       "description": "Choose if destructive button will be the last",
       "type": "boolean",
-      "optional":false
+      "optional":true
     }
   ]
 }
