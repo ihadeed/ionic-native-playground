@@ -69,6 +69,7 @@ import {MediaPage} from "./pages/media/media";
 import {LinkedIn} from "@ionic-native/linkedin";
 
 class Plugin {
+  params: { sig: any; name: any; provider: any; };
   constructor(
     public name: string,
     public component: any
