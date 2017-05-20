@@ -12,7 +12,8 @@
     <allow-intent href="mailto:*"/>
     <allow-intent href="geo:*"/>
     <platform name="android">
-        <preference name="YouTubeDataApiKey" value="AIzaSyAxgi2AHulGhgZ26J-PHOClrLe-hr-pJVI"/>
+      <preference name="HeaderColor" value="#03A9F4" />
+      <preference name="YouTubeDataApiKey" value="AIzaSyAxgi2AHulGhgZ26J-PHOClrLe-hr-pJVI"/>
         <allow-intent href="market:*"/>
         <config-file parent="/*" target="AndroidManifest.xml">
             <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>

@@ -138,6 +138,7 @@
         "cordova-plugin-googlemaps": "git+https://github.com/ihadeed/cordova-plugin-googlemaps.git",
         "cordova-plugin-googleplus": "^5.1.1",
         "cordova-plugin-gyroscope": "^0.1.4",
+        "cordova-plugin-headercolor": "^1.0.0",
         "cordova-plugin-http": "^1.2.0",
         "cordova-plugin-inappbrowser": "^1.7.1",
         "cordova-plugin-linkedin": "^1.2.0",
@@ -273,7 +274,8 @@
             "cordova-plugin-admob-free": {},
             "cordova-plugin-linkedin": {
                 "APP_ID": "4355214"
-            }
+            },
+            "cordova-plugin-headercolor": {}
         },
         "platforms": [
             "android"
