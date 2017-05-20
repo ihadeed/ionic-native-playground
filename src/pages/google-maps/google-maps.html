@@ -1,16 +1,10 @@
 <ion-header>
-
   <ion-navbar color="primary">
     <ion-title>Google Maps</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
 <ion-content>
-
-  <google-map (mapClick)="onMapClick($event)" (mapReady)="onMapReady(e)" [options]="options">
-
-  </google-map>
-
+  <google-map (mapClick)="onMapClick($event)" (mapReady)="onMapReady(e)" [options]="options"></google-map>
 </ion-content>
