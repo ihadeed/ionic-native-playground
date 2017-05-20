@@ -50,6 +50,11 @@ export class ObjectCreator {
             type: 'radio',
             label: 'Array',
             value: 'array'
+          },
+          {
+            type: 'radio',
+            label: 'Date',
+            value: 'date'
           }
         ],
         buttons: [
@@ -178,6 +183,8 @@ export class ObjectCreator {
         return {};
       case 'array':
         return [];
+      case 'date':
+        return new Date();
       default:
         return '';
     }

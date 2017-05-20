@@ -29,6 +29,7 @@
         <ion-input *ngIf="['string', 'number'].indexOf(item.type) > -1" [type]="item.type" [(ngModel)]="values[i]"></ion-input>
         <ion-toggle *ngIf="item.type === 'boolean'" [(ngModel)]="values[i]"></ion-toggle>
         <ion-textarea *ngIf="['object', 'array'].indexOf(item.type) > -1" [value]="values[i] | stringify" disabled></ion-textarea>
+        <ion-datetime *ngIf="item.type === 'date'" displayFormat="MMM DD, YYYY HH:mm" [(ngModel)]="values[i]"></ion-datetime>
         <button ion-button icon-only clear item-right *ngIf="['object', 'array'].indexOf(item.type) > -1" (click)="editObject(i)">
           <ion-icon name="create"></ion-icon>
         </button>
