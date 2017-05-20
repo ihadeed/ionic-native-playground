@@ -6,6 +6,15 @@ import { Component } from '@angular/core';
 })
 export class GoogleMapsPage {
 
+  options: any = {
+    controls: {
+      compass: true,
+      myLocationButton: true,
+      indoorPicker: true,
+      zoom: true
+    }
+  };
+
   onMapClick(e) {
     console.log('map was clicked', e);
   }

@@ -38,6 +38,9 @@ export class GoogleMapComponent implements OnInit {
     return this._width;
   }
 
+  @Input()
+  options: any;
+
   @Output()
   mapClick: EventEmitter<any> = new EventEmitter<any>();
 
@@ -60,7 +63,7 @@ export class GoogleMapComponent implements OnInit {
 
     this.platform.ready()
       .then(() => {
-        this.map = this.googleMaps.create(this.mapContainer);
+        this.map = this.googleMaps.create(this.mapContainer, this.options);
 
         this.map.one(GoogleMapsEvent.MAP_READY)
           .then(() => {
