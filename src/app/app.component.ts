@@ -7,6 +7,7 @@ import { SignatureService } from '../providers/signature';
 import '../object-creator';
 import {AppConfigProvider} from "../providers/app-config/app-config";
 import {AdMobFree} from "@ionic-native/admob-free";
+import { noop } from 'lodash';
 
 @Component({
   templateUrl: 'app.html'
@@ -17,9 +18,9 @@ export class MyApp {
   set adsEnabled(val: boolean) {
     this.config.adsEnabled = val;
     if (val === true) {
-      this.admob.banner.show();
+      this.admob.banner.show().catch(noop);
     } else {
-      this.admob.banner.hide();
+      this.admob.banner.hide().catch(noop);
     }
   }
 
