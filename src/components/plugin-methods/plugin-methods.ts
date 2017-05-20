@@ -122,9 +122,10 @@ export class PluginMethodsComponent {
               let sig = await this.sig.getMethodSignature(member, this.sigName);
               if (sig && sig.params && sig.params.length) {
                 let params = await this.getParams(sig);
-                if (params) {
-                  args = params;
+                if (params && params.cancel === true) {
+                  return;
                 }
+                args = params;
               }
             }
             getResult(args);

@@ -155,7 +155,9 @@ export class ObjectCreator {
   }
 
   cancel() {
-    this.viewCtrl.dismiss();
+    this.viewCtrl.dismiss({
+      cancel: true
+    });
   }
 
   showHelp() {
