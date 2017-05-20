@@ -2,6 +2,12 @@
   <ion-navbar color="primary">
     <ion-title>CameraPreview</ion-title>
     <ion-buttons end>
+      <button ion-button icon-only (click)="changeFilter()">
+        <ion-icon name="color-filter"></ion-icon>
+      </button>
+      <button ion-button icon-only (click)="reverseCamera()">
+        <ion-icon name="reverse-camera"></ion-icon>
+      </button>
       <button ion-button icon-only (click)="takePicture()">
         <ion-icon name="camera"></ion-icon>
       </button>

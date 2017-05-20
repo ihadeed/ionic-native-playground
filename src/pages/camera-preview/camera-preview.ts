@@ -1,5 +1,5 @@
 import { Component, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
-import { NavController, NavParams, Platform } from 'ionic-angular';
+import { Platform } from 'ionic-angular';
 import { CameraPreview, CameraPreviewOptions } from '@ionic-native/camera-preview';
 import { Base64ToGallery } from "@ionic-native/base64-to-gallery";
 import {Toast} from "@ionic-native/toast";
@@ -14,11 +14,18 @@ export class CameraPreviewPage implements AfterViewInit {
   @ViewChild('cameraPreviewContainer') container: ElementRef;
 
   private previewOpts: CameraPreviewOptions;
+  private colorFilters: string[] = [
+    'NONE',
+    'MONO',
+    'NEGATIVE',
+    'POSTERIZE',
+    'SEPIA'
+  ];
+
+  private currentColorFilterIndex: number = 0;
 
   constructor(
-    public navCtrl: NavController
-    , public navParams: NavParams
-    , private platform: Platform
+    private platform: Platform
     , private cameraPreview: CameraPreview
     , private base64ToGallery: Base64ToGallery
     , private toast: Toast
@@ -33,8 +40,19 @@ export class CameraPreviewPage implements AfterViewInit {
       .then(pic => this.base64ToGallery.base64ToGallery(pic[0], null))
       .then(() => {
         this.toast.show('Picture taken and saved to gallery', '5000', 'center').subscribe();
-        console.log('picture taken!');
       })
+      .catch(e => console.log(e));
+  }
+
+  reverseCamera() {
+    this.cameraPreview.switchCamera()
+      .catch(e => console.log(e));
+  }
+
+  changeFilter() {
+    this.currentColorFilterIndex++;
+    if (this.currentColorFilterIndex > 4) this.currentColorFilterIndex = 0;
+    this.cameraPreview.setColorEffect(this.colorFilters[this.currentColorFilterIndex])
       .catch(e => console.log(e));
   }
 
