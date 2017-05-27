@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import {StringifyPipe} from "./stringify/stringify";
+import { StringifyPipe } from "./stringify/stringify";
 
 @NgModule({
   declarations: [
