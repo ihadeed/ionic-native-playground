@@ -79,6 +79,6 @@ This app will be published upon completion.
 git clone https://github.com/ihadeed/ionic-native-playground
 cd ionic-native-playground
 npm install
-cordova platform add <platform name> # add platform name(s)
-ionic run <platform name>
+ionic cordova platform add <platform name> # add platform name(s)
+ionic cordova run <platform name>
 ```
