@@ -21,8 +21,8 @@
     <ion-item *ngFor="let prop of sig.properties" text-wrap>
       <h2>{{ prop.name }}</h2>
       <p>{{ prop.description }}</p>
-      <ion-note item-right *ngIf="!!prop.type">{{ prop.type }}</ion-note>
-      <ion-note item-right *ngIf="prop.optional">(optional)</ion-note>
+      <ion-note item-end *ngIf="!!prop.type">{{ prop.type }}</ion-note>
+      <ion-note item-end *ngIf="prop.optional">(optional)</ion-note>
     </ion-item>
   </ion-list>
 
@@ -32,12 +32,12 @@
 
   <ion-list *ngIf="interfaces && interfaces.length">
     <ion-list-header color="light" text-wrap>
-      <ion-note item-left>Interface name</ion-note>
-      <ion-note item-right>Parent class</ion-note>
+      <ion-note item-start>Interface name</ion-note>
+      <ion-note item-end>Parent class</ion-note>
     </ion-list-header>
     <button ion-item *ngFor="let int of filteredInterfaces" (click)="diveDeeper(int.name)" text-wrap>
       <h2>{{ int.name }}</h2>
-      <ion-note item-right>{{ int.parent }}</ion-note>
+      <ion-note item-end>{{ int.parent }}</ion-note>
     </button>
   </ion-list>
 
