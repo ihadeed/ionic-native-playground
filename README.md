@@ -71,8 +71,8 @@ This demo app puts all the plugins below in action, using Ionic Native wrappers.
 - Youtube Video Player
 
 # Install from iTunes / Google Play
-Soon.
-This app will be published upon completion.
+- Google Play: https://play.google.com/store/apps/details?id=ca.zyra.apps.ionicnativeplayground&hl=en
+- iTunes: Soon
 
 # Manual Installation
 ```shell
