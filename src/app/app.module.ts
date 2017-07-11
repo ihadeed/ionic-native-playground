@@ -30,7 +30,7 @@ import { HelpPage } from '../pages/help/help';
 import { CameraPreviewPage } from '../pages/camera-preview/camera-preview';
 import { CameraPreview } from '@ionic-native/camera-preview'
 import {MediaPage} from "../pages/media/media";
-import { MediaPlugin } from '@ionic-native/media';
+import { Media } from '@ionic-native/media';
 import { File } from '@ionic-native/file';
 import {Base64ToGallery} from "@ionic-native/base64-to-gallery";
 import {Toast} from "@ionic-native/toast";
@@ -75,7 +75,7 @@ const providers = [
   Contacts,
   GoogleMaps,
   CameraPreview,
-  MediaPlugin,
+  Media,
   File,
   Base64ToGallery,
   Toast,
@@ -105,7 +105,6 @@ export function getProviders() {
     BrowserModule,
     HttpModule,
     IonicModule.forRoot(MyApp),
-    IonicStorageModule.forRoot(MyApp),
     PipesModule
   ],
   bootstrap: [IonicApp],

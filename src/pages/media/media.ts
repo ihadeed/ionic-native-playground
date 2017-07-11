@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {File} from "@ionic-native/file";
-import {MediaObject, MediaPlugin} from "@ionic-native/media";
+import {MediaObject, Media} from "@ionic-native/media";
 
 @Component({
   selector: 'page-media',
@@ -23,7 +23,7 @@ export class MediaPage {
   }
 
   constructor(
-    private media: MediaPlugin,
+    private media: Media,
     private file: File
   ) {}
 
