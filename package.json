@@ -27,7 +27,6 @@
         "@ionic-native/app-preferences": "^4.0.0",
         "@ionic-native/app-rate": "^4.0.0",
         "@ionic-native/app-version": "^4.0.0",
-        "@ionic-native/background-geolocation": "^4.0.0",
         "@ionic-native/badge": "^4.0.0",
         "@ionic-native/barcode-scanner": "^4.0.0",
         "@ionic-native/base64-to-gallery": "^4.0.0",

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {File} from "@ionic-native/file";
-import {MediaObject, Media} from "@ionic-native/media";
+import { MediaObject, Media, MEDIA_STATUS, MEDIA_ERROR } from "@ionic-native/media";
 
 @Component({
   selector: 'page-media',
@@ -14,14 +14,6 @@ export class MediaPage {
   isRecording: boolean;
   isPlaying: boolean;
 
-  onSuccess(r) {
-    this.result = r;
-  }
-
-  onError(e) {
-    this.error = e;
-  }
-
   constructor(
     private media: Media,
     private file: File
@@ -29,6 +21,25 @@ export class MediaPage {
 
   startRecording() {
     this.mediaObject = this.media.create('file.mp3');
+
+    this.mediaObject.onSuccess.subscribe((status: any) => {
+      console.log('Success fired', status);
+    });
+
+    this.mediaObject.onError.subscribe((err: MEDIA_ERROR) => {
+      console.log('Error fired', err);
+    });
+
+    this.mediaObject.onStatusUpdate.subscribe((status: MEDIA_STATUS) => {
+      console.log('Status update fired', status);
+
+      if (status == MEDIA_STATUS.STOPPED || status == MEDIA_STATUS.PAUSED) {
+        this.isPlaying = false;
+        this.isRecording = false;
+      }
+
+    });
+
     this.mediaObject.startRecord();
     this.isRecording = true;
   }

@@ -18,7 +18,6 @@ import { AppRate } from '@ionic-native/app-rate';
 import { AppPreferences } from '@ionic-native/app-preferences';
 import { Device } from '@ionic-native/device';
 import { BatteryStatus } from '@ionic-native/battery-status';
-import { BackgroundGeolocation } from '@ionic-native/background-geolocation';
 import { AppVersion } from '@ionic-native/app-version';
 import { DBMeter } from '@ionic-native/db-meter';
 import { DeviceMotion } from '@ionic-native/device-motion';
@@ -125,7 +124,6 @@ const dynamicPlugins = [
   CallNumber,
   DatePicker,
   AppPreferences,
-  BackgroundGeolocation,
   AppVersion,
   DBMeter,
   DeviceMotion,
