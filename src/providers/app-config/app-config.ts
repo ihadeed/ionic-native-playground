@@ -15,12 +15,10 @@ export class AppConfigProvider {
       if (typeof config === 'boolean') {
         return config;
       }
-      this.adsEnabled = true;
-      return true;
-    } catch (e) {
-      this.adsEnabled = true;
-      return true;
-    }
+    } catch (e) {}
+
+    this.adsEnabled = false;
+    return false;
   }
 
 }
