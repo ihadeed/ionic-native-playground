@@ -64,23 +64,25 @@
     <plugin name="card.io.cordova.mobilesdk" spec="^2.1.0" />
     <plugin name="com.darktalker.cordova.screenshot" spec="^0.1.6" />
     <plugin name="com.telerik.plugins.nativepagetransitions" spec="^0.6.5" />
+    <plugin name="cordova-android-play-services-gradle-release" spec="0.0.2" />
     <plugin name="cordova-base64-to-gallery" spec="^4.1.2" />
     <plugin name="cordova-clipboard" spec="^1.0.0" />
-    <plugin name="cordova-custom-config" spec="^3.2.0" />
+    <plugin name="cordova-custom-config" spec="^4.0.2" />
     <plugin name="cordova-plugin-actionsheet" spec="^2.3.3" />
-    <plugin name="cordova-plugin-admob-free" spec="^0.9.0" />
+    <plugin name="cordova-plugin-admob-free" spec="^0.10.0" />
     <plugin name="cordova-plugin-android-fingerprint-auth" spec="^1.2.7" />
     <plugin name="cordova-plugin-app-preferences" spec="^0.99.3" />
     <plugin name="cordova-plugin-app-version" spec="^0.1.9" />
     <plugin name="cordova-plugin-appavailability" spec="^0.4.2" />
     <plugin name="cordova-plugin-apprate" spec="^1.3.0" />
-    <plugin name="cordova-plugin-badge" spec="^0.7.4" />
+    <plugin name="cordova-plugin-badge" spec="^0.8.1" />
     <plugin name="cordova-plugin-battery-status" spec="^1.2.4" />
     <plugin name="cordova-plugin-brightness" spec="^0.1.5" />
     <plugin name="cordova-plugin-browsertab" spec="^0.2.0" />
     <plugin name="cordova-plugin-calendar" spec="^4.5.5" />
     <plugin name="cordova-plugin-call-number" spec="^1.0.1" />
     <plugin name="cordova-plugin-camera" spec="^2.4.1" />
+    <plugin name="cordova-plugin-camera-preview" spec="git+https://github.com/cordova-plugin-camera-preview/cordova-plugin-camera-preview.git" />
     <plugin name="cordova-plugin-compat" spec="^1.1.0" />
     <plugin name="cordova-plugin-console" spec="^1.0.7" />
     <plugin name="cordova-plugin-contacts" spec="^2.3.1" />
@@ -97,6 +99,10 @@
     <plugin name="cordova-plugin-geolocation" spec="^2.4.3" />
     <plugin name="cordova-plugin-globalization" spec="^1.0.7" />
     <plugin name="cordova-plugin-google-analytics" spec="^1.8.2" />
+    <plugin name="cordova-plugin-googlemaps" spec="git+https://github.com/mapsplugin/cordova-plugin-googlemaps.git#multiple_maps">
+        <variable name="API_KEY_FOR_ANDROID" value="AIzaSyDprtwhsBk0oonfHN1i0QJF51b_jeWTx6A" />
+        <variable name="API_KEY_FOR_IOS" value="AIzaSyDprtwhsBk0oonfHN1i0QJF51b_jeWTx6A" />
+    </plugin>
     <plugin name="cordova-plugin-googleplus" spec="^5.1.1">
         <variable name="REVERSED_CLIENT_ID" value="com.googleusercontent.apps.574561427806-5u2m32athiahkvr0cefepdr82r824ch9" />
     </plugin>
@@ -109,7 +115,7 @@
     </plugin>
     <plugin name="cordova-plugin-market-ibby" spec="^1.2.0" />
     <plugin name="cordova-plugin-media" spec="^3.0.1" />
-    <plugin name="cordova-plugin-nativegeocoder" spec="^1.0.2" />
+    <plugin name="cordova-plugin-nativegeocoder" spec="^2.0.2" />
     <plugin name="cordova-plugin-network-information" spec="^1.3.3" />
     <plugin name="cordova-plugin-pedometer" spec="^0.4.1" />
     <plugin name="cordova-plugin-pin-dialog" spec="^0.1.3" />
@@ -137,9 +143,4 @@
     <plugin name="cordova.plugins.diagnostic" spec="^3.6.5" />
     <plugin name="ionic-plugin-keyboard" spec="^2.2.1" />
     <plugin name="onesignal-cordova-plugin" spec="^2.1.1" />
-    <plugin name="cordova-plugin-googlemaps" spec="https://github.com/mapsplugin/cordova-plugin-googlemaps#multiple_maps">
-        <variable name="API_KEY_FOR_ANDROID" value="AIzaSyDprtwhsBk0oonfHN1i0QJF51b_jeWTx6A" />
-        <variable name="API_KEY_FOR_IOS" value="AIzaSyDprtwhsBk0oonfHN1i0QJF51b_jeWTx6A" />
-    </plugin>
-    <plugin name="cordova-plugin-camera-preview" spec="https://github.com/cordova-plugin-camera-preview/cordova-plugin-camera-preview" />
 </widget>

@@ -1,14 +1,14 @@
-import {Component, Input, Renderer, OnInit, ElementRef, Output, EventEmitter} from '@angular/core';
+import {Component, Input, Renderer, OnInit, ElementRef, Output, EventEmitter, AfterViewInit} from '@angular/core';
 import {Platform} from "ionic-angular";
 import {
-  GoogleMap, GoogleMapsEvent, GoogleMaps
+  GoogleMap, GoogleMapsEvent, GoogleMaps, LatLng, CameraPosition, GeocoderRequest, GoogleMapOptions, ILatLng
 } from "@ionic-native/google-maps";
 
 @Component({
   selector: 'google-map',
   template: '<ng-content></ng-content>'
 })
-export class GoogleMapComponent implements OnInit {
+export class GoogleMapComponent implements AfterViewInit {
 
   private mapContainer: HTMLElement;
 
@@ -39,10 +39,17 @@ export class GoogleMapComponent implements OnInit {
   }
 
   @Input()
-  options: any;
+  options: GoogleMapOptions = {
+    camera: {
+      target: [
+        {"lat": 21.306944, "lng": -157.858333},
+        {"lat": 47.037874, "lng": -69.779490}
+      ]
+    }
+  };
 
   @Output()
-  mapClick: EventEmitter<any> = new EventEmitter<any>();
+  mapClick: EventEmitter<LatLng> = new EventEmitter<any>();
 
   @Output()
   mapReady: EventEmitter<GoogleMap> = new EventEmitter<GoogleMap>();
@@ -57,7 +64,7 @@ export class GoogleMapComponent implements OnInit {
     this.mapContainer = el.nativeElement;
   }
 
-  ngOnInit() {
+  ngAfterViewInit() {
 
     this.setupContainer();
 
@@ -67,6 +74,8 @@ export class GoogleMapComponent implements OnInit {
 
         this.map.one(GoogleMapsEvent.MAP_READY)
           .then(() => {
+            console.log('Map ready fired', this.map);
+
             this.mapReady.emit(this.map);
             this.isInit = true;
           });
